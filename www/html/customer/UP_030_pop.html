@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>사람인 OTWOJOB</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../../css/pc/reset.css">
+<link rel="stylesheet" type="text/css" href="../../css/pc/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/pc/content.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/pc/placeholders.jquery.min.js"></script>
+<script type="text/javascript" src="../../js/pc/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/pc/common.js"></script>
+</head>
+<body>
+
+<!-- Layer popup -->
+<div class="box_type850 order_number_srch">
+	<p class="tit">주문번호검색</p>
+
+	<article class="pop_content last">
+
+		<div class="tab_type tab_type01 tab_width_type02">
+			<a href="#buy_sell_list" class="on">구매내역</a>
+			<a href="#buy_sell_list">판매내역</a>
+		</div>
+
+		<div id="buy_sell_list" class="tab_content">
+
+			<button class="btn_srch">조회</button>
+			<div class="srch_options">
+				<div class="calendal_area">
+					<input type="text" class="input_calendar" name="" /> ~
+					<input type="text" class="input_calendar" name="" />
+				</div>
+
+				<div class="tab_search trans2">
+					<ul class="tab_type02">
+						<li class="on"><a href="#">오늘</a></li>
+						<li><a href="#">어제</a></li>
+						<li><a href="#">이번주</a></li>
+						<li><a href="#">이번달</a></li>
+						<li><a href="#">전체</a></li>
+					</ul>
+				</div>
+
+				<div class="selectbox">
+					<label for="phone_num">제목</label>
+					<select id="phone_num">
+						<option selected>제목</option>
+						<option value="">제목</option>
+						<option value="">제목</option>
+					</select>
+				</div>
+				<input type="text" id="" class="write_keyword" title="" placeholder="검색할 키워드를 입력해 주세요." />
+			</div>
+
+			<div class="tab_type03">
+				<ul>
+					<li><a href="#none">구매 0</a></li>
+					<li class="on"><a href="#none">완료 0</a></li>
+					<li><a href="#none">취소 0</a></li>
+				</ul>
+			</div>
+
+			<p class="srch_guide">문의하실 주문번호를 선택하여 주세요.</p>
+			<table class="tbl_type01 fullsize">
+				<colgroup>
+					<col width="14%" />
+					<col width="14%" />
+					<col width="*" />
+					<col width="16%" />
+					<col width="16%" />
+					<col width="14%" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>주문번호</th>
+						<th>주문날짜</th>
+						<th>제목</th>
+						<th>판매자</th>
+						<th>가격/수량</th>
+						<th>선택</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>152141FE</td>
+						<td>2016.03.22</td>
+						<td class="txt_title">
+							모닝콜-날씨안내 해드립니다.
+						</td>
+						<td>오투잡</td>
+						<td>5000원/1개</td>
+						<td><button type="button" class="btn_apply">선택</button></td>
+					</tr>
+					<tr>
+						<td>152141FE</td>
+						<td>2016.03.22</td>
+						<td class="txt_title">
+							[디자인]웹/모바일 디자인해 드립니다.
+						</td>
+						<td>오투잡</td>
+						<td>5000원/1개</td>
+						<td><button type="button" class="btn_apply">선택</button></td>
+					</tr>
+					<tr>
+						<td>152141FE</td>
+						<td>2016.03.22</td>
+						<td class="txt_title">
+							운세/궁합/손금/신점 봐드려요~
+						</td>
+						<td>오투잡</td>
+						<td>5000원/1개</td>
+						<td><button type="button" class="btn_apply">선택</button></td>
+					</tr>
+					<tr>
+						<td>152141FE</td>
+						<td>2016.03.22</td>
+						<td class="txt_title">
+							모닝콜-날씨안내 해드립니다.
+						</td>
+						<td>오투잡</td>
+						<td>5000원/1개</td>
+						<td><button type="button" class="btn_apply">선택</button></td>
+					</tr>
+					<tr><!-- 검색결과가없음 -->
+						<td colspan="8" class="no_result">
+							검색결과가 없습니다.
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</article>
+</div>
+<!--// Layer popup -->
+
+</body>
+</html>

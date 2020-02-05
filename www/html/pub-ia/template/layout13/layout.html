@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>사람인 OTWOJOB</title>
+    <meta name="viewport"
+          content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/pc/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/slick.css">
+    <link rel="stylesheet" type="text/css" href="/js/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/content.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/short_event.css"> <!-- [dev] 이벤트 페이지에만 발생 -->
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.bxslider.js"></script>
+    <!--<script type="text/javascript" src="/js/pc/placeholders.jquery.min.js"></script>-->
+    <script type="text/javascript" src="/js/pc/slick.min.js"></script>
+    <script type="text/javascript" src="/js/pc/cycle2.js"></script>
+    <script type="text/javascript" src="/js/pc/slick.min.js"></script>
+    <script type="text/javascript" src="/js/pc/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="/js/pc/loader.js"></script>
+    <script type="text/javascript" src="/js/pc/plugins.min.js"></script>
+    <script type="text/javascript" src="/js/pc/flicking.pkgd.min.js"></script>
+    <!--<script type="text/javascript" src="/js/pc/common.js"></script>-->
+</head>
+<body>
+
+<!-- skip_content -->
+<div id="skip_content">
+    <a href="#content">본문바로가기</a>
+</div>
+<!-- //skip_content -->
+
+<!-- header -->
+<header id="header"></header>
+<!-- //header -->
+
+<!-- sticky_wrap  -->
+<!--<div class="sticky_wrap"></div>-->
+<!-- //sticky_wrap -->
+
+<!-- content -->
+<section id="content"></section>
+<!-- // content -->
+
+<!-- footer -->
+<footer id="footer" class="type02 footerWrap"></footer>
+<!-- //footer -->
+
+<script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    //header
+    $.ajax({
+        type: 'GET',
+        url: 'header.html',
+        dataType: 'html',
+        cache: false,
+        async: false,
+        success: function (data) {
+            $('#header').html(data);
+        }
+    });
+    //stickyWrap
+    /*$.ajax({
+               type: 'GET',
+               url: 'stickyWrap.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.sticky_wrap').html(data);
+               }
+           });*/
+    //content
+    $.ajax({
+        type: 'GET',
+        url: '/p/' + getParameterByName('page'),
+        dataType: 'html',
+        cache: false,
+        async: false,
+        success: function (data) {
+            $('#content').html(data);
+        }
+    });
+    //footer
+    $.ajax({
+        type: 'GET',
+        url: 'footer.html',
+        dataType: 'html',
+        cache: false,
+        async: false,
+        success: function (data) {
+            $('#footer').html(data);
+        }
+    });
+</script>
+<script type="text/javascript" src="/js/pc/common.js"></script>
+
+<!-- Layer popup : CRM 쿠폰 otwojob-1455 -->
+<div class="popup_layer confirm_coupon" style="display:none">
+    <div class="dimm"></div>
+    <div class="in_layer lucky7">
+        <div class="lucky7_cont">
+            <p class="lucky7_img01"><img src="/image/pc/popup/lucky7_img01.png"></p>
+            <p class="lucky7_text01">오투잡 가족 7일째를 기념하여<br><em>럭키세븐 할인쿠폰</em>이 발급되었습니다.</p>
+            <p class="lucky7_img02"><img src="/image/pc/popup/lucky7_img02.png"></p>
+            <p class="lucky7_text02">앞으로도 회원님의 무한한 사랑을 기대하며,<br>오투잡이 행운의 쿠폰을 쏩니다.</p>
+            <p class="lucky7_btn"><a href="#">쿠폰 확인 ＞</a></p>
+        </div>
+        <button type="button" class="lucky7_closer">닫기</button>
+    </div>
+</div>
+
+<!-- Layer popup : CRM 쿠폰 otwojob-1455 -->
+<div class="popup_layer confirm_coupon" style="display:none">
+    <div class="dimm"></div>
+    <div class="in_layer secret">
+        <div class="secret_cont">
+            <p class="secret_text01">쉿! <span>정영환우솔파파정영환우솔</span>님께<br><em>시크릿 할인쿠폰</em>이 발급되었습니다.</p>
+            <p class="secret_img01"><img src="/image/pc/popup/secret_img02.png"></p>
+            <p class="secret_text02">아직도 구매를 망설인다면<br>이번이 할인받아 구매할 기회!</p>
+            <p class="secret_btn"><a href="#">쿠폰 확인 ＞</a></p>
+        </div>
+        <button type="button" class="secret_closer">닫기</button>
+    </div>
+</div>
+
+<!-- Layer popup : 1000원 할인 쿠폰 otwojob-1627 -->
+<div class="popup_layer coupon1000" style="display:none">
+    <div class="dimm"></div>
+    <div class="in_layer secret">
+        <div class="secret_cont">
+            <p class="secret_text01">쉿! <span>정영환우솔파파정영환우솔</span>님께<br><em>할인쿠폰</em>이 발급되었습니다.</p>
+            <p class="secret_img01"><img src="/image/pc/popup/coupon_1000.png"></p>
+            <p class="secret_text02">아직도 구매를 망설인다면<br>이번이 할인받아 구매할 기회!</p>
+            <p class="secret_btn"><a href="#">쿠폰 확인 ＞</a></p>
+        </div>
+        <button type="button" class="secret_closer">닫기</button>
+    </div>
+</div>
+
+<!-- Layer popup : 견적요청하기 -->
+<div class="popup_layer box_type600 estimate_request">
+    <p class="tit">견적요청하기<a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a></p>
+    <p class="tit2">상세요청사항입력</p>
+    <article class="pop_content last">
+        <div class="text_form">
+            <label for=""><input type="text" id="" placeholder="상세 내용 및 조건을 입력해주세요"></label>
+        </div>
+        <div class="choose_image_form2">
+            <div class="custom_file_upload type2">
+                <input type="text" class="file2" name="">
+                <div class="file_upload type2">
+                    <input type="file" id="file_upload" name="file_upload" value="">
+                </div>
+            </div>
+        </div>
+        <div class="layer_table_ver type2">
+            <table summary="테이블 입니다.">
+                <caption>테이블</caption>
+                <tbody>
+                <tr>
+                    <th scope="row" title="수량">수량</th>
+                    <td>
+                        <div class="selectbox">
+                            <label for="a1">1</label>
+                            <select id="a1">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </td>
+                    <th scope="row" title="작업 기간">작업 기간</th>
+                    <td>
+                        <div class="selectbox">
+                            <label for="a2">1</label>
+                            <select id="a2">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <ul class="image_upload_help mt15">
+            <li><span class="dot">ㆍ</span>최대 20MB 까지 업로드가 가능합니다.</li>
+            <li><span class="dot">ㆍ</span>등록 가능한 파일 확장자는 jpg, gif, png, bmp 입니다.</li>
+        </ul>
+        <div class="btn_wrap">
+            <button type="button" class="btn_border">취소</button>
+            <button type="button" class="btn_fill">등록</button>
+        </div>
+    </article>
+</div>
+<!--// Layer popup -->
+
+<!-- Layer popup : 신고하기 -->
+<div class="popup_layer free_order box_type850">
+    <p class="tit">맛보기재능 주문 <a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a>
+    </p>
+    <!-- pop_content -->
+    <article class="pop_content">
+        <ul class="cont_list03 type_order">
+            <li>
+                <div class="talent_info">
+                    <div class="photo"><span><em><img src="/image/pc/temp/@list1.png" alt=""></em></span></div>
+                    <div class="tit_area">
+                        <a href="#">[디자인] 한글 캘리그라피 전문가가 직접 정성스럽게 써드립니다. <i class="icon_free">+ 맛보기</i></a>
+                        <span class="price"><strong class="free_color">0</strong>원</span>
+                        <div class="pay_add order_info"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="table_row report">
+            <table>
+                <caption class="blind"></caption>
+                <colgroup>
+                    <col width="150px"/>
+                    <col width="*"/>
+                </colgroup>
+                <tr>
+                    <th>상세설명</th>
+                    <td>상세설명 상세설명. 블로그 1건을 온라인/모바일 검색영역 최상위에 유지하는 것이며 총 2달 진행합니다. 콘텐츠는 매월 교체되었으면 좋겠구요, 키워드는 총 3개이며, 키워드
+                        조회는 각각 1만건, 1만 5천건 , 블로그 1건을 온라인/모바일 검색영역 최상위에 유지하는 것이며 총 2달 진행합니다.
+                    </td>
+                </tr>
+                <tr>
+                    <th>판매규정</th>
+                    <td>맛보기재능은 A/S 및 수정이 불가능하며, 구매 후 취소 시 재구매가 불가능합니다.<br>맛보기재능은 판매자가 재능의 일부를 맛보기로 제공하는 기능으로, 무료(0원)로
+                        결제가 진행됩니다.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btn_wrap">
+            <button type="button" class="btn_cancel">취소</button>
+            <button type="button" class="btn_free"><strong>0원</strong> 주문계속하기</button>
+        </div>
+    </article>
+    <!--// pop_content -->
+</div>
+<!--// Layer popup -->
+
+<!-- 모바일 폼 893 -->
+<!-- Layer popup : 이메일 입력 -->
+<div class="popup_layer pc_ver fn_order_email box_type600"
+     style="margin-left: -299px; margin-top: -245px; display: none;"> <!-- style 은 개발 후 삭제 -->
+    <p class="tit">주문 전 입력해 주세요! <span class="member_point">최초 1회</span><a href="#none" class="btn_close"><img
+            src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a></p>
+    <!-- pop_content -->
+    <article class="pop_content">
+        <!-- otwojob-1627 -->
+        <p class="small_txt_banner"><span>EVENT</span><a href="#">지금 개인정보 입력하면 할인쿠폰 즉시 발급!</a></p>
+        <article class="cont_wrap">
+            <!-- form_join -->
+            <fieldset class="form_join">
+                <legend class="blind">이메일입력</legend>
+                <div class="write first">
+                    <div class="input_wrap must required">
+                        <input type="text" title="이메일주소" placeholder="이메일 주소">
+                    </div>
+                    <button type="button" class="btn_confirm_new">인증하기</button>
+                    <p class="warning" id="">[$test@test2.co.kr$]으로 발송된 인증메일의 인증링크를 유효시간 30분 안에 클릭해주세요.</p>
+                    <!-- step01 -->
+                    <p class="confirm" id="">인증이 완료 되었습니다.</p> <!-- step02 -->
+                    <p class="warning" id="">[$test@test2.co.kr$](은)는 이미 가입되어 있는 이메일주소 입니다.</p> <!-- 이미가입시 -->
+                </div>
+                <div class="write">
+                    <div class="confirm_box">
+                        <label for="agree2" class="form_type01 member"><input type="checkbox" id="agree2"><span
+                                class="txt">(선택) 이메일을 통한 이벤트, 서비스 관련광고, 재능정보 등 <a href="javascript:void(0);"
+                                                                                  class="underline"
+                                                                                  onclick="memberDivOpen('event_info_agree_layer01');">마케팅정보 수신</a>에 동의합니다.</span></label>
+                        <p class="confirm_box_info">
+                            <span class="confirm_box_txt">선택 동의를 하지 않은 경우, 일부 서비스 이용에 제한이 있을 수 있습니다.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="write hide" id="event_info_agree_layer01">
+                    <div class="write_agree_form">
+                        <p class="txt_tit">마케팅 정보수신 동의 (선택)<a href="javascript:void(0);" class="hide_form_close"
+                                                              onclick="memberDivClose('event_info_agree_layer01');">X</a>
+                        </p>
+                        <div class="txt_box">
+                            • 수집ㆍ이용목적<br>
+                            &nbsp;&nbsp;&nbsp;- 신규 서비스, 이벤트, 서비스 관련 맞춤형 광고 및 재능정보 전송<br>
+                            • 수집항목: 이메일 수신동의<br>
+                            • 보유 및 이용기간: 서비스 이용시까지<br><br>
+                            ※ 선택사항에 동의하지 않으셔도 회원가입은 가능합니다.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다만, 오투잡 서비스 이용에 제한이 있을 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+                <!-- //form_join -->
+            </fieldset>
+        </article>
+        <div class="list_type04">
+            <ul>
+                <li><p>회원서비스 제공, 구매자 확인 및 상담 처리를 위해 입력해주세요.</p></li>
+                <li><p>입력하신 정보는 기본회원 정보에 함께 저장합니다.</p></li>
+            </ul>
+        </div>
+
+        <div class="btn_wrap">
+            <button type="button" class="btn_type btn_type02">인증완료하기</button>
+            <button type="button" class="btn_type btn_type11">인증완료하기</button> <!-- 미인증시 노출 -->
+        </div>
+    </article>
+</div>
+<!-- Layer popup -->
+
+<!-- Layer popup : 휴대폰번호 입력 -->
+<div class="popup_layer pc_ver fn_order_phone box_type600">
+    <p class="tit">주문 전 입력해 주세요! <span class="member_point">최초 1회</span><a href="#none" class="btn_close"><img
+            src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a></p>
+    <!-- pop_content -->
+    <article class="pop_content">
+        <article class="cont_wrap">
+            <!-- form_join -->
+            <fieldset class="form_join">
+                <legend class="blind">휴대폰번호입력</legend>
+                <div class="write first">
+                    <div class="input_wrap must required">
+                        <input type="text" title="휴대폰번호" placeholder="휴대폰번호(&quot;_&quot;제외, 숫자만 입력)">
+                    </div>
+                    <button type="button" class="btn_confirm_new" onclick="memberDivOpen('phone_confirm')">인증하기</button>
+                    <!--<button type="button" class="btn_confirm_new">재발송</button>--> <!-- 인증하기 클릭시 버튼 변경 -->
+                    <p class="confirm" id="">입력하신 번호로 인증번호가 발송되었습니다.</p>
+                </div>
+                <div class="write hide" id="phone_confirm">
+                    <div class="input_wrap required">
+                        <input type="text" title="인증번호 입력" placeholder="인증번호 입력">
+                    </div>
+                    <button type="button" class="btn_confirm_new">인증하기</button>
+                </div>
+                <div class="write">
+                    <div class="input_wrap required">
+                        <input type="text" title="휴대폰번호" placeholder="휴대폰번호(&quot;_&quot;제외, 숫자만 입력)"
+                               value="01033333333">
+                    </div>
+                    <button type="button" class="btn_confirm_new" onclick="memberDivOpen('phone_confirm');">인증하기
+                    </button>
+                    <!--<button type="button" class="btn_confirm_new">재발송</button>--> <!-- 인증하기 클릭시 버튼 변경 -->
+                    <p class="warning" id="">이미 사용중인 휴대폰번호입니다.</p>
+                </div>
+                <div class="write">
+                    <div class="input_wrap required">
+                        <input type="text" title="휴대폰번호" placeholder="휴대폰번호(&quot;_&quot;제외, 숫자만 입력)"
+                               value="01033333333">
+                    </div>
+                    <button type="button" class="btn_confirm_new" onclick="memberDivOpen('phone_confirm')">인증하기</button>
+                    <!--<button type="button" class="btn_confirm_new">재발송</button>--> <!-- 인증하기 클릭시 버튼 변경 -->
+                    <p class="confirm" id="">인증이 완료 되었습니다.</p>
+                </div>
+                <div class="write">
+                    <div class="confirm_box">
+                        <label for="agree2_1" class="form_type01 member"><input type="checkbox" id="agree2_1"><span
+                                class="txt">(선택) SMS/MMS를 통한 이벤트, 서비스 관련광고, 재능정보 등 <a href="javascript:void(0);"
+                                                                                      class="underline"
+                                                                                      onclick="memberDivOpen('event_info_agree_layer02');">마케팅정보 수신</a>에 동의합니다.</span></label>
+                        <p class="confirm_box_info">
+                            <span class="confirm_box_txt">선택 동의를 하지 않은 경우, 일부 서비스 이용에 제한이 있을 수 있습니다.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="write hide" id="event_info_agree_layer02">
+                    <div class="write_agree_form">
+                        <p class="txt_tit">마케팅 정보수신 동의 (선택)<a href="javascript:void(0);" class="hide_form_close"
+                                                              onclick="memberDivClose('event_info_agree_layer02');">X</a>
+                        </p>
+                        <div class="txt_box">
+                            • 수집ㆍ이용목적<br>
+                            &nbsp;&nbsp;&nbsp;- 신규 서비스, 이벤트, 서비스 관련 맞춤형 광고 및 재능정보 전송<br>
+                            • 수집항목: SMS/MMS 수신동의<br>
+                            • 보유 및 이용기간: 서비스 이용시까지<br><br>
+                            ※ 선택사항에 동의하지 않으셔도 회원가입은 가능합니다.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다만, 오투잡 서비스 이용에 제한이 있을 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+                <!-- //form_join -->
+            </fieldset>
+        </article>
+        <div class="list_type04">
+            <ul>
+                <li><p>회원서비스 제공, 구매자 확인 및 상담 처리를 위해 입력해주세요.</p></li>
+                <li><p>입력하신 정보는 기본회원 정보에 함께 저장합니다.</p></li>
+            </ul>
+        </div>
+
+        <div class="btn_wrap">
+            <button type="button" class="btn_type btn_type02">인증완료하기</button>
+            <button type="button" class="btn_type btn_type11">인증완료하기</button> <!-- 미인증시 노출 -->
+        </div>
+    </article>
+</div>
+<!-- Layer popup
+
+<!-- Layer popup : 휴대폰번호, 이메일 동시 입력 -->
+<div class="popup_layer pc_ver fn_order_phone_mail box_type600">
+    <p class="tit">주문 전 입력해 주세요! <span class="member_point">최초 1회</span><a href="#none" class="btn_close"><img
+            src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a></p>
+    <!-- pop_content -->
+    <article class="pop_content scroll_h615">
+        <article class="cont_wrap">
+            <!-- form_join -->
+            <fieldset class="form_join">
+                <legend class="blind">휴대폰번호, 이메일 동시 입력</legend>
+                <div class="write first">
+                    <div class="input_wrap must required">
+                        <input type="text" title="휴대폰번호" placeholder="휴대폰번호(&quot;_&quot;제외, 숫자만 입력)">
+                    </div>
+                    <button type="button" class="btn_confirm_new" onclick="memberDivOpen('phone_confirm02')">인증하기
+                    </button>
+                    <!--<button type="button" class="btn_confirm_new">재발송</button>--> <!-- 인증하기 클릭시 버튼 변경 -->
+                    <p class="confirm" id="">입력하신 번호로 인증번호가 발송되었습니다.</p>
+                </div>
+                <div class="write hide" id="phone_confirm02">
+                    <div class="input_wrap required">
+                        <input type="text" title="인증번호 입력" placeholder="인증번호 입력">
+                    </div>
+                    <button type="button" class="btn_confirm_new">인증하기</button>
+                </div>
+                <div class="write">
+                    <div class="input_wrap required">
+                        <input type="text" title="휴대폰번호" placeholder="휴대폰번호(&quot;_&quot;제외, 숫자만 입력)"
+                               value="01033333333">
+                    </div>
+                    <button type="button" class="btn_confirm_new" onclick="memberDivOpen('phone_confirm');">인증하기
+                    </button>
+                    <!--<button type="button" class="btn_confirm_new">재발송</button>--> <!-- 인증하기 클릭시 버튼 변경 -->
+                    <p class="warning" id="">이미 사용중인 휴대폰번호입니다.</p>
+                </div>
+                <div class="write">
+                    <div class="input_wrap required">
+                        <input type="text" title="휴대폰번호" placeholder="휴대폰번호(&quot;_&quot;제외, 숫자만 입력)"
+                               value="01033333333">
+                    </div>
+                    <button type="button" class="btn_confirm_new" onclick="memberDivOpen('phone_confirm')">인증하기</button>
+                    <!--<button type="button" class="btn_confirm_new">재발송</button>--> <!-- 인증하기 클릭시 버튼 변경 -->
+                    <p class="confirm" id="">인증이 완료 되었습니다.</p>
+                </div>
+                <div class="write">
+                    <div class="confirm_box">
+                        <label for="agree2_2" class="form_type01 member"><input type="checkbox" id="agree2_2"><span
+                                class="txt">(선택) SMS/MMS를 통한 이벤트, 서비스 관련광고, 재능정보 등 <a href="javascript:void(0);"
+                                                                                      class="underline"
+                                                                                      onclick="memberDivOpen('event_info_agree_layer0201');">마케팅정보 수신</a>에 동의합니다.</span></label>
+                        <p class="confirm_box_info">
+                            <span class="confirm_box_txt">선택 동의를 하지 않은 경우, 일부 서비스 이용에 제한이 있을 수 있습니다.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="write hide" id="event_info_agree_layer0201">
+                    <div class="write_agree_form">
+                        <p class="txt_tit">마케팅 정보수신 동의 (선택)<a href="javascript:void(0);" class="hide_form_close"
+                                                              onclick="memberDivClose('event_info_agree_layer0201');">X</a>
+                        </p>
+                        <div class="txt_box">
+                            • 수집ㆍ이용목적<br>
+                            &nbsp;&nbsp;&nbsp;- 신규 서비스, 이벤트, 서비스 관련 맞춤형 광고 및 재능정보 전송<br>
+                            • 수집항목: SMS/MMS 수신동의<br>
+                            • 보유 및 이용기간: 서비스 이용시까지<br><br>
+                            ※ 선택사항에 동의하지 않으셔도 회원가입은 가능합니다.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다만, 오투잡 서비스 이용에 제한이 있을 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="write">
+                    <div class="input_wrap must required">
+                        <input type="text" title="이메일주소" placeholder="이메일 주소">
+                    </div>
+                    <button type="button" class="btn_confirm_new">인증하기</button>
+                    <p class="warning" id="">[$test@test2.co.kr$]으로 발송된 인증메일의 인증링크를 유효시간 30분 안에 클릭해주세요.</p>
+                    <!-- step01 -->
+                    <p class="confirm" id="">인증이 완료 되었습니다.</p> <!-- step02 -->
+                    <p class="warning" id="">[$test@test2.co.kr$](은)는 이미 가입되어 있는 이메일주소 입니다.</p> <!-- 이미가입시 -->
+                </div>
+                <div class="write">
+                    <div class="confirm_box">
+                        <label for="agree2_3" class="form_type01 member"><input type="checkbox" id="agree2_3"><span
+                                class="txt">(선택) 이메일을 통한 이벤트, 서비스 관련광고, 재능정보 등 <a href="javascript:void(0);"
+                                                                                  class="underline"
+                                                                                  onclick="memberDivOpen('event_info_agree_layer0102');">마케팅정보 수신</a>에 동의합니다.</span></label>
+                        <p class="confirm_box_info">
+                            <span class="confirm_box_txt">선택 동의를 하지 않은 경우, 일부 서비스 이용에 제한이 있을 수 있습니다.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="write hide" id="event_info_agree_layer0102">
+                    <div class="write_agree_form">
+                        <p class="txt_tit">마케팅 정보수신 동의 (선택)<a href="javascript:void(0);" class="hide_form_close"
+                                                              onclick="memberDivClose('event_info_agree_layer0102');">X</a>
+                        </p>
+                        <div class="txt_box">
+                            • 수집ㆍ이용목적<br>
+                            &nbsp;&nbsp;&nbsp;- 신규 서비스, 이벤트, 서비스 관련 맞춤형 광고 및 재능정보 전송<br>
+                            • 수집항목: 이메일 수신동의<br>
+                            • 보유 및 이용기간: 서비스 이용시까지<br><br>
+                            ※ 선택사항에 동의하지 않으셔도 회원가입은 가능합니다.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다만, 오투잡 서비스 이용에 제한이 있을 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+                <!-- //form_join -->
+            </fieldset>
+        </article>
+        <div class="list_type04">
+            <ul>
+                <li><p>회원서비스 제공, 구매자 확인 및 상담 처리를 위해 입력해주세요.</p></li>
+                <li><p>입력하신 정보는 기본회원 정보에 함께 저장합니다.</p></li>
+            </ul>
+        </div>
+
+        <div class="btn_wrap">
+            <button type="button" class="btn_type btn_type02">인증완료하기</button>
+            <button type="button" class="btn_type btn_type11">인증완료하기</button> <!-- 미인증시 노출 -->
+        </div>
+    </article>
+</div>
+<!-- Layer popup -->
+
+<!-- Layer popup : 승인거절 사유 -->
+<div class="popup_layer talent_refuse">
+    <p class="tit">승인거절 사유<a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a>
+    </p>
+    <article class="pop_content">
+        <p class="alert_txt type_one">
+            죄송합니다.<br/>
+            테스트 등록으로 인한 승인이 거절되었습니다.
+        </p>
+        <div class="btn_wrap">
+            <button type="button" class="btn_ok btn_close">확인</button>
+        </div>
+    </article>
+</div>
+<!--// Layer popup -->
+
+<div class="popup_overlay dark">
+    <a href="javascript:void(0);" class="btn_close">
+        <img src="/image/pc/btn/btn-close-black-28-px.png" alt="팝업닫기" />
+    </a>
+    <div class="popup_layer zoomIn_portfolio" style="display: none;"></div>
+    <button type="button" class="slide_prev" onclick="ImageFade.goToPrev()"></button>
+    <button type="button" class="slide_next" onclick="ImageFade.goToNext()"></button>
+    <div class="image_slider">
+        <div>
+            <img class="main_portfolio" src="//images.otwojob.com/attached/1/P/L/1PLLwElPGeBs3ab.jpg/o2j/resize/1000>">
+        </div>
+        <div>
+            <img class="main_portfolio" src="http://ertkorea.com/data/file/7/3551666217_wnbHtYoN_13__1_.png">
+        </div>
+        <div>
+            <img class="main_portfolio" src="https://i.ytimg.com/vi/5_3jd471hp0/maxresdefault.jpg">
+        </div>
+        <div>
+            <img class="main_portfolio" src="//images.otwojob.com/attached/5/7/2/57275252caa5c.jpg/o2j/resize/1004>">
+        </div>
+    </div>
+    <div class="footer_window">
+        <div class="seller_inform">
+            <span class="photo" style="background-color: #86af69;">
+                <span>
+                    <img src="//images.otwojob.com/profile/f/3/7/f37jikGJ5txGJSx.png/o2j/resize/40x40&gt;" alt="hoseki31" title="프로필사진">
+                    알
+                </span>
+            </span>
+            <h2>알라딘베이비</h2>
+            <h3>(Firmly)</h3>
+            <button type="button" class="like">&nbsp;</button>
+        </div>
+    </div>
+</div>
+
+<!-- Layer popup : 신고하기 -->
+<div class="popup_layer report box_type600">
+    <p class="tit">신고하기 <a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a></p>
+    <!-- pop_content -->
+    <article class="pop_content">
+        <div class="table_row report">
+            <table>
+                <caption class="blind"></caption>
+                <colgroup>
+                    <col width="30%"/>
+                    <col width="*"/>
+                </colgroup>
+                <tr>
+                    <th>신고유형</th>
+                    <td>
+                        <div class="selectbox select_type01">
+                            <label for="a41">상세정보</label>
+                            <select id="a41">
+                                <option selected>상세정보</option>
+                                <option>상세정보</option>
+                                <option>상세정보</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btn_wrap">
+            <button type="button" class="btn_cancel">닫기</button>
+            <button type="button" class="btn_ok">신고하기</button>
+        </div>
+    </article>
+    <!--// pop_content -->
+</div>
+
+<div class="popup_layer buy_promotion">
+    <h1>아직, 구매결정 못하셨나요?</h1>
+    <h4>가격과 시간부담을 덜어드리겠습니다.</h4>
+    <button class="down_coupon"><img src="/image/pc/temp/coupon-link.png"></button>
+    <button class="link_orderjob"><img src="/image/pc/temp/orderjob-link.png"></button>
+
+    <div class="btn_wrap">
+        <button type="button" onclick="closeTodayPopup('buy_promotion')">오늘 하루 열지 않기</button>
+        <button type="button" onclick="layerClose('buy_promotion')">닫기</button>
+    </div>
+</div>
+
+<!--// Layer popup -->
+
+<!-- Layer popup : 맛보기재능 주문 -->
+<div class="popup_layer free_order box_type850">
+    <p class="tit">맛보기재능 주문 <a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a>
+    </p>
+    <!-- pop_content -->
+    <article class="pop_content scroll_h615">
+        <ul class="cont_list03 type_order">
+            <li>
+                <div class="talent_info">
+                    <div class="photo"><span><em><img src="/image/pc/temp/@list1.png" alt=""></em></span></div>
+                    <div class="tit_area">
+                        <a href="#">[디자인] 한글 캘리그라피 전문가가 직접 정성스럽게 써드립니다. <i>+ 맛보기</i></a>
+                        <span class="price"><strong class="free_color">0</strong>원</span>
+                        <div class="pay_add order_info"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="table_row report">
+            <table>
+                <caption class="blind"></caption>
+                <colgroup>
+                    <col width="150px"/>
+                    <col width="*"/>
+                </colgroup>
+                <tr>
+                    <th>상세설명</th>
+                    <td>상세설명 상세설명. 블로그 1건을 온라인/모바일 검색영역 최상위에 유지하는 것이며 총 2달 진행합니다. 콘텐츠는 매월 교체되었으면 좋겠구요, 키워드는 총 3개이며, 키워드
+                        조회는 각각 1만건, 1만 5천건 , 블로그 1건을 온라인/모바일 검색영역 최상위에 유지하는 것이며 총 2달 진행합니다.
+                    </td>
+                </tr>
+                <tr>
+                    <th>판매규정</th>
+                    <td>맛보기재능은 A/S 및 수정이 불가능하며, 구매 후 취소 시 재구매가 불가능합니다.<br>맛보기재능은 판매자가 재능의 일부를 맛보기로 제공하는 기능으로, 무료(0원)로
+                        결제가 진행됩니다.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btn_wrap">
+            <button type="button" class="btn_cancel">취소</button>
+            <button type="button" class="btn_free"><strong>0원</strong> 주문계속하기</button>
+        </div>
+    </article>
+    <!--// pop_content -->
+</div>
+<!--// Layer popup -->
+
+<!-- Layer popup : 카카오페이 API otwojob-1518 -->
+<div class="popup_layer kakao box_type460 h600">
+    1111
+</div>
+
+<!-- Layer popup : 재능상세 댓글 이미지 팝업 -->
+<div class="popup_layer review_img box_type600">
+    <p class="tit">상세 이미지 <a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"/></a>
+    </p>
+    <!-- pop_content -->
+    <article class="pop_content scroll_h615">
+        <p class="gallery"><img width="540" src="http://images.otwojob.com/image/mail/20170810/img_20170810_02.jpg"></p>
+    </article>
+    <!--// pop_content -->
+</div>
+<!--// Layer popup -->
+
+<!-- 알림 레이어 -->
+<div class="notice_layer">
+    <span class="notice_layer_arr"></span>
+    <div class="notice_layer_top">$나마스테$님의 최근 메세지</div>
+    <!-- 로딩이미지 -->
+    <div class="notice_loading" style="display:block;"><img src="/image/pc/common/loading02.gif" alt="로딩이미지"/></div>
+    <!-- css 최초설정 : display:none; -->
+    <!-- //로딩이미지 -->
+    <div class="notice_layer_cont">
+        <div class="scrollbar-inner">
+            <p class="no_notice">아직 도착한 알림이 없습니다.</p> <!-- 알림 없을 시 노출 -->
+            <ul>
+                <li class="first">
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img
+                                        src="//images.otwojob.com/profile/5/7/9/5795a81aa26d0.jpg/o2j/resize/100>"
+                                        alt="ca92336"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="notice_color">[공지]</span>
+                                <span class="cont_txt">판매회원 전환완료 되었습니다.</span>
+                                <span class="notice_date">15분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img
+                                        src="//images.otwojob.com/profile/Y/f/H/YfHeWdw4uj2DLR1.jpeg/o2j/resize/100>"
+                                        alt="ca92336"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="notice_color">[공지]</span>
+                                <span class="cont_txt">보유하고 있는 O포인트 소멸예정포인트 10,000p가 소멸예정입니다.</span>
+                                <span class="notice_date">3시간 30분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg"
+                                                               alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="message_color">[메세지]</span>
+                                <span class="cont_txt">스페셜디자인님으로 부터 메시지가 도착하였습니다.</span>
+                                <span class="notice_date">2017.12.17 21:07</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg"
+                                                               alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="deal_color">[거래메세지]</span>
+                                <span class="cont_txt">4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트</span>
+                                <span class="notice_date">15분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg"
+                                                               alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="notice_color">[공지]</span>
+                                <span class="cont_txt">보유하고 있는 O포인트 소멸예정포인트 10,000p가 소멸예정입니다.</span>
+                                <span class="notice_date">3시간 30분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg"
+                                                               alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="message_color">[메세지]</span>
+                                <span class="cont_txt">스페셜디자인님으로 부터 메시지가 도착하였습니다.</span>
+                                <span class="notice_date">2017.12.17 21:07</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span></span></span>
+                            </dt>
+                            <dd>
+                                <span class="deal_color">[거래메세지]</span>
+                                <span class="cont_txt">4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트트</span>
+                                <span class="notice_date">15분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="last"><span class="dot_point">&nbsp;</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="notice_layer_foot"><a href="#">내 알림 전체보기</a></div>
+</div>
+
+
+<!-- Layer popup -->
+<div class="popup_layer find_address box_type600">
+    <fieldset>
+        <legend class="blind">우편번호 찾기</legend>
+
+        <p class="tit">우편번호 찾기<a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png"
+                                                                     alt="팝업닫기"/></a></p>
+        <article class="pop_content">
+            <div class="tab_type tab_type01 not_fn">
+                <a href="#address_load" class="on">도로명 주소</a>
+                <a href="#address">지번 주소</a>
+            </div>
+
+            <div id="address_load" class="tab_content sch_address">
+                <p class="alert_txt border_block">찾고자 하는 주소의 도로명을 입력해 주세요. (예: 테헤란로, 동숭1길)</p>
+                <div class="search_form border_block">
+                    <input type="text" placeholder="도로명+건물번호를 입력해 주세요." title="도로명+건물번호 입력"/>
+                    <button type="button">검색</button>
+                    <!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+                        <p class="warning" style="display:block">도로명을 입력해주세요. </p> -->
+                </div>
+                <p class="alert_txt">검색 결과 중 해당 주소를 클릭하시면 자동 입력됩니다.</p>
+
+                <div class="search_result">
+                    <!-- 검색결과 있을 때 -->
+                    <table class="table_type01">
+                        <colgroup>
+                            <col width="140px">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="post_num">우편번호</th>
+                            <th class="address">주소</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="table_scroller1">
+                        <table class="table_type01">
+                            <colgroup>
+                                <col width="140px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 검색결과 없을 때 -->
+                    <p class="no_result">검색결가가 없습니다.</p>
+                </div>
+
+                <p class="alert_txt last"><span class="point">사업자 등록증의 주소</span>와 동일한 사업장 주소를 입력해 주세요.</p>
+            </div>
+
+            <div id="address" class="tab_content sch_address" style="display:none;">
+                <p class="alert_txt border_block">찾고자 하는 주소의 동(읍/리/면) 이름을 입력해 주세요. <br/>(예: 대치동, 곡석읍, 오곡면)</p>
+                <div class="search_form border_block">
+                    <input type="text" placeholder="동을 입력해 주세요" title="동 입력"/>
+                    <button type="button">검색</button>
+                    <!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+                        <p class="warning" style="display:block">도로명을 입력해주세요. </p> -->
+                </div>
+                <p class="alert_txt">검색 결과 중 해당 주소를 클릭하시면 자동 입력됩니다.</p>
+
+                <div class="search_result">
+                    <!-- 검색결과 있을 때 -->
+                    <table class="table_type01 scroll">
+                        <colgroup>
+                            <col width="35%"/>
+                            <col width="*"/>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="post_num">우편번호</th>
+                            <th class="address">주소</th>
+                        </tr>
+                        </thead>
+                    </table>
+
+                    <div class="table_scroller1">
+                        <table class="table_type01">
+                            <colgroup>
+                                <col width="140px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 검색결과 없을 때 -->
+                    <p class="no_result">검색결가가 없습니다.</p>
+                </div>
+
+                <p class="alert_txt last"><span class="point">사업자 등록증의 주소</span>와 동일한 사업장 주소를 입력해 주세요.</p>
+            </div>
+        </article>
+    </fieldset>
+</div>
+<!--// Layer popup -->
+
+<div class="popup_layer image_banner auth_floating">
+    <a href="javascript:void(0);" class="btn_close" onclick="layerClose('auth_floating')">
+        <img src="/image/pc/orderjob/btn-close-white-24-px.png" alt="팝업닫기" />
+    </a>
+    <img src="/image/pc/temp/auth-popup.png">
+    <a href="javascript:void(0)" class="direct_link">본인 인증하기</a>
+</div>
+
+</body>
+</html>

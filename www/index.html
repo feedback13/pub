@@ -1,0 +1,3693 @@
+<!doctype html>
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<html lang="kr">
+<head>
+
+    <meta charset="utf-8">
+    <title>퍼블리싱 작업리스트</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        body{font-family:dotum;font-size: 12px;}
+        h1{margin:20px 0 10px;text-align:center;}
+        ul{width:370px;margin:0 auto 20px;padding:3px 30px;border:1px solid #d5d5d5;overflow:hidden;}
+        ul li{float:left;list-style:none;line-height:20px;margin-right:20px;}
+        ul li:last-child{margin-right:0;}
+        ul li{line-height:20px;font-weight:bold;}
+        ul li span{display:inline-block;margin-right:5px;width:20px;height:20px;margin-top:5px;border:1px solid #d5d5d5;}
+        ul li span.complete{background-color:#fff8a4;}
+        ul li span.examine{background-color:#cbffc0;}
+        ul li span.question{background-color:#ffece0;}
+        .tbl_list{clear:both;width:98%;min-width:1260px;margin:20px auto;padding:0;border-top:1px solid #333;border-collapse:collapse;}
+        .tbl_list tr:hover{background-color:#eee;}
+        .tbl_list tr.complete{background-color:#fff8a4;}
+        .tbl_list tr.examine{background-color:#cbffc0;}
+        .tbl_list tr.question{background-color:#ffece0;}
+        .tbl_list th{height:35px;line-height:30px;text-align:center;font-weight:bold;background-color:#595959;color:#FFF;border:1px solid #aaa;}
+        .tbl_list td{padding:2px 5px;text-align:left;color:#404040;border:1px solid #aaa;}
+        .tbl_list td a{display:block;color:#404040;text-decoration:none;font-weight:bold;}
+    </style>
+</head>
+
+<body>
+<h1>퍼블리싱 작업 리스트</h1>
+<ul>
+    <li><span class="examine"></span>검수요청</li>
+    <li><span class="complete"></span>검수완료</li>
+    <li><span class="question"></span>추후재정리(미해결문제)</li>
+</ul>
+<table class="tbl_list">
+    <col width="10%">
+    <col width="4%">
+    <col width="4%">
+    <col width="8%">
+    <col width="8%">
+    <col width="10%">
+    <col width="10%">
+    <col width="10%">
+    <col width="8%">
+    <col width="20%">
+    <col width="4%">
+    <col width="4%">
+    <tr>
+        <th width="75">SB Doc.</th>
+        <th width="114">Page No.</th>
+        <th width="67">WBS_ID</th>
+        <th dir="LTR" width="123">Category</th>
+        <th dir="LTR" width="130">Menu1</th>
+        <th dir="LTR" width="193">Menu2</th>
+        <th dir="LTR" width="203">Menu3</th>
+        <th dir="LTR" width="135">Menu4</th>
+        <th dir="LTR" width="172">Menu5</th>
+        <th dir="LTR" width="203">Work</th>
+        <th dir="LTR" >기능</th>
+        <th dir="LTR" >퍼블</th>
+    </tr>
+    <tr>
+        <td><span class="examine">2.메인</span> <strong>(Key)</strong></td>
+        <td><span class="examine">2</span></td>
+        <td><span class="examine"><a href="html/main/UP_001.html" target="_blank">UP_001</a></span></td>
+        <td><span class="examine">레이아웃</span></td>
+        <td><span class="examine">GNB</span></td>
+        <td><span class="examine">로그인 전</span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">로그인 전</span></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td><span class="examine">2.메인</span></td>
+        <td><span class="examine">2</span></td>
+        <td><span class="examine"><a href="html/main/UP_001.html" target="_blank">UP_001</a></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">로그인 후 판매자</span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">로그인 후 판매자</span></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td><span class="examine">2.메인</span></td>
+        <td><span class="examine">3</span></td>
+        <td><span class="examine"><a href="html/main/UP_001.html" target="_blank">UP_001</a></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">로그인 후 구매자</span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">로그인 후 구매자</span></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td><span class="examine">2.메인</span></td>
+        <td><span class="examine">4</span></td>
+        <td><span class="examine"><a href="html/main/UP_001.html" target="_blank">UP_001</a></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">카테고리 메인</span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">카테고리 메인</span></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td><span class="examine">2.메인</span></td>
+        <td><span class="examine">5</span></td>
+        <td><span class="examine"><a href="html/main/UP_001.html" target="_blank">UP_001</a></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">카테고리 서브</span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine"></span></td>
+        <td><span class="examine">카테고리 서브</span></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td width="114">11</td>
+        <td>UP_002</td>
+        <td></td>
+        <td>SNB</td>
+        <td>고객센터</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>고객센터</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td width="114">3</td>
+        <td>UP_002</td>
+        <td></td>
+        <td></td>
+        <td>마이페이지</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>마이페이지</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>13</td>
+        <td>UP_003</td>
+        <td></td>
+        <td>FOOTER</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>FOOTER</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>1</td>
+        <td>UP_004</td>
+        <td></td>
+        <td>팝업존</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>팝업존</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>7~12</td>
+        <td><a href="html/main/UP_001.html" target="_blank">UP_001</a></td>
+        <td>메인</td>
+        <td>로그인전 메인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>로그인전 메인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>7~12</td>
+        <td>UP_005</td>
+        <td></td>
+        <td>로그인후 메인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>로그인후 메인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>26</td>
+        <td>UP_006</td>
+        <td></td>
+        <td>오투잡앱설치하기</td>
+        <td>오투잡앱</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오투잡앱</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>27</td>
+        <td>UP_006</td>
+        <td></td>
+        <td></td>
+        <td>판매자전용앱</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매자전용앱</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세 <strong>(Key)</strong></td>
+        <td>1~3</td>
+        <td><a href="html/talent/UP_007.html" target="_blank">UP_007</a></td>
+        <td>재능</td>
+        <td>카테고리 리스트 (1차)</td>
+        <td>카테고리 리스트 (2차)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>카테고리 리스트(2차)</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td></td>
+        <td><a href="html/talent/UP_007_1.html" target="_blank">UP_007_1</a></td>
+        <td>재능</td>
+        <td>카테고리 리스트 (1차)</td>
+        <td>리스트 없는 경우</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>리스트 없는 경우</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr target="_blank">
+        <td>3.재능상세 <strong>(Key)</strong></td>
+        <td>4~7,12</td>
+        <td>UP_008</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>상세</td>
+        <td>상세정보</td>
+        <td></td>
+        <td>상세설명</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td>9</td>
+        <td>UP_009</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매규정</td>
+        <td></td>
+        <td>판매규정</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td>10</td>
+        <td>UP_010</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>리뷰</td>
+        <td></td>
+        <td>리뷰</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td>11</td>
+        <td>UP_011</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오투잡 이용방법</td>
+        <td></td>
+        <td>오투잡 이용방법</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td>UP_000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>문의하기</td>
+        <td></td>
+        <td>문의하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td>13,16</td>
+        <td>UP_012</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>프로필 보기</td>
+        <td>기업</td>
+        <td></td>
+        <td>프로필-기업</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td>13,16</td>
+        <td>UP_012</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>개인</td>
+        <td></td>
+        <td>프로필-개인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td>6</td>
+        <td>UP_013</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>견적요청</td>
+        <td></td>
+        <td>견적요청</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>3.재능상세</td>
+        <td>8</td>
+        <td>UP_014</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>신고하기</td>
+        <td></td>
+        <td>신고하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>21,22</td>
+        <td><a href="html/main/UP_015.html" target="_blank">UP_015</a></td>
+        <td>오더잡</td>
+        <td>메인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>메인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>23</td>
+        <td><a href="html/main/UP_015.html" target="_blank">UP_015</a></td>
+        <td></td>
+        <td>카테고리 리스트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>카테고리 리스트</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td></td>
+        <td><a href="html/main/UP_015_03.html" target="_blank">UP_015_03</a></td>
+        <td></td>
+        <td>카테고리 리스트</td>
+        <td>리스트 없는 경우</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>리스트 없는 경우</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.메인</td>
+        <td>24</td>
+        <td>UP_016</td>
+        <td></td>
+        <td></td>
+        <td>오더상세</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더상세</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>5.통합검색</td>
+        <td>7,8</td>
+        <td>UP_017</td>
+        <td>통합검색</td>
+        <td>통합검색결과 리스트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>통합검색결과 리스트</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>5.통합검색</td>
+        <td>9</td>
+        <td>UP_017</td>
+        <td></td>
+        <td></td>
+        <td>검색영역 설정- 전체보기 오픈</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>검색영역 설정- 전체보기 오픈</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>5.통합검색</td>
+        <td>9</td>
+        <td>UP_017</td>
+        <td></td>
+        <td></td>
+        <td>검색영역 설정- 2차 추가보기 오픈</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>검색영역 설정- 2차 추가보기 오픈</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>5.통합검색</td>
+        <td>9</td>
+        <td>UP_017</td>
+        <td></td>
+        <td></td>
+        <td>검색영역 설정- 스마트 검색 오픈</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>검색영역 설정- 스마트 검색 오픈</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>11.12</td>
+        <td>UP_018</td>
+        <td>회원</td>
+        <td>회원가입</td>
+        <td>일반회원가입</td>
+        <td>약관동의</td>
+        <td></td>
+        <td></td>
+        <td>약관동의</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/agree">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>1.PC_회원<strong>(Key)</strong></td>
+        <td>13,14</td>
+        <td>UP_019</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>정보입력</td>
+        <td></td>
+        <td></td>
+        <td><a href="html/member/UP_019.html" target="_blank">정보입력</a></td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/join">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>15,17</td>
+        <td>UP_019</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오류알림 메시지 출력</td>
+        <td></td>
+        <td></td>
+        <td>오류알림 메시지 출력</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/join">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>16</td>
+        <td>UP_019</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>정상알림 메시지 출력</td>
+        <td></td>
+        <td></td>
+        <td>정상알림 메시지 출력</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/join">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>20,21</td>
+        <td>UP_020</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>페이스북 회원가입</td>
+        <td></td>
+        <td></td>
+        <td>페이스북 회원가입</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/join">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>22</td>
+        <td>UP_021</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>가입완료</td>
+        <td></td>
+        <td></td>
+        <td>가입완료</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/join">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>7~9</td>
+        <td>UP_022</td>
+        <td></td>
+        <td>로그인</td>
+        <td>일반로그인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>일반로그인</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/auth/loginForm">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>58</td>
+        <td>UP_023</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>만 14세 미만 회원 서비스 제한 안내</td>
+        <td></td>
+        <td></td>
+        <td>만 14세 미만 회원 서비스 제한 안내</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>7~9</td>
+        <td>UP_022</td>
+        <td></td>
+        <td></td>
+        <td>페이스북 로그인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>페이스북 로그인</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/auth/loginForm">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>10</td>
+        <td>UP_024</td>
+        <td></td>
+        <td></td>
+        <td>아이디/비밀번호 찾기</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>아이디/비밀번호 찾기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>5</td>
+        <td>UP_025</td>
+        <td>고객센터</td>
+        <td>메인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>메인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>9</td>
+        <td>UP_026</td>
+        <td></td>
+        <td>공지사항</td>
+        <td>공지사항리스트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>공지사항리스트</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/board/notice/0">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>10</td>
+        <td>UP_027</td>
+        <td></td>
+        <td></td>
+        <td>공지사항내용</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>공지사항내용</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/board/detail/notice/187">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>12</td>
+        <td>UP_028</td>
+        <td></td>
+        <td>FAQ(구매/판매 공통)</td>
+        <td>리스트</td>
+        <td>일반</td>
+        <td></td>
+        <td></td>
+        <td>FAQ리스트-일반</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/board/faq/1">60%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>13</td>
+        <td>UP_028</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오픈</td>
+        <td></td>
+        <td></td>
+        <td>FAQ리스트-오픈</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/board/faq/0">60%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>6,7</td>
+        <td>UP_028</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>검색</td>
+        <td></td>
+        <td></td>
+        <td>FAQ 검색</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>14,15</td>
+        <td>UP_029</td>
+        <td></td>
+        <td>1:1문의</td>
+        <td>문의하기</td>
+        <td>기본폼</td>
+        <td></td>
+        <td></td>
+        <td>문의하기-기본폼</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/board/faq/0">60%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>15</td>
+        <td>UP_029</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>분류2선택시 폼</td>
+        <td></td>
+        <td></td>
+        <td>분류2선택시 폼</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>16</td>
+        <td>UP_029</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>환불신청 선택시 폼</td>
+        <td></td>
+        <td></td>
+        <td>환불신청 선택시 폼</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>17</td>
+        <td>UP_030</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>주문번호 검색</td>
+        <td></td>
+        <td></td>
+        <td>주문번호 검색</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>21</td>
+        <td>UP_135</td>
+        <td></td>
+        <td>환불신청문의</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>환불신청문의</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>18</td>
+        <td>UP_031</td>
+        <td></td>
+        <td>문의내역 확인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>문의내역 확인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td width="75">7.고객센터</td>
+        <td>19,20</td>
+        <td>UP_032</td>
+        <td></td>
+        <td></td>
+        <td>상세</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>상세</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>64</td>
+        <td>UP_039</td>
+        <td></td>
+        <td>오투잡 이용가이드</td>
+        <td>구매자 가이드</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매자 가이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>이슈사항 회신미진행</td>
+        <td>UP_040</td>
+        <td></td>
+        <td></td>
+        <td>판매자 가이드</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매자 가이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>64</td>
+        <td>UP_041</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>재능 등록가이드</td>
+        <td></td>
+        <td></td>
+        <td>재능 등록가이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>이슈사항 회신미진행</td>
+        <td>UP_042</td>
+        <td></td>
+        <td>오더잡 이용가이드</td>
+        <td>구매자 가이드</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매자 가이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>64</td>
+        <td>UP_043</td>
+        <td></td>
+        <td></td>
+        <td>판매자 가이드</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매자 가이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>이슈사항 회신미진행</td>
+        <td>UP_033</td>
+        <td>이용약관</td>
+        <td>이용약관</td>
+        <td>오투잡 이용약관</td>
+        <td>현재 약관</td>
+        <td></td>
+        <td></td>
+        <td>현재 약관</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>59,60</td>
+        <td>UP_034</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>이전 약관 보기</td>
+        <td></td>
+        <td></td>
+        <td>이전 약관 보기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>61</td>
+        <td>UP_035</td>
+        <td></td>
+        <td></td>
+        <td>판매자 이용약관</td>
+        <td>현재 약관</td>
+        <td></td>
+        <td></td>
+        <td>현재 약관</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>이슈사항 회신미진행</td>
+        <td>UP_036</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>이전 약관 보기</td>
+        <td></td>
+        <td></td>
+        <td>이전 약관 보기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>62</td>
+        <td>UP_037</td>
+        <td></td>
+        <td>개인정보처리방침</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>개인정보처리방침</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>63</td>
+        <td>UP_038</td>
+        <td></td>
+        <td></td>
+        <td>변경 전 개인정보처리방침 보기</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>변경 전 개인정보처리방침 보기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지<strong>(Key)</strong></td>
+        <td>1,2</td>
+        <td><a href="html/mypage/UP_044.html" target="_blank">UP_044</a></td>
+        <td>마이페이지</td>
+        <td>메인</td>
+        <td>판매메인</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href="html/mypage/UP_044.html" target="_blank">판매메인</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>45,47</td>
+        <td>UP_045</td>
+        <td></td>
+        <td></td>
+        <td>구매메인</td>
+
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매메인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>46</td>
+        <td>UP_045</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>사진올리기</td>
+        <td></td>
+        <td></td>
+        <td>사진올리기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>3,4,6,8,9</td>
+        <td>UP_051</td>
+        <td></td>
+        <td>판매</td>
+        <td>재능등록</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>재능등록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>5</td>
+        <td>UP_052</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>이미지업로드</td>
+        <td></td>
+        <td></td>
+        <td>이미지업로드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>5</td>
+        <td>UP_053</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>동영상추가</td>
+        <td></td>
+        <td></td>
+        <td>동영상추가</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>9</td>
+        <td>UP_054</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>미리보기</td>
+        <td></td>
+        <td></td>
+        <td>미리보기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>10</td>
+        <td>UP_055</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>완료</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_055.html">완료</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>11</td>
+        <td>UP_056</td>
+        <td></td>
+        <td></td>
+        <td>재능관리</td>
+        <td>내역</td>
+        <td></td>
+        <td></td>
+        <td>내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>12</td>
+        <td>UP_056</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>승인거절사유</td>
+        <td></td>
+        <td>승인거절사유</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>7</td>
+        <td>UP_057</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>수정</td>
+        <td></td>
+        <td></td>
+        <td>수정</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>13,14,15</td>
+        <td>UP_058</td>
+        <td></td>
+        <td></td>
+        <td>판매관리</td>
+        <td>전체(탭 포함)</td>
+        <td></td>
+        <td></td>
+        <td>전체(탭 포함)</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td>UP_000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매-1:1거래메시지</td>
+        <td></td>
+        <td></td>
+        <td>판매-1:1거래메시지</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>16</td>
+        <td>UP_061</td>
+        <td></td>
+        <td></td>
+        <td>스케줄관리</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>스케줄관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>17</td>
+        <td>UP_062</td>
+        <td></td>
+        <td></td>
+        <td>오더정보(스마트매치)</td>
+        <td>오더정보</td>
+        <td></td>
+        <td></td>
+        <td>오더정보내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>18</td>
+        <td>UP_062</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>21,22</td>
+        <td>UP_063</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>제안하기</td>
+        <td></td>
+        <td>제안하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>23</td>
+        <td>UP_064</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>제안완료</td>
+        <td></td>
+        <td>제안완료</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>19</td>
+        <td>UP_065</td>
+        <td></td>
+        <td></td>
+        <td>나의 제안내역</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>나의 제안내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>20</td>
+        <td>UP_066</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>요청내역보기</td>
+        <td></td>
+        <td></td>
+        <td>요청내역보기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>24</td>
+        <td>UP_067</td>
+        <td></td>
+        <td></td>
+        <td>광고관리</td>
+        <td>광고관리</td>
+        <td></td>
+        <td></td>
+        <td>광고관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>25</td>
+        <td>UP_068</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>광고리포트</td>
+        <td>일별조회수</td>
+        <td>일별 조회수</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>26</td>
+        <td>UP_068</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>일별주문수</td>
+        <td>일별 주문수</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>27,28</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>광고신청</td>
+        <td>공통폼</td>
+        <td></td>
+        <td>공통폼</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>스페셜 재능</td>
+        <td></td>
+        <td>스페셜 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>플러스 재능</td>
+        <td></td>
+        <td>플러스 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>셀프픽업 재능</td>
+        <td></td>
+        <td>셀프픽업 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>추천 재능</td>
+        <td></td>
+        <td>추천 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>30</td>
+        <td>UP_070</td>
+        <td></td>
+        <td></td>
+        <td>수익관리</td>
+        <td>수익관리</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_070.html">수익관리</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>31</td>
+        <td>UP_071</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매내역</td>
+        <td></td>
+        <td></td>
+        <td>판매내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>32</td>
+        <td>UP_072</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>정산관리</td>
+        <td></td>
+        <td></td>
+        <td>정산관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>33</td>
+        <td>UP_073</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>출금신청</td>
+        <td></td>
+        <td></td>
+        <td>출금신청</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>34</td>
+        <td>UP_074</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>출금신청등록</td>
+        <td></td>
+        <td>출금신청등록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>42</td>
+        <td>UP_059</td>
+        <td></td>
+        <td></td>
+        <td>매출관리</td>
+        <td>매출 거래 내역</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_059.html">매출 거래 내역</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>UP_060</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>부가가치세 신고자료내역</td>
+        <td></td>
+        <td></td>
+        <td>부가가치세 신고자료내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>36</td>
+        <td>UP_121</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰발행</td>
+        <td>쿠폰 발행내역</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>36</td>
+        <td>UP_121</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>37</td>
+        <td>UP_122</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행하기</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>37</td>
+        <td>UP_123</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행실패</td>
+        <td></td>
+        <td>쿠폰 발행실패</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>38</td>
+        <td>UP_124</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성내역</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>28</td>
+        <td>UP_124</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>40</td>
+        <td>UP_125</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성하기</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>41</td>
+        <td>UP_126</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매중 재능선택</td>
+        <td></td>
+        <td>판매중 재능선택</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>41</td>
+        <td>UP_127</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰할인예시</td>
+        <td></td>
+        <td>쿠폰할인예시</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>39</td>
+        <td>UP_128</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성/발행 방법</td>
+        <td></td>
+        <td>쿠폰 생성/발행 방법</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>48,62</td>
+        <td>UP_075</td>
+        <td></td>
+        <td>구매</td>
+        <td>구매관리</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>63</td>
+        <td>UP_076</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매상세</td>
+        <td></td>
+        <td></td>
+        <td>구매상세</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td>UP_000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매-1:1거래메시지</td>
+        <td></td>
+        <td></td>
+        <td>구매-1:1거래메시지</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>49</td>
+        <td>UP_077</td>
+        <td></td>
+        <td></td>
+        <td>찜리스트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>나의 관심리스트</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>57</td>
+        <td>UP_085</td>
+        <td></td>
+        <td></td>
+        <td>O캐시</td>
+        <td>충전하기</td>
+        <td></td>
+        <td></td>
+        <td>충전하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>59</td>
+        <td>UP_086</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매내역</td>
+        <td></td>
+        <td></td>
+        <td>구매내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>58</td>
+        <td>UP_087</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>충전내역</td>
+        <td></td>
+        <td></td>
+        <td>충전내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>60</td>
+        <td>UP_133</td>
+        <td></td>
+        <td></td>
+        <td>O포인트</td>
+        <td>적립내역</td>
+        <td></td>
+        <td></td>
+        <td>적립내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>61</td>
+        <td>UP_134</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>사용내역</td>
+        <td></td>
+        <td></td>
+        <td>사용내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>77</td>
+        <td>UP_129</td>
+        <td></td>
+        <td></td>
+        <td>할인쿠폰</td>
+        <td>사용가능 쿠폰</td>
+        <td></td>
+        <td></td>
+        <td>사용가능 쿠폰</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>78</td>
+        <td>UP_130</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>종료된 쿠폰</td>
+        <td></td>
+        <td></td>
+        <td>종료된 쿠폰</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>50,51</td>
+        <td>UP_078</td>
+        <td></td>
+        <td>오더잡</td>
+        <td>오더등록</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더등록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>53</td>
+        <td>UP_079</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록완료</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_079.html">등록완료</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>52</td>
+        <td>UP_132</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더등록가이드</td>
+        <td></td>
+        <td></td>
+        <td>오더등록가이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>54,55,56</td>
+        <td>UP_080</td>
+        <td></td>
+        <td></td>
+        <td>오더내역</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>SB추가필요</td>
+        <td>UP_081</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더 상세정보</td>
+        <td></td>
+        <td></td>
+        <td>오더 상세정보</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>UP_082</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더내역 종료</td>
+        <td></td>
+        <td>오더내역 종료</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>SB추가필요</td>
+        <td>UP_083</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>수정</td>
+        <td></td>
+        <td>수정</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>SB추가필요</td>
+        <td>UP_084</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>수정완료</td>
+        <td>수정완료</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td><a href="html/mypage/UP_044.html" target="_blank">UP_046</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>문의관리</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>메시지목록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_msg.html" onclick="window.open(this.href, 'popMsg', 'width=500, height=659, left=0, top=0, scrollbars=no, menubar=no, toolbar=no, directories=no, location=no, resizable=yes'); return false">popup_msg</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price.html" onclick="window.open(this.href, 'popSpecailPrice', 'width=617, height=650, left=0, top=0, scrollbars=yes, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price2.html" onclick="window.open(this.href, 'popSpecailPrice2', 'width=601, height=657, left=0, top=0, scrollbars=no, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price2</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>재능선택 후</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price3.html" onclick="window.open(this.href, 'popSpecailPrice3', 'width=601, height=484, left=0, top=0, scrollbars=no, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price3</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>견적요청</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price4.html" onclick="window.open(this.href, 'popSpecailPrice4', 'width=601, height=450, left=0, top=0, scrollbars=no, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price4</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>받은 사람</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price5.html" onclick="window.open(this.href, 'popSpecailPrice5', 'width=601, height=511, left=0, top=0, scrollbars=no, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price5</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>신고하기</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매메인</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>46</td>
+        <td>UP_045</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>사진올리기</td>
+        <td></td>
+        <td></td>
+        <td>사진올리기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>3,4,6,8,9</td>
+        <td>UP_051</td>
+        <td></td>
+        <td>판매</td>
+        <td>재능등록</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>재능등록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>5</td>
+        <td>UP_052</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>이미지업로드</td>
+        <td></td>
+        <td></td>
+        <td>이미지업로드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>5</td>
+        <td>UP_053</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>동영상추가</td>
+        <td></td>
+        <td></td>
+        <td>동영상추가</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>9</td>
+        <td>UP_054</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>미리보기</td>
+        <td></td>
+        <td></td>
+        <td>미리보기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>10</td>
+        <td>UP_055</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>완료</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_055.html">완료</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>11</td>
+        <td>UP_056</td>
+        <td></td>
+        <td></td>
+        <td>재능관리</td>
+        <td>내역</td>
+        <td></td>
+        <td></td>
+        <td>내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>12</td>
+        <td>UP_056</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>승인거절사유</td>
+        <td></td>
+        <td>승인거절사유</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>7</td>
+        <td>UP_057</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>수정</td>
+        <td></td>
+        <td></td>
+        <td>수정</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>13,14,15</td>
+        <td>UP_058</td>
+        <td></td>
+        <td></td>
+        <td>판매관리</td>
+        <td>전체(탭 포함)</td>
+        <td></td>
+        <td></td>
+        <td>전체(탭 포함)</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td>UP_000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매-1:1거래메시지</td>
+        <td></td>
+        <td></td>
+        <td>판매-1:1거래메시지</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>16</td>
+        <td>UP_061</td>
+        <td></td>
+        <td></td>
+        <td>스케줄관리</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>스케줄관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>17</td>
+        <td>UP_062</td>
+        <td></td>
+        <td></td>
+        <td>오더정보(스마트매치)</td>
+        <td>오더정보</td>
+        <td></td>
+        <td></td>
+        <td>오더정보내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>18</td>
+        <td>UP_062</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>21,22</td>
+        <td>UP_063</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>제안하기</td>
+        <td></td>
+        <td>제안하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>23</td>
+        <td>UP_064</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>제안완료</td>
+        <td></td>
+        <td>제안완료</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>19</td>
+        <td>UP_065</td>
+        <td></td>
+        <td></td>
+        <td>나의 제안내역</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>나의 제안내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>20</td>
+        <td>UP_066</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>요청내역보기</td>
+        <td></td>
+        <td></td>
+        <td>요청내역보기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>24</td>
+        <td>UP_067</td>
+        <td></td>
+        <td></td>
+        <td>광고관리</td>
+        <td>광고관리</td>
+        <td></td>
+        <td></td>
+        <td>광고관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>25</td>
+        <td>UP_068</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>광고리포트</td>
+        <td>일별조회수</td>
+        <td>일별 조회수</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>26</td>
+        <td>UP_068</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>일별주문수</td>
+        <td>일별 주문수</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>27,28</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>광고신청</td>
+        <td>공통폼</td>
+        <td></td>
+        <td>공통폼</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>스페셜 재능</td>
+        <td></td>
+        <td>스페셜 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>플러스 재능</td>
+        <td></td>
+        <td>플러스 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>셀프픽업 재능</td>
+        <td></td>
+        <td>셀프픽업 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>29</td>
+        <td>UP_069</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>추천 재능</td>
+        <td></td>
+        <td>추천 재능</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>30</td>
+        <td>UP_070</td>
+        <td></td>
+        <td></td>
+        <td>수익관리</td>
+        <td>수익관리</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_070.html">수익관리</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>31</td>
+        <td>UP_071</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매내역</td>
+        <td></td>
+        <td></td>
+        <td>판매내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>32</td>
+        <td>UP_072</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>정산관리</td>
+        <td></td>
+        <td></td>
+        <td>정산관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>33</td>
+        <td>UP_073</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>출금신청</td>
+        <td></td>
+        <td></td>
+        <td>출금신청</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>34</td>
+        <td>UP_074</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>출금신청등록</td>
+        <td></td>
+        <td>출금신청등록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>42</td>
+        <td>UP_059</td>
+        <td></td>
+        <td></td>
+        <td>매출관리</td>
+        <td>매출 거래 내역</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_059.html">매출 거래 내역</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>UP_060</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>부가가치세 신고자료내역</td>
+        <td></td>
+        <td></td>
+        <td>부가가치세 신고자료내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>36</td>
+        <td>UP_121</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰발행</td>
+        <td>쿠폰 발행내역</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>36</td>
+        <td>UP_121</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>37</td>
+        <td>UP_122</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행하기</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>37</td>
+        <td>UP_123</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 발행실패</td>
+        <td></td>
+        <td>쿠폰 발행실패</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>38</td>
+        <td>UP_124</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성내역</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>28</td>
+        <td>UP_124</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td></td>
+        <td>등록글미존재</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>40</td>
+        <td>UP_125</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성하기</td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>41</td>
+        <td>UP_126</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매중 재능선택</td>
+        <td></td>
+        <td>판매중 재능선택</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>41</td>
+        <td>UP_127</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰할인예시</td>
+        <td></td>
+        <td>쿠폰할인예시</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>39</td>
+        <td>UP_128</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>쿠폰 생성/발행 방법</td>
+        <td></td>
+        <td>쿠폰 생성/발행 방법</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>48,62</td>
+        <td>UP_075</td>
+        <td></td>
+        <td>구매</td>
+        <td>구매관리</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>63</td>
+        <td>UP_076</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매상세</td>
+        <td></td>
+        <td></td>
+        <td>구매상세</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td>UP_000</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매-1:1거래메시지</td>
+        <td></td>
+        <td></td>
+        <td>구매-1:1거래메시지</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>49</td>
+        <td>UP_077</td>
+        <td></td>
+        <td></td>
+        <td>찜리스트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>나의 관심리스트</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>57</td>
+        <td>UP_085</td>
+        <td></td>
+        <td></td>
+        <td>O캐시</td>
+        <td>충전하기</td>
+        <td></td>
+        <td></td>
+        <td>충전하기</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>59</td>
+        <td>UP_086</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>구매내역</td>
+        <td></td>
+        <td></td>
+        <td>구매내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>58</td>
+        <td>UP_087</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>충전내역</td>
+        <td></td>
+        <td></td>
+        <td>충전내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>60</td>
+        <td>UP_133</td>
+        <td></td>
+        <td></td>
+        <td>O포인트</td>
+        <td>적립내역</td>
+        <td></td>
+        <td></td>
+        <td>적립내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>61</td>
+        <td>UP_134</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>사용내역</td>
+        <td></td>
+        <td></td>
+        <td>사용내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>77</td>
+        <td>UP_129</td>
+        <td></td>
+        <td></td>
+        <td>할인쿠폰</td>
+        <td>사용가능 쿠폰</td>
+        <td></td>
+        <td></td>
+        <td>사용가능 쿠폰</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>78</td>
+        <td>UP_130</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>종료된 쿠폰</td>
+        <td></td>
+        <td></td>
+        <td>종료된 쿠폰</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>50,51</td>
+        <td>UP_078</td>
+        <td></td>
+        <td>오더잡</td>
+        <td>오더등록</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더등록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr class="examine">
+        <td>4.마이페이지</td>
+        <td>53</td>
+        <td>UP_079</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>등록완료</td>
+        <td></td>
+        <td></td>
+        <td><a href="htm/mypage/UP_079.html">등록완료</a></td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>52</td>
+        <td>UP_132</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더등록가이드</td>
+        <td></td>
+        <td></td>
+        <td>오더등록가이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>54,55,56</td>
+        <td>UP_080</td>
+        <td></td>
+        <td></td>
+        <td>오더내역</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>SB추가필요</td>
+        <td>UP_081</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더 상세정보</td>
+        <td></td>
+        <td></td>
+        <td>오더 상세정보</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>UP_082</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>오더내역 종료</td>
+        <td></td>
+        <td>오더내역 종료</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>SB추가필요</td>
+        <td>UP_083</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>수정</td>
+        <td></td>
+        <td>수정</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>SB추가필요</td>
+        <td>UP_084</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>수정완료</td>
+        <td>수정완료</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td><a href="html/mypage/UP_044.html" target="_blank">UP_046</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>문의관리</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>메시지목록</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_msg.html" onclick="window.open(this.href, 'popMsg', 'width=500, height=659, left=0, top=0, scrollbars=yes, menubar=no, toolbar=no, directories=no, location=no, resizable=yes'); return false">popup_msg</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price.html" onclick="window.open(this.href, 'popSpecailPrice', 'width=617, height=650, left=0, top=0, scrollbars=yes, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price2.html" onclick="window.open(this.href, 'popSpecailPrice2', 'width=617, height=645, left=0, top=0, scrollbars=yes, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price2</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>재능선택 후</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price3.html" onclick="window.open(this.href, 'popSpecailPrice3', 'width=617, height=475, left=0, top=0, scrollbars=yes, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price3</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>견적요청</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price4.html" onclick="window.open(this.href, 'popSpecailPrice4', 'width=617, height=440, left=0, top=0, scrollbars=yes, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price4</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>받은 사람</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td></td>
+        <td><a href="html/mypage/popup_special_price5.html" onclick="window.open(this.href, 'popSpecailPrice5', 'width=617, height=485, left=0, top=0, scrollbars=yes, menubar=no, toolbar=no, directories=no, location=no, resizable=no'); return false">popup_special_price5</a></td>
+        <td></td>
+        <td>메세지관리</td>
+        <td>메세지 창 팝업</td>
+        <td>스페셜 가격 제안</td>
+        <td>신고하기</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>0.메시지</td>
+        <td>추후 재정리</td>
+        <td>UP_000</td>
+        <td></td>
+        <td></td>
+        <td>대화창</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>대화창</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>89</td>
+        <td>UP_097</td>
+        <td></td>
+        <td>결제내역관리</td>
+        <td>주문내역</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>주문내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>90,91,92,93,94</td>
+        <td><a href="html/mypage/UP_098.html" target="_blank">UP_098</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>주문 상세내역</td>
+        <td></td>
+        <td></td>
+        <td>주문 상세내역</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>95</td>
+        <td>UP_099</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>현금영수증 발급신청</td>
+        <td></td>
+        <td>현금영수증 발급신청</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>96</td>
+        <td>UP_100</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>현금영수증 발급</td>
+        <td>현금영수증 발급</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>97</td>
+        <td>UP_101</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>신용카드 매출전표</td>
+        <td>간이과세자 신용카드 매출전표</td>
+        <td>간이과세자 신용카드 매출전표</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>98</td>
+        <td>UP_102</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>개인 신용카드 매출전표</td>
+        <td>개인 신용카드 매출전표</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>100</td>
+        <td>UP_103</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>영수증/계산서 발행안내</td>
+        <td></td>
+        <td>영수증/계산서 발행안내</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>23</td>
+        <td>UP_104</td>
+        <td></td>
+        <td>개인정보관리</td>
+        <td>개인정보수정</td>
+        <td>비밀번호확인</td>
+        <td>일반 비밀번호확인</td>
+        <td></td>
+        <td>일반 비밀번호확인</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/auth/password">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>24</td>
+        <td>UP_105</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>페이스북 비밀번호확인</td>
+        <td></td>
+        <td>페이스북 비밀번호확인</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/auth/sns">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>25~28</td>
+        <td>UP_106</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>기본회원정보</td>
+        <td></td>
+        <td></td>
+        <td>기본회원정보</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/info">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>29</td>
+        <td>UP_107</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>본인인증</td>
+        <td></td>
+        <td>본인인증</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/info">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>30</td>
+        <td>UP_108</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>비밀번호변경</td>
+        <td></td>
+        <td>비밀번호변경</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/info">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>31</td>
+        <td>UP_109</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>생년월일변경</td>
+        <td></td>
+        <td>생년월일변경</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/info">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>32</td>
+        <td>UP_110</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>SMS수신시간설정</td>
+        <td></td>
+        <td>SMS수신시간설정</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/info">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>33,34</td>
+        <td>UP_111</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>판매회원정보</td>
+        <td>개인</td>
+        <td></td>
+        <td>개인</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/seller">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>35,36</td>
+        <td>UP_112</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>사업자</td>
+        <td></td>
+        <td>사업자</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/seller">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>37</td>
+        <td>UP_113</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>수수료증빙수단변경</td>
+        <td>세금계산서</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/seller">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>38</td>
+        <td>UP_113</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>현금영수증</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/seller">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>48</td>
+        <td>UP_114</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>심사</td>
+        <td>심사중</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/screening/seller">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>48</td>
+        <td>UP_114</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>심사거절</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/reject/seller">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>39</td>
+        <td>UP_047</td>
+        <td></td>
+        <td></td>
+        <td>판매 회원 전환</td>
+        <td>약관동의</td>
+        <td></td>
+        <td></td>
+        <td>약관동의</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/switch/agree">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>40</td>
+        <td>UP_048</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>정보입력(판매유형/영수증발급동의)</td>
+        <td></td>
+        <td></td>
+        <td>정보입력(판매유형/영수증발급동의)</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/switch">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>41,42</td>
+        <td>UP_049</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>정보입력(개인)</td>
+        <td></td>
+        <td></td>
+        <td>정보입력(개인)</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/switch">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>43,44,45</td>
+        <td>UP_050</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>정보입력(사업자)</td>
+        <td></td>
+        <td></td>
+        <td>정보입력(사업자)</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/switch">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>23</td>
+        <td>UP_104</td>
+        <td></td>
+        <td></td>
+        <td>회원탈퇴</td>
+        <td>비밀번호확인</td>
+        <td>일반 비밀번호확인</td>
+        <td></td>
+        <td>일반 비밀번호확인</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/delete">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>24</td>
+        <td>UP_105</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>페이스북 비밀번호확인</td>
+        <td></td>
+        <td>페이스북 비밀번호확인</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/delete">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>51,52,53</td>
+        <td>UP_115</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>회원탈퇴</td>
+        <td></td>
+        <td></td>
+        <td>회원탈퇴</td>
+        <td><span class="examine"><a href="http://dev.o2job.co/member/delete">100%</a></span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>54</td>
+        <td>UP_116</td>
+        <td></td>
+        <td></td>
+        <td>프로필관리</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>프로필관리</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>55,56,57</td>
+        <td>UP_117</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>프로필 인증</td>
+        <td></td>
+        <td></td>
+        <td>프로필 인증</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>109,111</td>
+        <td><a href="html/mypage/UP_088.html" target="_blank">UP_088</a></td>
+        <td>결제(상품페이지에서)</td>
+        <td>주문/결제하기</td>
+        <td>재능상품</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>재능상품</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>110</td>
+        <td>UP_089</td>
+        <td></td>
+        <td></td>
+        <td>광고상품</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>광고상품</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>UP_090</td>
+        <td></td>
+        <td></td>
+        <td>O캐쉬충전</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>O캐쉬충전</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>113</td>
+        <td>UP_091</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>주문/결제완료</td>
+        <td>재능/가상계좌</td>
+        <td>재능/가상계좌</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>114</td>
+        <td>UP_092</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>재능/가상계좌 외</td>
+        <td>재능/가상계좌 외</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>115</td>
+        <td>UP_093</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>광고상품/가상계좌</td>
+        <td>광고상품/가상계좌</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>116</td>
+        <td>UP_094</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>광고상품/가상계좌 외</td>
+        <td>광고상품/가상계좌 외</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>UP_095</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>O캐쉬충전</td>
+        <td>O캐쉬충전</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>117</td>
+        <td>UP_096</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>결제실패</td>
+        <td></td>
+        <td>결제실패</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>65</td>
+        <td>UP_118</td>
+        <td>오류안내</td>
+        <td>오류</td>
+        <td>네트워크 장애 (일시적인 장애)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>네트워크 장애</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>66</td>
+        <td>UP_118</td>
+        <td></td>
+        <td></td>
+        <td>링크 오류 (찾을 수 없는 페이지)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>링크 오류</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>70</td>
+        <td>UP_118</td>
+        <td></td>
+        <td>IE8 업그레이드</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>IE8 업그레이드</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>67</td>
+        <td>UP_118</td>
+        <td></td>
+        <td>작업(서비스 점검) 공지</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>작업(서비스 점검) 공지</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>68</td>
+        <td>UP_119</td>
+        <td></td>
+        <td></td>
+        <td>팝업</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>작업(서비스 점검) 공지 팝업</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>46</td>
+        <td>UP_120</td>
+        <td>공통</td>
+        <td>우편번호찾기</td>
+        <td>지번 검색</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>지번 검색</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1.PC_회원</td>
+        <td>47</td>
+        <td>UP_120</td>
+        <td></td>
+        <td></td>
+        <td>도로명 검색</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>도로명 검색</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>4.마이페이지</td>
+        <td>76</td>
+        <td>UP_131</td>
+        <td></td>
+        <td>달력폼</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>달력폼(레이어or팝업달력)</td>
+        <td><span class="examine">0%</span></td>
+        <td><span class="examine">0%</span></td>
+    </tr>
+    <tr>
+        <td>1차 이벤트</td>
+        <td></td>
+        <td><a href="html/event/UP_170.html" target="_blank">UP_170</a></td>
+        <td></td>
+        <td>1차 이벤트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2차 이벤트</td>
+        <td></td>
+        <td><a href="html/event/UP_170_2.html" target="_blank">UP_170_2</a></td>
+        <td></td>
+        <td>2차 이벤트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3차 이벤트</td>
+        <td></td>
+        <td><a href="html/event/UP_170_3.html" target="_blank">UP_170_3</a></td>
+        <td></td>
+        <td>3차 이벤트</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>브랜딩 페이지</td>
+        <td></td>
+        <td><a href="saramin/mypage/branding.html" target="_blank">branding page</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>사람인 내부에<br>들어가는 오투잡용<br>iframe</td>
+        <td></td>
+        <td><a href="saramin/mypage/otwojob.html" target="_blank">otwojob</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>

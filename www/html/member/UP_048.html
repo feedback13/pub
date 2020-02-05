@@ -1,0 +1,65 @@
+	<fieldset>
+		<legend class="blind">판매회원전환 정보입력</legend>
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>판매유형</h2>
+			<div class="type01 sell_type">
+				<div class="selectbox">
+					<label for="sell_type">유형선택</label>
+					<select id="sell_type">
+						<option value="">유형선택</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<div class="selectbox share_line ">
+					<label for="sell_type2"></label>
+					<select id="sell_type2">
+						<option value=""></option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="sell_type">
+				<p class="warning" style="display:block">판매 유형을 선택해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+					<p class="warning" style="display:none">판매 유형을 선택해 주세요.</p> -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>영수증의 발급</h2>
+
+			<div class="type01 sell_type">
+				<span class="input_check">
+					<input type="checkbox" id="bill_agree" title="영수증 대행 발급에 동의 " />
+					<label for="bill_agree">영수증 대행 발급 동의</label>
+				</span>
+				<div class="agree_text">
+					오투잡 납세 정책에 따라 회사는 오투잡 사이트에서 체결되는 거래에 대해 판매
+					회원을 대행하여 구매 회원에게 영수증을 발급합니다.
+					회사는 과세당국의 요청에 의하여 구매 회원의 요청을 할 경우에 판매회원을
+					대행하여 영수증을 발급하며, 이에 대한 내역은 국세청 홈페이지(http://
+					www.taxsave.go.kr/)에서 확인할 수 있음을 판매 회원에게 고지합니다.
+				</div>
+			</div>
+			<div class="sell_type">
+				<p class="warning">판매 회원 이용약관과 개인정보 수집 및 이용에 동의해 주세요.</p>
+			</div>
+
+		</article>
+		<!--// row_group -->
+
+		<!-- btn_wrap -->
+		<article class="btn_wrap">
+			<div class="join_btn_wrap">
+				<span class="btn_cancel"><button type="button">취소</button></span>
+				<span class="btn_next"><button type="button">다음</button></span>
+			</div>
+		</article>
+		<!--// btn_wrap -->
+	</fieldset>

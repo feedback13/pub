@@ -1,0 +1,304 @@
+	<fieldset>
+		<legend class="blind">판매회원전환 정보입력(개인)</legend>
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>판매유형 <span class="must"> 필수입력정보입니다.</span></h2>
+			<div class="inner_box">
+				<div class="selectbox right_pos full_width">
+					<label for="sell_type">유형선택</label>
+					<select id="sell_type">
+						<option value="">유형선택</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<p class="warning" style="display:block">판매 유형을 선택해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+					<p class="warning" style="display:none">판매 유형을 선택해 주세요.</p> -->
+			</div>
+			<div class="inner_box">
+				<div class="selectbox right_pos full_width">
+					<label for="sell_type">기업형태 선택</label>
+					<select id="sell_type">
+						<option value="">기업형태 선택</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<p class="warning" style="display:block">기업형태를 선택해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+					<p class="warning" style="display:none">판매 유형을 선택해 주세요.</p> -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>판매자 정보</h2>
+			<div class="must type03">
+				<input type="text" placeholder="회사명(법인명)을 입력해 주세요" title="회사명(법인명)" />
+				<p class="warning" style="display:block">회사명(법인명)을 입력해 주세요</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div class="must type03">
+				<input type="text" placeholder="사업자등록번호를 ( - )없이 입력해 주세요" title="사업자등록번호" />
+				<p class="warning" style="display:block">사업자등록번호를 입력해 주세요</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div class="must">
+				<input type="text" placeholder="대표자명을 입력해 주세요" title="대표자명" />
+				<p class="warning" style="display:block">대표자명을 입력해 주세요</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div class="must">
+				<input type="text" placeholder="우편번호" title="우편번호" />
+				<button class="btn_confirm btn_gray" type="button" onclick="javascript:openLay('find_address');">우편번호  찾기</button>
+				<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+				<p class="warning" style="display:block">우편번호를 입력해 주세요</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div class="type03">
+				<input type="text" placeholder="주소" title="주소" />
+			</div>
+			<div class="type03">
+				<input type="text" placeholder="상세주소" title="상세주소" />
+			</div>
+			<div class="must tell">
+				<div class="selectbox">
+					<label for="a1">대표번호</label>
+					<select id="a1">
+						<option value="">대표번호</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+			</div>
+			<div class="type03">
+				<input type="text" placeholder="업태를 입력해 주세요." title="업태" />
+				<p class="warning" style="display:block">업태를 입력해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div class="type03">
+				<input type="text" placeholder="종목을 입력해 주세요." title="종목" />
+				<p class="warning" style="display:block">종목을 입력해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>사업자 사본</h2>
+			<div class="must">
+				<p class="file_wrap">
+					<input type="text" id="file_route" readonly="readonly" value="사업자 등록증 사본.jpg" title="첨부된 파일경로" />
+					<span class="btn_file">
+						<input type="file" onchange="javascript:document.getElementById('file_route').value=this.value" />
+					</span>
+				</p>
+				<p class="warning" style="display:block">사업자 등록증 사본을 업로드 해주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div>
+				<p class="file_wrap">
+					<input type="text" id="file_route2" readonly="readonly" value="통신판매업 신고증 사본.jpg" title="첨부된 파일경로" />
+					<span class="btn_file">
+						<input type="file" onchange="javascript:document.getElementById('file_route2').value=this.value" />
+					</span>
+				</p>
+				<p class="warning" style="display:block">통신판매업 신고증 사본을 업로드 해주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div>
+				<p class="file_wrap">
+					<input type="text" id="file_route3" readonly="readonly" value="사업자 통장사본.jpg" title="첨부된 파일경로" />
+					<span class="btn_file">
+						<input type="file" onchange="javascript:document.getElementById('file_route3').value=this.value" />
+					</span>
+				</p>
+				<p class="warning" style="display:block">사업자 통장 사본을 업로드 해주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>출금계좌 정보</h2>
+			<div class="must type03">
+				<input type="text" placeholder="사업자 통장의 예금주를 입력해 주세요" title="예금주" />
+				<p class="warning" style="display:block">예금주를 입력해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+			<div class="must type03">
+				<div class="selectbox">
+					<label for="a2">은행명</label>
+					<select id="a2">
+						<option value="">은행명</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="must type03">
+				<input type="text" placeholder="계좌번호를 ( - )없이 입력해 주세요" title="계좌번호" />
+				<p class="warning" style="display:block">계좌번호를 입력해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>수수료에 대한 증빙</h2>
+			<div class="must ">
+				<span class="input_radio">
+					<input type="radio" id="bill01"name="bill" title="세금계산서" />
+					<label for="bill01">세금계산서</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="bill02"name="bill" title="현금영수증" />
+					<label for="bill02">현금영수증</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="none"name="bill" title="발급안함" />
+					<label for="none">발급안함</label>
+				</span>
+			</div>
+
+			<div class="password_text">
+				회사는 매월 판매 회원의 오투잡 서비스 수수료(20%) 부과에 대한 세금계산서 <br />
+				또는 현금영수증을 발급합니다
+				<p class="warning" style="display:block">수수료에 대한 증빙의 발급 수단을 선택해 주세요</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>세금계산서 발급</h2>
+
+			<div class="must email02">
+				<input type="text" placeholder="이메일" title="이메일주소" /> @
+				<input type="text" title="이메일주소" />
+				<div class="selectbox share_line">
+					<label for="mail1">직접입력</label>
+					<select id="mail1">
+						<option value="">직접입력</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+
+			<div class="tell">
+				<div class="selectbox">
+					<label for="a1">연락처</label>
+					<select id="a1">
+						<option value="">010</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+			</div>
+
+			<div class="password_text">
+				전자세금계산서를 아래의 이메일에서 받으실 수 있습니다.
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>현금영수증 발급</h2>
+
+			<div class="must email02">
+				<input type="text" placeholder="이메일" title="이메일주소" /> @
+				<input type="text" title="이메일주소" />
+				<div class="selectbox share_line">
+					<label for="mail2">직접입력</label>
+					<select id="mail2">
+						<option value="">직접입력</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+
+			<div>
+				<span class="bill_tit">발급용도</span>
+				<span class="input_radio">
+					<input type="radio" id="cause01"name="cause" title="소득공제용" />
+					<label for="cause01">소득공제용</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="cause02"name="cause" title="지출증빙용" />
+					<label for="cause02">지출증빙용</label>
+				</span>
+			</div>
+
+			<div>
+				<span class="bill_tit">발급수단</span>
+				<span class="input_radio">
+					<input type="radio" id="phone"name="cause2" title="휴대폰 번호" />
+					<label for="phone">휴대폰 번호</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="cashcard"name="cause2" title="현금영수증카드" />
+					<label for="cashcard">현금영수증카드</label>
+				</span>
+			</div>
+
+			<!-- 휴대폰 번호 체크했을때 -->
+			<div class="tell">
+				<div class="selectbox">
+					<label for="a1">연락처</label>
+					<select id="a1">
+						<option value="">010</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+			</div>
+
+			<!-- 현금영수증카드 체크했을때 -->
+			<div class="card">
+				<input type="text" title="현금영수증카드1" /> -
+				<input type="text" title="현금영수증카드2" /> -
+				<input type="text" title="현금영수증카드3" /> -
+				<input type="text" title="현금영수증카드4" />
+			</div>
+
+			<div class="password_text">
+				<p class="warning" style="display:block">발급용도와 발급 수단을 선택해 주세요. </p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+				(선택한 발급용도로 발급된 현금영수증은 다른 용도로 재 발급 불가)
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- btn_wrap -->
+		<article class="btn_wrap">
+			<div class="join_btn_wrap">
+				<span class="btn_cancel"><button type="button">취소</button></span>
+				<span class="btn_next"><button type="button">전환하기</button></span>
+			</div>
+		</article>
+		<!--// btn_wrap -->
+
+		<!-- tbl_list_type02 -->
+		<article class="tbl_list_type02 content_block">
+			<p>재능 판매 유의 사항</p>
+			<ul>
+				<li><span class="dot">ㆍ</span>세금 관련 유의사항 내용</li>
+				<li><span class="dot">ㆍ</span>판매 회원(사업자) 승인 시까지 별도의 기간이 소요되며, 정보가 올바르지 않을 경우 <br />승인 거절이 될 수 있습니다</li>
+				<li><span class="dot">ㆍ</span>판매 회원 승인 관련 문의사항은 1:1문의 혹은 고객센터(02-2025-2707)로 연락 주시기 <br />바랍니다.</li>
+			</ul>
+		</article>
+		<!--// tbl_list_type02 -->
+	</fieldset>

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.terms_cont {color:#666; font-size:13px; padding:40px 0; line-height:22px;}
+.terms_cont h2 {font-size:24px; color:#333; font-weight:600;}
+.terms_cont h3{font-size:14px; color:#333; font-weight:600; margin-top:40px;}
+.terms_cont h4{font-size:14px; color:#333; font-weight:600; margin-top:30px;}
+.terms_cont strong {color:#333;}
+.terms_cont .type01 {font-size:18px; margin-top:20px;}
+.terms_cont .type02 {font-size:14px; margin:20px 0;}
+.terms_cont p{margin-top:15px;}
+.terms_cont .text {margin-top:15px;}
+.terms_cont .text02 {margin-top:15px;}
+.terms_cont .text03 {font-size:14px; color:#666; margin-top:30px;}
+
+.terms_cont .terms_list {margin-top:40px; border:1px solid #e5e5e5;}
+.terms_cont .terms_list dt {color:#888; padding:15px; font-size:14px; border-bottom:1px solid #e5e5e5;}
+.terms_cont .terms_list dd {background:#fbfbfb; padding:30px 15px;}
+.terms_cont .terms_list dd ul {overflow:hidden;}
+.terms_cont .terms_list dd ul li {float:left; width:33.33333%; border-right:1px solid #e5e5e5; font-size:14px; padding:0 15px;}
+.terms_cont .terms_list dd ul li:nth-child(3n) {border-right:none;}
+
+.terms_cont .list_type01 {margin-top:10px;}
+.terms_cont .list_type01 li {margin-top:10px;}
+.terms_cont .list_type01 > li > ul > li {padding-left:20px; text-indent:-10px;}
+
+.terms_cont .list_type02{margin-top:10px;}
+.terms_cont .list_type02 > li {margin-top:10px; padding-left:15px; text-indent:-15px;}
+.terms_cont .list_type02 li li {margin-top:10px; padding-left:10px; text-indent:-10px;}
+
+
+.terms_cont .version_prev {text-align:right;}

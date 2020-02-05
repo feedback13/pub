@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>사람인 OTWOJOB</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/pc/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/content.css">
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <!--<script type="text/javascript" src="/js/pc/placeholders.jquery.min.js"></script>-->
+    <script type="text/javascript" src="/js/pc/jquery.scrollbar.min.js"></script>
+    <!--<script type="text/javascript" src="/js/pc/common.js"></script>-->
+</head>
+<body class="member">
+
+<!-- header -->
+<header id="header_member"></header>
+<!-- //header -->
+
+<!-- content -->
+<section class="member_content"></section>
+<!-- // content -->
+
+<!-- footer -->
+<footer id="footer"></footer>
+<!-- //footer -->
+
+
+<script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    //header
+    $.ajax({
+           type: 'GET',
+           url: 'header.html',
+           dataType: 'html',
+           cache: false,
+           async: false,
+           success: function (data) {
+               $('#header_member').html(data);
+           }
+       });
+    //content
+    $.ajax({
+               type: 'GET',
+               url: '/p/'+getParameterByName('page'),
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.member_content').html(data);
+               }
+           });
+    //footer
+    $.ajax({
+               type: 'GET',
+               url: 'footer.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('#footer').html(data);
+               }
+           });
+</script>
+<script type="text/javascript" src="/js/pc/common.js"></script>
+
+<!-- Layer popup : 우편번호찾기 -->
+<div class="popup_layer find_address box_type600">
+    <fieldset>
+        <legend class="blind">우편번호 찾기</legend>
+
+        <p class="tit">우편번호 찾기<a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기" /></a></p>
+        <article class="pop_content">
+            <div class="tab_type tab_type01 not_fn">
+                <a href="#address_load" class="on">도로명 주소</a>
+                <a href="#address">지번 주소</a>
+            </div>
+
+            <div id="address_load" class="tab_content sch_address">
+                <p class="alert_txt border_block">찾고자 하는 주소의 도로명을 입력해 주세요. (예: 테헤란로, 동숭1길)</p>
+                <div class="search_form border_block">
+                    <input type="text" placeholder="도로명+건물번호를 입력해 주세요." title="도로명+건물번호 입력" />
+                    <button type="button">검색</button>
+                    <!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+                        <p class="warning" style="display:block">도로명을 입력해주세요. </p> -->
+                </div>
+                <p class="alert_txt">검색 결과 중 해당 주소를 클릭하시면 자동 입력됩니다.</p>
+
+                <div class="search_result">
+                    <!-- 검색결과 있을 때 -->
+                    <table class="table_type01">
+                        <colgroup>
+                            <col width="140px">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="post_num">우편번호</th>
+                            <th class="address">주소</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="table_scroller1">
+                        <table class="table_type01">
+                            <colgroup>
+                                <col width="140px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            <tr>
+                                <td class="center">135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동 테헤란로 624</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 검색결과 없을 때 -->
+                    <p class="no_result">검색결가가 없습니다.</p>
+                </div>
+
+                <p class="alert_txt last"><span class="point">사업자 등록증의 주소</span>와 동일한 사업장 주소를 입력해 주세요.</p>
+            </div>
+
+            <div id="address" class="tab_content sch_address" style="display:none;">
+                <p class="alert_txt border_block">찾고자 하는 주소의 동(읍/리/면) 이름을 입력해 주세요. <br/>(예: 대치동, 곡석읍, 오곡면)</p>
+                <div class="search_form border_block">
+                    <input type="text" placeholder="동을 입력해 주세요" title="동 입력" />
+                    <button type="button">검색</button>
+                    <!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+                        <p class="warning" style="display:block">도로명을 입력해주세요. </p> -->
+                </div>
+                <p class="alert_txt">검색 결과 중 해당 주소를 클릭하시면 자동 입력됩니다.</p>
+
+                <div class="search_result">
+                    <!-- 검색결과 있을 때 -->
+                    <table class="table_type01 scroll">
+                        <colgroup>
+                            <col width="35%" />
+                            <col width="*" />
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="post_num">우편번호</th>
+                            <th class="address">주소</th>
+                        </tr>
+                        </thead>
+                    </table>
+
+                    <div class="table_scroller1">
+                        <table class="table_type01">
+                            <colgroup>
+                                <col width="140px">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            <tr>
+                                <td>135-933</td>
+                                <td><a href="#none">서울시 강남구 역삼동</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 검색결과 없을 때 -->
+                    <p class="no_result">검색결가가 없습니다.</p>
+                </div>
+
+                <p class="alert_txt last"><span class="point">사업자 등록증의 주소</span>와 동일한 사업장 주소를 입력해 주세요.</p>
+            </div>
+        </article>
+    </fieldset>
+</div>
+<!--// Layer popup -->
+
+</body>
+<!--[if lte IE 9]>
+<script type="text/javascript">
+    jQuery(window).on('load',function (e) {
+        var inputHasPlaceholder = 0;
+        if (!("placeholder" in document.createElement("input"))) {
+            jQuery(document).on('focus', ":input[placeholder]", function() {
+                var $this = jQuery(this);
+                $this.addClass("focusbox");
+                jQuery("#jQueryVirtual_label_" + $this.attr("id")).hide();
+            }).on('blur', ":input[placeholder]", function() {
+                var $this = jQuery(this);
+                $this.removeClass("focusbox");
+                if(!jQuery.trim($this.val()))
+                    jQuery("#jQueryVirtual_label_" + $this.attr("id")).show();
+                else jQuery("#jQueryVirtual_label_" + $this.attr("id")).hide();
+            })
+            jQuery.fn.createLabel = function() {
+                return this.each(function() {
+                    inputHasPlaceholder++;
+                    var $this = jQuery(this);
+                    var pos = $this.position();
+                    if(!$(this).is("[id]")){
+                        $(this).attr('id', 'id'+ inputHasPlaceholder);
+                    }
+                    if (!this.id) this.id = "jQueryVirtual_" + this.name;
+
+
+                    if($this.hasClass('top10')){
+                        $this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left:" + (pos.left +10) + "px; top:" + (pos.top +10) + "px;width:" + ($this.width()) + "px; height:" + ($this.height()) + "px;line-height:" + ($this.height()) + "px;margin-top:1px' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                        $this.trigger("blur");
+                    }else if($this.hasClass('find_placeholder')){
+                        $this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left: 45px; top: 18px; width: 328px; height: 22px; line-height: 22px; margin-top: 1px; display: inline;' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                        $this.trigger("blur");
+                    }else if($this.hasClass('placeholder_long')){
+                        $this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left: 45px; top: 18px; width: 328px; height: 22px; line-height: 1.5; margin-top: 1px; display: inline;' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                        $this.trigger("blur");
+                    }else{
+                        $this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left:" + (pos.left +10) + "px; top:" + (pos.top) + "px;width:" + ($this.width()) + "px; height:" + ($this.height()) + "px;line-height:" + ($this.height()) + "px;margin-top:1px' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                        $this.trigger("blur");
+                    }
+                })
+            }
+            jQuery(':input[placeholder]').createLabel();
+        }
+    })
+</script>
+<style>
+    label.absolute { width:100%;
+        position: absolute;
+        color:#999;
+        display: none;
+        cursor: text
+    }
+</style>
+<![endif]-->
+</html>

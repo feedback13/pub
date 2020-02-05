@@ -1,0 +1,68 @@
+
+    <!-- 오키데이 이벤트 -->
+    <div class="inner">
+        <div class="time_num">
+            <p><img src="/image/pc/event/20180319/ok_top_banner.png" alt="" /></p>
+            <span class="time01"><em class="num_0"></em></span>
+            <span class="time02"><em class="num_0"></em></span>
+            <span class="time03"><em class="num_0"></em></span>
+            <span class="time04"><em class="num_0"></em></span>
+            <span class="time05"><em class="num_0"></em></span>
+            <span class="time06"><em class="num_0"></em></span>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var close_date = new Date(2018, 03-1, 22, 23, 59, 59); // 종료일 (년, 월 -1, 일, 시, 분, 초)
+            var close_timestamp = Math.floor(close_date.getTime()/1000);
+
+            window.setInterval(function(){
+                var now_timestamp = Math.floor((new Date()).getTime()/1000);
+                var remind_timestamp = close_timestamp - now_timestamp;
+                var remind_days = Math.floor(remind_timestamp/86400);
+                var remind_hours = Math.floor((remind_timestamp - (86400 * remind_days))/3600);
+                var remind_minutes = Math.floor((remind_timestamp - ((86400 * remind_days) + (3600 * remind_hours)))/60);
+                var remind_seconds = remind_timestamp % 60;
+
+                //console.log('남은시간 : ' + remind_days + '일' + remind_hours + '시' + remind_minutes + '분' + remind_seconds + '초');
+                $('.time_num span em').attr('class', '')
+                if (remind_hours > 0){
+                    if (remind_hours < 10){
+                        $('.time_num .time01 em').addClass('num_0');
+                        $('.time_num .time02 em').addClass('num_' + (Math.floor(remind_hours % 10)));
+                    }else{
+                        $('.time_num .time01 em').addClass('num_' + (Math.floor(remind_hours / 10)));
+                        $('.time_num .time02 em').addClass('num_' + (Math.floor(remind_hours % 10)));
+                    }
+                }
+                if (remind_minutes > 0){
+                    if (remind_minutes < 10){
+                        $('.time_num .time03 em').addClass('num_0');
+                        $('.time_num .time04 em').addClass('num_' + (Math.floor(remind_minutes % 10)));
+                    }else{
+                        $('.time_num .time03 em').addClass('num_' + (Math.floor(remind_minutes / 10)));
+                        $('.time_num .time04 em').addClass('num_' + (Math.floor(remind_minutes % 10)));
+                    }
+                }
+                if (remind_seconds > 0){
+                    if (remind_seconds < 10){
+                        $('.time_num .time05 em').addClass('num_0');
+                        $('.time_num .time06 em').addClass('num_' + (Math.floor(remind_seconds % 10)));
+                    }else{
+                        $('.time_num .time05 em').addClass('num_' + (Math.floor(remind_seconds / 10)));
+                        $('.time_num .time06 em').addClass('num_' + (Math.floor(remind_seconds % 10)));
+                    }
+                }
+            }, 1000);
+        });
+    </script>
+
+    <!--<div class="inner">
+        <img src="/image/pc/temp/top_banner01.png" alt=""/>
+        <span class="input_chk">
+                <label for="banner_agree01">오늘은 다시보지 않음</label>
+                <input type="checkbox" id="banner_agree01">
+            </span>
+        <a href="javascript:topBannerClose();" class="btn_close">닫기<i></i></a>
+    </div>-->

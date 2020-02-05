@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>오투잡 코딩가이드</title>
+<link type="text/css" rel="stylesheet" href="../styles/common.css" />
+<script type="text/javascript" src="../js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="../js/function.js"></script>
+<script type="text/javascript" src="../js/shCore.js"></script>
+<script type="text/javascript" src="../js/shBrushBash.js"></script>
+<script type="text/javascript" src="../js/shBrushCpp.js"></script>
+<script type="text/javascript" src="../js/shBrushCSharp.js"></script>
+<script type="text/javascript" src="../js/shBrushCss.js"></script>
+<script type="text/javascript" src="../js/shBrushDelphi.js"></script>
+<script type="text/javascript" src="../js/shBrushDiff.js"></script>
+<script type="text/javascript" src="../js/shBrushGroovy.js"></script>
+<script type="text/javascript" src="../js/shBrushJava.js"></script>
+<script type="text/javascript" src="../js/shBrushJScript.js"></script>
+<script type="text/javascript" src="../js/shBrushPhp.js"></script>
+<script type="text/javascript" src="../js/shBrushPlain.js"></script>
+<script type="text/javascript" src="../js/shBrushPython.js"></script>
+<script type="text/javascript" src="../js/shBrushRuby.js"></script>
+<!--<script type="text/javascript" src="../js/shBrushScala.js"></script>-->
+<script type="text/javascript" src="../js/shBrushSql.js"></script>
+<script type="text/javascript" src="../js/shBrushVb.js"></script>
+<script type="text/javascript" src="../js/shBrushXml.js"></script>
+<script type='text/javascript' src='../js/select.js'></script>
+
+<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = '../js/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header_coding">
+		<div>빈 레이어</div>
+		<ul>
+			<li class="menu1"><a href="index.html">DTD</a></li>
+			<li class="menu2"><a href="layout.html">LAYOUT</a></li>
+			<li class="menu3"><a href="css.html">CSS</a></li>
+			<li class="menu4"><a href="table.html">TABLE</a></li>
+			<li class="menu5"><a href="bbs.html">BBS</a></li>
+			<li class="menu6"><a href="test1.html">TEST</a></li>
+		</ul>
+		<p>※ 코딩가이드는 <span>모던 브라우저(FF,Chrome, Safari)</span> 사용을 권장합니다.</p>
+	</div>
+	<div id="container_coding">
+		<div id="lnb_coding">
+			<div></div>
+			<h1>오투잡 코딩가이드</h1>
+			<h2>#TABLE</h2>
+			<ul>
+				<li><a href="#table01">TableType 01</a></li>
+				<li><a href="#table02">TableType 02</a></li>
+			</ul>
+		</div>
+		<div id="content_coding" style="margin-top:40px;">
+			<h3 id="table01">+ TableType 01</h3>
+			<!-- ▷▷   Preview   ◁◁ -->
+			<!-- Input Table -->
+					<div class="table_row">
+						<table>
+							<caption></caption>
+							<colgroup>
+								<col width="150px" />
+								<col width="*" />
+							</colgroup>
+							<tr>
+								<th scope="">원본파일 제공여부</th>
+								<td>미제공</td>
+							</tr>
+							<tr>
+								<th>저작권</th>
+								<td>미상업적 사용</td>
+							</tr>
+							<tr>
+								<th>수정가능횟수</th>
+								<td>2회</td>
+							</tr>
+							<tr>
+								<th>대량주문가능개수</th>
+								<td>1~5개</td>
+							</tr>
+							<tr>
+								<th>주문 후 필요한 정보</th>
+								<td>
+									얼굴과 헤어스타일이 잘 나온 사진을 보내주세요 . 낙서 or 배경을 선택하신 경우 배경에 적고자 하는 내용이나<br />
+									원하시는 색상을 적어주세요.  의상변경을 선택하신 경우 원하시는 의상을 적어주세요  <br />
+									ex) 커플 맨투맨 (검,흰) 커플 후드(네이비,분홍) 등등..
+								</td>
+							</tr>
+						</table>
+					</div>
+				<!-- //Input Table -->
+			<!-- ▷▷   EOD : Preview   ◁◁ -->
+			<div class="section">
+				<button class="sourceView" type="button" title="HTML 소스보기"></button>
+				<div class="sourceDiv" style="display:none">
+					<pre class="brush: c-sharp;">
+					<div class="table_row">
+						<table>
+							<caption></caption>
+							<colgroup>
+								<col width="150px" />
+								<col width="*" />
+							</colgroup>
+							<tr>
+								<th scope="">원본파일 제공여부</th>
+								<td>미제공</td>
+							</tr>
+							<tr>
+								<th>저작권</th>
+								<td>미상업적 사용</td>
+							</tr>
+							<tr>
+								<th>수정가능횟수</th>
+								<td>2회</td>
+							</tr>
+							<tr>
+								<th>대량주문가능개수</th>
+								<td>1~5개</td>
+							</tr>
+							<tr>
+								<th>주문 후 필요한 정보</th>
+								<td>
+									얼굴과 헤어스타일이 잘 나온 사진을 보내주세요 . 낙서 or 배경을 선택하신 경우 배경에 적고자 하는 내용이나<br />
+									원하시는 색상을 적어주세요.  의상변경을 선택하신 경우 원하시는 의상을 적어주세요  <br />
+									ex) 커플 맨투맨 (검,흰) 커플 후드(네이비,분홍) 등등..
+								</td>
+							</tr>
+						</table>
+					</div>
+					</pre>
+				</div>
+			</div>
+			<div class="section">
+				<button type="button" class="sourceView sourceView2" title="CSS 소스보기"></button>
+				<div class="sourceDiv" style="display:none">
+					<pre class="brush: c-sharp;">
+						.table_row {background:#fff; border-top:1px solid #cfcfcf; font-size:14px; margin-top:15px; line-height:22px;}
+						.table_row table {width:100%; }
+						.table_row th {text-align:left; background:#f5f5f5; padding:15px 10px; border-bottom:1px solid #e7e7e7;}
+						.table_row td {padding:15px 10px; color:#666; border-bottom:1px solid #e7e7e7;}
+					</pre>
+				</div>
+			</div>
+			<h3 id="table02">+ TableType 02</h3>
+			<!-- ▷▷   Preview   ◁◁ -->
+			<!-- Input Table -->
+				<div class="table_col">
+					<table>
+						<colgroup>
+							<col width="93px" />
+							<col width="95px" />
+							<col width="350px" />
+							<col width="295px" />
+							<col width="*" />
+						</colgroup>
+						<thead>
+						<tr>
+							<th>구분</th>
+							<th>수집방법</th>
+							<th>수집항목</th>
+							<th>수집 및 이용목적</th>
+							<th>보유 및 이용기간</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="center" rowspan="3">구매회원</td>
+							<td class="center">
+									회원가입
+							</td>
+							<td>
+									(필수)아이디, 비밀번호, 이름, 이메일주소, 휴대폰번호<br />
+									(선택)이메일, SMS/MMS/APP푸쉬 수신동의 (마케팅 정보수신)
+							</td>
+							<td rowspan="2">
+									(필수)회원서비스 제공, 계약이행 및 약관변경 등의 고지사항 전달, 불만처리 등 원활한 의사소통 경로 확보<br />
+									(선택)신규 서비스, 이벤트, 서비스 관련 맞춤형 광고 및 재능정보 전송
+							</td>
+							<td rowspan="2">
+
+									회원탈퇴 시 지체없이 파기<br />
+									단, ID는 부정이용 이슈방지를 위해 탈퇴DB에서 3개월 후 파기
+							</td>
+						</tr>
+						<tr>
+							<td class="center">
+									회원가입<br />(페이스북 계정)
+							</td>
+							<td>
+									(필수)페이스북아이디(이메일), 이름, 아이디, 휴대폰번호<br />
+									(선택)이메일, SMS/MMS/APP푸쉬 수신동의 (마케팅 정보수신)
+							</td>
+						</tr>
+						<tr>
+							<td  class="center">
+									재능구매
+							</td>
+							<td>
+									(필수)신용카드정보, 은행계좌정보, 휴대폰결제정보<br />
+									※ 결제정보는 결제대행업체에서만 저장하며, 당사는 저장 및 관리하고 있지 않습니다.
+							</td>
+							<td>
+									유료서비스 이용 및 재능구매에 대한 결제처리
+							</td>
+							<td>
+									5년 보관
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			<!-- //Input Table -->
+			<!-- ▷▷   EOD : Preview   ◁◁ -->
+			<div class="section">
+				<button class="sourceView" type="button" title="HTML 소스보기"></button>
+				<div class="sourceDiv" style="display:none">
+					<pre class="brush: c-sharp;">
+						<div class="table_col">
+							<table>
+								<colgroup>
+									<col width="93px" />
+									<col width="95px" />
+									<col width="350px" />
+									<col width="295px" />
+									<col width="*" />
+								</colgroup>
+								<thead>
+								<tr>
+									<th>구분</th>
+									<th>수집방법</th>
+									<th>수집항목</th>
+									<th>수집 및 이용목적</th>
+									<th>보유 및 이용기간</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td class="center" rowspan="3">구매회원</td>
+									<td class="center">
+											회원가입
+									</td>
+									<td>
+											(필수)아이디, 비밀번호, 이름, 이메일주소, 휴대폰번호<br />
+											(선택)이메일, SMS/MMS/APP푸쉬 수신동의 (마케팅 정보수신)
+									</td>
+									<td rowspan="2">
+											(필수)회원서비스 제공, 계약이행 및 약관변경 등의 고지사항 전달, 불만처리 등 원활한 의사소통 경로 확보<br />
+											(선택)신규 서비스, 이벤트, 서비스 관련 맞춤형 광고 및 재능정보 전송
+									</td>
+									<td rowspan="2">
+
+											회원탈퇴 시 지체없이 파기<br />
+											단, ID는 부정이용 이슈방지를 위해 탈퇴DB에서 3개월 후 파기
+									</td>
+								</tr>
+								<tr>
+									<td class="center">
+											회원가입<br />(페이스북 계정)
+									</td>
+									<td>
+											(필수)페이스북아이디(이메일), 이름, 아이디, 휴대폰번호<br />
+											(선택)이메일, SMS/MMS/APP푸쉬 수신동의 (마케팅 정보수신)
+									</td>
+								</tr>
+								<tr>
+									<td  class="center">
+											재능구매
+									</td>
+									<td>
+											(필수)신용카드정보, 은행계좌정보, 휴대폰결제정보<br />
+											※ 결제정보는 결제대행업체에서만 저장하며, 당사는 저장 및 관리하고 있지 않습니다.
+									</td>
+									<td>
+											유료서비스 이용 및 재능구매에 대한 결제처리
+									</td>
+									<td>
+											5년 보관
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</pre>
+				</div>
+			</div>
+			<div class="section">
+				<button type="button" class="sourceView sourceView2" title="CSS 소스보기"></button>
+				<div class="sourceDiv" style="display:none">
+					<pre class="brush: c-sharp;">
+						.table_col {background:#fff; border-top:1px solid #cfcfcf; margin:15px 0 40px 0; line-height:22px;}
+						.table_col table {width:100%; }
+						.table_col th {background:#f5f5f5; font-size:14px; padding:15px 10px; border-bottom:1px solid #e7e7e7; color:#333; font-weight:600;text-align:center;}
+						.table_col tr td:first-child {border-left:0;}
+						.table_col td {padding:10px; color:#666; border:1px solid #e7e7e7; border-width:0 0 1px 1px; vertical-align:middle;}
+						.table_col td.center {text-align:center;}
+					</pre>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+	<fieldset>
+		<legend class="blind">아이디 찾기</legend>
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>아이디 찾기</h2>
+
+			<div class="find_text">오투잡에 등록되어 있는 회원정보로 아이디를 찾을 수 있습니다. <br />아래의 정보를 입력해주세요.</div>
+
+			<div class="tab_type01">
+				<a class="on" href="#cell_cont">휴대폰 번호 인증</a>
+				<a href="#email_cont">이메일 주소 인증</a>
+			</div>
+
+			<!-- tab_content -->
+			<div id="cell_cont" class="tab_content">
+				<h3 class="blind">휴대폰 번호 인증</h3>
+				<div><input type="text" placeholder="이름" title="이름"  class="find_placeholder" /></div>
+				<div class="tell">
+					<div class="selectbox">
+						<label for="a1">010</label>
+						<select id="a1">
+							<option value="">010</option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+					<input class="share_line wide_form" type="text" title="전화번호앞자리" /> - <input class="wide_form" type="text" title="전화번호뒷자리" />
+				</div>
+			</div>
+			<!--// tab_content -->
+
+			<!-- tab_content -->
+			<div id="email_cont" class="tab_content" style="display:none;" onclick="jQuery(':input[placeholder]').createLabel();">
+				<h3 class="blind">이메일 주소 인증</h3>
+				<div><input type="text" placeholder="이름" title="이름" class="find_placeholder"/></div>
+				<div class="email01 infd_id">
+					<input type="text" placeholder="이메일" title="이메일주소"  class="find_placeholder" /> @
+					<input class="wide_form" type="text" title="이메일주소" />
+					<div class="selectbox share_line">
+						<label for="a2">직접입력</label>
+						<select id="a2">
+							<option value="">직접입력</option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<!--// tab_content -->
+		</article>
+		<!--// row_group -->
+
+		<!-- btn_wrap -->
+		<article class="btn_wrap">
+			<div class="join_btn_wrap">
+				<button type="button" class="btn_find_id">아이디 찾기</button>
+			</div>
+		</article>
+		<!--// btn_wrap -->
+	<fieldset>
+</section>
+<!--// content_container -->
+
+<!-- footer -->
+<footer id="footer">
+	<address>Copyright©사람인HR. All rights reserved</address>
+</footer>
+<!--// footer -->
+
+</body>
+
+</html>

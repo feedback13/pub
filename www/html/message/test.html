@@ -1,0 +1,962 @@
+<!doctype html>
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>오투잡</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/pc/message.css">
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/pc/jquery.scrollbar.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <header class="header">
+        <h1 class="blind">OTWOJOB1111</h1>
+
+        <div class="defalt_area">
+            <h2>하비마스터</h2>
+            <button type="button" class="btn_back">뒤로가기</button>
+            <button type="button" class="btn_setting">설정</button>
+            <button type="button" class="btn_search">검색</button>
+            <button type="button" class="btn_shop" onclick="layerPop.init('msg_shop', 'full');">샵</button>
+        </div>
+
+        <!-- 검색 시 노출 -->
+        <div class="search_area">
+            <h2><input type="text" placeholder="대화 내용 검색"></h2>
+            <button type="button" class="btn_search">검색</button>
+            <button type="button" class="btn_close">닫기</button>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- content -->
+    <section class="content">
+        <div class="scrollbar-inner">
+            <div class="message_noti">
+                <p class="txt">직거래를 유도하는 계좌이체, 연락처, 이메일 등 개인정보가 포함된 글과 광고성 게시물의 경우 관리자에 의해 임의로 삭제될 수 있습니다.</p>
+            </div>
+            <div class="message_wrap">
+                <div class="message_area recipient first">
+                    <p class="photo">
+                        <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/28x28" alt="1d12BCsbVs" title="프로필사진"></span>
+                    </p>
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>테스트 중입니다. 연휴 잘 보내고 계시지요?</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area recipient mb16">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>현재는 응답이 늦을 수 있습니다.</span>
+                        </div>
+                        <div class="txt_info">
+                            <p class="time">10:29 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area sender first mb16">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>안녕하세요~</span>
+                        </div>
+                        <div class="txt_info">
+                            <p class="read">읽음</p>
+                            <p class="time">10:30 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area first recipient">
+                    <p class="photo">
+                        <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/28x28" alt="1d12BCsbVs" title="프로필사진"></span>
+                    </p>
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>안녕하세요. 하비마스터 입니다.<br>궁금하신 내용이 있으시면 <em>메시지</em>를 남겨주세요.<br><em>메시지</em>를 남겨주세요.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area recipient mb16">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>현재는 응답이 늦을 수 있습니다.</span>
+                        </div>
+                        <div class="txt_info">
+                            <p class="time">10:29 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="previous_posts"><span>여기까지 읽으셨습니다</span></p>
+                <div class="message_area first sender">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>안녕하세요~</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area sender mb16">
+                    <div class="message_box">
+                        <div class="txt_info">
+                            <p class="read">읽음</p>
+                            <p class="time">10:30 AM</p>
+                        </div>
+                        <div class="txt add_file"> <!-- 파일 업로드 시 -->
+                            <span>번역요청_광고이미지.pdf</span>
+                            <i>405KB pdf</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area first recipient mb16">
+                    <p class="photo">
+                        <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/28x28" alt="1d12BCsbVs" title="프로필사진"></span>
+                    </p>
+                    <div class="message_box">
+                        <div class="txt_info">
+                            <p class="read">읽음</p>
+                            <p class="time">10:30 AM</p>
+                        </div>
+                        <div class="txt add_file"> <!-- 파일 업로드 시 -->
+                            <span>번역요청_광고이미지.pdf</span>
+                            <i>405KB pdf</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area first recipient">
+                    <p class="photo">
+                        <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/28x28" alt="1d12BCsbVs" title="프로필사진"></span>
+                    </p>
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>안녕하세요. 하비마스터 입니다.<br>궁금하신 내용이 있으시면 <em>메시지</em>를 남겨주세요.<br><em>메시지</em>를 남겨주세요.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area recipient mb16">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>현재는 응답이 늦을 수 있습니다.</span>
+                        </div>
+                        <div class="txt_info">
+                            <p class="time">10:29 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area first recipient">
+                    <p class="photo">
+                        <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/28x28" alt="1d12BCsbVs" title="프로필사진"></span>
+                    </p>
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>안녕하세요. 하비마스터 입니다.<br>궁금하신 내용이 있으시면 <em>메시지</em>를 남겨주세요.<br><em>메시지</em>를 남겨주세요.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area recipient mb16">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>현재는 응답이 늦을 수 있습니다.</span>
+                        </div>
+                        <div class="txt_info">
+                            <p class="time">10:29 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area first recipient">
+                    <p class="photo">
+                        <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/28x28" alt="1d12BCsbVs" title="프로필사진"></span>
+                    </p>
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>안녕하세요. 하비마스터 입니다.<br>궁금하신 내용이 있으시면 <em>메시지</em>를 남겨주세요.<br><em>메시지</em>를 남겨주세요.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area recipient mb16">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>현재는 응답이 늦을 수 있습니다.</span>
+                        </div>
+                        <div class="txt_info">
+                            <p class="time">10:29 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area first recipient">
+                    <p class="photo">
+                        <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/28x28" alt="1d12BCsbVs" title="프로필사진"></span>
+                    </p>
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>안녕하세요. 하비마스터 입니다.<br>궁금하신 내용이 있으시면 <em>메시지</em>를 남겨주세요.<br><em>메시지</em>를 남겨주세요.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_area recipient mb16">
+                    <div class="message_box">
+                        <div class="txt">
+                            <span>현재는 응답이 늦을 수 있습니다.</span>
+                        </div>
+                        <div class="txt_info">
+                            <p class="time">10:29 AM</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //content -->
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="message_foot">
+            <div class="option_box">
+                <ul>
+                    <li><button type="button" class="ic_file" onclick="layerPop.init('msg_file_upload', '');">파일전송</button></li>
+                    <li><button type="button" class="ic_deliver" onclick="layerPop.init('msg_order_deliver', 'full');">주문배송</button></li>
+                    <li><button type="button" class="ic_pay" onclick="layerPop.init('msg_add_payment', 'full');">추가결제</button></li>
+                    <li><button type="button" class="ic_money" onclick="layerPop.init('msg_price_suggest', 'full');">가격제안</button></li>
+                    <li><button type="button" class="ic_cancle_order" onclick="layerPop.init('msg_order_cancel', 'full');">주문취소</button></li>
+                    <li><button type="button" class="ic_complain" onclick="layerPop.init('msg_report', '');">신고하기</button></li>
+                </ul>
+            </div>
+            <div class="message_write">
+                <p class="btn_option"><button type="button" class="">옵션</button></p>
+                <div class="message_input">
+                    <p><input type="text" placeholder="메시지를 입력해 주세요."></p>
+                </div>
+                <p class="btn_send"><button type="button" class="">전송</button></p> <!-- [개발] 글자 입력 시 on 추가 -->
+            </div>
+        </div>
+
+
+        <!-- 검색 시 노출 -->
+        <div class="message_search_controll">
+            <button type="button" class="btn_up">위로</button>
+            <button type="button" class="btn_down">아래로</button>
+        </div>
+    </section>
+    <!-- //footer -->
+
+    <!-- layerPop : 파일전송 -->
+    <section class="layer_pop msg_file_upload">
+        <div class="layer_box">
+            <div class="tit_area">파일을 전송하시겠습니까?</div>
+            <div class="cont_area">
+                <ul class="file_list">
+                    <li>aapsodpo_dosid_3455977_askf...jpg <em>21KB jpg</em></li>
+                    <li>거래 계약서.jpg <em>21KB jpg</em></li>
+                    <li>거래 계약서.jpg <em>21KB jpg</em></li>
+                    <li>거래 계약서.jpg <em>21KB jpg</em></li>
+                    <li>거래 계약서.jpg <em>21KB jpg</em></li>
+                </ul>
+            </div>
+            <div class="btn_area type02">
+                <p><button type="button" onclick="layerPop.closeLayer('msg_file_upload')">취소</button></p>
+                <p class="color_type01"><button type="button">확인</button></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- layerPop : 신고하기 -->
+    <section class="layer_pop msg_report">
+        <div class="layer_box">
+            <div class="tit_area">대화를 신고 하시겠습니까?</div>
+            <div class="cont_area">
+                <div class="report_box">
+                    <textarea cols="5" rows="6" placeholder="신고하실 내용을 입력해 주세요"></textarea>
+                </div>
+            </div>
+            <div class="btn_area type02">
+                <p><button type="button" onclick="layerPop.closeLayer('msg_report')">취소</button></p>
+                <p class="color_type01"><button type="button">확인</button></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- layerPop : 주문취소 -->
+    <section class="layer_pop msg_order_cancel_s">
+        <div class="layer_box">
+            <div class="tit_area">주문을 취소 하시겠습니까?</div>
+            <div class="cont_area">
+                <div class="com_pad msg_item_list border_b">
+                    <dl>
+                        <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                        <dd>
+                            <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                            <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="btn_area type02">
+                <p><button type="button" onclick="layerPop.closeLayer('msg_order_cancel_s')">취소</button></p>
+                <p class="color_type01"><button type="button">확인</button></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- layerPop : 주문배송 -->
+    <section class="layer_pop msg_order_deliver_s">
+        <div class="layer_box">
+            <div class="tit_area">주문을 배송 하시겠습니까?</div>
+            <div class="cont_area">
+                <div class="com_pad msg_item_list border_b">
+                    <dl>
+                        <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                        <dd>
+                            <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                            <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="btn_area type02">
+                <p><button type="button" onclick="layerPop.closeLayer('msg_order_deliver_s')">취소</button></p>
+                <p class="color_type01"><button type="button">확인</button></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- layerPop : 추가결제 요청 -->
+    <section class="layer_pop msg_add_payment_s">
+        <div class="layer_box">
+            <div class="tit_area">추가결제 요청</div>
+            <div class="cont_area">
+                <div class="com_pad msg_item_list border_b">
+                    <dl>
+                        <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                        <dd>
+                            <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                            <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont_area no_pad">
+                <div class="option_input_box">
+                    <p>
+                        <input type="text" placeholder="추가 상품을 입력해 주세요">
+                        <button type="button"><img src="/image/pc/message/ic_cancle.png" alt="삭제"></button>
+                    </p>
+                    <p>
+                        <input type="text" placeholder="추가 금액을 입력해주세요">
+                        <span>원</span>
+                        <button type="button"><img src="/image/pc/message/ic_cancle.png" alt="삭제"></button>
+                    </p>
+                    <p>
+                        <input type="text" placeholder="작업기간을 입력해주세요">
+                        <span>일</span>
+                        <button type="button"><img src="/image/pc/message/ic_cancle.png" alt="삭제"></button>
+                    </p>
+                </div>
+                <div class="option_result_box">
+                    <ul>
+                        <li><strong>작업기간</strong><span>5일</span></li>
+                        <li><strong>총 금액</strong><span>400,000원</span></li>
+                    </ul>
+                    <p>추가결제는 기본 상품 주문이 완료 된 상태에서만 (진행중인 상품) 가능합니다.</p>
+                </div>
+            </div>
+            <div class="btn_area type02">
+                <p><button type="button" onclick="layerPop.closeLayer('msg_add_payment_s')">취소</button></p>
+                <p class="color_type01"><button type="button" class="off">확인</button></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- layerPop : 스페셜 가격 제안 -->
+    <section class="layer_pop msg_price_suggest_s">
+        <div class="layer_box">
+            <div class="tit_area">스페셜 가격 제안을 진행하시겠습니까?</div>
+            <div class="cont_area">
+                <div class="com_pad msg_item_list border_b">
+                    <dl>
+                        <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                        <dd>
+                            <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                            <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont_area no_pad">
+                <div class="option_result_box02">
+                    <ul>
+                        <li><strong>제안금액</strong><span>500,000,000원</span></li>
+                        <li><strong>작업기간</strong><span>7일</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn_area type02">
+                <p><button type="button" onclick="layerPop.closeLayer('msg_price_suggest_s')">취소</button></p>
+                <p class="color_type01"><button type="button">확인</button></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- full_layer_pop : 스페셜 가격 제안 -->
+    <section class="full_layer_pop msg_price_suggest">
+        <div class="layer_box">
+            <div class="tit_area">
+                <p>스페셜 가격 제안<span>상품을 선택 후 금액과 작업기간을 입력해주세요</span></p>
+            </div>
+            <div class="cont_area">
+                <div class="scrollbar-inner">
+                    <div class="com_pad02 msg_item_list border_b">
+                        <a href="#">
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="option_input_box border_b">
+                        <div class="option_input_inner">
+                            <span class="ic_money">금액</span>
+                            <p>
+                                <input type="text" placeholder="추가 금액을 입력해주세요">
+                                <span>원</span>
+                                <button type="button"><img src="/image/pc/message/ic_cancle.png" alt="삭제"></button>
+                            </p>
+                        </div>
+                        <div class="option_input_inner">
+                            <span class="ic_calender">작업기간</span>
+                            <p>
+                                <input type="text" placeholder="작업기간을 입력해주세요">
+                                <span>일</span>
+                                <button type="button"><img src="/image/pc/message/ic_cancle.png" alt="삭제"></button>
+                            </p>
+                        </div>
+                        <div class="btn_area type02">
+                            <p><button type="button" onclick="layerPop.closeLayer('msg_add_payment_s')">취소</button></p>
+                            <p class="color_type01"><button type="button" class="" onclick="layerPop.init('msg_price_suggest_s', '');">확인</button></p>
+                        </div>
+                    </div>
+                    <div class="com_pad02 msg_item_list border_b">
+                        <a href="#">
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="option_input_box border_b">
+                        <div class="option_input_inner">
+                            <span class="ic_money">금액</span>
+                            <p>
+                                <input type="text" placeholder="추가 금액을 입력해주세요">
+                                <span>원</span>
+                                <button type="button"><img src="/image/pc/message/ic_cancle.png" alt="삭제"></button>
+                            </p>
+                        </div>
+                        <div class="option_input_inner">
+                            <span class="ic_calender">작업기간</span>
+                            <p>
+                                <input type="text" placeholder="작업기간을 입력해주세요">
+                                <span>일</span>
+                                <button type="button"><img src="/image/pc/message/ic_cancle.png" alt="삭제"></button>
+                            </p>
+                        </div>
+                        <div class="btn_area type02">
+                            <p><button type="button" onclick="layerPop.closeLayer('msg_add_payment_s')">취소</button></p>
+                            <p class="color_type01"><button type="button" class="off" onclick="layerPop.init('msg_price_suggest_s', '');">확인</button></p>
+                        </div>
+                    </div>
+                    <div class="com_pad02 msg_item_list border_b">
+                        <a href="#">
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="com_pad02 msg_item_list border_b">
+                        <a href="#">
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="com_pad02 msg_item_list border_b">
+                        <a href="#">
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="com_pad02 msg_item_list border_b">
+                        <a href="#">
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="btn_msg_close"><button type="button" onclick="layerPop.closeFullLayer('msg_price_suggest')">닫기</button></p>
+        </div>
+    </section>
+
+    <!-- full_layer_pop : 판매자 샵 -->
+    <section class="full_layer_pop msg_shop">
+        <div class="layer_box">
+            <div class="tit_area shop">
+                <p class="photo">
+                    <span><img src="//images.otwojob.com/profile/0/W/L/0WLSYkh2jT2edl7.png/o2j/resize/48x48" alt="1d12BCsbVs" title="프로필사진"></span>
+                </p>
+                <p><strong>아이디</strong>님의<br>판매 상품입니다.</p>
+            </div>
+            <div class="cont_area">
+                <div class="scrollbar-inner">
+                    <ul class="com_pad msg_item_list">
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                    <dd>
+                                        <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                        <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                    <dd>
+                                        <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                        <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                    <dd>
+                                        <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                        <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                    <dd>
+                                        <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                        <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                    <dd>
+                                        <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                        <p class="current"><span class="discount">30%</span>24,000<em>원~</em></p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="btn_msg_close"><button type="button" onclick="layerPop.closeFullLayer('msg_shop')">닫기</button></p>
+        </div>
+    </section>
+
+    <!-- full_layer_pop : 주문취소 -->
+    <section class="full_layer_pop msg_order_cancel">
+        <div class="layer_box">
+            <div class="tit_area">
+                <p>주문취소</p>
+            </div>
+            <div class="cont_area">
+                <div class="scrollbar-inner">
+                    <ul class="com_pad msg_item_list">
+                        <li>
+                            <div class="top_area">
+                                <p class="state progress"><img src="/image/pc/message/badge_progress.png" alt="진행중"></p> <!-- 진행중 : progress / 접수대기 : waiting / 늦은배송 : delay / 거부됨 : deny / 취소요청 : cancel -->
+                                <p class="date">
+                                    <span class="buy">구매</span>
+                                    <span class="otj">오투잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_cancel_s', '');">주문취소</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state waiting"><img src="/image/pc/message/badge_waiting.png" alt="접수대기"></p>
+                                <p class="date">
+                                    <span class="buy">구매</span>
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_cancel_s', '');">주문취소</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state delay"><img src="/image/pc/message/badge_delay.png" alt="늦은배송"></p>
+                                <p class="date">
+                                    <span class="buy">구매</span>
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_cancel_s', '');">주문취소</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state deny"><img src="/image/pc/message/badge_deny.png" alt="거부됨"></p>
+                                <p class="date">
+                                    <span class="sell">판매</span>
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_cancel_s', '');">주문취소</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state cancel"><img src="/image/pc/message/badge_cancel.png" alt="취소요청"></p>
+                                <p class="date">
+                                    <span class="buy">구매</span>
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_cancel_s', '');">주문취소</button></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="btn_msg_close"><button type="button" onclick="layerPop.closeFullLayer('msg_order_cancel')">닫기</button></p>
+        </div>
+    </section>
+
+    <!-- full_layer_pop : 주문배송 -->
+    <section class="full_layer_pop msg_order_deliver">
+        <div class="layer_box">
+            <div class="tit_area">
+                <p>주문배송</p>
+            </div>
+            <div class="cont_area">
+                <div class="scrollbar-inner">
+                    <ul class="com_pad msg_item_list">
+                        <li>
+                            <div class="top_area">
+                                <p class="state progress"><img src="/image/pc/message/badge_progress.png" alt="진행중"></p> <!-- 진행중 : progress / 접수대기 : waiting / 늦은배송 : delay / 거부됨 : deny / 취소요청 : cancel -->
+                                <p class="date">
+                                    <span class="otj">오투잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_deliver_s', '');">주문배송</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state waiting"><img src="/image/pc/message/badge_waiting.png" alt="접수대기"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_deliver_s', '');">주문배송</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state delay"><img src="/image/pc/message/badge_delay.png" alt="늦은배송"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_deliver_s', '');">주문배송</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state deny"><img src="/image/pc/message/badge_deny.png" alt="거부됨"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_deliver_s', '');">주문배송</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state cancel"><img src="/image/pc/message/badge_cancel.png" alt="취소요청"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_order_deliver_s', '');">주문배송</button></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="btn_msg_close"><button type="button" onclick="layerPop.closeFullLayer('msg_order_deliver')">닫기</button></p>
+        </div>
+    </section>
+
+    <!-- full_layer_pop : 추가결제 -->
+    <section class="full_layer_pop msg_add_payment">
+        <div class="layer_box">
+            <div class="tit_area">
+                <p>추가결제</p>
+            </div>
+            <div class="cont_area">
+                <div class="scrollbar-inner">
+                    <ul class="com_pad msg_item_list">
+                        <li>
+                            <div class="top_area">
+                                <p class="state progress"><img src="/image/pc/message/badge_progress.png" alt="진행중"></p> <!-- 진행중 : progress / 접수대기 : waiting / 늦은배송 : delay / 거부됨 : deny / 취소요청 : cancel -->
+                                <p class="date">
+                                    <span class="otj">오투잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('msg_add_payment_s', '');">추가결제</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state waiting"><img src="/image/pc/message/badge_waiting.png" alt="접수대기"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('', '');">추가결제</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state delay"><img src="/image/pc/message/badge_delay.png" alt="늦은배송"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('', '');">추가결제</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state deny"><img src="/image/pc/message/badge_deny.png" alt="거부됨"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('', '');">추가결제</button></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="top_area">
+                                <p class="state cancel"><img src="/image/pc/message/badge_cancel.png" alt="취소요청"></p>
+                                <p class="date">
+                                    <span class="odj">오더잡</span>
+                                    <span class="order_time">주문 2018.03.31</span>
+                                    <span class="closing_time">종료예정 2018.04.31</span>
+                                </p>
+                            </div>
+                            <dl>
+                                <dt><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/54x40"></dt>
+                                <dd>
+                                    <p class="tit"><strong>[번역]</strong> 리뉴얼 EVENT 좋아요/조회수/팔로워/리뉴얼 EVENT 좋아요/조회수/팔로워/</p>
+                                    <p class="current"><span class="option">주문금액 (2개)</span>24,000<em>원~</em></p>
+                                </dd>
+                            </dl>
+                            <div class="btn_area_s">
+                                <p><button type="button" onclick="layerPop.init('', '');">추가결제</button></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="btn_msg_close"><button type="button" onclick="layerPop.closeFullLayer('msg_add_payment')">닫기</button></p>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="/js/pc/otwojob.message.js"></script>
+
+</body>
+</html>

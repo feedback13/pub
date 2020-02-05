@@ -1,0 +1,250 @@
+<!doctype html>
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>오투잡</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/pc/otwojob_cafe24.css">
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- content -->
+    <section class="content"></section>
+    <!-- //content -->
+
+    <!-- footer -->
+    <section class="footerWrap"></section>
+    <!-- //footer -->
+
+</div>
+
+
+<div class="popup_layer box_type460 login pc_ver">
+    <p class="tit">로그인<a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"></a></p>
+    <article class="pop_content last">
+        <!-- cont_wrap -->
+        <article class="cont_wrap login_form">
+            <!-- form_join -->
+            <fieldset class="form_join type02">
+                <legend class="blind">로그인</legend>
+
+                <div class="write first">
+                    <div class="input_wrap wide">
+                        <input type="text" title="아이디" placeholder="아이디">
+                    </div>
+                </div>
+                <div class="write">
+                    <div class="input_wrap wide">
+                        <input type="password" title="비빌번호" placeholder="비빌번호">
+                    </div>
+                </div>
+            </fieldset>
+            <!-- //form_join -->
+        </article>
+        <!-- //cont_wrap -->
+
+        <!-- btn_wrap -->
+        <div class="btn_wrap">
+            <div class="btn_cover_full">
+                <button type="submit" class="btn_type btn_type02">
+                    <span class="check">로그인</span>
+                </button>
+            </div>
+        </div>
+        <!-- //btn_wrap -->
+
+        <!-- login_find -->
+        <div class="login_find">
+            <label class="member on" for="saveid"><input type="checkbox" id="saveid" checked="checked"><span class="txt">로그인 상태 유지</span></label>
+            <p class="find_button">
+                <a href="#none">아이디찾기</a>
+                <a href="#none" class="pw">비밀번호 찾기</a>
+            </p>
+        </div>
+        <!-- //login_find -->
+
+        <!-- other_id_join -->
+        <div class="other_id_join_box">
+            <div class="other_id_join_txt">소셜 계정으로 로그인</div>
+            <div class="other_id_join">
+                <a href="#none"><span class="naver">네이버로 로그인하기</span></a>
+                <a href="#none"><span class="facebook">페이스북으로 로그인하기</span></a>
+                <a href="#none"><span class="kakao">카카오톡으로 로그인하기</span></a>
+                <a href="#none"><span class="google">카카오톡으로 로그인하기</span></a>
+            </div>
+        </div>
+        <!-- //other_id_join -->
+
+        <p class="txt_msg type3">아직 회원이 아니세요?  <strong><a href="#none" class="point">회원가입</a></strong></p>
+    </article>
+</div>
+
+<script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    //content
+    $.ajax({
+               type: 'GET',
+               url: '/p/'+getParameterByName('page'),
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.content').html(data);
+               }
+           });
+    //footer
+    $.ajax({
+               type: 'GET',
+               url: 'footer.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.footerWrap').html(data);
+               }
+           });
+</script>
+<!--
+<script>
+    /* 구버전 */
+    $.fn.layerScript = function(o){
+        o = $.extend({
+                         divs : ''
+                     }, o || {});
+
+        var e = $(this),
+            bg = $('<div id="layer_bg"></div>'),
+            ly_w,
+            ly_h,
+            closeDiv = o.divs;
+
+        $("body").attr("lyNums", lyNums)
+        // 열기
+        if(!$("body").hasClass("lyOn")){
+            $("body").addClass("lyOn");
+            bg.prependTo($("body"));
+        }
+
+        _resize();
+
+        function _resize() {
+            ly_w = e.width();
+            ly_h = e.height();
+            e.css({"margin-left":-(ly_w/2), "margin-top":-(ly_h/2)}).show();
+        }
+
+        e.show();
+
+        addResizeListener(e.get(0), _resize);
+
+        // 닫기
+        $(this).find(".btn_close").off("click");
+        $(this).find(".btn_close").on('click', function(){
+            layerClose(closeDiv);
+        });
+        // dimmed 배경 클릭시 팝업 이벤트 닫힘
+        bg.on('click', function(){
+            layerClose(closeDiv);
+        });
+
+        //esc 클릭시 팝업 이벤트 닫힘
+        $("body").keyup(function(escEvent) {
+            if (escEvent.keyCode == 27) {
+                layerClose(closeDiv);
+            }
+        });
+    }
+
+    var  lyNums = 0,
+        lyOne = 0;
+
+    //layer popup 열기
+    function openLay(name){
+        lyNums++;
+        $(".popup_layer").each(function(index){
+            if($(this).hasClass(name)){
+                $(this).layerScript({divs : name});
+                if(name == 'confirm_coupon') {
+                    $('#layer_bg').hide();
+                }
+
+                if(name == 'movie01') {
+                    $(".movie01").append("<iframe width=\"740\" height=\"416\" src=\"https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=523AC0EC16DA51AC5574D0D35E98EA296CC1&outKey=V12400d000be27c6a8d0eeebb4aeb6ebd501be19e2ff5cc224786eebb4aeb6ebd501b\" frameborder=\"no\" scrolling=\"no\" allow='autoplay; encrypted-media' allowfullscreen></iframe>").css({top:"50%", marginTop:"-200px"});
+                }
+                if(name == 'movie02') {
+                    $(".movie02").append("<iframe width=\"740\" height=\"416\" src=\"https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=7D1ABF22D9F4A5B414655508428F425CE66C&outKey=V1241a0057ecbc3803039e684c5be372c481d4dfc421309dfa1f1e684c5be372c481d\" frameborder=\"no\" scrolling=\"no\" allow='autoplay; encrypted-media' allowfullscreen></iframe>").css({top:"50%", marginTop:"-200px"});
+                }
+                if(name == 'movie03') {
+                    $(".movie03").append("<iframe width=\"740\" height=\"416\" src=\"https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=C967C0AB6B8CDC55B7661AAEB93B4C8FECEA&outKey=V128af2848b0b8876ec85b7b379177af63104b09d53226b83b3eab7b379177af63104\" frameborder=\"no\" scrolling=\"no\" allow='autoplay; encrypted-media' allowfullscreen></iframe>").css({top:"50%", marginTop:"-200px"});
+                }
+            }
+        });
+        /* OTWOJOB-566 */
+        $(".event_layer").each(function(index){
+            if($(this).hasClass(name)){
+                $(this).layerScript({divs : name});
+            }
+        });
+        /* //OTWOJOB-566 */
+    }
+    function openMovLay(name, url){
+        lyNums++;
+
+        $(".movie").each(function(index){
+            if($(this).hasClass(name)){
+                $(this).layerScript({divs : name});
+                $(".movie").append("<iframe width=\"740\" height=\"416\" src=\"" + url + "\" frameborder=\"no\" scrolling=\"no\" allow='autoplay; encrypted-media' allowfullscreen></iframe>").css({top:"50%", marginTop:"-200px"});
+            };
+        });
+    }
+    // layer popup 닫기
+    function layerClose(name){
+        $(".popup_layer").each(function(index){
+            if($(this).hasClass(name)){
+                var e = $(this);
+
+                e.hide().attr("style","display:none");
+                $("#layer_bg").attr("style","display:none");
+
+                lyNums &#45;&#45;;
+                if(lyNums == 0){
+                    $("body").removeClass("lyOn");
+                    $("#layer_bg").remove();
+                }
+            }
+            $(".movie_area iframe").remove();
+        });
+        /* OTWOJOB-566 */
+        $(".event_layer").each(function(index){
+            if($(this).hasClass(name)){
+                var e = $(this);
+
+                e.hide().attr("style","display:none");
+                $("#layer_bg").attr("style","display:none");
+
+                lyNums &#45;&#45;;
+                if(lyNums == 0){
+                    $("body").removeClass("lyOn");
+                    $("#layer_bg").remove();
+                }
+            }
+        });
+        /* //OTWOJOB-566 */
+    }
+</script>-->
+
+</body>
+</html>

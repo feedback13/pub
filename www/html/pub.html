@@ -1,0 +1,110 @@
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>사람인 OTWOJOB</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../css/pc/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/pc/common.css">
+    <link rel="stylesheet" type="text/css" href="../../js/jquery/themes/default/style.min.css">
+    <script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery/jstree.min.js"></script>
+    <style type="text/css">
+        body {overflow-y:hidden;}
+        .wraper {min-width:370px;}
+        .area_menu {display:block;position:fixed;left:0;top:0;background:rgba(255, 255, 255, 0.9);border-bottom:2px solid #002d4a;border-right:2px solid #002d4a;padding:0 10px}
+        .area_menu h1 {padding:30px 0 10px;font-size:18px;}
+        .area_menu h1 em {color:#ff4500;}
+        .area_menu .header_button {position:absolute;width:300px;text-align:left;}
+        .area_menu .header_button button {float:left;padding:5px 0;width:33%;border:1px solid #ddd;text-align:center;}
+        .area_menu .header_button button.on {border:1px solid #ff4500;}
+        .area_menu .header_button p#contSize {position:absolute;top:35px;right:10px;}
+        .area_menu #menuFrame {margin-top:50px}
+        .area_menu #menuCloseButton {position:absolute;left:0;top:0;padding: 5px 10px;font-size:12px;border:1px solid #ddd;}
+        section.contaner {overflow:hidden;}
+        section.contaner:after {display:table;table-layout:fixed;clear:both;content:""}
+        section.contaner #menuFrame {float:left;padding-top:50px;width:300px;border-right:1px solid #000;}
+        section.contaner .content {width:100%;}
+        section.contaner .content #menuOpenButton {position:absolute;left:0;top:0;padding: 5px 10px;font-size:12px;border:1px solid #ddd;background:#000;color:#fff;}
+        @media (max-width: 420px) {
+            body {}
+            .wraper {position:relatvie;width:100%;min-width:auto;}
+            .area_menu {width:100%;}
+            .area_menu .header_button {width:95%;}
+            .area_menu #menuFrame {width:100%;}
+
+        }
+    </style>
+</head>
+<body>
+<div class="wraper">
+    <div class="area_menu">
+        <p><button id="menuCloseButton" onclick="menuCloseButton();">닫기</button></p>
+        <h1><em>O</em>TWOJOB - PUB Information Architecture</h1>
+        <div class="header_button">
+            <button type="button" class="pc on" onclick="menuChange('pc');">WEB</button>
+            <button type="button" class="m" onclick="menuChange('m');">MOBILE</button>
+            <button type="button" class="mail" onclick="menuChange('mail');">메일</button>
+            <button type="button" onclick="document.getElementById('menuFrame').contentWindow.openAll();">전체열기</button>
+            <button type="button" onclick="document.getElementById('menuFrame').contentWindow.closeAll();">전체닫기</button>
+            <p id="contSize"></p>
+        </div>
+        <iframe src="./pub-ia/template/menu_pc.html" id="menuFrame" name="menuFrame" scrolling="yes"></iframe>
+    </div>
+    <section class="contaner">
+        <div class="content">
+            <p><button id="menuOpenButton" onclick="menuOpenButton();">메뉴</button></p>
+            <iframe src="./pub-ia/guide/html/main.html" id="pageFrame" name="pageFrame" scrolling="yes"></iframe>
+        </div>
+    </section>
+</div>
+
+
+<script>
+    function menuOpenButton(){
+        $('.area_menu').show();
+        $('#menuOpenButton').hide();
+    }
+    function menuCloseButton(){
+        $('.area_menu').hide();
+        $('#menuOpenButton').show();
+    }
+    function menuChange(path) {
+        var file_path = path;
+        var href = './pub-ia/template/menu_' + path + '.html'
+        $('.header_button button').removeClass('on');
+        $('.'+file_path).addClass('on');
+        if (file_path == 'pc'){
+            $('#menuFrame').attr('src', href);
+        }else if (file_path == 'm'){
+            $('#menuFrame').attr('src', href);
+        }else{
+            $('#menuFrame').attr('src', href);
+        }
+    };
+    function layoutSize () {
+        var documentW = $(window).width(),
+            documentH = $(window).height()
+
+        $('#menuFrame').css('height', documentH - 110);
+        $('.contaner').css('height', documentH);
+        $('#pageFrame').css('width', documentW);
+        $('#pageFrame').css('height', documentH);
+        $('#contSize').text(documentW -1 + ' X ' + documentH);
+    }
+    $(document).ready(function () {
+        layoutSize();
+    })
+    $(window).resize(function (){
+        layoutSize();
+    })
+
+</script>
+</body>
+</html>

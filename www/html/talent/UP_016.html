@@ -1,0 +1,698 @@
+	<!-- path_indicator -->
+ 	<nav class="path_indicator">
+		<div class="inner_container">
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+				<li>
+					<span class="home"><a href="/main">Home</a></span>
+					<span class="path_home"><a href="/main">오투잡 홈</a></span>
+				</li>
+				<li class="path_div">
+					<span class="path"><a href="/products/11">오투잡 베스트</a></span>
+				</li>
+			</ol>
+			<!--// breadcrumb -->
+		</div>
+	</nav>
+	<!-- //path_indicator -->
+
+	<!-- content_container -->
+	<section id="content_container" class="type02 center_position">
+		<section class="best_ranking_header">
+			<div class="ranking_title">
+				<h1 style="display: inline-block;">오투잡 베스트</h1>
+				<button class="ranking_inform" onclick="dataToolTip(this)" data-tooltip="ranking_guide1" data-tooltip-width="280">
+					<img src="/image/pc/ico/ico-question.png">
+				</button>
+				<div class="theme_btns">
+					<a href="javascript:void(0);"><img src="/image/pc/ico/icon-realtimeranking.png">실시간 랭킹</a>
+					<a href="javascript:void(0);"><img src="/image/pc/ico/icon-categoryranking.png">카테고리 랭킹</a>
+				</div>
+			</div>
+			<br>  <!-- br 태그 추가 -->
+			<div class="ranking_category">
+				<button onclick="javascript:changeCategory('left')" id="left_btn" class="category_arrow"><img src="/image/pc/common/arrow-left-off.png"></button>
+
+				<button onclick="javascript:changeCategory('all')" name="first" id="all_btn" class="category_all on">전체</button>
+				<button onclick="javascript:changeCategory('10')" name="first" id="10_btn" class="category_btn"><img src="/image/pc/ico/ic-category-10.png"><br>번역</button>
+				<button onclick="javascript:changeCategory('11')" name="first" id="11_btn" class="category_btn"><img src="/image/pc/ico/ic-category-11.png"><br>디자인</button>
+				<button onclick="javascript:changeCategory('12')" name="first" id="12_btn" class="category_btn"><img src="/image/pc/ico/ic-category-12.png"><br>비즈니스 문서</button>
+				<button onclick="javascript:changeCategory('13')" name="first" id="13_btn" class="category_btn"><img src="/image/pc/ico/ic-category-13.png"><br>마케팅</button>
+				<button onclick="javascript:changeCategory('14')" name="first" id="14_btn" class="category_btn"><img src="/image/pc/ico/ic-category-14.png"><br>음악/더빙</button>
+				<button onclick="javascript:changeCategory('15')" name="first" id="15_btn" class="category_btn"><img src="/image/pc/ico/ic-category-15.png"><br>IT개발</button>
+				<button onclick="javascript:changeCategory('16')" name="first" id="16_btn" class="category_btn"><img src="/image/pc/ico/ic-category-16.png"><br>생활서비스</button>
+
+				<button onclick="javascript:changeCategory('17')" name="second" id="17_btn" class="category_btn"><img src="/image/pc/ico/ic-category-17.png"><br>전문가컨설팅</button>
+				<button onclick="javascript:changeCategory('18')" name="second" id="18_btn" class="category_btn"><img src="/image/pc/ico/ic-category-18.png"><br>운세/상담</button>
+				<button onclick="javascript:changeCategory('19')" name="second" id="19_btn" class="category_btn"><img src="/image/pc/ico/ic-category-19.png"><br>행사/이벤트</button>
+				<button onclick="javascript:changeCategory('21')" name="second" id="21_btn" class="category_btn"><img src="/image/pc/ico/ic-category-21.png"><br>여행플랜</button>
+				<button onclick="javascript:changeCategory('23')" name="second" id="23_btn" class="category_btn"><img src="/image/pc/ico/ic-category-23.png"><br>창작/작문</button>
+				<button onclick="javascript:changeCategory('25')" name="second" id="25_btn" class="category_btn"><img src="/image/pc/ico/ic-category-25.png"><br>영상/애니</button>
+				<button onclick="javascript:changeCategory('26')" name="second" id="26_btn" class="category_btn"><img src="/image/pc/ico/ic-category-26.png"><br>핸드메이드</button>
+				<button onclick="javascript:changeCategory('27')" name="second" id="27_btn" class="category_btn"><img src="/image/pc/ico/ic-category-27.png"><br>레슨</button>
+
+				<button onclick="javascript:changeCategory('right')" id="right_btn" class="category_arrow"><img src="/image/pc/common/arrow-right-on.png"></button>
+			</div>
+			<br>  <!-- br 태그 추가 -->
+			<div class="ranking_sub_category">
+				<div class="category_list" id="category_11">
+					<button onclick="javascript:void(0)" class="on">디자인 전체</button>
+					<button onclick="javascript:void(0)">인도네시아어번역</button>
+					<button onclick="javascript:void(0)">웹디자인</button>
+					<button onclick="javascript:void(0)">블로그/카페</button>
+					<button onclick="javascript:void(0)">로고&CI&BI</button>
+					<button onclick="javascript:void(0)">캘리그라피</button>
+					<button onclick="javascript:void(0)">전단지/홍보물</button>
+					<button onclick="javascript:void(0)">명함</button>
+					<button onclick="javascript:void(0)">일러스트</button>
+					<button onclick="javascript:void(0)">캐리커쳐/인물</button>
+					<button onclick="javascript:void(0)">만화/웹툰</button>
+					<button onclick="javascript:void(0)">캐릭터/아이콘</button>
+					<button onclick="javascript:void(0)">패키지/북커버</button>
+					<button onclick="javascript:void(0)">인테리어/3D</button>
+					<button onclick="javascript:void(0)">PPT디자인</button>
+					<button onclick="javascript:void(0)">포토샵/보정</button>
+					<button onclick="javascript:void(0)">사진촬영</button>
+					<button onclick="javascript:void(0)">누끼작업</button>
+					<button onclick="javascript:void(0)">이미지 변환</button>
+					<button onclick="javascript:void(0)">기타</button>
+				</div>
+				<div class="category_list" id="category_10"></div>
+				<div class="category_list" id="category_12"></div>
+				<div class="category_list" id="category_15"></div>
+				<div class="category_list" id="category_23"></div>
+				<div class="category_list" id="category_14"></div>
+				<div class="category_list" id="category_25"></div>
+				<div class="category_list" id="category_13"></div>
+				<div class="category_list" id="category_17"></div>
+				<div class="category_list" id="category_18"></div>
+				<div class="category_list" id="category_16"></div>
+				<div class="category_list" id="category_26"></div>
+				<div class="category_list" id="category_21"></div>
+				<div class="category_list" id="category_27"></div>
+				<div class="category_list" id="category_19"></div>
+			</div>
+		</section>
+		<section class="best_ranking_navbar">   <!-- section 태그 추가 -->
+			<div class="best_ranking_nav">
+				<img src="/image/pc/ico/ic-crown-grey.png">
+				베스트 > <b>디자인</b> > <b>디자인 전체</b>
+			</div>
+		</section>
+
+
+		<div class="common_tooltip" id="ranking_guide1" style="text-align: left;">
+			<span class="tooltip_arr"></span>
+			<div class="tooltip_wrap">
+				<p class="tooltip_tit">오투잡 베스트</p>
+				<div class="tooltip_cont">
+					<ul class="type_no">
+						<li style="text-align: left;">상품의 판매실적과 구매평을 기본으로 가중치를 부여하여 오투잡 선정한 상품입니다
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="coupon_closer">닫기</button>
+		</div>
+
+		<!-- Top 3 Content -->
+		<section class="best_ranking_top">
+			<ul class="top_content">
+				<li>
+					<div class="crown">1</div> <!-- ranking number -->
+					<div class="top_img">
+						<a href="javascript:void(0)" target="_blank">
+							<img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img">
+						</a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>   <!-- 찜하기(설정 되있으면 class="wish"추가) -->
+						<span class="hotdeal_discount">50</span>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<!--<div class="top_price">
+							<span class="discount">30%</span>
+							<span class="price">50,000,000,000</span>
+							원~
+						</div>-->
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name"><a href="javascript:void(0)" target="_blank">건축가가가가가가</a></span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="crown">2</div>
+					<div class="top_img">
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)">&nbsp;</button>   <!-- 찜하기(설정 되있으면 class="wish"추가) -->
+						<span class="hotdeal_discount">50</span>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요</a>
+						</div>
+						<div class="top_grade" style="display: none;">
+							<span class="stars"><span class="percent" style="width:44%"></span></span>
+							4.5(144)
+						</div>
+						<div class="top_grade">
+							증권 분석 전문 기업
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name"><a href="javascript:void(0)" target="_blank">건축가가가가가가</a></span>
+							<em class="offline">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="crown">3</div>
+					<div class="top_img">
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+						<span class="sale_discount">50</span>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:87.7%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name"><a href="javascript:void(0)" target="_blank">건축가가가가가가</a></span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="ranking_content">
+				<li>
+					<div class="top_img">
+						<div class="crown">4</div>		<!-- ranking number -->
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a> <!-- image -->
+						<button onclick="void(0)" class="wish">&nbsp;</button> <!-- 찜하기 -->
+						<span class="hotdeal_discount">50</span>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>  <!-- 별점(width로 지정) -->
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="offline">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">5</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+						<span class="hotdeal_discount">50</span>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade" style="display: none;">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="top_grade">
+							증권 분석 전문 기업
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">6</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+						<span class="sale_discount">50</span>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">7</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+						<span class="sale_discount">50</span>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+
+
+
+
+
+				<li>
+					<div class="top_img">
+						<div class="crown">8</div>		<!-- ranking number -->
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a> <!-- image -->
+						<button onclick="void(0)" class="wish">&nbsp;</button> <!-- 찜하기 -->
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>  <!-- 별점(width로 지정) -->
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">9</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">10</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">11</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">12</div>		<!-- ranking number -->
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a> <!-- image -->
+						<button onclick="void(0)" class="wish">&nbsp;</button> <!-- 찜하기 -->
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>  <!-- 별점(width로 지정) -->
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">13</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+						<span class="discount"><em>30</em>%</span>
+						<span class="sale">100,000원</span>
+						<span class="origin"><em>50,000,000,000</em></span>
+					</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">14</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="top_img">
+						<div class="crown">15</div>
+						<a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/W/F/h/WFhJfw37SpmzSd0.jpg/o2j/resize/236" class="top_main_img"></a>
+						<button onclick="void(0)" class="wish">&nbsp;</button>
+					</div>
+					<div class="inform">
+						<div class="mark">
+							<span class="category">디자인</span>
+							<span class="free">맛보기재능</span>
+							<img class="special" src="/image/pc/ico/ic-special.png">
+						</div>
+						<br>
+						<div class="top_title">
+							<a href="javascript:void(0)">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a>
+						</div>
+						<div class="top_grade">
+							<span class="stars"><span class="percent" style="width:93%"></span></span>
+							4.5(144)
+						</div>
+						<div class="price">
+							<span class="discount"><em>30</em>%</span>
+							<span class="sale">100,000원</span>
+							<span class="origin"><em>50,000,000,000</em></span>
+						</div>
+						<div class="top_user">
+							<span class="photo"><img class="featured-image" src=""></span>
+							<span class="name">건축가가가가가가</span>
+							<em class="online">온라인</em>
+							<div class="auth">
+								<span class="corp">기업</span>
+								<span class="profile">프로필</span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- 베스트 재능이 없을경우 아래 부분 show (class=best_ranking_top인 부분 hide) -->
+		<section class="no_result empty_ranking" style="display:none;">
+			<article class="cont_sect">
+				<h2>베스트 재능에 대한 검색결과가 없습니다 .</h2>
+			</article>
+		</section>
+	</section>

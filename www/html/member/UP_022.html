@@ -1,0 +1,75 @@
+<div class="bg_color01">
+	<div class="inner_container type14 responsive">
+		<a href="/main" class="logo_sub01"><img src="//images-dev.o2job.co/image/mobile/common/logo_sub1.png" alt="OTWOJOB"></a>
+		<form action="/login" method="post" accept-charset="UTF-8" name="loginForm">
+			<input type="hidden" name="_csrf" value="2b4c2855-cf44-4fa9-9b7b-b073b5a1304f">
+			<input type="hidden" name="redirectUrl" value="">
+			<!-- cont_wrap -->
+			<article class="cont_wrap login_form">
+
+
+				<!-- form_join -->
+				<fieldset class="form_join type02">
+					<legend class="blind">로그인</legend>
+
+					<div class="write first">
+						<div class="input_wrap wide">
+							<input type="text" title="아이디" placeholder="아이디 or 이메일 or 휴대폰번호 입력('-' 제외)" name="username" value="" autocomplete="false" id="username">
+						</div>
+						<p class="warning" style="display:none" id="p_username_msg"></p>
+					</div>
+					<div class="write">
+						<div class="input_wrap wide">
+							<input type="password" title="비밀번호" placeholder="비밀번호" name="password" autocomplete="new-password" id="password">
+						</div>
+						<p class="warning" style="display:none" id="p_password_msg"></p>
+					</div>
+				</fieldset>
+				<!-- //form_join -->
+			</article>
+			<!-- //cont_wrap -->
+
+			<!-- login_find -->
+			<div class="login_find">
+				<label for="saveid" class="member on">
+					<input type="hidden" name="remember-me-param-based" value="on">
+					<input type="checkbox" id="saveid" checked="checked" name="rememberMe">
+					<span class="txt">자동로그인</span>
+				</label>
+				<p class="find_button">
+					<a href="/member/find/id">아이디찾기</a>
+					<a href="/member/find/pass" class="pw">비밀번호 찾기</a>
+				</p>
+			</div>
+			<!-- //login_find -->
+
+			<!-- btn_wrap -->
+			<div class="btn_wrap">
+				<div class="btn_cover_full">
+					<button type="submit" class="btn_type btn_type02">
+						<span class="check">로그인</span>
+					</button>
+				</div>
+
+			</div>
+			<!-- //btn_wrap -->
+		</form>
+		<p class="or_line"><span class="or">or</span></p>
+
+		<!-- other_id_join -->
+		<div class="other_id_join">
+
+
+			<a href="javascript:void(0);" onclick="window.open('/auth/naver', '_blank', 'width=480,height=640');"><span class="naver">네이버로 로그인하기</span></a>
+			<a href="javascript:void(0);" onclick="window.open('/auth/facebook?scope=public_profile,email', '_blank', 'width=480,height=640');"><span class="facebook">페이스북으로 로그인하기</span></a>
+			<a href="javascript:void(0);" onclick="window.open('/auth/kakao', '_blank', 'width=480,height=640');"><span class="kakao">카카오톡으로 로그인하기</span></a>
+			<a href="javascript:void(0);" onclick="window.open('/auth/google?scope=profile', '_blank', 'width=480,height=640');"><span class="google">구글로 로그인하기</span></a>
+
+
+
+		</div>
+		<!-- //other_id_join -->
+
+		<p class="txt_msg type3">아직 회원이 아니세요?  <strong><a href="/member/join/step1" class="point">회원가입</a></strong></p>
+	</div>
+</div>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, em, img, strong, dl, dt, dd, ol,
+ul, li, fieldset, form, label, legend, table, thead, tbody, tfoot,  tr, th, td, img, textarea, button
+{margin:0; padding:0; border:0; font-size:100%; font-style:normal; text-decoration:none;  vertical-align:middle; outline:0; background:transparent;}
+
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
+
+button {display:inline-block; cursor:pointer;}
+input {margin:0; padding:0; color:inherit; vertical-align:middle;}
+input["type=radio"] {width:13px; height:13px; vertical-align:middle;}
+
+label {display:inline-block;} /* ie.css */
+
+
+a, select, textarea {color:inherit; font-size:inherit; vertical-align:middle;}
+img {vertical-align:top;}
+strong {font-weight:bold;}
+/*
+	table default markup is
+	table class="" border="1" cellspacing="0" summary=""
+*/
+table {table-layout:fixed; width:100%;}
+table, th, td {border-collapse:collapse; border-spacing:0; border:0; font-weight: normal;}
+table thead th {text-align:center;}
+table caption {display:none; width:0; height:0; font-size:0; line-height:0; visibility:hidden;}
+
+/* display none for screen reader software */
+legend, hr {overflow:hidden; position:absolute; left:0; top:0; width:0; height:0; font-size:0; line-height:0; visibility:hidden;}
+
+/* skipnavigation, gotop, longdesc class for keyboard access */
+.skipnavigation, .gotop, .longdesc {display:block; overflow:hidden; clear:both; height:1px; width:1px; margin-bottom:-1px; color:#000 !important; text-align:center; white-space:nowrap;}
+.skipnavigation:focus, .skipnavigation:active {height:auto; width:auto; padding:5px; margin-bottom:10px;}
+
+/* skipNav */
+#skipnav {position: absolute; top: 0; left: 22px; }
+#skipnav a {position: absolute; top: -9999px; }
+#skipnav a:hover,
+#skipnav a:active,
+#skipnav a:focus {display: inline-block; top: 0; width: 160px; padding: 5px 0; border:3px solid #ddd; color: #000; font-weight: bold; text-align: center; background-color: #fff;}
+
+
+

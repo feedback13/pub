@@ -1,0 +1,972 @@
+@media screen and (min-width:461px) {
+    .popup_layer.common {width: 460px;background-color:#fff;border:1px solid #e5e5e5;position:fixed;left: 50%;top: 50%;z-index:230;display:none;/*margin: 0 !important;*/ transform: translate(-50%, -50%);}
+    .popup_layer.common.box_type600 {width: 600px;}
+    .popup_layer.common.box_type460.h600 {height:600px;}
+    .popup_layer.common.box_type600 .tit span.member_point {display:inline-block;margin-top:2px;vertical-align:top;padding:3px 10px;font-size: 11px;color:#fff;background:#738aa4;border:1px solid #738aa4;border-radius:18px;letter-spacing:-1px;} /* 893 */
+    .popup_layer.common > .tit {position:relative;padding:18px 30px;font-size: 26px;color:#333;background:url('https://images.otwojob.com/image/pc/ico/popup_line_top.png') no-repeat 0 bottom;}
+    .popup_layer.common .pop_content {padding:20px 30px;}
+    .popup_layer.common .pop_content.scroll_h615 {max-height:615px;overflow:hidden;overflow-y:auto}
+
+    .popup_layer.common.pc_ver .form_join .write .input_wrap input[type=text],
+    .popup_layer.common.pc_ver .form_join .write .input_wrap input[type=password] {width:360px;border:none;color:#333;font-size:13px;margin-left:15px;}/* padding.divide :2.3 */
+}
+
+@media screen and (max-width:460px) {
+    .popup_layer.common {width: 100% !important;background-color:#fff;border:1px solid #e5e5e5;position:fixed;left: 0;top: 0;z-index:2530;display:none;margin: 0 !important;}
+    .popup_layer.common.box_type600 {width: 100%;}
+    .popup_layer.common.box_type460.h600 {height: 100%;}
+    .popup_layer.common.box_type600 .tit span.member_point {display:inline-block;margin-top:2px;vertical-align:top;padding:3px 10px;font-size: 11px;color:#fff;background:#738aa4;border:1px solid #738aa4;border-radius:18px;letter-spacing:-1px;} /* 893 */
+    .popup_layer.common > .tit {position:relative;padding:18px 30px;font-size: 17px;color:#333;background:url('https://images.otwojob.com/image/pc/ico/popup_line_top.png') no-repeat 0 bottom;}
+    .popup_layer.common .pop_content {padding:10px}
+    .popup_layer.common .pop_content.scroll_h615 {height: calc(100vh - 60px);overflow:hidden;overflow-y:auto;}
+
+    .popup_layer.common.pc_ver .form_join .write .input_wrap input[type=text],
+    .popup_layer.common.pc_ver .form_join .write .input_wrap input[type=password] {width:100%;border:none;color:#333;font-size:11px;padding:7px 5px; background-color: transparent;}/* padding.divide :2.3 */
+}
+
+#layer_bg {width:100%;height:100%;background-color:#000;position:fixed;left:0;top:0;z-index:220;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity:0.5;opacity:0.5}
+
+.popup_layer.common.movie_area {width:740px;background-color:none;border:none;position:fixed;left:50%;top:50%;z-index:230;display:none}
+.popup_layer.common.movie_area iframe {position:relative;z-index:2;}
+.popup_layer.common.movie_area .btn_close {position:absolute;right:-45px;top:0;z-index:3;}
+.popup_layer.common.coupon1000 {border:0 none;}
+.popup_layer.common.box_type460 {width:460px;border:1px solid #e5e5e5}
+
+.popup_layer.common.box_type460 .tit {background:url('https://images.otwojob.com/image/pc/ico/popup460_line_top.png') no-repeat 0 bottom}
+
+.popup_layer.common.box_type600 .tit {background:url('https://images.otwojob.com/image/pc/ico/popup600_line_top.png') no-repeat 0 bottom}
+.popup_layer.common.box_type600 .assessment_tit {background:url('https://images.otwojob.com/image/pc/ico/popup600_line_top.png') no-repeat 0 bottom}
+.popup_layer.common.box_type600 .tit2 {font-size:15px;color:#333;padding:18px 30px 0px;letter-spacing:0px}
+
+.popup_layer.common.box_type600 .pop_content {background:none}
+.popup_layer.common.box_type850 {width:850px}
+.popup_layer.common.box_type850 .tit {background:url('https://images.otwojob.com/image/pc/ico/popup850_line_top.png') no-repeat 0 bottom}
+.popup_layer.common.box_type850 .pop_content {background:none}
+.popup_layer.common.box_type990 {width:990px}
+.popup_layer.common.box_type990 .tit {border-bottom:2px solid #738aa4;position:relative;background:none}
+.popup_layer.common.box_type990 .tit:before {content:"";display:block;width:180px;height:2px;border-bottom:2px solid #f77542;position:absolute;left:0;bottom:-2px}
+.popup_layer.common.box_type990 .pop_content {background:none}
+.popup_layer.common fieldset > .tit,
+
+.popup_layer.common .tit>.btn_close {display:inline-block;position:absolute;right:20px;top:18px}
+.popup_layer.common .assessment_tit {position:relative;padding:18px 30px;font-size:26px;color:#333;background:url('https://images.otwojob.com/image/pc/ico/popup_line_top.png') no-repeat 0 bottom}
+.popup_layer.common .assessment_tit .btn_close {display:inline-block;position:absolute;right:20px;top:18px}
+.popup_layer.common .tab_type {margin-top:0}
+
+.popup_layer.common .pop_content.type03 {padding:20px 0 0 0}
+.popup_layer.common .pop_content.no_padding {padding:0}
+.popup_layer.common .pop_content.type02 {padding-bottom:0}
+.popup_layer.common .pop_content.last {padding-bottom:40px}
+.popup_layer.common .pop_content.last .tit2 {font-size:14px;color:#333;line-height:1.5;margin-bottom:20px}
+.popup_layer.common .pop_content.last .tit2 i {color:#f9530b}
+.popup_layer.common .pop_content.align_center {text-align:center}
+.popup_layer.common .pop_content.scroll_h365 {max-height:365px;overflow:hidden;overflow-y:auto}
+
+.popup_layer.common .pop_content.scroll_h615 p.gallery {max-width:540px;}
+.popup_layer.common .pop_content.scroll_h615 p.gallery img {width:100%}
+.popup_layer.common .sec_title span {font-size:16px;color:#666;display:inline-block;margin-left:7px}
+.popup_layer.common .sec_title02 {font-size:22px;color:#333;text-align:left}
+.popup_layer.common .sec_title02 p {margin-top:30px;font-size:16px;color:#666;line-height:22px}
+.popup_layer.common .sec_title02 p span {color:#f95716}
+.popup_layer.common .sec_title02 p span {color:#f95716}
+.popup_layer.common .sec_title02 .plus_subject {width:470px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.popup_layer.common .alert_txt {font-size:14px;line-height:18px;color:#333;padding:20px 0;word-break:break-all}
+.popup_layer.common .alert_txt.first {padding-top:0}
+.popup_layer.common .alert_txt.last {padding-bottom:10px}
+.popup_layer.common .alert_txt.type_one {padding:0}
+.popup_layer.common .alert_txt .point {color:#f95715}
+.popup_layer.common .alert_txt .pay {display:inline-block;margin-left:10px;font-size:16px}
+.popup_layer.common .border_block {border-bottom:1px solid #e7e7e7}
+.popup_layer.common .btn_wrap {margin:35px 0;font-size:0;line-height:0}
+.popup_layer.common .btn_wrap a,
+.popup_layer.common .btn_wrap button {display:inline-block;vertical-align:top;font-size:16px;margin:0 4px;text-decoration:none}
+.popup_layer.common .btn_wrap .btn_cancel {width:110px;height:38px;line-height:38px;border:1px solid #999;color:#333}
+.popup_layer.common .btn_wrap .btn_ok {width:110px;height:38px;line-height:38px;background-color:#ff5a12;color:#fff}
+.popup_layer.common .btn_wrap .btn_free {width:159px;height:38px;line-height:38px;background-color:#3ba8e1;color:#fff} /* 644 */
+.popup_layer.common .btn_wrap .btn_free strong {color:#fff600;font-size:18px;}
+.popup_layer.common .btn_wrap .btn_upgrade_ie {width:224px;height:54px;line-height:54px;background-color:#09396a;color:#fff;font-size:19px;font-weight:500}
+.popup_layer.common .align_right {text-align:right}
+.popup_layer.common .input_check {position:relative;display:inline-block}
+.popup_layer.common .input_check label {display:block;height:21px;line-height:21px;font-size:16px;color:#333;background:url('https://images.otwojob.com/image/pc/ico/check_member_off.png') no-repeat 0% 1px;padding-left:30px}
+.popup_layer.common .input_check label .must {display:inline-block;background:none;font-size:14px;color:#f95715}
+.popup_layer.common .input_check label .select {display:inline-block;background:none;font-size:14px;color:#666}
+.popup_layer.common .input_check input {position:absolute;top:50%;left:0;opacity:0;filter:alpha(opacity=0);-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.popup_layer.common .input_check input:checked + label {background:url('https://images.otwojob.com/image/pc/ico/check_member_on.png') no-repeat 0% 1px}
+.popup_layer.common .selectbox {position:relative;display:inline-block;vertical-align:middle;z-index:1;width:170px;height:38px !important;line-height:38px;font-size:13px;border:1px solid #e9e9e9}
+.popup_layer.common .selectbox:before {content:'';position:absolute;top:50%;right:5px;width:9px;height:5px;margin-top:-2px;background:url('https://images.otwojob.com/image/pc/ico/route_select_arr.png') no-repeat}
+.popup_layer.common .selectbox label {position:absolute;top:0;left:0;z-index:-1;color:#666;padding:0 2px 0 9px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;box-sizing:border-box;height:38px;line-height:38px}
+.popup_layer.common .selectbox select {width:100%;height:100%;line-height:100%;opacity:0;filter:alpha(opacity=0);-webkit-appearance:none;-moz-appearance:none;appearance:none;color:#666;letter-spacing:-1px}
+.popup_layer.common .selectbox.select_type01 {width:100%}
+.popup_layer.common .sub_title {font-size:14px}
+.popup_layer.common .sub_title2 {font-size:14px;margin-top:20px;color:#666}
+.popup_layer.common .gray_box {margin-top:20px;padding:20px;background:#f5f5f5;border-top:1px solid #b5b5b5;border-bottom:1px solid #e5e5e5}
+.popup_layer.common .gray_box input[type='text'] {width:100%;line-height:38px;height:38px}
+.popup_layer.common .gray_box .volume {overflow:hidden;margin-top:10px}
+.popup_layer.common .gray_box .volume dt {float:left;width:20%;line-height:38px;height:38px}
+.popup_layer.common .gray_box .volume dd {float:left;width:30%}
+.popup_layer.common .gray_box .volume dd .select_type01 {width:130px}
+.popup_layer.common .tab_width_type {width:390px}
+.popup_layer.common .tab_width_type02 {width:370px}
+.popup_layer.common .ads_txt {color:#666;font-size:20px;line-height:36px}
+.popup_layer.common .big {color:#333;font-size:36px}
+.popup_layer.common .big .hightlight {color:#f95715}
+.popup_layer.common .ads_txt:first-child {padding-top:0px}
+.popup_layer.common .ads_txt:last-child {padding-bottom:20px}
+.popup_layer.common .ads_content_wrapper {display:inline-block;height:240px;margin:25px 0 20px 0;;padding-top:25px;width:100%;border-top:1px solid #ccc;background:url('https://images.otwojob.com/image/pc/common/bg_app_download_20171031.png') no-repeat 320px 25px}
+.popup_layer.common .ads_content_wrapper .ads_content {float:left;width:310px}
+.popup_layer.common .ads_content_wrapper .ads_content .install_info {color:#333;font-size:17px;line-height:24px}
+.popup_layer.common .ads_content_wrapper .ads_content .install_info i {padding:0 8px;border:2px solid #ff5a12;border-radius:10px;color:#ff5a12;font-size:12px;letter-spacing:0}
+.popup_layer.common .ads_content_wrapper .ads_content .install_info a {display:inline-block;margin-top:2px;padding-bottom:5px;border-bottom:1px solid #333;color:#333}
+.popup_layer.common .ads_content_wrapper .ads_content .search_info {padding:25px 0 20px 0;color:#999;font-size:14px}
+.popup_layer.common .ads_content_wrapper .ads_content .search_info .highlight {color:#f95715}
+.popup_layer.common .ads_content_wrapper .ads_content .google_play,
+.popup_layer.common .ads_content_wrapper .ads_content .appstore {width:280px;height:34px;font-size:15px;text-indent:25px}
+.popup_layer.common .ads_content_wrapper .ads_content .google_play {margin-bottom:15px;color:#f95715;border:1px solid #f95715;background:url('https://images.otwojob.com/image/pc/ico/ico_googleplay.png') no-repeat 40% 50%}
+.popup_layer.common .ads_content_wrapper .ads_content .appstore {border:1px solid #999;color:#333;background:url('https://images.otwojob.com/image/pc/ico/ico_appstore.png') no-repeat 40% 50%}
+.popup_layer.common .get_download_url {padding:15px 20px;background-color:#eaeaea}
+.popup_layer.common .get_download_url p {margin-bottom:10px;color:#333;font-size:16px;font-weight:600}
+.popup_layer.common .get_download_url p span {color:#666;font-weight:400}
+.popup_layer.common .get_url_form {position:relative}
+.popup_layer.common .get_url_form input {width:400px;height:38px;border:1px solid #e9e9e9;font-size:14px;color:#999;padding:0 15px}
+.popup_layer.common .get_url_form button {float:right;width:90px;height:38px;color:#fff;background-color:#8a90a0}
+.popup_layer.common .agree_form {margin-top:15px}
+.popup_layer.common .agree_form .input_check label {color:#999;font-size:13px}
+.popup_layer.common .example {background:#eaeff5;margin-top:45px;padding:30px 50px;overflow:hidden}
+.popup_layer.common .example > div {float:left;margin-left:50px}
+.popup_layer.common .example > div:first-child {margin-left:0}
+.popup_layer.common .example .title {font-size:20px;text-align:center;margin:20px 0}
+.popup_layer.common .example .title span {color:#2aacc1}
+.popup_layer.common .example .title span.type02 {color:#08396a}
+.popup_layer.common .example02 {background:url('https://images.otwojob.com/image/pc/temp/img_ex03.png') right 50px top 40px  no-repeat;padding:40px 50px;min-height:262px}
+.popup_layer.common .example02.type02 {background:url('https://images.otwojob.com/image/pc/temp/img_ex04.png') right 50px top 40px  no-repeat}
+.popup_layer.common .example02 dt {font-size:28px;font-weight:600;line-height:34px}
+.popup_layer.common .example02 dt span {font-size:14px;line-height:14px;border-radius:15px;border:1px solid #ff5a12;color:#ff5a12;display:block;padding:4px 0;text-align:center;width:70px;font-weight:bold;margin-bottom:10px}
+.popup_layer.common .example02.type02 dt span {border:1px solid #5d90cc;color:#5d90cc}
+.popup_layer.common .example02 dd {font-size:15px;color:#666;margin-top:30px;line-height:18px}
+.popup_layer.common .example_list {background:#949ba6;padding:40px 50px;margin-top:40px}
+.popup_layer.common .example_list li {color:#fff;margin-top:20px}
+.popup_layer.common .example_list li:first-child {margin-top:0}
+.popup_layer.common .example_list li .number {display:inline-block;border-radius:100px;background:#9fa5af;width:40px;height:40px;text-align:center;padding-top:13px;vertical-align:top}
+.popup_layer.common .example_list li > div {display:inline-block;font-size:16px;margin-left:10px}
+.popup_layer.common .example_list li > div span {display:block;background:url('https://images.otwojob.com/image/pc/ico/ico_more_arrow.png') 0 3px no-repeat;color:#dce2eb;font-size:13px;margin-top:10px;padding-left:10px}
+.popup_layer.common .terms_cont_pop {padding:30px 30px}
+.popup_layer.common .terms_cont_pop ul {border-top:1px solid #bbb}
+.popup_layer.common .terms_cont_pop ul li {float:left;width:25%;text-align:center;border-bottom:1px solid #d0d0d0;border-right:1px solid #d0d0d0;height:50px;line-height:50px;font-size:13px;color:#666}
+.popup_layer.common .terms_cont_pop ul li:nth-child(4n) {border-right:none}
+.popup_layer.common .terms_cont_pop ul:after {clear:both;content:'';display:block}
+.popup_layer.common .terms_cont_pop .paging {margin:30px 0}
+.popup_layer.common .terms_cont_pop .info {font-size:14px;color:#666;border-top:1px solid #ccc;padding-top:20px;margin-bottom:36px}
+.popup_layer.common .terms_cont_pop .btn_close {display:block;margin:0 auto 10px;position:relative;right:0px;top:0px;width:110px;padding:10px 0;text-align:center;border:1px solid #999;font-size:16px;color:#333}
+.popup_layer.common.confirm_coupon {width:360px;background:none;z-index:1000}
+.popup_layer.common.confirm_coupon .coupon_pop {position:relative;width:100%;margin:0 auto;background:#2b89e3;border-radius:30px;color:#fff;letter-spacing:-1px;}
+.popup_layer.common.confirm_coupon .coupon_pop.in_layer {background:#2b89e3;box-shadow:0 0 10px rgba(0, 0, 0, .2);}
+.popup_layer.common.confirm_coupon .coupon_pop .coupon_cont {padding:27px 27px 20px;font-size:30px;border-bottom:1px solid #227dd4;line-height:36px;}
+.popup_layer.common.confirm_coupon .coupon_pop .coupon_cont strong {color:#fffd34;}
+.popup_layer.common.confirm_coupon .coupon_pop .coupon_cont a {font-size:14px;line-height:1;}
+.popup_layer.common.confirm_coupon .coupon_pop .coupon_date {padding:20px 30px 29px 30px;font-size:14px;border-top:1px solid #2d90ed;letter-spacing:0;}
+.popup_layer.common.confirm_coupon .coupon_pop .closer {position:absolute; right:20px; top:20px; width:17px; height:17px; text-indent:-1000px; overflow:hidden; background:url('https://images.otwojob.com/image/mobile/detail/ico_msg_closer.png') no-repeat 0 0; background-size:17px auto;}
+.popup_layer.common .dimm {position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,0.6);z-index:1}
+.popup_layer.common .in_layer.lucky7 .lucky7_closer {position:absolute; right:14px; top:14px; width:17px; height:17px; overflow:hidden; text-indent:-1000px; background:url('https://images.otwojob.com/image/pc/popup/layer_x.png') no-repeat 0 0; background-size:17px auto;}
+.popup_layer.common .in_layer.lucky7 {position:absolute;width:436px;height:566px;margin-left:-218px;margin-top:-283px;z-index:2;padding:28px 0 30px;background-color: #fff;box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);}
+.popup_layer.common .in_layer.lucky7 p.lucky7_img01 {width:271px;margin:0 auto;}
+.popup_layer.common .in_layer.lucky7 p.lucky7_img01 img {width:100%;}
+.popup_layer.common .in_layer.lucky7 p.lucky7_text01 {margin-top:12px;font-size:24px;color:#615151;line-height:31px;text-align:center;letter-spacing:-1.5px;}
+.popup_layer.common .in_layer.lucky7 p.lucky7_text01 em {color:#2b89e3;}
+.popup_layer.common .in_layer.lucky7 p.lucky7_text02 {margin-top:0;color:#737272;font-size:19px;line-height:24px;text-align:center;letter-spacing:-1.1px;}
+.popup_layer.common .in_layer.lucky7 p.lucky7_img02 {width:281px;margin:15px auto 0;}
+.popup_layer.common .in_layer.lucky7 p.lucky7_img02 img {width:100%;}
+.popup_layer.common .in_layer.lucky7 p.lucky7_btn a {display:block;width:228px;margin:15px auto 0;padding:8px 0 12px;font-size:22px;text-align:center;background-color:#fff;border:solid 1px #2b89e3;color:#2b89e3;border-radius: 29.5px;}
+.popup_layer.common .in_layer.secret .secret_closer { position:absolute; right:30px; top:85px; width:17px; height:17px; overflow:hidden; text-indent:-1000px; background:url('https://images.otwojob.com/image/pc/popup/layer_x.png') no-repeat 0 0; background-size:17px auto;}
+.popup_layer.common .in_layer.secret {position:absolute;width:457px;height:575px;margin-left:-217px;margin-top:-276px;z-index:2;background:url('https://images.otwojob.com/image/mobile/popup/secret_letter.png') no-repeat;background-size:457px auto;}
+.popup_layer.common .in_layer.secret p.secret_text01 {margin-top:102px;font-size:24px;color:#615151;line-height:31px;text-align:center;letter-spacing:-1.5px;}
+.popup_layer.common .in_layer.secret p.secret_text01 em {color:#2b89e3;}
+.popup_layer.common .in_layer.secret p.secret_text01 span {position:relative;top:6px;max-width:250px;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;white-space:nowrap;word-wrap:normal;display:inline-block;}
+.popup_layer.common .in_layer.secret p.secret_text02 {margin-top:35px;color:#737272;font-size:19px;line-height:24px;text-align:center;letter-spacing:-1.1px;}
+.popup_layer.common .in_layer.secret p.secret_img01 {width:264px;margin:10px auto 0;}
+.popup_layer.common .in_layer.secret p.secret_img01 img {width:100%;}
+.popup_layer.common .in_layer.secret p.secret_btn a {display:block;width:228px;margin:20px auto 0;padding:8px 0 12px;font-size:22px;text-align:center;background-color:#ebeaec;border:solid 1px #2b89e3;color:#2b89e3;border-radius: 29.5px;}
+.popup_layer.common .small_txt_banner span {padding:0 5px;border:1px solid #fa6400;color:#fa6400;font-size:11px;}
+.popup_layer.common .small_txt_banner a {margin-left:10px;font-size:15px;color:#7a7a7a;text-decoration:underline;}
+
+/* list_type */
+.no_list_detail {padding:12px 0 0 5px;font-size:13px;color:#666;line-height:18px}
+.list_type01 {}
+.list_type01.mb20 {margin-bottom:20px}
+.list_type01 .item_wrap {margin:0 -3px}
+.list_type01 .item_wrap:after {display:block;content:'';clear:both}
+.list_type01 .item {float:left;width:50%;margin:12px 0 -1px}
+.list_type01 .item .in_wrap {margin:0 3px;border:1px solid #eaeaea;background:#fff;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.list_type01 .item .image {position:relative;width:100%;overflow:hidden}
+.list_type01 .item .image a {text-align:center;background-color:#f7f7f7;display:table;width:100%;height:106px;overflow:hidden}
+.list_type01 .item .image a:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;}
+.list_type01 .item .image a > .photo {display:table-cell;text-align:center;vertical-align:middle}
+.list_type01 .item .image a > .photo img {max-width:100%;max-height:106px}
+.list_type01 .item .image .mark {position:absolute;left:7px;top:7px;z-index:1}
+.list_type01 .item .image .mark img {width:21px}
+.list_type01 .item .image .certify_area {position:absolute;left:0;bottom:0;text-align:left}
+.list_type01 .item .image span.sale_discount,
+.list_type01 .item .image span.hotdeal_discount {position: absolute; right: 5px; top: 4px; width:32px; height: 37px;   background-size: 32px 37px !important; color: #fff; font-size: 16px; font-weight: bold; font-family: Roboto, Malgun Gothic; letter-spacing: -0.6px; padding-top: 13px; text-align: center;}
+.list_type01 .item .image span.hotdeal_discount {background:url('../../image/mobile/common/badge-hotdeal-34-px.png') no-repeat 0 0;}
+.list_type01 .item .image span.sale_discount {background:url('../../image/mobile/common/badge-sale-34-px.png') no-repeat 0 0; padding-top: 10px;}
+.list_type01 .item .image span.sale_discount:after,
+.list_type01 .item .image span.hotdeal_discount:after {content:'\25'; font-size: 12px; font-weight: normal;}
+
+.list_type01 .item .desc_wrap {margin:10px 5px 0}
+.list_type01 .item .desc_wrap .tit {display:-webkit-box;overflow:hidden;color:#333;font-size:14px;height:2.1em;text-overflow:ellipsis;word-break:break-all;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.1}
+.list_type01 .item .desc_wrap .price_wrap {position:relative;margin-top:10px;height:25px;overflow:inherit}
+.list_type01 .item .desc_wrap .price_wrap .current {text-align:right;font-size:14px;color:#f9530b} /* 1133 */
+.list_type01 .item .desc_wrap .price_wrap .current span {font-weight:700}
+.list_type01 .item .desc_wrap .price_wrap .current:after {content: '\C6D0\7E';}
+.list_type01 .item .desc_wrap .price_wrap .prev {text-align:right;margin-top:3px;font-size:11px;color:#999} /* 1133 */
+.list_type01 .item .desc_wrap .price_wrap .prev:after {content: '\C6D0\7E';}
+.list_type01 .item .desc_wrap .price_wrap .discount {position:absolute;left:0;bottom:0;color:#333;font-size:12px;font-weight:bold;letter-spacing:-1px;} /* 1133 */
+.list_type01 .item .desc_wrap .price_wrap .discount span {font-size:14px;}
+.list_type01 .item .desc_wrap .like_wrap {margin-top:12px;overflow:hidden}
+.list_type01 .item .desc_wrap .like_wrap .star_grade {float:left}
+.list_type01 .item .desc_wrap .like_wrap .star_grade .txt {color:#999;font-size:11px}
+.list_type01 .item .desc_wrap .like_wrap .like_num {float:right;margin-top:1px;padding-left:16px;background:url('https://images.otwojob.com/image/mobile/index/ico_heart.png') no-repeat 0 50%;background-size:12px auto;font-size:11px;color:#999}
+.list_type01 .item .desc_wrap .like_wrap .like_num.off {background-image:url('https://images.otwojob.com/image/mobile/index/ico_heart_blank.png')}
+.list_type01 .item .host {position:relative;margin-top:10px;padding:6px 5px 5px;border-top:1px solid #f2f2f2;overflow:hidden} /* 1042 */
+.list_type01 .item .host .host_img {display:table;float:left;border-radius:50%;width:32px;height:32px;overflow:hidden;position:relative;background:url('https://images.otwojob.com/image/mobile/index/host_null.png') no-repeat 0 0;background-size:32px auto}
+.list_type01 .item .host .host_img span {display:table-cell;text-align:center;vertical-align:middle}
+.list_type01 .item .host .host_img span img {max-width:32px;max-height:32px}
+.list_type01 .item .host .host_img:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.08)}
+.list_type01 .item .host .name {display:block;overflow:hidden;line-height:32px;padding-left:5px;color:#999;font-size:12px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+.list_type01 .item .host .online {position:absolute;left:27px;top:25px;width:12px;height:12px;border:1px solid #fff;background:#7fba00;border-radius:50%;text-indent:-9999px;font-size:0;} /* 1042 */
+.list_type01 .item .host .offline {position:absolute;left:27px;top:25px;width:12px;height:12px;border:1px solid #fff;background:#9e9e9e;border-radius:50%;text-indent:-9999px;font-size:0;} /* 1042 */
+.list_type01 .item.replaced_image11 {padding: 0px 3px; position: relative; height: 16.4rem;}
+.list_type01 .item.replaced_image11 img {width: 100%; height: 100%;}
+.list_type01.type01 .item_wrap {margin:0}
+.list_type01.type01 .item {float:none;width:auto}
+.list_type01.type01 .item.first {margin-top:0}
+.list_type01.type01 .in_wrap {padding:9px;background:#fff;margin:0;border:1px solid #eaeaea}
+.list_type01.type01 .item .in_wrap:after {content:'';display:block;clear:both}
+.list_type01.type01 .item .image {float:left;width:130px}
+.list_type01.type01 .item .image a {display:table;width:130px;height:97px}
+.list_type01.type01 .item .image a > .photo img {max-width:100%;max-height:97px}
+.list_type01.type01 .item .outer_wrap {overflow:hidden}
+.list_type01.type01 .item .desc_wrap {margin-top:0}
+.list_type01.type01 .item .desc_wrap .tit {font-size:13px;height:3em;line-height:1.4em} /* 644 */
+.list_type01.type01 .item .desc_wrap .tit i {display:inline-block;margin-left:0px;padding:2px 3px 0px 5px;height:16px;background:#fff;color:#3ba8e1;border:1px solid #129ee7;border-top-left-radius:25% 70%;border-top-right-radius:25% 70%;border-bottom-left-radius:25% 70%;border-bottom-right-radius:25% 70%;font-size:11px;line-height:1} /* 644 */
+.list_type01.type01 .item .desc_wrap .price_wrap {position:relative;margin-top:2px}
+.list_type01.type01 .item .desc_wrap .price_wrap .current {text-align:right;font-size:12px;color:#f9530b; position: absolute; right: 0; bottom: 0;} /* 1133 */
+.list_type01.type01 .item .desc_wrap .price_wrap .current span {font-size:13px;font-weight:700}
+.list_type01.type01 .item .desc_wrap .price_wrap .current:after {content: '\C6D0\7E';}
+.list_type01.type01 .item .desc_wrap .price_wrap .prev {min-height:10px;text-align:right;margin-top:3px;font-size:10px;color:#999; position: absolute; right: 1px; top: 0;} /* 1133 */
+.list_type01.type01 .item .desc_wrap .price_wrap .prev:after {content: '\C6D0\7E';}
+.list_type01.type01 .item .desc_wrap .price_wrap .discount {position:absolute;left:0;bottom:0;color:#333;font-size:11px;font-weight:bold;letter-spacing:-1px;} /* 1133 */
+.list_type01.type01 .item .desc_wrap .price_wrap .discount span {font-size:12px;}
+.list_type01.type01 .item .desc_wrap .price_wrap .free {position:absolute;left:0;bottom:2px;color:#333;font-size:11px;letter-spacing:-1px;} /* 1319 */
+.list_type01.type01 .item .desc_wrap .price_wrap .free span {font-size:12px;color:#3ba8e1;}
+.list_type01.type01 .item .desc_wrap .like_wrap {margin-top:3px;position:relative;overflow:visible} /* 644 / 1133 */
+.list_type01.type01 .item .desc_wrap .like_wrap .star_grade {float:none}
+.list_type01.type01 .item .desc_wrap .like_wrap .like_num {position:absolute;right:0;top:16px} /* 1133 */
+.list_type01.type01 .item .host {margin-top:3px;margin-right:33px;padding-top:0;border:0 none} /* 1133 */
+.list_type01.type01 .item .host .host_img {display:none}
+.list_type01.type01 .item .host .name .online {display:inline-block;position:relative;left:0px;top:-10px;width:12px;height:12px;border:1px solid #fff;background:#7fba00;border-radius:50%;text-indent:-9999px;font-size:0;} /* 1042 */
+.list_type01.type01 .item .host .name .offline {display:inline-block;position:relative;left:0px;top:-10px;width:12px;height:12px;border:1px solid #fff;background:#9e9e9e;border-radius:50%;text-indent:-9999px;font-size:0;} /* 1042 */
+.list_type01.type01 .item .host .name {line-height:1;padding-left:0;height:13px}
+.list_type01.type01 .item .badge {border-bottom:1px solid;text-align:right}
+.list_type01.type01 .item .badge span {display:inline-block;padding:3px 0;width:60px;color:#fff;font-size:12px;text-align:center}
+.list_type01.type01 .item .badge.type01 {border-color:#2e456e}
+.list_type01.type01 .item .badge.type01 span {background:#2e456e}
+.list_type01.type01 .item .badge.type02 {border-color:#08a3a5}
+.list_type01.type01 .item .badge.type02 span {background:#08a3a5}
+.list_type01.type01 .item .badge.type03 {border-color:#ff8d11}
+.list_type01.type01 .item .badge.type03 span {background:#ff8d11}
+.list_type01.type01 .item .badge.type04 {border-color:#f42456}
+.list_type01.type01 .item .badge.type04 span {background:#f42456}
+.list_type01.type02 {}
+.list_type01.type02 .item .in_wrap {border:0 none}
+.list_type01.type02 .item .desc_wrap {margin:0 0 10px}
+.list_type01.type02 .item .desc_wrap .seller_id {color:#999;font-size:12px;margin-top:10px}
+.list_type01.type02 .item .desc_wrap .tit {font-size:14px;line-height:1.2;height:33px;margin-top:10px}
+.list_type01.type02 .item .image a {display:table}
+.list_type02 {padding:13px 0 0}
+.list_type02.no_top {padding-top:0}
+.list_type02 .item {position:relative;margin:12px 0 0;background:#fff;border:1px solid #eaeaea}
+.list_type02 .item.first {margin-top:0}
+.list_type02 .item.on {border-color:#14b4ba}
+.list_type02 .item .btn_del {position:absolute;top:-1px;right:-1px;width:20px;height:20px;font-size:0;background:#ccc url('https://images.otwojob.com/image/mobile/mypage/ico_del04.png') no-repeat center center;background-size:10px auto;z-index:2}
+.list_type02 .item.on .btn_del {background:#14b4ba url('https://images.otwojob.com/image/mobile/mypage/ico_del04.png') no-repeat center center;background-size:10px auto}
+.list_type02 .item .in_wrap {margin:15px 10px 10px}
+.orderjob_detail.list_type02 .item .in_wrap {margin:20px 10px 10px}
+.list_type02 .item .head {position:relative}
+.list_type02 .item .head:after {clear:both;content:'';display:block}
+.list_type02 .item .head .category {float:left}
+.list_type02 .item .head .category span {display:inline-block;padding:3px 11px;color:#fff;font-size:13px}
+.list_type02 .item .head .category .cat_color11 {background:#f2034c;color:#fff} /* 디자인 */
+.list_type02 .item .head .category .cat_color10 {background:#344253;color:#fff} /* 번역 */
+.list_type02 .item .head .category .cat_color13 {background:#3f6fa5;color:#fff} /* 마케팅 */
+.list_type02 .item .head .category .cat_color12 {background:#f5470a;color:#fff} /* 문서작성 */
+.list_type02 .item .head .category .cat_color15 {background:#9b6fd0;color:#fff} /* 컴퓨터 */
+.list_type02 .item .head .category .cat_color14 {background:#fcaa2d;color:#fff} /* 음악/동영상 */
+.list_type02 .item .head .category .cat_color19 {background:#f06793;color:#fff} /* 대행/섭외 */
+.list_type02 .item .head .category .cat_color18 {background:#de6e62;color:#fff} /* 노하우/상담 */
+.list_type02 .item .head .category .cat_color17 {background:#019db4;color:#fff} /* 비지니스 */
+.list_type02 .item .head .category .cat_color16 {background:#008e78;color:#fff} /* 생활서비스 */
+.list_type02 .item .head .category .cat_color21 {background:#6cc068;color:#fff} /* 여행 */
+.list_type02 .item .head .category .cat_color23 {background:#005028;color:#fff} /* 창작/작문 */
+.list_type02 .item .head .category .cat_color25 {background:#ba0909;color:#fff} /* 영상/애니 */
+.list_type02 .item .head .category .cat_color26 {background:#da57df;color:#fff} /* 핸드메이드 */
+.list_type02 .item .head .category .cat_color27 {background:#d49400;color:#fff} /* 레슨 */
+
+.list_type02 .item .head .regist_day {float:right;color:#999;padding:3px 0}
+.list_type02 .item .head .regist_day > span {position:relative;padding-right:6px}
+.list_type02 .item .head .regist_day > span:before {position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:0;width:1px;height:10px;background-color:#ddd;content:''}
+.list_type02 .item .head .regist_day > span:last-child:before {display:none}
+.list_type02 .item .head .regist_day > span a {vertical-align:top;}
+.list_type02 .item .head .status {float:left;position:relative;padding:3px 0;margin-right:4px;padding-right:5px;font-weight:bold}
+.list_type02 .item .head .status.ing {color:#f9530b}
+.list_type02 .item .head .status.end {color:#333}
+.list_type02 .item .head .status.refuse {color:#f9530b}
+.list_type02 .item .head .status.refuse > span {display:inline-block;background:url('https://images.otwojob.com/image/mobile/mypage/ico_refuse.png') no-repeat right 0;background-size:13px auto;padding-right:15px;border-bottom:1px solid #f9530b;padding-bottom:3px}
+.list_type02 .item .head .status:before {position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:0;width:1px;height:10px;background-color:#ddd;content:''}
+.list_type02 .item .head .status.no_line {margin-left:5px}
+.list_type02 .item .head .status.no_line:before {display:none}
+.list_type02 .item .head .refuse_reason {width:100%;display:block;position:absolute;top:30px;left:0;padding:10px 30px 10px 10px;background:#f9f9f9 url('https://images.otwojob.com/image/mobile/mypage/ico_del05.png') no-repeat 99% 10px;background-size:14px 14px;border:1px solid #e5e5e5;font-size:13px;line-height:15px;color:#666}
+.list_type02 .item .head .refuse_reason:before {position:absolute;top:-8px;left:70px;width:8px;height:8px;background:url('https://images.otwojob.com/image/mobile/mypage/bg_refuse_txt.png') no-repeat 0 0;background-size:8px auto;content:''}
+.list_type02 .item .head .name {float:left;background:url('https://images.otwojob.com/image/mobile/mypage/ico_name.png') no-repeat right center;background-size:19px auto;padding:3px 25px 3px 0;color:#999}
+.list_type02 .item .head .name img {width:18px}
+.list_type02 .item .head .photo {display:table;position:relative;float:left;width:30px;height:30px;border-radius:15px;overflow:hidden;margin-top:-5px;margin-right:3px;background-color:#eee}
+.list_type02 .item .head .photo span {display:table-cell;text-align:center;vertical-align:middle}
+.list_type02 .item .head .photo span img {max-width:30px;max-height:30px}
+.list_type02 .item .head .photo:after {content:"";width:30px;height:30px;border-radius:15px;position:absolute;left:0;top:0;right:0;bottom:0;}
+.list_type02 .item .tags {margin:18px 0 0;font-size:13px;color:#999}
+.orderjob_detail.list_type02 .item .tags {margin:15px 0 0;}
+.list_type02 .item .tit {margin:8px 0 0;font-size:14px;color:#333}
+.orderjob_detail.list_type02 .item .tit {margin:7px 0 0;}
+.list_type02 .item .info_wrap {overflow:hidden;margin:15px 0 0;padding:15px 0;text-align:center;border:1px solid #f2f2f2;border-width:1px 0}
+.list_type02 .item .info_wrap p {float:left;width:23%;position:relative;padding:0 8px;font-size:14px}
+.list_type02 .item .info_wrap p.price {width:43%}
+.list_type02 .item .info_wrap p.h_num {width:34%}
+.list_type02 .item .info_wrap p:before {position:absolute;content:'';height:14px;width:1px;background:#f2f2f2;left:0;top:50%;margin-top:-7px}
+.list_type02 .item .info_wrap.two p {width:50%;}
+.list_type02 .item .info_wrap .price:before {display:none}
+.list_type02 .item .info_wrap .span_wrap {display:inline-block;vertical-align:middle;font-size:13px;}
+.list_type02 .item .info_wrap .price img {width:24px;margin-right:4px;margin-top:-2px}
+.list_type02 .item .info_wrap .price .num {color:#f9530b;font-weight:700}
+.list_type02 .item .info_wrap .remain_day img {width:16px;margin-right:4px;margin-top:-3px}
+.list_type02 .item .info_wrap .h_num img {width:15px;margin-top:-3px}
+.list_type02 .item .info_wrap .h_num .tit {position:absolute;left:50%;top:50%;margin:0;padding:2px 6px;background:#14b4ba;font-size:11px;color:#fff;border-radius:8px}
+.list_type02 .item .info_wrap .h_num .tit.none {background:#999}
+.list_type02 .item .more {margin:5px 0 0;text-align:right}
+.list_type02 .item .more button {display:inline-block;padding-right:15px;background:url('https://images.otwojob.com/image/mobile/index/ico_arrow2_upside.png') no-repeat 100% 50%;background-size:11px auto;position:relative}
+.list_type02 .item.on .more button {background-image:url('https://images.otwojob.com/image/mobile/index/ico_arrow2.png')}
+.list_type02 .item .details {display:none;margin:19px 0 0}
+.list_type02 .item .details .comment {font-size:14px;line-height:18px;color:#666}
+.list_type02 .item .details .comment .blind_img img {width:100%;}
+.list_type02 .item.on .details {display:block}
+.list_type02 .item .meta_info {margin:13px 0 0}
+.list_type02 .item .meta_info span {display:inline-block;padding:3px 8px;margin-bottom:8px;border:1px solid #e5e5e5;border-radius:9px;font-size:12px;color:#999;margin-right:3px}
+.list_type02 .item .attached {margin:27px 0 0;background:#f5f5f5;padding:10px}
+.list_type02 .item .attached .line1 {font-size:13px;color:#333;padding-left:15px;background:url('https://images.otwojob.com/image/mobile/index/ico_clip.png') no-repeat 0 50%;background-size:13px auto}
+.list_type02 .item .attached .line1 .n {color:#f9530b}
+.list_type02 .item .attached .files {margin:8px 0 0}
+.list_type02 .item .attached .files a {display:inline-block;padding:4px 10px;border:1px solid #ff5a12;color:#ff5a12;font-size:13px;background-color:#fff;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-break:break-all}
+.list_type02 .item .attached .files a img {width:9px;margin-top:-3px;margin-right:5px}
+.list_type02 .item .do_suggest {margin:15px 0}
+.list_type02 .item .do_suggest a {display:block;padding:8px 0;text-align:center;font-size:16px;color:#14b4ba;background:#fff;border:1px solid #14b4ba;}
+.list_type02 .item .do_suggest a.on {background:#14b4ba}
+.list_type02 .item .do_suggest.gray a {background:#acacac;border:1px solid #acacac;color:#fff}
+.list_type02 .item .do_suggest.end {background:#f2f2f2;padding:15px 0;text-align:center;border:1px solid #eaeaea}
+.list_type02 .item .do_suggest.end .end_txt {font-size:18px;color:#333}
+.list_type02 .item .do_suggest.end .end_txt strong {color:#f9530b}
+.list_type02 .item .do_suggest.end .suggest_con {font-size:13px;color:#666;margin-top:10px}
+.list_type02 .item .do_suggest.end .suggest_con > span {background:url('https://images.otwojob.com/image/mobile/index/ico_m3_off.png') no-repeat 0 50%;background-size:12px auto;padding-left:17px}
+.list_type02 .item.on .do_suggest.end {background:#14b4ba}
+.list_type02 .item.on .do_suggest.end .end_txt {color:#fff}
+.list_type02 .item.on .do_suggest.end .end_txt strong {color:#fff}
+.list_type02 .item.on .do_suggest.end .suggest_con {color:#fff}
+.list_type02 .item.on .do_suggest.end .suggest_con > span {background:url('https://images.otwojob.com/image/mobile/index/ico_m3_on.png') no-repeat 0 50%;background-size:12px auto;padding-left:17px}
+.list_type02 .item.on .btn_wrap .btn_type02 {background-color:#14b4ba}
+.list_type02 .item .dimmed_over {position:absolute;left:-2px;right:-2px;top:-2px;bottom:-2px;background:rgba(0,0,0,0.5);z-index:1}
+.list_type02 .item .dimmed_over p {position:absolute;left:0;right:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);color:#fff;font-size:16px;text-align:center}
+.list_type02 .popup_con .details {display:block}
+.list_type02 .popup_con .attached {display:block}
+.list_type02 .popup_con .in_wrap {margin:0}
+.list_type02 .popup_con .status:before {display:none}
+.list_type02 .popup_con .ico {display:inline-block;font-size:13px;color:#333;background-color:#e5e5e5;border-radius:10px;padding:1px 9px 4px ;margin-left:5px}
+.list_type02.orderjob_detail {padding:0 0 10px;}
+.bg_color02 .list_type02.orderjob_detail {padding:0;}
+.list_type02.orderjob_detail.mt10 {margin-top:10px;}
+.list_type02.orderjob_detail .item {margin-top:0;border:1px solid #fff;}
+.bg_color02 .list_type02.orderjob_detail .item {margin-bottom:10px;border:1px solid #eaeaea}
+.bg_color02 .list_type02.orderjob_detail .item:last-child {margin-bottom:0;}
+.list_type02.orderjob_detail .details {display:block;}
+.list_type02.orderjob_detail .suggest_order_blind {padding:10px 14px;background:#fafafa;color:#666;}
+.list_type02.orderjob_detail .suggest_order_blind .point {color:#10a3a8}
+.list_type02.orderjob_detail .suggest_order_blind .mt5 {margin-top:5px;}
+.orderjob_detail_info {margin-top:10px;padding:15px 20px;text-align:center;font-size:11px;color:#999;line-height:1.36;background:#f9f9f9}
+.list_type03 {overflow:hidden;margin:15px -5px 0}
+.list_type03 .item {float:left;width:33.33333333333333%}
+.list_type03.in_join {max-width:360px;margin:25px auto 0;padding-bottom:25px;}
+.list_type03.in_join  p.user_search_item {padding:0 10px;font-size:15px;font-weight:bold;}
+.list_type03.in_join .item {float:left;width:48%;margin:15px 1% 0;}
+.list_type03.in_join .item .price {color:#ff5a12 !important;font-weight:bold;}
+.list_type03.in_join .item .name {color:#999;line-height:1.2;margin-top:5px;}
+.list_type03.in_join .item .in_wrap .image {height:124px;}
+.list_type03.in_join .item .in_wrap .image img {width:100%;max-height:124px;}
+.list_type03.in_join .no-item {height:196px;border:1px solid #e5e5e5;}
+.list_type03.in_join .no-item .arr_bg {margin:62px auto 0;padding-top:52px;width:80px;font-size:12px;color:#999;text-align:center;background:url('https://images.otwojob.com/image/mobile/svg/join_user_view.svg') no-repeat 50% 0;background-size:50px 50px;}
+.member_order_box {padding:30px 0;text-align:center;}
+.member_order_box p.font_type01 {font-size:16px;font-weight:bold;color:#333;line-height:20px;}
+.member_order_box p.font_type02 {margin-top:10px;font-size:14px;color:#7a7a7a;line-height:19px;}
+.member_order_box p a {display:inline-block;margin-top:20px;padding:14px 55px;font-size:15px;color:#fff;background:#16b4ba;}
+.list_type03 .item .in_wrap {margin:0 5px}
+.list_type03 .item .in_wrap .image {display:table;position:relative;text-align:center;width:100%;height:106px;overflow:hidden;background:#f7f7f7}
+.list_type03 .item .in_wrap .image span {display:table-cell;text-align:center;vertical-align:middle}
+.list_type03 .item .in_wrap .image span img {width:100%;max-height:106px}
+.list_type03 .item .in_wrap .image:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;}
+.list_type03 .item .in_wrap .item_tit {display:-webkit-box;overflow:hidden;min-height:30px;margin:5px 0 0;color:#666;font-size:12px;line-height:1.3;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.list_type03 .item .in_wrap .price {margin:5px 0 0;font-size:12px;color:#666}
+.list_type04 {margin:7px 0 0}
+.list_type04.type01 {border-top:1px solid #f2f2f2;margin-top:40px}
+.list_type04 li {padding:3px 0 3px 7px;background:url('https://images.otwojob.com/image/mobile/common/ico_dot01.png') no-repeat 2px 10px;background-size:2px auto;font-size:14px;color:#666;line-height:17px}
+.list_type04.infotext li {font-size:12px;}
+.list_type04 li p.exam {margin:5px 0 0;font-size:13px;color:#999}
+.list_type04 li .link {color:#ff5a12;background:url('https://images.otwojob.com/image/mobile/common/ico_link_arr_on.png') no-repeat right center;background-size:6px auto;padding-right:11px}
+.list_type04 li .d_wrap {overflow:hidden;font-size:14px}
+.list_type04 li .d_wrap .t_type {float:left;width:100px;color:#666;font-weight:400}
+.list_type04 li .d_wrap .t_type2 {float:left;width:90px;color:#666;font-weight:400}
+.list_type04 li .d_wrap .in_desc {overflow:hidden;color:#999}
+.list_type04 li .color01 {color:#f9530b !important}
+.list_type04 li p.gray_font {font-size:13px;color:#999}
+.list_type04 li p i {color:#f9530b}
+.list_type04 li.no_bg {background:none;padding-bottom:0;} /* 1383 */
+.list_type04 ul.type_no li {padding-left:5px;background:none;}
+.list_type04 ul.type_no.link_type li a {text-decoration:underline;vertical-align:top;}
+.list_type04 ul.coupon_tooltip_list li {width:100%;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.list_type05 {background-color:#f2f2f2}
+.list_type05 .item_wrap {padding-bottom:10px}
+.list_type05 .item {background-color:#fff;border-bottom:1px solid #e5e5e5}
+.list_type05 .item .top_info {border-bottom:1px solid #e5e5e5;padding:10px 16px 10px 16px} /* 1383 */
+.list_type05 .item .top_info:after {clear:both;content:'';display:block}
+.list_type05 .item .top_info .current {font-size:17px;color:#f9530b}
+.list_type05 .item .top_info .date {float:right;font-size:13px;color:#999;margin-top:3px}
+.list_type05 .item .top_info .date > span {display:inline-block}
+.list_type05 .item .top_info .date .end {border-left:1px solid #dadada;margin-left:4px;padding-left:4px}
+.list_type05 .item .desc_wrap {padding:17px 10px}
+.list_type05 .item .desc_wrap .infos:after {clear:both;content:'';display:block}
+.list_type05 .item .desc_wrap .infos .photo {float:left;margin-right:10px;position:relative;display:table;width:130px;height:101px;overflow:hidden;background:#f7f7f7}
+.list_type05 .item .desc_wrap .infos .photo span {display:table-cell;text-align:center;vertical-align:middle}
+.list_type05 .item .desc_wrap .infos .photo span img {max-width:130px;max-height:101px}/* width.divide :2 */
+.list_type05 .item .desc_wrap .infos .photo:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;}
+.list_type05 .item .desc_wrap .infos .info_text {overflow:hidden}
+.list_type05 .item .desc_wrap .infos .info_text .category {color:#999;font-size:12px}
+.list_type05 .item .desc_wrap .infos .info_text .category .icon {display:inline-block;border-radius:2px;text-align:center;padding:1px 4px 2px 4px;margin-right:6px}/* margin-right.divide :2 */
+.list_type05 .item .desc_wrap .infos .info_text .category .icon.otwo {color:#f9530b;border:1px solid #f9530b}
+.list_type05 .item .desc_wrap .infos .info_text .category .icon.order {color:#14b4ba;border:1px solid #14b4ba}
+.list_type05 .item .desc_wrap .infos .info_text .title {display:block;color:#333;font-size:14px;line-height:18px;margin-top:4px}
+.list_type05 .item .desc_wrap .infos .info_text .title i {display:inline-block;top:-2px;margin-left:0px;padding:1px 3px 1px 5px;height:16px;background:#fff;color:#3ba8e1;border:1px solid #129ee7;border-top-left-radius:25% 70%;border-top-right-radius:25% 70%;border-bottom-left-radius:25% 70%;border-bottom-right-radius:25% 70%;font-size:11px;line-height:1.2} /* 644 */
+.list_type05 .item .desc_wrap .infos .info_text .price_num {color:#333;font-size:15px;margin-top:8px}
+.list_type05 .item .desc_wrap .infos .info_text .price_num > span {display:inline-block;padding-top:1px;vertical-align:top} /* 644 */
+.list_type05 .item .desc_wrap .infos .info_text .price_num i {display:inline-block;top:-2px;margin-left:0px;padding:1px 3px 1px 5px;height:16px;background:#fff;color:#3ba8e1;border:1px solid #129ee7;border-top-left-radius:25% 70%;border-top-right-radius:25% 70%;border-bottom-left-radius:25% 70%;border-bottom-right-radius:25% 70%;font-size:11px;line-height:1.2} /* 644 */
+.list_type05 .item .desc_wrap .infos .info_text .price_num .num {position:relative;margin-left:4px;padding-left:5px}
+.list_type05 .item .desc_wrap .infos .info_text .price_num .num:before {position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0;width:1px;height:10px;background-color:#666;content:''}
+.list_type05 .item .desc_wrap .infos .info_text .price_num .day {font-size:12px;color:#999}
+.list_type05 .item .desc_wrap .infos .info_text .name {color:#999;font-size:12px;margin-top:8px}
+.list_type05 .item .desc_wrap .infos .info_text .name > span {display:inline-block}
+.list_type05 .item .desc_wrap .infos .info_text .name > span em {position:relative;margin-left:5px;padding-left:5px;display:inline-block;margin-bottom:5px}
+.list_type05 .item .desc_wrap .infos .info_text .name > span em:before {position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);left:0;content:'';width:1px;height:10px;background-color:#bbb}
+.list_type05 .item .desc_wrap .infos .info_text .name > .msg_link {display:inline-block;width:34px;height:25px;padding-left:19px;background:url('https://images.otwojob.com/image/mobile/detail/ico_msg.png') no-repeat 0 top;background-size:34px auto;margin-left:2px;margin-top:-2px}
+.list_type05 .item .desc_wrap .infos .info_text .name > .msg_link.type01 {background-image:url('https://images.otwojob.com/image/mobile/detail/ico_msg2.png');background-size:18px auto;width:18px;height:16px;line-height:16px}
+.list_type05 .item .desc_wrap .infos .info_text .name > .msg_link.type02 {background-image:url('https://images.otwojob.com/image/mobile/detail/ico_msg3.png');background-size:15px 17px;width:41px;height:17px;line-height:17px}
+.list_type05 .item .desc_wrap .infos .info_text .name > .msg_link.type03 {background-image:url('https://images.otwojob.com/image/mobile/detail/ico_msg4.png');background-size:15px 17px;width:41px;height:17px;line-height:17px}
+.list_type05 .item .desc_wrap .infos .info_text .name > .msg_link.type04 {background-image:url('https://images.otwojob.com/image/mobile/detail/ico_talk.png');background-size:17px 14px;width:17px;height:14px;line-height:17px}
+.list_type05 .item .desc_wrap .txt {font-size:14px;color:#999;margin-top:13px}
+.list_type05 .item .desc_wrap .txt i {color:#666}
+.list_type05 .item .desc_wrap .txt:before {content:"";display:inline-block;width:2px;height:2px;margin:0 5px 0 2px;background-color:#898989;vertical-align:middle}
+.list_type05 .item .desc_wrap .pay_list {margin:16px 11px 0}
+.list_type05 .item .desc_wrap .pay_list .plus {position:relative;margin-top:8px;padding-left:120px;font-size:13px;color:#666;line-height:15px}
+.list_type05 .item .desc_wrap .pay_list .plus:first-child {margin-top:0}
+.list_type05 .item .desc_wrap .pay_list .plus .tit {font-size:14px;color:#333;position:absolute;top:0;left:0;background:url('https://images.otwojob.com/image/mobile/mypage/ico_plus_pay.png') no-repeat left -1px;background-size:11px auto;padding-left:16px}
+.list_type05 .item .desc_wrap .pay_list .plus .tit2 {font-size:14px;color:#999;position:absolute;top:0;left:0;background:url('https://images.otwojob.com/image/mobile/mypage/ico_plus_pay.png') no-repeat left -1px;background-size:11px auto;padding-left:16px}
+/* 1383 */
+.list_type05 .assessment_result {padding:10px 10px;border-top:1px solid #e5e5e5;color:#999;}
+.list_type05 .assessment_result > span {position:relative;top:-1px}
+.list_type05 .assessment_result a {height:25px;line-height:23px;padding:2px 7px;border:1px solid #ff5a12;color:#f9530b;text-align:center;}
+.list_type05 .assessment_result .star_box {display:inline-block;width:60px;background:url('https://images.otwojob.com/image/mobile/index/ico_star_blank01.png') 0 1px no-repeat;background-size:60px 12px;line-height:1.3}
+.list_type05 .assessment_result .star_box span {display:inline-block;width:100%;}
+.list_type05 .assessment_result .star_box span span {display:inline-block;height:18px;background:url('https://images.otwojob.com/image/mobile/index/ico_star_full01.png') 0 1px no-repeat;background-size:60px 12px;text-indent:-9999px}
+.list_type05 .item_wrap.end .item {background-color:#ebebeb}
+.list_type05 .item_wrap.end .item {position:relative;}
+.list_type05 .item_wrap.end .item .top_info {border-bottom:1px solid #d3d3d3}
+.list_type05 .item_wrap.end .item .top_info .current {color:#333}
+.list_type05 .item_wrap.end .item .desc_wrap .infos {border-bottom:1px solid #dfdfdf;padding-bottom:9px}
+.list_type05 .item_wrap.end .item .desc_wrap .infos .info_text .title,
+.list_type05 .item_wrap.end .item .desc_wrap .infos .info_text .price_num,
+.list_type05 .item_wrap.end .item .desc_wrap .pay_list .plus,
+.list_type05 .item_wrap.end .item .desc_wrap .pay_list .plus .tit {color:#999}
+/*.list_type05 .item_wrap.end .item:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.08)}*/
+.list_type05 .item_wrap.end .desc_wrap .infos .info_text .price_num i {background:#ebebeb} /* 644 */
+.list_type05 .item_wrap.type01 {padding-bottom:0}
+.list_type05 .item.type01 {border-bottom-width:0}
+.list_type06 {}
+.list_type06 .item {position:relative;margin:12px 0 0;/*padding-bottom:12px;background:#f2f2f2*/}
+.list_type06 .item.first {margin-top:0}
+.list_type06 .item .del_item {position:absolute;right:0;top:0;width:20px;height:20px;background:#ccc url('https://images.otwojob.com/image/mobile/mypage/ico_del04.png') no-repeat 50% 50%;background-size:10px auto;text-indent:-9999px;overflow:hidden;/* z-index:20px; */}
+.list_type06 .item .in_wrap {position:relative;background:#fff}
+.list_type06 .item .status_wrap {overflow:hidden;padding:10px}
+.list_type06 .item .status_wrap .stat_txt {float:left;font-size:17px;font-weight:700;color:#333}
+.list_type06 .item .status_wrap .stat_txt.type01 {color:#f9530b}
+.list_type06 .item .status_wrap .stat_txt.type02 {color:#328ddb}
+.list_type06 .item .status_wrap .right_side {float:right;margin-top:2px}
+.list_type06 .item .status_wrap .right_side > * {float:left;height:22px;line-height:22px;margin-right:5px}
+.list_type06 .item .status_wrap .right_side .date {color:#999;font-size:13px}
+.list_type06 .item .status_wrap .right_side .del {width:20px;height:20px;}
+.list_type06 .item .status_wrap .right_side .del img {width:100%;vertical-align:top}
+.list_type06 .item .in_cont {overflow:hidden;padding:15px 10px;border:1px solid #e5e5e5;border-width:1px 0}
+.list_type06 .item .image {position:relative;float:left;width:130px;border:1px solid #f2f2f2}
+.list_type06 .item .image a {display:block;position:relative}
+.list_type06 .item .image a:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;}
+.list_type06 .item .image a .photo {display:table;width:128px;height:99px;overflow:hidden}
+.list_type06 .item .image a .photo em {display:table-cell;text-align:center;vertical-align:middle}
+.list_type06 .item .image a .photo em img {max-width:129px;max-height:99px}
+.list_type06 .item .image .mark {position:absolute;left:7px;top:7px;z-index:1}
+.list_type06 .item .image .mark img {width:21px}
+.list_type06 .item .image .certify_area {position:absolute;left:0;bottom:0;text-align:left}
+.list_type06 .item .image .certify_area p {font-size:12px;display:inline-block;padding:3px 5px;color:#fff}
+.list_type06 .item .image .certify_area .cert01 {background:#8811c1}
+.list_type06 .item .image .certify_area .cert02 {background:#0973e0}
+.list_type06 .item .outer_wrap {overflow:hidden}
+.list_type06 .item .desc_wrap {margin:0 0 0 5px}
+.list_type06 .item .desc_wrap .tit {padding:0 0 6px;color:#333;font-size:14px;}
+.list_type06 .item .desc_wrap .tit.type01 {overflow:hidden;height:35px; line-height: 16px; margin-right:15px;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;padding-bottom:0}
+.list_type06 .item .desc_wrap .tit.type01 a {display: inline-block; width: 100%; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.list_type06 .item .desc_wrap .statistic {overflow:hidden;font-size:12px;line-height:15px;color:#666;}
+.list_type06 .item .desc_wrap .statistic dt {float:left;width:55px}
+.list_type06 .item .desc_wrap .statistic dd {overflow:hidden}
+.list_type06 .item .desc_wrap .account {overflow:hidden;font-size:14px;line-height:15px;color:#333; margin: 0.3rem 0;}
+.list_type06 .item .desc_wrap .account dt {float:left;width:45px}
+.list_type06 .item .desc_wrap .account dd {overflow:hidden}
+.list_type06 .item .desc_wrap .account dt b, .list_type06 .item .desc_wrap .account dd b{font-weight: bold;}
+.list_type06 .item .desc_wrap .like_wrap {margin:5px 0 0}
+.list_type06 .item .desc_wrap .func {margin:5px 0 0;position:relative;height:25px}
+.list_type06 .item .desc_wrap .func .l_btn {position:relative; display:inline-block; height:25px}
+.list_type06 .item .desc_wrap .func .l_btn a {display:inline-block;height:25px;line-height:23px;border:1px solid #ccc;text-align:center;font-size:14px;color:#333; padding: 0 0.4rem;}
+.list_type06 .item .desc_wrap .func .r_btn {margin-left:0.1rem; display: inline-block;}
+.list_type06 .item .desc_wrap .func .r_btn button {display:inline-block;height:25px;line-height:23px;padding:0 7px;border:1px solid #ccc;text-align:center;font-size:14px;color:#333}
+.list_type06 .item .desc_wrap .func .n_btn {display:inline-block;height:25px;line-height:23px;padding:0 15px;border:1px solid #ccc;text-align:center;font-size:14px;color:#333}
+.list_type06 .item .desc_wrap .func .soldout {display: inline-block; height: 22px;border-radius: 11px; color: #fff; background-color: #c9c9c9; font-size: 12px; vertical-align: middle; padding: 3px 5px 0px 5px;}
+.list_type06 .item .desc_wrap .price_wrap {position:relative;margin-top:2px;height:21px}
+.list_type06 .item .desc_wrap .price_wrap .current {font-size:14px;color:#f9530b}
+.list_type06 .item .desc_wrap .price_wrap .current span {font-weight:700}
+.list_type06 .item .desc_wrap .price_wrap .current:after {content: '\C6D0\7E';}
+.list_type06 .item .desc_wrap .price_wrap .prev {margin-top:3px;font-size:12px;color:#999}
+.list_type06 .item .desc_wrap .price_wrap .prev:after {content: '\C6D0\7E';}
+.list_type06 .item .desc_wrap .price_wrap .discount {position:absolute;right:0;top:0;font-size:22px;color:#999;letter-spacing:-1px;font-weight:200;padding-right:11px;background:url('https://images.otwojob.com/image/mobile/index/ico_discount.png') no-repeat 100% 50%;background-size:7px auto}
+.list_type06 .item .desc_wrap .name {margin-top:5px;color:#999;font-size:12px}
+.list_type06 .item .desc_wrap .name > span {display:inline-block}
+.list_type06 .item .desc_wrap .name > span em {position:relative;margin-right:5px;padding-right:5px;display:inline-block}
+.list_type06 .item .desc_wrap .name > span em:before {position:absolute;top:1px;right:0;content:'';width:1px;height:10px;background-color:#bbb}
+.list_type06 .item .desc_wrap .name > .msg_link {display:inline-block;width:34px;height:25px;background:url('https://images.otwojob.com/image/mobile/detail/ico_msg.png') no-repeat 0 top;background-size:34px auto;margin-left:5px}
+.list_type06 .item .desc_wrap .category {font-size:14px;color:#0973e0;font-weight:400}
+.list_type06 .item .desc_wrap .category.type01 {color:#f9530b}
+.list_type06 .item .desc_wrap .category + .tit {margin-top:10px}/* margin-top.divide :2 */
+.list_type06 .item .msg_wrap {position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,0.7);z-index:10}
+.list_type06 .item .msg_wrap p {position:absolute;left:0;right:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);color:#fff;font-size:16px;text-align:center}
+/* 644 */
+.list_type06 .item .in_cont.free_in_cont {overflow:hidden;border-top:none;}
+.list_type06 .item .in_cont.free_in_cont .free_left {float:left;width:50%;vertical-align:middle;}
+.list_type06 .item .in_cont.free_in_cont .free_left span {font-size:13px;color:#2899d4}
+.list_type06 .item .in_cont.free_in_cont .free_left select {border:1px solid #b3b3b3;color:#b3b3b3;height:24px;background-image:none;line-height:1.3}
+.list_type06 .item .in_cont.free_in_cont .free_left select.on {border:1px solid #2899d4;color:#2899d4;background-image: url('https://images.otwojob.com/image/mobile/common/free_select_arr.png');}
+.list_type06 .item .in_cont.free_in_cont .free_left button {padding:0 12px;height:24px;border:1px solid #2899d4;color:#2899d4;}
+.list_type06 .item .in_cont.free_in_cont .free_right {float:right;padding-top:5px;width:50%;text-align:right;font-size:11px;vertical-align:middle;}
+.list_type06 .item .in_cont.free_in_cont .free_right i {display:inline-block;margin-left:0px;padding:1px 5px;height:16px;background:#3ba8e1;color:#fff;border:1px solid #3ba8e1;border-top-left-radius:25% 70%;border-top-right-radius:25% 70%;border-bottom-left-radius:25% 70%;border-bottom-right-radius:25% 70%;font-size:11px;} /* 644 */
+.list_type06 .item .in_cont.free_in_cont .free_right i.off {background:#c9c9c9;border:1px solid #c9c9c9;}
+.btn_free_tooltip {margin-top:15px;font-size:15px;color:#3ba8e1;text-align:center;font-weight:600;}
+.btn_free_tooltip a {padding:3px 0 5px;height:20px;border-bottom:1px solid #3ba8e1;}
+.btn_free_tooltip a img {vertical-align:top}
+/* //644 */
+.list_type07 {border-top:1px solid #e5e5e5}
+.list_type07 li {}
+.list_type07 li a {display:block;padding:10px 30px 10px 10px;border-bottom:1px solid #e5e5e5;background:url('https://images.otwojob.com/image/mobile/customer/ico_arrow01.png') no-repeat right 5px center;background-size:7px auto}
+.list_type07 li a .txt {font-size:16px;color:#333;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+.list_type07 li a .date {margin-top:7px;font-size:14px;color:#999}
+.list_type08 {}
+.list_type08 .item {margin:10px 0 0;border:1px solid #ddd;background:#fff}
+.list_type08 .item.first {margin-top:0}
+.list_type08 .item .i_tit {}
+.list_type08 .item .i_tit a {display:block;height:44px;line-height:43px;padding:0 10px;border-bottom:1px solid #ddd;color:#333;font-size:17px;background:url('https://images.otwojob.com/image/mobile/common/ico_select_arr_up.png') no-repeat right 10px center;background-size:12px auto}
+.list_type08 .item .i_tit a.on {background-image:url('https://images.otwojob.com/image/mobile/common/ico_select_arr.png');border-bottom:0 none}
+.list_type08 .item .item_cont {padding:10px}
+.list_type08 .item .item_cont.type01 {border-top:1px solid #ddd}
+.list_type08 .item .item_cont.type02 {border-top:1px solid #ddd;background:#f5f5f5}
+.list_type08 .item .image_item {overflow:hidden;margin-bottom:7px}
+.list_type08 .item .image_item .img {display:table;float:left;margin-right:7px;position:relative;width:85px;height:65px;overflow:hidden}
+.list_type08 .item .image_item .img a {border:1px solid #f2f2f2;display:table-cell;text-align:center;vertical-align:middle}
+.list_type08 .item .image_item .img a img {max-width:85px;max-height:65px}
+.list_type08 .item .image_item .img:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.08)}
+.list_type08 .item .image_item .desc_wrap {overflow:hidden}
+.list_type08 .item .image_item .desc_wrap .category {font-size:14px}
+.list_type08 .item .image_item .desc_wrap .category .main {color:#333}
+.list_type08 .item .image_item .desc_wrap .category .sub {margin-left:6px;color:#999}
+.list_type08 .item .image_item .desc_wrap .category .sub:before {content:"";display:inline-block;width:1px;height:10px;background:#ddd;margin-right:6px;vertical-align:middle;margin-top:-4px}
+.list_type08.free_list_type .item .image_item .desc_wrap .category .sub:before {margin-right:0;background:none;} /* 무료재능 별도 */
+.list_type08 .item .image_item .desc_wrap .cate_tit {margin:7px 0 0;font-size:14px;color:#333;line-height:16px}
+.list_type08 .item .image_item .desc_wrap .cate_tit i {display:inline-block;margin-left:0px;padding:1px 3px 1px 5px;height:16px;background:#fff;color:#3ba8e1;border:1px solid #129ee7;border-top-left-radius:25% 70%;border-top-right-radius:25% 70%;border-bottom-left-radius:25% 70%;border-bottom-right-radius:25% 70%;font-size:11px;line-height:1.2} /* 644 */
+.list_type08 .item .txt_tit {font-size:14px;color:#333;line-height:16px;margin-bottom:10px}
+.list_type08 .item .txt01 {font-size:13px;color:#999;line-height:16px}
+.list_type08 .item .txt02 {font-size:14px;color:#333;line-height:16px}
+.list_type08 .item .txt02 .name {display:block;margin-bottom:10px;color:#000;font-size:16px}/* OTWOJOB-719 */
+.list_type08 .item .txt02 .bank_name {color:#666}/* OTWOJOB-719 */
+.list_type08 .item .txt02 p + p {color:#666}/* OTWOJOB-719 */
+.list_type08 .item .txt03 {margin:14px 0 0;padding:12px 0 0;border-top:1px solid #e5e5e5;font-size:14px;color:#999;line-height:17px}
+.list_type08 .item .txt03 span {color:#f9530b}
+.list_type08 .item .txt03 span i {display:block;padding-left:41px}/* OTWOJOB-719 */
+.list_type08 .item .txt04 {font-size:13px;line-height:17px;} /* 644 */
+.list_type08 .item .txt04 span {color:#2d86d1} /* 644 */
+.list_type08 .item .pay_list {margin:16px 11px 0 0}
+.list_type08 .item .pay_list .plus {position:relative;margin-top:8px;padding-left:83px;font-size:13px;color:#666;line-height:15px}
+.list_type08 .item .pay_list .plus:first-child {margin-top:0}
+.list_type08 .item .pay_list .plus .tit {font-size:14px;color:#333;position:absolute;top:0;left:0;background:url('https://images.otwojob.com/image/mobile/mypage/ico_plus_pay.png') no-repeat left -1px;background-size:11px auto;padding-left:16px}
+.list_type08 .item .last_order_cont {margin:14px 0 0;padding:12px 0 0;border-top:1px solid #f2f2f2;overflow:hidden;font-size:16px}
+.list_type08 .item .last_order_cont .tit {float:left;color:#333}
+.list_type08 .item .last_order_cont .price {float:right;color:#f9530b}
+.list_type08 .item .last_order_cont .price span {font-weight:700}
+.list_type08 .item .divide_cont {font-size:14px;color:#333}
+.list_type08 .item .divide_cont:after {content:"";display:block;clear:both}
+.list_type08 .item .divide_cont .l_side {float:left}
+.list_type08 .item .divide_cont .l_side .s_tit {display:inline-block;line-height:16px}
+.list_type08 .item .divide_cont .l_side .s_tit.type01 {line-height:33px}
+.list_type08 .item .divide_cont .l_side .s_txt {margin-left:10px;line-height:33px;color:#666}
+.list_type08 .item .divide_cont .r_side {float:right}
+.list_type08 .item .line {margin-top:10px}
+.list_type08 .item .divide_cont01 {position:relative;margin:10px 0 0}
+.list_type08 .item .divide_cont01 .s_tit {position:absolute;left:0;top:0;height:33px;line-height:33px;width:40px;font-size:14px;color:#333}
+.list_type08 .item .divide_cont01 .c_box {margin-left:40px;position:relative}
+.list_type08 .item .divide_cont01 .c_box .input_box {margin-right:73px}
+.list_type08 .item .divide_cont01 .c_box .input_box input {color:#2d86d1}
+.list_type08 .item .divide_cont01 .c_box .btn_do {position:absolute;right:0;top:0;width:70px}
+.list_type08 .item .pay_method_select {position: relative;}
+.list_type08 .item .pay_method_select .smile_flag01 {position: absolute; left: calc(50vw - 15px); display: none; width: calc((100vw - 40px) / 2 * 0.93); margin-top: -10px; z-index: 90;}
+.list_type08 .item .pay_method_select .smile_flag02 {position: absolute; left: 5px; display: none; width: calc((100vw - 40px) / 2 * 0.93); margin-top: -10px; z-index: 91;}
+.list_type08 .item .pay_method_select .line {overflow:hidden;}
+.list_type08 .item .pay_method_select .line .side {float:left;width:50%}
+.list_type08 .item .pay_method_select .line .side_tobe {float:left;width:100%; }
+.list_type08 .item .pay_method_select .line .side_tobe .btn_method {float:left;width:50%}
+.list_type08 .item .pay_method_select .line .side_tobe:after {content:"";display:block;clear:both}/*../../image/mobile/event/20180316/num_0.png*/
+.list_type08 .item .pay_method_select .line .btn_method {position:relative;display:block;text-align:left;height:50px;padding-left:54px;border:1px solid #e5e5e5;line-height:48px;font-size:0.75rem;color:#333;background-repeat:no-repeat;background-position:15px 50%;overflow:hidden}
+.list_type08 .item .pay_method_select .line .btn_method.on {color:#ff5a12;border-color:#ff5a12;border-right:1px solid #ff5a12;}
+.list_type08 .item .pay_method_select .line .pay_kakao {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-kakaopay.png');background-size:24px auto;border-right:none;}
+.list_type08 .item .pay_method_select .line .pay_kakao.on {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-kakaopay-on.png')}
+.list_type08 .item .pay_method_select .line .pay_smile {background-image:url('../../image/mobile/ico/icon-payment-smilepay.png');background-size:28px auto;}
+.list_type08 .item .pay_method_select .line .pay_smile.on {background-image:url('../../image/mobile/ico/icon-payment-smilepay-on.png')}
+/*
+.list_type08 .item .pay_method_select .line .pay_smile.smile_tooltip {position: relative;}
+.list_type08 .item .pay_method_select .line .pay_smile.smile_tooltip:after {content: ''; position: absolute; left: 5px; bottom: -20px;  background:url('../../image/mobile/temp/m-tooltip-smilepay-prpmotion.png') no-repeat center center; display: inline-block; width: calc((100vw - 40px) / 2 * 0.93); height: calc((100vw - 40px) / 94.86 / 299); background-size: calc((100vw - 40px) / 2 * 0.93) calc((100vw - 40px) / 94.86 / 299);}
+*/
+.list_type08 .item .pay_method_select .line .method01 {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-card.svg');background-size:24px auto;border-right:none;}
+.list_type08 .item .pay_method_select .line .method01.on {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-card-on.svg')}
+.list_type08 .item .pay_method_select .line .method02 {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-transfer.svg');background-size:24px auto;}
+.list_type08 .item .pay_method_select .line .method02.on {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-transfer-on.svg')}
+.list_type08 .item .pay_method_select .line .method03 {background-image:url('https://images.otwojob.com/image/mobile/ico/ico_method03_off.png');background-size:24px auto}
+.list_type08 .item .pay_method_select .line .method03.on {background-image:url('https://images.otwojob.com/image/mobile/ico/ico_method03_on.png')}
+.list_type08 .item .pay_method_select .line .method04 {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-phone.svg');background-size:24px auto;}
+.list_type08 .item .pay_method_select .line .method04.on {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-phone-on.svg')}
+.list_type08 .item .pay_method_select .line .method05 {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-ocash.svg');background-size:24px auto;}
+.list_type08 .item .pay_method_select .line .method05.on {background-image:url('https://images.otwojob.com/image/mobile/ico/icon-payment-ocash-on.svg')}
+.list_type08 .item .pay_method_select .line .method05.disabled {background-color:#cdcdcd}
+.list_type08 .item .pay_method_select .line .method05 .txt {}
+.list_type08 .item .pay_method_select .line .method05 .cash_wrap {position:absolute;left:26%;top:0;bottom:0;right:0;font-size:0.7rem;text-align:left;padding-left:15px}
+/*.list_type08 .item .pay_method_select .line .method05 .cash_wrap:before {content:"";position:absolute;left:0;top:50%;width:1px;height:14px;background:#f2f2f2;-webkit-transform:translateY(-50%);transform:translateY(-50%)}*/
+.list_type08 .item .pay_method_select .line .method05 .cash_wrap .c_tit {margin-right:15px;color:#999}
+.list_type08.free_list_type .item {border-left:none;border-right:none} /* 644 */
+.list_type08.free_list_type .item .item_cont {padding-left:0;padding-right:0;} /* 644 */
+.list_type08.free_list_type .item .item_cont .cate_tit i {display:inline-block;margin-left:0px;padding:1px 3px 1px 5px;height:16px;background:#fff;color:#3ba8e1;border:1px solid #129ee7;border-top-left-radius:25% 70%;border-top-right-radius:25% 70%;border-bottom-left-radius:25% 70%;border-bottom-right-radius:25% 70%;font-size:11px;line-height:1.2} /* 644 */
+.list_type08.free_list_type .item .last_order_cont {padding-left:10px;padding-right:10px;font-size:14px;}
+.list_type08.free_list_type .item .free_list_type_info {padding:10px;border-top:1px solid #e5e5e5;font-size:12px;} /* 644 */
+.list_type08.free_list_type .item .free_list_type_info dl {margin-top:12px;}
+.list_type08.free_list_type .item .free_list_type_info dl:first-child {margin-top:0;}
+.list_type08.free_list_type .item .free_list_type_info dl dt {margin-bottom:5px;}
+.list_type08.free_list_type .item .free_list_type_info dl dd {color:#666;line-height:14px}
+.list_type09 {}
+.list_type09 .day {font-size:9px;color:#999;margin-bottom:5px}
+.list_type09 .item {background:#fff;border:1px solid #ddd;padding:10px 14px 15px;margin-bottom:15px}
+.list_type09 .item a:hover {text-decoration:none}
+.list_type09 .item .in_wrap {background:#fff;margin-bottom:8px;position:relative}
+.list_type09 .item .in_wrap .image {display:table;position:absolute;left:0;top:0;width:77px;height:51px;border:1px solid #f2f2f2;overflow:hidden}/* OTWOJOB-597 */
+.list_type09 .item .in_wrap .image:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;}
+.list_type09 .item .in_wrap .image span {display:table-cell;text-align:center;vertical-align:middle}
+.list_type09 .item .in_wrap .image span img {max-width:77px;max-height:59px}
+.list_type09 .item .in_wrap .outer_wrap {margin-left:87px}
+.list_type09 .item .in_wrap .outer_wrap .desc_wrap {}
+.list_type09 .item .in_wrap .outer_wrap .desc_wrap .month {display:block;color:#ff5a12;font-size:9px;margin-bottom:4px}
+.list_type09 .item .in_wrap .outer_wrap .desc_wrap .tit {color:#333;font-size:13px;margin-bottom:4px;line-height:1.2;overflow:hidden;height:31px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:ellipsis;white-space:normal}
+.list_type09 .item .in_wrap .outer_wrap .desc_wrap .name {display:block;color:#333;font-size:9px}
+.list_type09 .item .in_wrap .outer_wrap .desc_wrap .name i {font-size:10px;font-weight:bold}
+.list_type09 .item .in_wrap:after {clear:both;content:'';display:block}
+.list_type09 .item .txt {color:#666;line-height:1.3;font-size:9px;margin-bottom:13px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:ellipsis;white-space:normal}
+.list_type09 .item .btn_view {display:block;width:100%;line-height:35px;text-align:center;color:#ff5a12;font-size:14px;border:1px solid #ff5a12;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.list_type10 {}
+.list_type10 .item_wrap {padding:5px 8px 0px;margin-bottom:15px}
+.list_type10 .item_wrap .item {float:left;width:50%}
+.list_type10 .item_wrap:after {clear:both;content:'';display:block}
+.list_type10 .item .in_wrap {margin:8px}
+.list_type10 .item .in_wrap .image {display:table;border:1px solid #f2f2f2;width:100%;overflow:hidden} /* [dev] OTWOJOB-645 */
+.list_type10 .item .in_wrap .image a {display:table-cell;text-align:center;vertical-align:middle;position:relative;background-color:#dfdede}
+.list_type10 .item .in_wrap .image img {width:100%;} /* [dev] OTWOJOB-645 */
+.list_type10 .item .in_wrap .image a:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.08)}
+.list_type10 .item .in_wrap .outer_wrap .desc_wrap .tit {color:#666;font-size:13px;margin:13px 0 8px;line-height:1.2;overflow:hidden;height:33px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;text-overflow:ellipsis;white-space:normal}
+.list_type10 .item .in_wrap .outer_wrap .desc_wrap .txt {color:#999;font-size:12px}
+.list_type10 .item .in_wrap:after {clear:both;content:'';display:block}
+
+/* 893 */
+/* new 회원가입 폼 */
+.member_form {margin-top:44px;}
+.member_form .area_member_txt {font-size:15px;color:#000;text-align:center;font-weight:600;line-height:24px;}
+.member_form .area_member_txt .txt_style01 {font-size:17px}
+.member_form .area_member_txt .txt_style02 {line-height:35px;}
+.member_form .area_member_txt .txt_style02 span.point_color {color:#f95715}
+.member_form .area_member_txt .txt_style02 strong {font-size:24px;color:#333;}
+.member_form .area_member_txt .txt_style03 {font-size:18px}
+.member_form .area_member_txt .txt_style04 {font-size:20px;padding-bottom:20px;}
+.member_form .area_member_txt .txt_style04 span.point_color {color:#f95715}
+.member_form .area_member_txt .id_info {display:inline-block;margin-top:10px;padding:5px 10px;font-weight:normal;border-top-left-radius:10% 100%;border-top-right-radius:10% 100%;border-bottom-right-radius:10% 100%;border-bottom-left-radius:10% 100%;background:#f5f5f5;}
+.member_form .area_member_txt .id_info span.point_color {color:#328ddb}
+.member_form .area_member_cont {margin-top:30px;}
+.member_form .event_banner_area {padding:33px 0 15px;text-align:center;}
+.member_form .event_banner_area img {width:100%;max-width:360px;}
+.area_member_cont .form_join_txt01 {margin-bottom:10px;font-size:14px;color:#666;text-align:center;line-height:20px;}
+.area_member_cont .form_join_txt0101 {margin-bottom:10px;font-size:15px;color:#666;text-align:center;line-height:20px;}
+.area_member_cont .form_join_txt02 {margin-top:25px;font-size:13px;color:#999;text-align:left;line-height:20px;}
+.area_member_cont .form_join_txt02 a {text-decoration:underline;color:#666;}
+.area_member_cont .form_join_txt02 .agree_all_check {display:block;overflow:hidden;margin-bottom:5px;}
+.area_member_cont .form_join_txt02 .agree_all_check:first-child {margin-top:0;}
+.area_member_cont .form_join_txt02 .agree_all_check * {vertical-align:top;}
+.area_member_cont .form_join_txt02 .agree_all_check input {float:left;}
+.area_member_cont .form_join_txt02 .agree_all_check p {position:relative;display:inline-block;float:left;width:90%;margin-left:2%;}
+.area_member_cont .form_join_txt02 .agree_all_check p.ml30 {margin-left:30px;}
+.area_member_cont .form_join_txt02 .agree_all_check p .btn_add_info {position:absolute;right:0;height:21px;background:#fff;font-size:10px;padding:0 5px;border:1px solid #dadada;}
+.area_member_cont .form_join_txt02 .agree_all_check_depth2 {margin-left:20px;}
+.area_member_cont .form_join_txt02 .agree_all_check_depth2 .hide_form_close {text-decoration:none;padding:0 0 0 3px;line-height:17px;}
+.area_member_cont .form_join_txt02 .agree_all_check_depth2 .form_join {margin-bottom:20px;}
+.area_member_cont .form_join_txt03 {font-size:16px;color:#333;text-align:center;line-height:20px;font-weight:600;}
+.area_member_cont .form_join_txt03.red {color: #f95715;}
+.area_member_cont .form_join_txt03.grey {color:#999; margin-top: 30px;}
+.area_member_cont .join_search_form {position:relative;margin-top:15px;height:48px;border:2px solid #ff5a12 !important;}
+.area_member_cont .join_search_form button {position:absolute;top:0;right:0;width:50px;height:47px;font-size:0;text-indent:-9999px;background:url('https://images.otwojob.com/image/mobile/common/ico_join_search_form.png') 0 0 no-repeat;background-size:contain;}
+.area_member_cont .talent_info {margin-top:30px;padding-top:30px;border-top:1px solid #e8e8e8;}
+.area_member_cont .talent_info.first {margin-top:0;}
+.area_member_cont .talent_info p.txt_style01 {font-size:16px;color:#999;line-height:24px;text-align:center;font-weight:600;}
+.area_member_cont .talent_info p.txt_style02 {margin-top:10px;font-size:14px;color:#666;text-align:center;line-height:19px;}
+#fn_order_phone .list_type04 li,
+#fn_order_email .list_type04 li,
+#fn_order_phone_mail .list_type04 li {font-size:11px;padding-bottom:0;}
+
+/*  893 */
+/* 회원가입 - 정보입력 */
+.form_join {border:1px solid #dadada;background:#fff;margin-top:10px}
+.form_join.bordernot {border:none;}
+.form_join .password_text {border-top:1px solid #efefef;padding:18px 20px;color:#999;line-height:20px}
+.form_join.hide {display:none;} /* 893 */
+.form_join .box_option {border-bottom:1px solid #dadada}
+.form_join .write {position:relative;border-top:1px solid #f2f2f2;padding:8px 8px 0;min-height:50px}
+.form_join .write.hide {display:none;} /* 893 */
+.form_join .write:after {content:'';display:block;clear:both}
+.form_join .write.first {margin-top:0;border-top:none;}
+.form_join .write .tab_btn li {float:left;width:50%}
+.form_join .write .tab_btn li a {height:35px;line-height:32px;display:block;border:1px solid #ccc;color:#333;text-align:center;text-decoration:none} /* 893 */
+.form_join .write .tab_btn li button {width:100%;height:38px;line-height:36px;display:block;border:1px solid #ccc;color:#333;text-align:center;text-decoration:none}
+.form_join .write .tab_btn li a.on .member_select {height:33px;border:none;text-align:center; background:url('https://images.otwojob.com/image/mobile/common/ico_select_arr_on.png') right 4px center / 12px no-repeat } /* 893 */
+.form_join .write .tab_btn li .member_select {height:31px;border:none;text-align:center;} /* 893 */
+.form_join .write .tab_btn .on {border:1px solid #f95715;color:#f95715}
+.form_join .write .tab_btn:after {clear:both;content:'';display:block}
+.form_join .write .tab_btn02 li {float:left;width:50%}
+.form_join .write .tab_btn02 li a {height:38px;line-height:36px;display:block;border:1px solid #ccc;color:#333;text-align:center;text-decoration:none}
+.form_join .write .tab_btn02 li button {width:100%;height:38px;line-height:36px;display:block;border:1px solid #ccc;color:#333;text-align:center;text-decoration:none}
+.form_join .write .tab_btn02 li a.on .member_select {border:none;text-align:center; background:url('https://images.otwojob.com/image/mobile/common/ico_select_arr_on.png') right 4px center / 12px no-repeat } /* 893 */
+.form_join .write .tab_btn02 li .member_select {border:none;text-align:center;} /* 893 */
+.form_join .write .tab_btn02 .on {border:1px solid #f95715;color:#f95715}
+.form_join .write .tab_btn02:after {clear:both;content:'';display:block}
+.form_join .write .tab_btn03 li {float:left;width:50%}
+.form_join .write .tab_btn03 li a {height:38px;line-height:36px;display:block;border:1px solid #ccc;color:#333;text-align:center;text-decoration:none} /* 893 */
+.form_join .write .tab_btn03 li button {width:100%;height:38px;line-height:36px;display:block;border:1px solid #ccc;color:#333;text-align:center;text-decoration:none}
+.form_join .write .tab_btn03 li a.on .member_select {height:33px;border:none;text-align:center; background:url('https://images.otwojob.com/image/mobile/common/ico_select_arr_on.png') right 4px center / 12px no-repeat } /* 893 */
+.form_join .write .tab_btn03 li .member_select {height:35px;border:none;text-align:center;vertical-align:top;} /* 893 */
+.form_join .write .tab_btn03 .on {border:1px solid #f95715;color:#f95715}
+.form_join .write .tab_btn03:after {clear:both;content:'';display:block}
+.form_join .write .tab_btn_info {font-size:11px;color:#999;margin-top:10px;padding:5px 0;line-height:14px;}
+.form_join .tab_content {display:none}
+.form_join #tab_phone {display:block}
+.form_join .write .input_wrap {position:relative;margin-right:88px}
+.form_join .write .input_wrap span.count_time {position:absolute;right:10px;top:35%;color:#ff2929;} /* 893 */
+.form_join .write .input_wrap span.email_tit {font-size:15px;padding-left:5px;}
+.form_join .write .input_wrap:after {clear:both;content:'';display:block}
+.form_join .write .input_wrap.wide {margin-right:0}
+.form_join .write .input_wrap input[type=text],
+.form_join .write .input_wrap input[type=number],
+.form_join .write .input_wrap input[type=email],
+.form_join .write .input_wrap input[type=password] {width:100%;border:none;color:#333;font-size:15px;padding:7px 5px; background-color: transparent;}/* padding.divide :2.3 */
+.form_join .write .input_wrap select {height:33px;line-height:31px;border:1px solid #e5e5e5;/*border-right:1px solid #f2f2f2;*/font-size:13px}
+.form_join .write .input_wrap select.last {border-right:none}
+.form_join .write .input_wrap select.type_left {border: 1px solid #e5e5e5;}
+.form_join .write .input_wrap .type_two {position:relative;float:left;width:50%}
+.form_join .write .input_wrap .type_three {position:relative;float:left;width:33.33333333333333%}
+.form_join .write .input_wrap .type_four {position:relative;float:left;width:25%}
+.form_join .write .input_wrap .space_right {display:block;margin-right:10px}
+.form_join .write .input_wrap .space_left {display:block;margin-left:10px}
+.form_join .write .input_wrap .bul {position:absolute;z-index:1}
+.form_join .write .input_wrap .bul.mail {top:0;right:-5px;line-height:33px}
+.form_join .write .input_wrap .bul.line {top:50%;right:-5px;width:10px;height:1px;background:url('https://images.otwojob.com/image/mobile/member/ico_line_bar.png') no-repeat 0 0;background-size:10px auto}
+.form_join .write .input_wrap.lh33 {line-height:33px}
+.form_join .write .input_wrap.divide10 {margin:0;float:left;width:10%;height:33px}
+.form_join .write .input_wrap.divide20 {margin:0;float:left;width:20%}
+.form_join .write .input_wrap.divide28 {margin:0;float:left;width:28%}
+.form_join .write .input_wrap.half_size {margin:0;float:left;width:50%}
+.form_join .write .input_wrap.divide66 {margin:0;float:left;width:66%}
+.form_join .write .input_wrap.divide34 {margin:0;float:left;width:34%}
+.form_join .write .input_wrap.divide25 {margin:0;float:left;width:25%}
+.form_join .write .input_wrap.divide70 {margin:0;float:left;width:70%}
+.form_join .write .input_wrap.divide75 {margin:0;float:left;width:75%}
+.form_join .write .input_wrap.divide80 {margin:0;float:left;width:80%}
+.form_join .write .input_wrap.divide90 {margin:0;float:left;width:90%}
+.form_join .write .input_wrap.divide1_3 {margin:0;float:left;width:33.33333333333333%}
+.form_join .write .input_wrap.divide100 {margin:0;width:100%}
+.form_join .write .input_wrap .borderRight {border-right:1px solid #f2f2f2}
+.form_join .write .input_wrap.last {padding-left:8px}
+.form_join .write .input_wrap.last .selectbox {border-right-width:0}
+.form_join .write .input_wrap .input_c {position:relative}
+.form_join .write .input_wrap .input_c .input_w {margin-right:25px}
+.form_join .write .input_wrap .input_c .input_w2 {margin-right:43px}
+.form_join .write .input_wrap .input_c .i_tit {position:absolute;left:0;top:0;height:33px;line-height:33px;width:45px;text-indent:5px;color:#999;text-align:left;font-size:13px}
+.form_join .write .input_wrap .input_c .i_tit + .input_w {margin-left:50px}
+.form_join .write .input_wrap .input_c .input_w input {width:100%}
+.form_join .write .input_wrap .input_c .input_w input:disabled {background-color: #eaeaea;}
+.form_join .write .input_wrap .input_c .unit {position:absolute;right:0;top:0;height:33px;line-height:33px;width:25px;color:#333;text-align:left}
+.form_join .write .input_wrap .input_c .unit2 {position:absolute;right:0;top:0;height:33px;line-height:33px;width:44px;color:#333;text-align:left}
+.form_join .write .input_wrap .input_c .unit2 i {font-size:13px}
+.form_join .write .input_wrap .input_c .input_title {color: #333; width: 70%; display: inline-block; font-size: 13px; padding: 9px 0 9px 5px; border-right: 1px solid #f2f2f2;}
+.form_join .write .input_wrap .input_c .input_title img {margin-left: 0.2rem; width: 45%; display: inline-block;}
+.form_join .write .input_wrap .input_c .input_check {width: 28%; text-align: center; display: inline-block;}
+
+.form_join .sub_content {background-color: #f7fbff;border-top:1px solid #f2f2f2; display: none;}
+.form_join .sub_content .sub_input {padding: 8px 8px 0; min-height: 50px; position: relative; border-bottom: 1px solid #fff;}
+.form_join .sub_content .sub_input.disabled {background-color: #eaeaea;}
+/*.form_join .sub_content .sub_input:first-child {border-top: 0px solid #fff;}*/
+.form_join .sub_content .sub_input .input_c {position:relative; display: inline-block; float: right;width: 100%;}
+.form_join .sub_content .sub_input .input_c input {border: none; background-color: transparent;}
+.form_join .sub_content .sub_input .input_c .input_w {margin-right:25px}
+.form_join .sub_content .sub_input .input_c .input_w2 {margin-right:43px;}
+.form_join .sub_content .sub_input .input_c .input_w input {width:100%}
+.form_join .sub_content .sub_input .input_c .input_w2 input {width: 100%; font-size: 13px;}
+.form_join .sub_content .sub_input .input_c .input_w input:disabled,
+.form_join .sub_content .sub_input .input_c .input_w2 input:disabled  {background-color: #eaeaea; color: #eaeaea;}
+.form_join .sub_content .sub_input .input_c .wide input { width: 100%; padding-left:5px;}
+.form_join .sub_content .sub_input .input_c .unit {position:absolute;right:0;top:0;height:33px;line-height:33px;width:25px;color:#333;text-align:left}
+.form_join .sub_content .sub_input .input_c .unit2 {position:absolute;right:0;top:0;height:33px;line-height:33px;width:44px;color:#333;text-align:left}
+.form_join .sub_content .sub_input .input_c .unit2 i {font-size:13px}
+.form_join .sub_content .sub_input .input_c.devide30 {width: 30%;}
+.form_join .sub_content .sub_input .input_c.devide40 {width: 40%;}
+.form_join .sub_content .sub_input .input_c.devide50 {width: 50%;}
+.form_join .sub_content .sub_input  .input_message {font-size: 13px; float: right; line-height: 33px; margin-right: 1rem; letter-spacing: -0.05rem;}
+.form_join .sub_content .sub_input  .input_message.red {color: #ff2a2a;}
+.form_join .sub_content .sub_input  .input_message.blue {color: #328ddb;}
+.form_join .sub_content .sub_input label {font-size: 13px; padding-left: 8px; color: #999; height: 33px; line-height: 26px; vertical-align: middle; position: relative; display: inline-block;}
+.form_join .sub_content .sub_input label .dc_field {background:transparent url('../../image/mobile/coupon/coupon_text.png') no-repeat 50% top; color: #fffa76; display: inline-block; height: 30px; background-size: 100% 30px; vertical-align: middle; padding: 0 0.5rem; line-height: 30px; margin-left: 0.6rem;}
+.form_join .sub_content .sub_input label .balloon {position: absolute; width: calc(100vw - 20px); left:-9px; top: 30px; z-index: 105; display: none;}
+.form_join .sub_content .sub_input label .balloon .balloon_main {position: relative; width: 100%; display: inline-block; background-color: #f8f8f8; border: solid 1px #d1d1d1;}
+.form_join .sub_content .sub_input label .balloon .balloon_main:after {content: ''; position: absolute; top: -9px; left: 4rem; border-bottom: 10px solid #f8f8f8; border-left: 5px solid transparent; border-right: 5px solid transparent;}
+.form_join .sub_content .sub_input label .balloon .balloon_main:before {content: ''; position: absolute; top: -11px; left: 4rem; border-bottom: 10px solid #d1d1d1; border-left: 5px solid transparent; border-right: 5px solid transparent;}
+.form_join .sub_content .sub_input label .balloon .balloon_main .balloon_header {color: #333; font-size: 1.2rem; margin: 0.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #333; }
+.form_join .sub_content .sub_input label .balloon .balloon_main .balloon_header a {width: 1rem; height: 1rem; float: right;}
+.form_join .sub_content .sub_input label .balloon .balloon_main .balloon_body {color: #888; font-size: 0.8rem; font-family: NotoSansCJKkr; line-height: 1.2rem; padding: 0 0.5rem 0.5rem; letter-spacing: -0.12rem;}
+.form_join .sub_content .sub_input label img {width: 0.8rem; height: auto; margin-right: 0.3rem;}
+.form_join .sub_content .sub_input .calendal_area {display: inline-block; position: absolute; right: 8px; top: 8px; min-width: 40%;}
+.form_join .sub_content .sub_input .calendal_area input[type=date] {width: 100%;}
+.form_join .sub_content .sub_input .calendal_area input[type=text] {text-align: right; background-color: transparent; border: none; color: #333; font-size: 13px;}
+.form_join .sub_content .sub_input .write { padding: 0; border: none; min-height: auto;}
+.form_join .sub_content .sub_input .write select {background-color: transparent;}
+
+.form_join .sub_content .option_content {border-bottom: 20px solid #edf4fa; position: relative;}
+.form_join .sub_content .option_content .option_close {position: absolute; right: 0; top: 0; z-index: 150;}
+.form_join .sub_content .option_content .option_close img {width: 20px; height: 20px;}
+
+.form_join .sub_content .add_option .option_content {margin-top:-7px; margin-bottom:7px;}
+.form_join .sub_content .add_option button {height: 35px; margin-top: -7px;}
+
+.form_join .write .input_wrap .agree_check {line-height:31px}
+.form_join .write .input_wrap .btn_del {position:absolute;top:50%;right:0;margin-top:-10px;background:#ccc url('https://images.otwojob.com/image/mobile/mypage/ico_del04.png') no-repeat center center;background-size:10px auto;width:20px;height:20px}
+/* OTWOJOB-777 */
+.form_join .write .info_wrap {overflow:hidden;height:auto;padding:10px 0}
+.form_join .write .info_wrap dt {float:left;width:25%}
+.form_join .write .info_wrap dd {float:left;width:75%;line-height:1.4}
+/* //OTWOJOB-777 */
+.form_join .write.period .half_size {width:45%}
+.form_join .write.period span {float:left;margin:0 10px;line-height:31px}
+.form_join .write .textarea_wrap {margin:5px 0 0}
+.form_join .write .textarea_wrap.type01 textarea {border-width:0;padding:5px}
+.form_join .write.type01 {border-top-color:#dadada}
+.form_join .write .add_option {padding:5px 0;text-align:center;font-size:14px;color:#333}
+.form_join .write .add_option img {margin-top:-3px;vertical-align:middle}
+.form_join .write .checkbox_wrap {height:33px;line-height:33px;text-align:center}
+.form_join .write .checkbox_wrap.type_left {text-align:left}
+.form_join .write .checkbox_wrap .tit {text-align:left;display:inline-block;border-right:1px solid #f2f2f2;padding-right:7px;margin-right:7px}
+.form_join .write .checkbox_wrap .txt {font-size:13px}
+.form_join .write.disabled,
+.form_join .write.disabled input[type=text],
+.form_join .write.disabled input[type=password] {background:#eaeaea}
+.form_join .write .pw {background:url('https://images.otwojob.com/image/mobile/member/ico_password.png') no-repeat right 50%;background-size:12px auto;padding-right:20px;margin-right:0}/* background-size.divide :2 */
+.form_join .write .pw.on {background-image:url('https://images.otwojob.com/image/mobile/member/ico_password_on.png')}
+.form_join .write .pw_check {background:url('https://images.otwojob.com/image/mobile/member/ico_chk.png') no-repeat right 50%;background-size:18px auto;padding-right:25px;margin-right:0}
+.form_join .write .pw_check.on {background-image:url('https://images.otwojob.com/image/mobile/member/ico_chk_on.png')}
+.form_join .write .btn_confirm {position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:14px;width:80px;height:30px;border:1px solid #dadada;color:#333;font-size:12px;letter-spacing:-1px;line-height:31px}
+.form_join .write .btn_confirm.type01 {position:relative;top:auto;right:auto;-webkit-transform:translateY(0%);transform:translateY(0%);margin-left:5px}
+.form_join .write .btn_confirm.type02 {top:0;right:0;-webkit-transform:translateY(0%);transform:translateY(0%)}
+.form_join .write .btn_confirm input[type=file] {position:absolute;left:0;top:0;width:100%;height:100%;opacity:0}
+.form_join .write .btn_confirm .txt {display:block;text-align:center;line-height:33px}
+.form_join .write .btn_confirm_new {position:absolute;top:10px;right:14px;width:80px;height:30px;border:1px solid #dadada;color:#333;font-size:13px;}
+.form_join .write .select_gender label {position:relative}
+.form_join .write .select_gender label .txt {float:left;width:50%;height:38px;line-height:36px;border:1px solid #ccc;color:#333;text-align:center;text-decoration:none;margin-left:0}
+.form_join .write .select_gender label input[type=radio] {position:absolute;top:0;left:0;width:0;height:0;border:none}
+.form_join .write .select_gender label input[type=radio]:checked + .txt {border:1px solid #f95715;color:#f95715}
+.form_join .write .select_gender:after {clear:both;content:'';display:block}
+.form_join .write .input_file_wrap {position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:8px;width:80px;height:33px}
+.form_join .write .input_file_wrap .btn {font-size:13px}
+.form_join .write.white {background-color:#fff;border:1px solid #ddd;margin-top:10px}
+.form_join .write .upload_file_block {display:inline-block;min-height:36px;padding:8px;color:#333;font-size:14px}
+.form_join .write .upload_file_block div {margin-top:10px}
+.form_join .write .upload_file_block div:first-child {margin-top:0}
+.form_join .write .upload_file_block div > a img {display:inline-block;margin-left:5px;vertical-align:top}
+.form_join .write .text {font-size:14px;color:#333;line-height:33px}
+.form_join .write .agree_txt {padding-top:8px;font-weight:600;} /* 983 */
+.form_join .write span.btn_write_unit {display:block;margin:10px 0 5px;}
+.form_join .write span.btn_write_unit a {padding:2px 4px;border:1px solid #ccc;color:#666;font-size:11px;letter-spacing:-1px;cursor:pointer;} /* 893 */
+.form_join.type01 {background:none;border:none}
+.form_join.type01 .write {padding:0}
+.form_join.type01 .write.white {padding:0;padding-right:90px}
+.form_join.type02 {margin-top:0}
+.form_join .s_tit {float:left;width:110px;height:33px;line-height:33px;font-size:14px;color:#999} /* 893 */
+.form_join .box_cont {overflow:hidden;position:relative;font-size:14px;color:#333;line-height:33px;padding-bottom:3px}
+.form_join .box_cont > p {min-height:33px}
+.form_join .box_cont .btn_modify {position:absolute;top:0;right:0;width:25px;height:33px;text-indent:-9999px;background:url('https://images.otwojob.com/image/mobile/mypage/ico_arrow02.png') no-repeat 50% 50%;background-size:8px auto}
+.form_join .box_cont .para {line-height:17px;margin-top:5px}
+.form_join .box_cont .para input {width:100%}
+.form_join .box_cont .required {color:#999}
+.form_join .box_cont .upload_file {background:url('https://images.otwojob.com/image/mobile/common/btn_file_upload04.png') no-repeat left center;background-size:11px auto;padding-left:15px;font-size:13px;color:#333}
+.form_join .box_cont .blank_area {margin-right:85px}
+.form_join .box_cont .blank_area input {width:100%;vertical-align:top}
+.form_join .box_cont .blank_area input {width:100%;vertical-align:top}
+.login_event_banner {position:absolute;top:145px;left:50%;margin-left:290px;}
+
+.form_join .confirm_box {padding:15px;}
+.form_join .confirm_box .confirm_box_info {padding-left:25px;}
+.form_join .confirm_box .confirm_box_info .confirm_box_txt {display:inline-block;margin-top:5px;color:#999;line-height:14px; font-size: 12px;}
+.form_join .write_agree_form {padding:4px 0 9px;}
+.form_join .write_agree_form .txt_tit {font-size:13px;color:#333;font-weight:600;}
+.form_join .write_agree_form .txt_tit .hide_form_close {float:right;display:inline-block;width:16px;height:16px;background:url('https://images.otwojob.com/image/mobile/orderjob/btn-close-black-16-px.png') no-repeat center center / 16px 16px;color:#fff;padding:3px 0 0 3px;border-radius:10px;font-size:11px; text-indent: -9999px;} /* 893 */
+.form_join .write_agree_form .txt_box {height:112px;border:1px solid #f2f2f2;background:#f9f9f9;font-size:13px;color:#999;line-height:18px;margin-top:10px;padding:13px;overflow-x:hidden;overflow-y:auto}/* font.divide :2 */
+.form_join .confirm_box input[type=checkbox] + .txt, .form_join .confirm_box input[type=hidden] + .txt {font-size:13px;}
+
+/* 경고,확인 메세지 */
+.warning {font-size:13px;color:#ff2929;margin-top:5px}
+.confirm {font-size:13px;color:#328ddb;margin-top:5px}
+.form_join .write .warning,
+.form_join .write .confirm {margin-top:0;margin-left:5px;padding-bottom:15px;padding-left:5px;} /* 893 */
+.form_join .write .warning.mt8,
+.form_join .write .confirm.mt8 {margin-top:8px; padding-bottom: 8px; line-height: normal;} /* 893 */
+.form_join .write .warning.mt10,
+.form_join .write .confirm.mt10 {margin-top:10px;} /* 893 */
+.form_join .write .agree_check {text-align:right;margin-top:6px}

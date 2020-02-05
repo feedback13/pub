@@ -1,0 +1,78 @@
+<!doctype html>
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>오투잡</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/pc/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/free_img.css">
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/pc/infinitegrid.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/pc/free_img.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!-- header -->
+    <!--<header class="header" id="header"></header>-->
+    <header class="header"></header> <!-- 메시지 검색 시 class='search' 추가 -->
+    <!-- //header -->
+
+    <!-- content -->
+    <section class="content"></section>
+    <!-- //content -->
+
+    <!-- footer -->
+    <section class="footer"></section>
+    <!-- //footer -->
+</div>
+
+<script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    //header
+    $.ajax({
+               type: 'GET',
+               url: 'header.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.header').html(data);
+               }
+           });
+    //content
+    $.ajax({
+               type: 'GET',
+               url: '/p/'+getParameterByName('page'),
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.content').html(data);
+               }
+           });
+    //footer
+    $.ajax({
+               type: 'GET',
+               url: 'footer.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.footer').html(data);
+               }
+           });
+</script>
+</body>
+</html>

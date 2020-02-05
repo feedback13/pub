@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>오투잡 코딩가이드</title>
+<link type="text/css" rel="stylesheet" href="../styles/common.css" />
+<script type="text/javascript" src="../js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="../js/function.js"></script>
+<script type="text/javascript" src="../js/shCore.js"></script>
+<script type="text/javascript" src="../js/shBrushBash.js"></script>
+<script type="text/javascript" src="../js/shBrushCpp.js"></script>
+<script type="text/javascript" src="../js/shBrushCSharp.js"></script>
+<script type="text/javascript" src="../js/shBrushCss.js"></script>
+<script type="text/javascript" src="../js/shBrushDelphi.js"></script>
+<script type="text/javascript" src="../js/shBrushDiff.js"></script>
+<script type="text/javascript" src="../js/shBrushGroovy.js"></script>
+<script type="text/javascript" src="../js/shBrushJava.js"></script>
+<script type="text/javascript" src="../js/shBrushJScript.js"></script>
+<script type="text/javascript" src="../js/shBrushPhp.js"></script>
+<script type="text/javascript" src="../js/shBrushPlain.js"></script>
+<script type="text/javascript" src="../js/shBrushPython.js"></script>
+<script type="text/javascript" src="../js/shBrushRuby.js"></script>
+<!--<script type="text/javascript" src="../js/shBrushScala.js"></script>-->
+<script type="text/javascript" src="../js/shBrushSql.js"></script>
+<script type="text/javascript" src="../js/shBrushVb.js"></script>
+<script type="text/javascript" src="../js/shBrushXml.js"></script>
+<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = '../js/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header_coding">
+		<div>빈 레이어</div>
+		<ul>
+			<li class="menu1"><a href="index.html">DTD</a></li>
+			<li class="menu2"><a href="layout.html">LAYOUT</a></li>
+			<li class="menu3"><a href="css.html">CSS</a></li>
+			<li class="menu4"><a href="table.html">TABLE</a></li>
+			<li class="menu5"><a href="bbs.html">BBS</a></li>
+			<li class="menu6"><a href="test1.html">TEST</a></li>
+		</ul>
+		<p>※ 코딩가이드는 <span>모던 브라우저(FF,Chrome, Safari)</span> 사용을 권장합니다.</p>
+	</div>
+	<div id="container_coding">
+		<div id="lnb_coding">
+			<div></div>
+			<h1>오투잡 코딩가이드</h1>
+			<h2>#DTD</h2>
+			<p>(Document Type Definition)</p>
+		</div>
+		<div id="content_coding">
+			<p>- W3C의 표준 문법을 준수합니다.</p>
+			<div class="intro">
+				<ul>
+					<li>Document Type Definition는 생략할 수 없으며 반드시 명시 합니다. 
+						<div>
+							대부분의 웹 브라우저들은 문서형(DTD:Document Type Definition)이 선언되지 않은 웹 문서를 쿽스모드(Quirks Mode)로 렌더링 하며, 웹 브라우저들마다 쿽스모드일 때 화면을 표시하는 방법이 달라서 문서형을 선언하지 않으면 브라우저 호환성을 확보하기 어렵습니다. <br />
+							<code>
+								&lt;!doctype html &gt;<br />
+								&lt;html lang="ko"&gt;<br />
+								&lt;head&gt;<br />
+								&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br />
+								&lt;meta charset="utf-8"&gt;<br />
+								&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;<Br />
+								&#60;/html&#62;<br />
+							</code>
+						</div>
+					</li>
+					<li>DTD와 관계없이 모든 요소(Element)와 속성(Properties) 및 값(Value)은 영문 소문자로 마크업 합니다. 요소와 속성을 소문자로 처리하는 것은 XHTML 문서로의 확장을 용이하게 합니다. 속성의 값을 소문자로 처리하는 것은 대부분의 브라우저에서 Quirks Mode DTD일때 대소문자를 구분하지 않기 때문이며, 이러한 이유로 id/class의 속성 값을 소문자로 처리하는 것은 공통 지침입니다. </li>
+					<li>작성이 완료된 순수 HTML 문서는 W3C HTML Validation 검사를 실시하고 Pass 될 때까지 디버깅 한 후 개발부서에 넘깁니다.</li>
+				</ul>
+			</div>
+			<h3>+ Document Type</h3>
+			<div class="sourceDiv" style="display:block">
+				<xmp>
+<!doctype html>
+				</xmp>
+			</div>
+			<h3>+ Default Encoding</h3>
+			<div class="sourceDiv" style="display:block">
+				<xmp>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+				</xmp>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

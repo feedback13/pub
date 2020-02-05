@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>사람인 OTWOJOB</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/pc/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/content.css">
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <!--<script type="text/javascript" src="/js/pc/placeholders.jquery.min.js"></script>-->
+    <script type="text/javascript" src="/js/pc/jquery.scrollbar.min.js"></script> <!-- otwojob-1323-->
+    <!--<script type="text/javascript" src="/js/pc/common.js"></script>-->
+</head>
+<body>
+
+<!-- skip_content -->
+<div id="skip_content">
+    <a href="#content">본문바로가기</a>
+</div>
+<!-- //skip_content -->
+
+<!-- header -->
+<header id="header02"></header>
+<!-- //header -->
+
+<!-- sticky_wrap  -->
+<!--<div class="sticky_wrap odj"></div>-->
+<!-- //sticky_wrap -->
+
+<!-- content -->
+<section id="content"></section>
+<!-- // content -->
+
+<!-- footer -->
+<footer id="footer" class="footerWrap"></footer>
+<!-- //footer -->
+
+<script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    //header
+    $.ajax({
+           type: 'GET',
+           url: 'header.html',
+           dataType: 'html',
+           cache: false,
+           async: false,
+           success: function (data) {
+               $('#header02').html(data);
+           }
+       });
+    //stickyWrap
+    /*$.ajax({
+               type: 'GET',
+               url: 'stickyWrap.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.sticky_wrap').html(data);
+               }
+           });*/
+    //content
+    $.ajax({
+               type: 'GET',
+               url: '/p/'+getParameterByName('page'),
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('#content').html(data);
+               }
+           });
+    //footer
+    $.ajax({
+               type: 'GET',
+               url: 'footer.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('#footer').html(data);
+               }
+           });
+</script>
+<script type="text/javascript" src="/js/pc/main.js"></script>
+<script type="text/javascript" src="/js/pc/common.js"></script>
+
+<!-- 알림 레이어 -->
+<div class="notice_layer">
+    <span class="notice_layer_arr"></span>
+    <div class="notice_layer_top">$나마스테$님의 최근 메세지</div>
+    <!-- 로딩이미지 -->
+    <div class="notice_loading" style="display:block;"><img src="/image/pc/common/loading02.gif" alt="로딩이미지" /></div> <!-- css 최초설정 : display:none; -->
+    <!-- //로딩이미지 -->
+    <div class="notice_layer_cont">
+        <div class="scrollbar-inner">
+            <p class="no_notice">아직 도착한 알림이 없습니다.</p> <!-- 알림 없을 시 노출 -->
+            <ul>
+                <li class="first">
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="//images.otwojob.com/profile/5/7/9/5795a81aa26d0.jpg/o2j/resize/100>" alt="ca92336"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="notice_color">[공지]</span>
+                                <span class="cont_txt">판매회원 전환완료 되었습니다.</span>
+                                <span class="notice_date">15분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="//images.otwojob.com/profile/Y/f/H/YfHeWdw4uj2DLR1.jpeg/o2j/resize/100>" alt="ca92336"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="notice_color">[공지]</span>
+                                <span class="cont_txt">보유하고 있는 O포인트 소멸예정포인트 10,000p가 소멸예정입니다.</span>
+                                <span class="notice_date">3시간 30분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg" alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="message_color">[메세지]</span>
+                                <span class="cont_txt">스페셜디자인님으로 부터 메시지가 도착하였습니다.</span>
+                                <span class="notice_date">2017.12.17 21:07</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg" alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="deal_color">[거래메세지]</span>
+                                <span class="cont_txt">4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트</span>
+                                <span class="notice_date">15분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg" alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="notice_color">[공지]</span>
+                                <span class="cont_txt">보유하고 있는 O포인트 소멸예정포인트 10,000p가 소멸예정입니다.</span>
+                                <span class="notice_date">3시간 30분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span><img src="/image/pc/etc/profile_img_otwojob_pc.jpg" alt="otwojob"></span></span>
+                            </dt>
+                            <dd>
+                                <span class="message_color">[메세지]</span>
+                                <span class="cont_txt">스페셜디자인님으로 부터 메시지가 도착하였습니다.</span>
+                                <span class="notice_date">2017.12.17 21:07</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <span class="dot_point"></span>
+                    <a href="#">
+                        <dl>
+                            <dt>
+                                <span class="photo"><span></span></span>
+                            </dt>
+                            <dd>
+                                <span class="deal_color">[거래메세지]</span>
+                                <span class="cont_txt">4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트4줄이상 테스트 텍스트트</span>
+                                <span class="notice_date">15분전</span>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li class="last"><span class="dot_point">&nbsp;</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="notice_layer_foot"><a href="#">내 알림 전체보기</a></div>
+</div>
+
+</body>
+</html>

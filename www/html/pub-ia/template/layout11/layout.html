@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>사람인 OTWOJOB</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/pc/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/main.css">
+    <!--<link rel="stylesheet" type="text/css" href="/css/pc/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/pc/content.css">-->
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/jquery.bxslider.js"></script>
+    <!--<script type="text/javascript" src="/js/pc/jquery.als-1.7.min.js"></script>-->
+    <!--<script type="text/javascript" src="/js/pc/placeholders.jquery.min.js"></script>-->
+    <script type="text/javascript" src="/js/pc/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/pc/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="/js/pc/cycle2.js"></script>
+</head>
+<body class="main">
+
+<!-- skip_content -->
+<div id="skip_content">
+    <a href="#content">본문바로가기</a>
+</div>
+<!-- //skip_content -->
+
+<!-- top_banner -->
+<section class="topBannerWrap on" style="display: none;"></section>
+<!--<div class="top_banner on" style="display:block;background-image:url('/image/pc/event/20180319/ok_top_banner_bg.png')"></div> 오키데이용 하드코딩 -->
+<!-- //top_banner -->
+
+<!-- header -->
+<header class="headerWrap" id="header"></header>
+<!-- //header -->
+
+<!-- sticky_wrap  -->
+<!--<section id="stickyWrap"></section>-->
+<!-- //sticky_wrap -->
+
+<!-- container wrap -->
+<section class="containerWrap" id="content">
+    <!-- containerInner -->
+    <div class="containerInner">
+        <section id="content_container"></section>
+    </div>
+    <!-- left wing banner -->
+    <aside class="leftWingBannerWrap"></aside>
+    <!-- history -->
+    <aside class="historyWrap"></aside>
+</section>
+<!-- // container wrap -->
+
+<!-- footer -->
+<footer class="footerWrap"></footer>
+<!-- //footer -->
+
+<!-- Layer popup : 동영상 재생 -->
+<div class="popup_layer movie_area movie" style="display:none">
+    <div class="dimm"></div>
+    <a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close_mov.png" alt="팝업닫기" /></a>
+</div>
+
+
+<script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    //topBannerWrap
+    $.ajax({
+           type: 'GET',
+           url: 'topBannerWrap.html',
+           dataType: 'html',
+           cache: false,
+           async: false,
+           success: function (data) {
+               $('.topBannerWrap').html(data);
+           }
+       });
+    //headerWrap
+    $.ajax({
+           type: 'GET',
+           url: 'headerWrap.html',
+           dataType: 'html',
+           cache: false,
+           async: false,
+           success: function (data) {
+               $('.headerWrap').html(data);
+           }
+       });
+    //stickyWrap
+    /*$.ajax({
+           type: 'GET',
+           url: 'stickyWrap.html',
+           dataType: 'html',
+           cache: false,
+           async: false,
+           success: function (data) {
+               $('#stickyWrap').html(data);
+           }
+       });*/
+    //containerInner
+    $.ajax({
+               type: 'GET',
+               url: '/p/'+getParameterByName('page'),
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.containerInner').html(data);
+               },
+               catch: function (err) {
+                   console.log("ERR:" + err);
+               }
+           });
+    //footerWrap
+    $.ajax({
+               type: 'GET',
+               url: 'footerWrap.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.footerWrap').html(data);
+               }
+           });
+    //leftBannerWrap
+    $.ajax({
+               type: 'GET',
+               url: 'leftWingBannerWrap.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.leftWingBannerWrap').html(data);
+               }
+           });
+    //historyWrap
+    $.ajax({
+               type: 'GET',
+               url: 'historyWrap.html',
+               dataType: 'html',
+               cache: false,
+               async: false,
+               success: function (data) {
+                   $('.historyWrap').html(data);
+               }
+           });
+</script>
+<script type="text/javascript" src="/js/pc/flicking.pkgd.min.js"></script>
+<script type="text/javascript" src="/js/pc/pub.main.js"></script>
+
+<!--[if lte IE 9]>
+<script type="text/javascript">
+    jQuery(window).on('load',function (e) {
+        var inputHasPlaceholder = 0;
+        if (!("placeholder" in document.createElement("input"))) {
+            jQuery(document).on('focus', ":input[placeholder]", function() {
+                var $this = jQuery(this);
+                $this.addClass("focusbox");
+                jQuery("#jQueryVirtual_label_" + $this.attr("id")).hide();
+            }).on('blur', ":input[placeholder]", function() {
+                var $this = jQuery(this);
+                $this.removeClass("focusbox");
+                if(!jQuery.trim($this.val()))
+                    jQuery("#jQueryVirtual_label_" + $this.attr("id")).show();
+                else jQuery("#jQueryVirtual_label_" + $this.attr("id")).hide();
+            })
+            jQuery.fn.createLabel = function() {
+                return this.each(function() {
+                    inputHasPlaceholder++;
+                    var $this = jQuery(this);
+                    var pos = $this.position();
+                    if(!$(this).is("[id]")){
+                        $(this).attr('id', 'id'+ inputHasPlaceholder);
+                    }
+                    if (!this.id) this.id = "jQueryVirtual_" + this.name;
+
+
+                    if($this.hasClass('top10')){
+                        $this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left:" + (pos.left +10) + "px; top:" + (pos.top +10) + "px;width:" + ($this.width()) + "px; height:" + ($this.height()) + "px;line-height:" + ($this.height()) + "px;margin-top:1px' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                        $this.trigger("blur");
+                    }if($this.hasClass('_visual_search')){
+                        $this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left:" + (pos.left +170) + "px; top:" + (pos.top +15) + "px;width:" + ($this.width()) + "px; height:" + ($this.height()) + "px;line-height:" + ($this.height()) + "px;margin-top:1px' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                        $this.trigger("blur");
+                    }else{
+                        $this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left:" + (pos.left +10) + "px; top:" + (pos.top) + "px;width:" + ($this.width()) + "px; height:" + ($this.height()) + "px;line-height:" + ($this.height()) + "px;margin-top:1px' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                        $this.trigger("blur");
+                    }
+                })
+            }
+            jQuery(':input[placeholder]').createLabel();
+        }
+    })
+</script>
+<style type="text/css">
+    label.absolute {display:none;position:absolute;width:100%;color:#999;cursor: text}
+</style>
+<![endif]-->
+
+</body>
+</html>

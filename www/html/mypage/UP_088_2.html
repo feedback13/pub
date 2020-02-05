@@ -1,0 +1,882 @@
+	<!-- path_indicator -->
+ 	<nav class="path_indicator">
+		<div class="inner_container">
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+			    <li>
+					<span class="home"><a href="#none">Home</a></span>
+					<span class="path_home"><a href="#none">오투잡 홈</a></span>
+			    </li>
+				<li class="path_div">
+					<span class="path"><a href="#none">주문/결제</a></span>
+				</li>
+			</ol>
+			<!--// breadcrumb -->
+		</div>
+	</nav>
+	<!-- //path_indicator -->
+
+	<!-- content_container -->
+	<section id="content_container" class="wide"> <!-- otwojob-1707 -->
+		<div class="inner_container"> <!-- otwojob-1707 -->
+			<section class="order_item_content">
+				<h2 class="tit_sect">주문/결제하기</h2>
+
+				<!-- items_to_order -->
+				<article class="items_to_order">
+					<h3>주문내역</h3>
+					<ul class="cont_list03 type_order">
+						<li>
+							<div class="talent_info">
+								<div class="photo"><span><em><img src="/image/pc/temp/@list1.png" alt="" /></em></span></div>
+								<div class="tit_area">
+									<span class="status">[디자인] </span>
+									<p class="tit">한글 캘리그라피 전문가가 직접 정성스럽게 써드립니다. <i class="icon_free">+ 맛보기</i></p> <!-- 644 -->
+									<div class="num_count">
+										<span>니익네에이임드으러어와아요오</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<!-- 이미지가 없을경우 tit_area에 no_photo로 분기시켜주세요~ -->
+						<li>
+							<div class="talent_info">
+								<div class="tit_area no_photo">
+									<span class="status">[디자인] </span>
+									<p class="tit">한글 캘리그라피 전문가가 직접 정성스럽게 써드립니다. </p>
+									<div class="num_count">
+										<span>니익네에이임드으러어와아요오</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- //이미지가 없을경우 -->
+					</ul>
+
+					<div class="pay_add order_info">
+						<div class="no_line">
+							<strong>기본</strong><em class="con_txt">( 5일 / 5,000원 )</em>
+							<div class="num_area">
+								<span class="num">1개</span>
+								<span class="day">15,000원</span>
+								<span class="pay_result">예정작업기간 10일</span>
+							</div>
+						</div>
+						<div class="no_line">
+							<strong>빠른 작업 요청</strong><em class="con_txt">( -3일 / 5,000원 )</em>
+							<div class="num_area">
+								<span class="num">1개</span>
+								<span class="day">15,000원</span>
+								<span class="pay_result">예정작업기간 888일 단축</span>
+							</div>
+						</div>
+						<div class="no_line">
+							<strong>옵션명</strong><em class="con_txt">( 3일 / 5,000원 )</em>
+							<div class="num_area">
+								<span class="num">1개</span>
+								<span class="day">15,000원</span>
+								<span class="pay_result">예정작업기간 10일</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="total_profit_inner">
+						<strong class="sum_tit">주문합계</strong>
+						<p class="sum_con">
+							<span class="price"><strong>2626,000</strong>원</span>
+							<span class="all">( 총 예정 작업기간 <strong>888</strong>일 )</span>
+						</p>
+					</div>
+				</article>
+				<!--// items_to_order -->
+
+				<article class="order_process_inform">
+					<div class="order_inform">
+                        <label class="attention">판매자 지시사항</label>
+                        <span class="req_message">
+							<button onclick="toggleMessage(this)" class="toggle_btn"><img src="/image/pc/ico/ic-arrow-down-23-px.png"></button>
+                            ★사이즈/색상/완성된 구두 받을 주소와 연락처★를 꼭 남겨주세요. 기타 문의사항 또는 사이즈 관련 문의도 연락 주시면 상담해 드리겠습니다.
+							★사이즈/색상/완성된 구두 받을 주소와 연락처★를 꼭 남겨주세요. 기타 문의사항 또는 사이즈 관련 문의도 연락 주시면 상담해 드리겠습니다.<br><br>
+							★사이즈/색상/완성된 구두 받을 주소와 연락처★를 꼭 남겨주세요. 기타 문의사항 또는 사이즈 관련 문의도 연락 주시면 상담해 드리겠습니다.
+★사이즈/색상/완성된 구두 받을 주소와 연락처★를 꼭 남겨주세요. 기타 문의사항 또는 사이즈 관련 문의도 연락 주시면 상담해 드리겠습니다.
+                        </span>
+						<div class="res_message">
+							<textarea placeholder="판매자 지시 사항에 대한 대변을 입력해주세요"></textarea>
+						</div>
+
+                    </div>
+                    <div class="order_inform">
+                        <label>배송지 정보</label>
+                        <div class="address_info" style="display: none;">  <!-- 기존 주소가 있을경우 사용-->
+                            <div class="full">
+                                <label>수령인</label>
+                                <div class="fixed_form">김길동</div>
+                                <button class="edit_adr">변경</button>
+                            </div>
+                            <div class="full">
+                                <label>연락처</label>
+                                <div class="fixed_form">010-1234-1235</div>
+                            </div>
+                            <div class="full">
+                                <label>배송지</label>
+                                <div class="fixed_form">(06236) 서울특별시 강남구 역삼동 736-58 대세빌딩 위워크 4층 사람인HR
+                                </div>
+                            </div>
+                            <div class="full">
+                                <label>배송메모</label>
+                                <div class="edit_form">
+                                    <input type="text" placeholder="부재시 경비실에 맡겨주세요">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic_check">
+                            <span class="input_check">
+                                <input type="checkbox" id="basic_check" title="기본배송지로 선택">
+                                <label for="basic_check">기본배송지로 선택</label>
+                            </span>
+                        </div>
+                        <div class="address_info">
+                            <div class="half">
+                                <label>수령인</label>
+                                <div class="edit_form">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="half">
+                                <label>연락처</label>
+                                <div class="edit_form">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="full">
+                                <label>배송지</label>
+                                <div class="edit_form">
+                                    <input type="text" class="address_type01">
+                                    <button class="search_adr" onclick="openLay('find_address')">주소검색</button>
+                                    <br>
+                                    <input type="text" class="address_type02">
+                                    <input type="text" class="address_type02">
+                                </div>
+                            </div>
+                            <div class="full">
+                                <label>배송메모</label>
+                                <div class="edit_form">
+                                    <input type="text" placeholder="부재시 경비실에 맡겨주세요">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+				</article>
+
+			</section>
+		</div>
+
+
+
+		<section class="payment_method_content">
+
+			<article class="payment_method">
+				<div class="show_payment_method">
+					<h3>할인선택<span class="comment">할인 및 O포인트는 주문금액에만 적용됩니다. (배송비와 수수료 할인 제외)</span></h3>
+					<div class="table_row02 discont_write_table">
+						<table>
+							<caption class="blind">할인쿠폰선택</caption>
+							<colgroup>
+								<col width="160px" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><label for="">할인쿠폰</label></th>
+									<td>
+										<div class="select_type01 selectbox">
+											<label for="">할인받을 쿠폰을 선택하세요.</label>
+											<select name="" id="" title="할인쿠폰">
+												<option>할인받을 쿠폰을 선택하세요.</option>
+												<option>O265541</option>
+												<option>O265542</option>
+												<option>O265543</option>
+											</select>
+										</div>
+										<div class="discount_price">-10,000<em>원</em></div>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="">O포인트</label></th>
+									<td>
+										<div class="point_to_use">
+											<span class="applicable_point">사용가능 포인트 <em>151,000 P</em></span>
+											<span class="point_write"><input type="text" id="" class="points" title="사용할 포인트 입력" placeholder="0"/> P</span>
+										</div>
+										<button type="button" class="btn_use">사용</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<!-- 644 -->
+					<h3>결제수단</h3>
+					<div class="box_free_info">
+						<p>맛보기재능은 무료재능으로 <strong>0원</strong>으로 <strong>'결제하기'</strong> 버튼을 클릭하신 후결제를 하셔야 주문이 완료되며,<br><strong>마이페이지 > 구매관리</strong>를 통해 진행내역을 확인하실 수 있습니다.</p>
+					</div>
+					<!-- //644 -->
+
+					<h3>결제수단 선택</h3>
+					<div class="payment_method_detail">
+						<table class="pay_radio_type">
+							<colgroup><col width="160px"><col width="252px"><col width="252px"></colgroup>
+							<tbody>
+								<tr>
+									<th>일반결제</th>
+									<td>
+										<span class="input_radio">
+											<input type="radio" name="payment" id="pay_creditcard" title="신용카드">
+											<label for="pay_creditcard">신용카드</label>
+										</span>
+									</td>
+									<td>
+										<span class="input_radio">
+											<input type="radio" name="payment" id="pay_phone" title="휴대폰 결제">
+											<label for="pay_phone">휴대폰 결제</label>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<th>현금결제</th>
+									<td>
+										<span class="input_radio">
+											<input type="radio" name="payment" id="pay_account" title="실시간 계좌이체">
+											<label for="pay_account">실시간 계좌이체</label>
+										</span>
+									</td>
+									<td>
+										<span class="input_radio">
+											<input type="radio" name="payment" id="pay_virtual_account" title="무통장 입금">
+											<label for="pay_virtual_account">무통장 입금</label>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<th>간편결제</th>
+									<td>
+										<span class="input_radio ">
+											<input type="radio" name="payment" id="pay_naver" title="네이버페이">
+											<label for="pay_naver"><img src="/image/pc/ico/payment-icon-naver.png">네이버페이</label>
+										</span>
+										<span class="input_radio bottom">
+											<input type="radio" name="payment" id="pay_smile" title="스마일페이">
+											<label for="pay_smile"><img src="/image/pc/ico/payment-icon-smile.png">스마일페이</label>
+										</span>
+
+									</td>
+									<td class="smile_tooltip">
+										<span class="input_radio">
+											<input type="radio" name="payment" id="pay_kakao" title="카카오페이">
+											<label for="pay_kakao"><img src="/image/pc/ico/payment-icon-kakao.png">카카오페이</label>
+										</span>
+									</td>
+								</tr>
+
+								<tr>
+									<th>O캐시 결제</th>
+									<td colspan="2">
+										<span class="input_radio">
+											<input type="radio" name="payment" id="pay_ocash" title="O 캐시">
+											<label for="pay_ocash">O 캐시</label>
+											<span class="use_cash"><em class="font_color01">9,510,000</em>원 사용가능  </span>
+										</span>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+
+						<div class="pay_type" style="display: none;"><!-- 선택된 상태 class="on" 추가 -->
+							<button class="pay_creditcard" type="button">신용카드</button>
+							<button class="pay_kakao" type="button">카카오페이</button> <!-- otwojob-1518 -->
+							<button class="pay_virtual_account on" type="button">무통장입금</button>
+							<button class="pay_account disabled" type="button">실시간<br>계좌이체</button>
+							<button class="pay_phone" type="button">휴대폰</button>
+							<button class="pay_ocash last" type="button">O 캐시 <span class="use_cash"><em class="font_color01">9,510,000</em>원 보유</span></button> <!-- otwojob-1518 -->
+						</div>
+						<div class="pay_type b_five" style="display: none;"><!-- 선택된 상태 class="on" 추가 -->
+							<button class="pay_creditcard" type="button">신용카드</button>
+							<button class="pay_virtual_account on" type="button">무통장입금</button>
+							<button class="pay_account disabled" type="button">실시간 계좌이체</button>
+							<button class="pay_phone" type="button">휴대폰</button>
+							<button class="pay_ocash last" type="button">O 캐시 <span class="use_cash"><em class="font_color01">9,510,000</em>원 보유</span></button> <!-- otwojob-1518 -->
+						</div>
+
+						<div class="table_row02 payment_write_table">
+							<table>
+								<caption class="blind">결제수단 선택 입력</caption>
+								<colgroup>
+									<col width="160px" />
+									<col width="*" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><label for="">현금영수증</label></th>
+										<td>
+											<span class="input_radio">
+												<input type="radio" id="apply01"name="cash_receipt" title="신청안함" />
+												<label for="apply01">신청안함</label>
+											</span>
+											<span class="input_radio">
+												<input type="radio" id="apply02" name="cash_receipt" title="신청함" checked="checked" />
+												<label for="apply02">신청함</label>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th><label for="">사용용도</label></th>
+										<td>
+											<span class="input_radio">
+												<input type="radio" id="use01"name="use" title="개인소득공제" />
+												<label for="use01">개인소득공제</label>
+											</span>
+											<span class="input_radio">
+												<input type="radio" id="use02" name="use" title="사업자 지출증빙" checked="checked" />
+												<label for="use02">사업자 지출증빙</label>
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<th><label for="">발급방법</label></th>
+										<td>
+											<div class="select_type01 selectbox how_to_get">
+												<label for="">휴대전화번호</label>
+												<select name="" id="" title="발급방법 옵션">
+													<!-- [dev] 개인소득공제 -->
+													<option value="">휴대전화번호</option>
+													<option value="">현금영수증카드번호</option>
+												</select>
+											</div>
+											<div class="form_block">
+												<div class="select_type01 selectbox three-digit">
+													<label for="phone_num"></label>
+													<select id="phone_num">
+														<option value="" selected>010</option>
+														<option value="">010</option>
+														<option value="">010</option>
+													</select>
+												</div> -
+												<input type="text" id="" class="phone_number" /> -
+												<input type="text" id="" class="phone_number" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><label for="">발급방법</label></th>
+										<td>
+											<div class="select_type01 selectbox how_to_get">
+												<label for="">사업자등록번호</label>
+												<select name="" id="" title="발급방법 옵션">
+													<!-- [dev] 사업자 지출증빙 -->
+													<option value="">사업자등록번호</option>
+													<option value="">현금영수증카드번호</option>
+												</select>
+											</div>
+											<div class="form_block">
+												<input type="text" id="" class="phone_number" /> -
+												<input type="text" id="" class="phone_number" /> -
+												<input type="text" id="" class="phone_number" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><label for="">발급방법</label></th>
+										<td>
+											<div class="select_type01 selectbox how_to_get">
+												<label for="">현금영수증카드번호</label>
+												<select name="" id="" title="발급방법 옵션">
+													<!-- [dev] 사업자 지출증빙 -->
+													<option value="">사업자등록번호</option>
+													<option value="" selected="selected">현금영수증카드번호</option>
+												</select>
+											</div>
+											<div class="form_block">
+												<input type="text" id="" class="one-digit" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th><label for="">수령인</label></th>
+										<td>
+											<input type="text" id="" title="수령인" class="receiver" />
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="save_apply_info">
+											<span class="input_check">
+												<input type="checkbox" id="save_cash_application" title="현금영수증 신청정보 저장" />
+												<label for="save_cash_application">현재 현금영수증 신청정보를 저장합니다.</label>
+											</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="content_block02">
+							<table class="tbl_type04 wide">
+								<colgroup>
+									<col width="20%" />
+									<col width="*" />
+								</colgroup>
+								<tbody>
+								<tr>
+									<th class="top">환불계좌</th>
+									<td>
+										<p class="word">오투잡</p>
+										<p class="word">KB국민은행</p>
+										<p class="word">123-12345-243255<b class="red">미인증 계좌입니다.</b><button type="button" class="btn_grey" onclick="openLay('account_regist')">계좌 정보 변경</button></p>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+
+							<!-- 환불계좌가 없는경우 -->
+							<table class="tbl_type04 wide">
+								<colgroup>
+									<col width="20%" />
+									<col width="*" />
+								</colgroup>
+								<tbody>
+								<tr>
+									<td colspan="2" align="center">
+									<span class="txt_comment">등록된 환불 계좌 정보가 없습니다.<br>
+										환불 계좌를 먼저 등록해주세요</span>
+										<button type="button" class="btn_grey" onclick="openLay('account_regist')">환불 계좌 등록</button>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<div class="table_row02 payback_write_table">
+							<table>
+								<caption class="blind">환불계좌 선택</caption>
+								<colgroup>
+									<col width="160px" />
+									<col width="*" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><label for="">환불계좌</label><p style="padding-top:10px;font-size:14px;font-weight:normal">입력화면입니다.<br>이 text는 개발시 삭제해주세요.</p></th>
+										<td>
+											<input type="text" id="test1" title="예금주 입력" placeholder="예금주" class="account_holder"><!-- [dev] OTWOJOB-719 -->
+											<div class="select_type01 selectbox bank_list">
+												<label for="">은행</label>
+												<select name="" id="" title="은행">
+													<option>은행</option>
+													<option>KB 국민은행</option>
+													<option selected="selected">KEB 하나은행</option>
+													<option>신한은행</option>
+													<option>우리은행</option>
+												</select>
+											</div>
+											<input type="text" id="" class="bank_account" title="계좌번호" />
+											<!-- [dev] OTWOJOB-719 : 문구 추가  -->
+											<div class="notify">
+												<em>*주의*</em>
+												<ul>
+													<li><em>입금자와 동일한 경우에만 환불이 가능합니다.</em></li>
+													<li><em>환불 계좌를 잘못 입력한 경우 취소 및 환불이 되지 않을 수 있습니다.</em></li>
+													<li>입력된 환불계좌는 개인정보 > 환불계좌 정보에 저장됩니다.</li>
+													<li>환불계좌 입력 이후부터 환불 처리는 입력하신 환불 계좌로 입금됩니다.</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									<!-- [dev] OTWOJOB-719 : 환불 정보 출력 -->
+									<tr>
+										<th><label for="">환불계좌</label><p style="padding-top:10px;font-size:14px;font-weight:normal">출력화면입니다.<br>이 text는 개발시 삭제해주세요.</p></th>
+										<td>
+											<span class="output">예금주 송지영<br>KB국민은행  123456789</span> <a href="javascript:void(0);" onclick="paymentController.updateCashReceipt();" class="edit">수정</a>
+											<!-- [dev] OTWOJOB-719 : 문구 추가 -->
+											<div class="notify">
+												<em>*주의*</em>
+												<ul>
+													<li><em>입금자와 동일한 경우에만 환불이 가능합니다.</em></li>
+													<li><em>환불 계좌를 잘못 입력한 경우 취소 및 환불이 되지 않을 수 있습니다.</em></li>
+													<li>입력된 환불계좌는 개인정보 > 환불계좌 정보에 저장됩니다.</li>
+													<li>환불계좌 입력 이후부터 환불 처리는 입력하신 환불 계좌로 입금됩니다.</li>
+												</ul>
+											</div>
+										</td>
+									</tr>
+									<!-- [dev] OTWOJOB-719 : 환불 계좌 수정 출력 asis -->
+									<tr>
+										<th><label for="">환불계좌</label><p style="padding-top:10px;font-size:14px;font-weight:normal">수정버튼 누른 후 나타나는 수정화면입니다.<br>이 text는 개발시 삭제해주세요.</p></th>
+										<td>
+											<input type="text" id="" title="예금주 입력" class="account_holder">
+											<div class="select_type01 selectbox bank_list">
+												<label for="">은행</label>
+												<select name="" id="" title="은행">
+													<option>은행</option>
+													<option>KB 국민은행</option>
+													<option selected="selected">KEB 하나은행</option>
+													<option>신한은행</option>
+													<option>우리은행</option>
+												</select>
+											</div>
+											<input type="text" id="" class="bank_account" title="계좌번호" value="123456789" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="payback_info">
+						<dl>
+							<dt><img src="/image/pc/ico/ico_o.png" alt=""> 포인트 적립혜택 : <span class="point_color">최대 <b>950P</b> 적립예정</span></dt>
+							<dd>
+								<span>
+									· 구매적립 : 구매 확정 시 <span class="point_color">450P</span> 적립예정
+									<button type="button" onclick="dataToolTip_reverse(this);" data-tooltip="payback_event1" data-tooltip-width="340"><img src="/image/pc/ico/ico_coupon_info.png"></button>
+								</span>
+								<span>
+									· 구매평적립 : 구매평 작성 시 <span class="point_color">500P</span> 적립예정
+									<button type="button" onclick="dataToolTip_reverse(this);" data-tooltip="payback_event2" data-tooltip-width="280"><img src="/image/pc/ico/ico_coupon_info.png"></button>
+								</span>
+							</dd>
+						</dl>
+					</div>
+
+					<div class="tbl_list_type02 first">
+						<p>O캐시 사용안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>O캐시 금액이 부족한경우 충전 후 이용해 주세요 <a href="/mypage/buyer/ocash">[충전하기]</a></li>
+							<li><span class="dot">ㆍ</span>O캐시로 결제 후 결제증빙자료가 필요하신 경우 고객센터로 문의주세요.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>신용카드 매출전표 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>신용카드 매출전표는 부가가치세법 제32조의 2 제3항에 의하여 발행되며, 동법 시행령 제57조 제2항에 의하여<br>
+								세금계산서를 교부하지 않습니다.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>현금영수증 발행 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>현금영수증이 발행되며, 입금확인 후 2일 이내에 확인하실 수 있습니다.</li>
+							<li><span class="dot">ㆍ</span>사업자증빙을 원하시는 경우에는 수정버튼을 통해 현금영수증(지출증빙용)으로 신청해 주시기 바랍니다.</li>
+							<li><span class="dot">ㆍ</span>현금영수증(지출증빙용)은 법인세법 116조 2항 및 부가가치세법 32조 2의 3항에 의해 세금계산서와 동일한 자격 및 효력이 있습니다.</li>
+							<li><span class="dot">ㆍ</span>발생 된 영수증은 수정 발부할 수 없습니다.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>휴대폰 소액결제</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>통신사 요금 납부 후 결제대행업체 명의의 현금영수증이 발행되며, 국세청 현금영수증 사이트에서 확인하실 수 있습니다.</li>
+							<li><span class="dot">ㆍ</span>결제대금은 휴대폰 사용료에 합산 청구됩니다.</li>
+							<li><span class="dot">ㆍ</span>SMS인증을 거쳐 결제가 진행되므로, 휴대폰을 소지하지 않으시면, 결제가 불가능합니다.</li>
+							<li><span class="dot">ㆍ</span>각 이동통신사별로 정해놓은 월 이용한도 금액까지 결제가 가능합니다. 이용한도는 이용하시는 통신사에서 확인해주세요.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p style="color:#888;font-size:13px;">* 결제수단은 중복하여 결제를 할수 없습니다.</p>
+
+					</div>
+
+					<!-- 카카오페이 결재시 노출 -->
+					<div class="tbl_list_type02 first">
+						<p>카카오페이란?</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>카카오톡에서 신용/체크카드를 등록하고, 결제 시 비밀번호 뿐만 아니라 지문으로도 쉽고 편리하게 결제할 수 있는 간편 결제 서비스입니다.</li>
+							<li><span class="dot">ㆍ</span>본인명의 스마트폰에서 본인명의 카드 등록 후 사용 가능합니다</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>카카오페이 결제 방법 및 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>카카오톡 > 더보기 > 카카오페이 클릭 ▶ 보유 카드 초기 등록 ▶ 초기 등록 후 비밀번호 입력 결제완료</li>
+							<li><span class="dot">ㆍ</span>30만원 이상 결제 시에는 ARS 추가 인증이 필요합니다.</li>
+							<li><span class="dot">ㆍ</span>모든 국내 신용/체크카드 사용 가능합니다.</li>
+							<li><span class="dot">ㆍ</span>카카오페이는 무이자할부 및 제휴카드 혜택 내용과 관계가 없으며, 자세한 사항은 카카오페이 공지사항에서 확인하실 수 있습니다.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>카카오페이 현금 영수증 발급 및 발행 관리</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>카카오머니로 결제하는 경우에만 현금영수증 발행이 가능합니다.</li>
+							<li><span class="dot">ㆍ</span>카카오페이 현금 영수증 발급 및 조회는 오투잡이 아닌 카카오페이에서 관리 및 확인 가능합니다.</li>
+							<li><span class="dot">ㆍ</span>카카오페이 > 나의 카카오페이 > 현금영수증 설정 > 현금영수증 관리에서 확인 가능</li>
+							<li><span class="dot">ㆍ</span>카카오톡 > 설정 > 개인/보안 > 내 결제 > 결제내역에서도 확인 가능</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>신용카드 매출전표 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>신용카드 매출전표는 부가가치세법 제32조의 2 제3항에 의하여 발행되며, 동법 시행령 제57조 제2항에 의하여 세금계산서를 교부하지 않습니다.</li>
+						</ul>
+					</div>
+					<!-- //카카오페이 결재시 노출 -->
+
+
+
+					<!-- 스마일페이 결재시 노출 -->
+					<div class="tbl_list_type02 first">
+						<p>스마일페이란?</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>최초 1회 결제정보 등록 시 비밀번호만으로 빠르고 간편하게 결제하는 서비스입니다.</li>
+							<li><span class="dot">ㆍ</span>본인명의 스마트폰에서 본인명의 카드 등록 후 사용 가능합니다.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>스마일페이 결제 방법 및 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>약관동의 및 휴대폰 본인인증 후 결제수단(신용/체크카드, 계좌이체, 휴대폰)과 결제 비밀번호를 최초 1회 등록 후</li>
+							<li>사용 가능합니다.</li>
+							<li>※스마일페이 등록 www.mysmilepay.com</li>
+							<li><span class="dot">ㆍ</span>결제 시, 결제수단 중 “스마일페이” 선택 > 결제 비밀번호 입력 > 결제 완료</li>
+							<li>결제 비밀번호는 마우스로 클릭해서 입력하세요.</li>
+							<li>※G마켓 아이디와 결제정보 명의자가 동일해야 결제 가능합니다.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>스마일캐시 결제 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>스마일캐시를 보유하고 있다면 스마일캐시만으로도 결제할 수 있으며,  신용카드+스마일캐시, 은행+스마일캐시,</li>
+							<li>휴대폰+스마일캐시와 같이 복합결제도 가능합니다.</li>
+							<li><span class="dot">ㆍ</span>스마일캐시/스마일포인트 내역은 www.mysmilepay.com접속 후 로그인 > 좌측 상단 [≡]버튼 > 스마일캐시 항목 내</li>
+							<li>[적립/사용내역, 전환, 출금] 선택하시어 확인 가능합니다.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>신용카드 매출전표 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>신용카드 매출전표는 부가가치세법 제32조의 2 제3항에 의하여 발행되며, 동법 시행령 제57조 제2항에 의하여 세금계산서를 교부하지 않습니다.</li>
+							<li>* 결제수단은 중복하여 결제를 할 수 없습니다.</li>
+						</ul>
+					</div>
+					<!-- //스마일페이 결재시 노출 -->
+
+					<!-- 네이버페이 결재시 노출 -->
+					<div class="tbl_list_type02 first">
+						<p>네이버페이란?</p>
+						<ul class="terms_conditions">
+							<li>네이버페이는 네이버ID로 별도의 앱 설치 없이 신용카드 또는 은행계좌 정보를 등록하여 네이버페이 비밀번호로
+								결제할 수 있는 간편결제 서비스입니다.</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>네이버페이 결제방법 및 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>결제 가능 신용카드: 신한, 삼성, 현대, BC, 국민, 하나, 롯데, NH농협, 씨티, 카카오뱅크</li>
+							<li><span class="dot">ㆍ</span>결제 가능 은행: NH농협, 국민, 신한, 우리, 기업 SC제일, 부산, 경남, 수협, 우체국, 미래에셋, 대구, 광구, 전북, 제주,<br>
+								새마을금고, KEB하나, 신협</li>
+							<li><span class="dot">ㆍ</span>네이버페이에서 제공하는 카드사별 무이자, 할인혜택을 받으실 수 있습니다</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>네이버페이 현금 영수증 발급 및 발행 관리</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>네이버페이 현금 영수증은 네이버페이 계좌 간편결제 시 발행되며 네이버페이 결제 시 신청할 수 있습니다.</li>
+							<li><span class="dot">ㆍ</span>네이버페이 현금 영수증 발급 및 조회는 오투잡이 아닌 네이버페이에서 관리 및 확인 가능합니다.</li>
+							<li><span class="dot">ㆍ</span>네이버페이 > 결제내역 > 결제상세정보 에서 현금영수증을 확인할 수 있습니다</li>
+						</ul>
+					</div>
+
+					<div class="tbl_list_type02">
+						<p>신용카드 매출전표 안내</p>
+						<ul class="terms_conditions">
+							<li><span class="dot">ㆍ</span>신용카드 매출전표는 부가가치세법 제32조의 2 제3항에 의하여 발행되며, 동법 시행령 제57조 제2항에 의하여 세금계산서를 교부하지 않습니다.</li>
+						</ul>
+					</div>
+					<!-- //네이버페이 결재시 노출 -->
+
+				</div>
+				<!-- show_total_price -->
+				<div class="show_total_price">
+					<h3>최종 결제금액</h3>
+
+					<ul class="price_per_item">
+						<li class="price_type01">
+							총 주문금액 <span><em>600,000</em> 원</span>
+						</li>
+						<li class="price_type02">
+							<dl>
+							 	<dt>배송비</dt>
+							 	<dd><em class="big">+2,500</em> 원</dd>
+							 	<dt>할인쿠폰</dt>
+							 	<dd><em>-10,000</em> 원</dd>
+							 	<dt>잔고할인</dt>
+							 	<dd><em>-5,000</em> 원</dd>
+								<dt>수수료<button type="button" class="guide_question"  data-tooltip="tex_tooltip" data-tooltip-width="196" onclick="dataToolTip(this);"></button></dt>
+								<dd><em class="big">+2,500</em> 원</dd>
+							</dl>
+						</li>
+						<li class="price_type03">
+							최종 결제금액
+							<!-- [dev] 결제방식에 따라 뱃지를 적용합니다 -->
+							<!-- <img src="/image/pc/ico/ico_pay_ocash_02.png" alt="지불방법 O캐시">
+							<img src="/image/pc/ico/ico_pay_phone_02.png" alt="지불방법 핸드폰">
+							<img src="/image/pc/ico/ico_pay_transfer_02.png" alt="지불방법 계좌이체">
+							<img src="/image/pc/ico/ico_pay_account_02.png" alt="지불방법 가상계좌">
+							<img src="/image/pc/ico/ico_pay_credit_02.png" alt="지불방법 신용카드">
+							<img src="/image/pc/ico/ico_pay_kakao_02.png" alt="지불방법 카카오페이">
+							<img src="/image/pc/ico/ico_pay_smile_02.png" alt="지불방법 스마일페이">
+							<img src="/image/pc/ico/ico_pay_smile_02.png" alt="지불방법 네이버페이">
+							 -->
+							<img src="/image/pc/ico/ico_pay_naver_02.png">
+
+							<p><em>587,500</em> 원</p>
+						</li>
+					</ul>
+					<!-- consent_container -->
+					<div class="agreement_container">
+						<!-- otwojob-925 -->
+						<span class="input_check">
+							<input type="checkbox" id="agree_all" title="상품내용 확인 및 결제진행 동의" />
+							<label for="agree_all">상품 내용을 확인하였으며 주문내역에 대한 결제 진행에 동의합니다.</label>
+						</span>
+								<!-- //otwojob-925 -->
+
+								<span class="input_check">
+							<input type="checkbox" id="agree_private_info" title="개인정보 제공 동의" />
+							<label for="agree_private_info">개인정보 제3자 제공에 동의합니다.</label>
+						</span>
+
+						<div class="content_txt">
+							제공 받는 자: 판매자(suminejjang)<br>
+							이용 목적: 서비스 제공, 구매자 확인 및 상담 제공<br>
+							항목: 구매자 아이디, 상품 구매정보 보유 및 이용<br>
+							기간: 거래완료 시 지체없이 파기 개인 정보를 제공...
+							항목: 구매자 아이디, 상품 구매정보 보유 및 이용<br>
+							기간: 거래완료 시 지체없이 파기 개인 정보를 제공...
+							항목: 구매자 아이디, 상품 구매정보 보유 및 이용<br>
+							기간: 거래완료 시 지체없이 파기 개인 정보를 제공...
+						</div>
+					</div>
+
+					<!--<button class="btn_checkout" type="button" onclick="loadingOpen()">결제하기</button>-->
+					<button class="btn_checkout" type="button" onclick="javascript:openLay('kakao');">결제하기</button> <!-- otwojob-1518 -->
+					<button class="btn_cancel" type="button">결제취소</button>
+
+					<!--// consent_container -->
+					<p class="otwojob_responsibility">
+							오투잡은 통신판매 중개자이며 통신판매의 당사자가 아닙니다. 따라서, 오투잡은 상품 &#46; 거래정보 및 거래에 대하여 책임을 지지 않습니다.
+					</p>
+
+				</div>
+				<!--// show_total_price -->
+
+			</article>
+		</section>
+		<!-- </div> -->
+		<!-- inner_container -->
+		<!-- otwojob-1400 -->
+		<div class="common_tooltip" id="payback_event1">
+			<span class="tooltip_arr"></span>
+			<div class="tooltip_wrap">
+				<p class="tooltip_tit">구매적립 기준</p>
+				<div class="tooltip_cont">
+					<ul class="type_no">
+						<li>&#149;&nbsp;50만원 미만 : 결제금액 의 1% 적립</li>
+						<li>&#149;&nbsp;50만원 이상 ~ 100만원 미만 :결제금액 의 2% 적립</li>
+						<li>&#149;&nbsp;100만원 이상~: 결제금액 의 3% 적립</li>
+						<li class="etc">30만원 이상의 혜택은 2018.09.17까지이며,<br>회사의 사정으로 중지 될 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="coupon_closer">닫기</button>
+		</div>
+
+		<div class="common_tooltip" id="payback_event2">
+			<span class="tooltip_arr"></span>
+			<div class="tooltip_wrap">
+				<p class="tooltip_tit">구매평 적립기준</p>
+				<div class="tooltip_cont">
+					<ul class="type_no">
+						<li>구매평 150자 미만 200p, 150자 이상 500p<br>등록 완료 시 즉시 지급!</li>
+						<li><a href="#" class="link_style">자세히보기></a></li>
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="coupon_closer">닫기</button>
+		</div>
+
+		<div class="common_tooltip type02" id="tex_tooltip">
+			<span class="tooltip_arr"></span>
+			<div class="tooltip_wrap">
+				<p class="tooltip_tit">수수료 안내</p>
+				<div class="tooltip_cont">
+					<ul class="type_no">
+						<li>상품 결제금액의 5%가 수수료로 부과되며, 이는 오투잡 플랫폼 운영에 사용됩니다. </li>
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="coupon_closer">닫기</button>
+		</div>
+		<!-- //otwojob-1400 -->
+	</section>
+	<!-- // content_container -->
+
+
+
+
+<!--[if lte IE 9]>
+<script type="text/javascript">
+jQuery(window).on('load',function (e) {
+ var inputHasPlaceholder = 0;
+    if (!("placeholder" in document.createElement("input"))) {
+        jQuery(document).on('focus', ":input[placeholder]", function() {
+            var $this = jQuery(this);
+            $this.addClass("focusbox");
+            jQuery("#jQueryVirtual_label_" + $this.attr("id")).hide();
+        }).on('blur', ":input[placeholder]", function() {
+            var $this = jQuery(this);
+            $this.removeClass("focusbox");
+            if(!jQuery.trim($this.val()))
+                jQuery("#jQueryVirtual_label_" + $this.attr("id")).show();
+            else jQuery("#jQueryVirtual_label_" + $this.attr("id")).hide();
+        })
+        jQuery.fn.createLabel = function() {
+            return this.each(function() {
+                inputHasPlaceholder++;
+                var $this = jQuery(this);
+                var pos = $this.position();
+                if(!$(this).is("[id]")){
+                    $(this).attr('id', 'id'+ inputHasPlaceholder);
+                }
+                if (!this.id) this.id = "jQueryVirtual_" + this.name;
+
+
+                if($this.hasClass('top10')){
+					$this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left:" + (pos.left +10) + "px; top:" + (pos.top +10) + "px;width:" + ($this.width()) + "px; height:" + ($this.height()) + "px;line-height:" + ($this.height()) + "px;margin-top:1px' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                	$this.trigger("blur");
+                }else{
+					$this.after("<label for='" + this.id + "' id='jQueryVirtual_label_" + this.id + "' style='left:" + (pos.left +10) + "px; top:" + (pos.top) + "px;width:" + ($this.width()) + "px; height:" + ($this.height()) + "px;line-height:" + ($this.height()) + "px;margin-top:1px' class='absolute'>" + $this.attr("placeholder") + "</label>");
+                	$this.trigger("blur");
+                }
+            })
+        }
+        jQuery(':input[placeholder]').createLabel();
+    }
+})
+</script>
+<style type="text/css">
+	label.absolute {display:none;position:absolute;width:100%;color:#999;cursor: text}
+</style>
+<![endif]-->

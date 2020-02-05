@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>OTWOJOB</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style>
+        /* reset and common */
+        * {box-sizing:border-box;}
+        body {margin:0;padding:0;font-family:"Malgun Gothic", gulim,AppleGothic,sans-serif;text-align:left}
+        div,ul,ol,li,dl,dt,dd,p,input,textarea,select,h1,h2,h3,h4,h5,em,address,fieldset,form,iframe,object,menu,button {margin:0;padding:0}
+        div,ul,ol,dl,p,td,input,textarea,select {color:#444;font-family:"Malgun Gothic", gulim,AppleGothic,sans-serif;font-size:12px;font-weight:normal}
+        img,fieldset,iframe {border:none}
+        menu,ul,ol,li {list-style:none}
+        img,input,select,textarea {vertical-align:top}
+        hr {display:none}
+        em,address {font-style:normal}
+        a {text-decoration:none;color:#666}
+        a:hover {text-decoration:none}
+        button {border:0;background:none;cursor:pointer}
+        .blind {visibility:hidden;overflow:hidden;position:absolute;left:-1000em;width:0;height:0;font-size:0;line-height:0}
+        .ipad input[type=text],input[type=image],button,input[type=button],textarea {-webkit-appearance:none;-webkit-text-size-adjust:none;-webkit-border-radius:0}
+        .bar {display:inline-block;width:1px;height:11px;margin:-1px 10px 1px 11px;background:url("<@message code="protocol.img.site.domain"/>/image/pc/saramin/l_bar.gif") no-repeat 100% 0px;vertical-align:middle}
+        .ir span {display:block;overflow:hidden;position:relative;z-index:-1;height:11px;padding-bottom:1px;color:#444;font-size:11px}
+        a.ir:hover {text-decoration:none}
+        /* contents */
+        .collaboration {width:1004px;margin:0 auto;}
+        .cont_list02 {overflow:hidden;position:relative}
+        .cont_list02 li {position:relative;background:#fff; float:left;width:180px;height:275px;margin:25px 26px 0 0;border:1px solid #eaeaea}
+        .cont_list02 li.mark_special {border-top:1px solid #f18aa2;position:relative}
+        .cont_list02 li.mark_special:before {content:"스페셜";position:absolute;right:-1px;top:-18px;display:block;width:60px;height:18px;line-height:18px;background-color:#f42556;color:#fff;font-size:12px;text-align:center;letter-spacing:0}
+        .cont_list02 li.mark_plus {border-top:1px solid #8e56a1;position:relative}
+        .cont_list02 li.mark_plus:before {content:"플러스";position:absolute;right:-1px;top:-18px;display:block;width:60px;height:18px;line-height:18px;background-color:#2f456e;color:#fff;font-size:12px;text-align:center;letter-spacing:0}
+        .cont_list02 li.mark_reco {border-top:1px solid #0da2a8;position:relative}
+        .cont_list02 li.mark_reco:before {content:"추천재능";position:absolute;right:-1px;top:-18px;display:block;width:60px;height:18px;line-height:18px;background-color:#0da2a8;color:#fff;font-size:12px;text-align:center;letter-spacing:0}
+        .cont_list02 li.mark_selfpickup {border-top:1px solid #ff8d11;position:relative}
+        .cont_list02 li.mark_selfpickup:before {content:"셀프픽업";position:absolute;right:-1px;top:-18px;display:block;width:60px;height:18px;line-height:18px;background-color:#ff8d11;color:#fff;font-size:12px;text-align:center;letter-spacing:0}
+        .cont_list02 li .over_dimmed {display:none;background:rgba( 0, 0, 0, 0.3 );position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}
+        .cont_list02 li:nth-child(5n) {margin-right:0}
+        .cont_list02.als-wrapper li:nth-child(5n) {margin-right:26px}
+        .cont_list02 li:hover {border:1px solid #ff8a00}
+        .cont_list02 li:hover .over_dimmed {display:block}
+        .cont_list02 li .type_img {display:table;position:relative;width:164px;height:128px;margin:8px 8px 10px 8px;background:#f7f7f7;cursor:pointer;text-align:center;overflow:hidden}
+        .cont_list02 li .type_img:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;}
+        .cont_list02 li .type_img .photo {display:table-cell;text-align:center;vertical-align:middle}
+        .cont_list02 li .type_img .photo img {margin:0 auto;max-width:164px;max-height:128px}
+        .cont_list02 li .type_img .info_icon {position:absolute;bottom:0;left:0}
+        .cont_list02 li .type_img .power_seller {position:absolute;top:5px;left:5px}
+        .cont_list02 li .type_img .info_icon span {display:inline-block;color:#fff;width:63px;height:15px;line-height:14px;vertical-align:middle; padding:2px 0; font-family:dotum;font-size:11px;text-align:center;margin-left:2px}
+        .cont_list02 li .type_img .info_icon span:first-child {margin-left:0}
+        .cont_list02 li .type_img .info_icon .profile {background:#8a12c3}
+        .cont_list02 li .type_img .info_icon .company {background:#0973df}
+        .cont_list02 li .tit {margin:8px 8px 4px 8px;line-height:16px;height:34px;overflow:hidden}
+        .cont_list02 li .tit i {display:inline-block;margin-left:3px;padding:0 6px 0 3px;height:17px;background:#fff;color:#3ba8e1;border:1px solid #129ee7;border-top-left-radius:25% 70%;border-top-right-radius:25% 70%;border-bottom-left-radius:25% 70%;border-bottom-right-radius:25% 70%;font-size:12px;line-height:1;}
+        .cont_list02 li .price {position:relative;margin-top:5px;height:44px}
+        .cont_list02 li .price .sale {position:absolute;top:0;right:8px;font-size:12px;text-decoration:line-through;color:#999}
+        .cont_list02 li .price .origin {position:absolute;top:15px;right:8px;color:#f9530b;font-size:14px}
+        .cont_list02 li .price .origin em {font-size:18px;font-weight:bold}
+        .cont_list02 li .price .discount {display:block;position:absolute;bottom:11px;left:8px;font-size:14px;} /* design check */
+        .cont_list02 li .price .discount em {letter-spacing:-1px;font-size:18px;display:inline-block;font-weight:bold;}
+        .cont_list02 li .price .free {display:block;position:absolute;bottom:11px;left:8px;font-size:14px;}
+        .cont_list02 li .price .free em {letter-spacing:-1px;font-size:14px;display:inline-block;color:#3ba8e1}
+        .cont_list02 li .price .remain {position:absolute;top:5px;right:0;}
+        .cont_list02 li .state {position:relative;border-top:1px solid #f1f1f1;padding:7px 10px;overflow:hidden;font-size:14px;color:#666}
+        .cont_list02 li .state  >  span {display:block;float:left;height:27px;line-height:27px}
+        .cont_list02 li .state i.online {position:absolute;left:31px;top:26px;width:12px;height:12px;border:1px solid #fff;background:#7fba00;border-radius:50%;text-indent:-9999px;font-size:0;} /* 1042 */
+        .cont_list02 li .state i.offline {position:absolute;left:31px;top:26px;width:12px;height:12px;border:1px solid #fff;background:#9e9e9e;border-radius:50%;text-indent:-9999px;font-size:0;} /* 1042 */
+        .cont_list02 li .state .photo {display:table;width:28px;height:28px; margin-right:10px;position:relative;background:#ebebeb url('../../image/pc/ico/bg_profile.png') no-repeat center center;background-size:15px auto;border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;overflow:hidden;text-align:center}
+        .cont_list02 li .state .photo span {display:table-cell;text-align:center;vertical-align:middle;border-radius:100%;-webkit-border-radius:100%;-moz-border-radius:100%;overflow:hidden}
+        .cont_list02 li .state .photo span img {max-width:28px;max-height:28px}
+        .cont_list02 li .state .photo:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.08);width:28px;height:28px;border-radius:100%;-webkit-border-radius:100%;-moz-border-radius:100%;overflow:hidden}
+        .cont_list02 li .state .name {width:70px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;cursor:pointer}
+        .cont_list02 li .state .like {background:url('../../image/pc/ico/ico_heart.png') 0 7px no-repeat;display:inline-block;float:right;height:27px;line-height:27px;padding-left:20px}
+        .cont_list02 li .state .like.on {background:url('../../image/pc/ico/ico_heart_on.png') 0 7px no-repeat}
+    </style>
+</head>
+<body>
+<div class="collaboration">
+    <ul class="cont_list02">
+        <li>
+            <!-- img -->
+            <div class="type_img">
+                <span class="photo"><img src="/image/pc/ico/btn_file_del.png" alt=""></span>
+                <div class="info_icon">
+                    <span class="profile">프로필인증</span>
+                    <span class="company">기업인증</span>
+                </div>
+            </div>
+            <!--// img -->
+            <h4 class="tit"><a href="#none">[노하우/상담] 블로그로 많은 돈버는 노하우노하우노... <i>+맛보기</i></a></h4>
+            <!-- 1133 -->
+            <div class="price">
+                <span class="discount"><em>10</em> %</span>
+                <span class="sale">100,000원</span>
+                <span class="origin"><em>90,000</em> 원</span>
+            </div>
+            <!-- //1133 -->
+            <div class="state">
+                <span class="photo"><span><img src="/image/pc/temp/@user.png" alt=""></span></span>
+                <span class="name">건축가</span>
+                <a class="like " href="#none">23</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

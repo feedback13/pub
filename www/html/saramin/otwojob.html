@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<html lang="ko">
+<head>
+    <title>OTWOJOB</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style>
+        /* reset and common */
+        body {margin:0;padding:0;font-family:"Malgun Gothic", gulim,AppleGothic,sans-serif;text-align:left}
+        div,ul,ol,li,dl,dt,dd,p,input,textarea,select,h1,h2,h3,h4,h5,em,address,fieldset,form,iframe,object,menu,button {margin:0;padding:0}
+        div,ul,ol,dl,p,td,input,textarea,select {color:#444;font-family:"Malgun Gothic", gulim,AppleGothic,sans-serif;font-size:12px;font-weight:normal}
+        img,fieldset,iframe {border:none}
+        menu,ul,ol,li {list-style:none}
+        img,input,select,textarea {vertical-align:top}
+        hr {display:none}
+        em,address {font-style:normal}
+        a {text-decoration:none;color:#666}
+        a:hover {text-decoration:none}
+        button {border:0;background:none;cursor:pointer}
+        .blind {visibility:hidden;overflow:hidden;position:absolute;left:-1000em;width:0;height:0;font-size:0;line-height:0}
+        .ipad input[type=text],input[type=image],button,input[type=button],textarea {-webkit-appearance:none;-webkit-text-size-adjust:none;-webkit-border-radius:0}
+        .bar {display:inline-block;width:1px;height:11px;margin:-1px 10px 1px 11px;background:url("../../image/pc/saramin/l_bar.gif") no-repeat 100% 0px;vertical-align:middle}
+        .ir span {display:block;overflow:hidden;position:relative;z-index:-1;height:11px;padding-bottom:1px;color:#444;font-size:11px}
+        a.ir:hover {text-decoration:none}
+        /* contents */
+        .otwjob_contents {position:relative;width:960px;margin:40px auto 0 auto;letter-spacing:-1px}
+        .otwjob_contents:after {display:block;clear:both;content:""}
+        .otwjob_contents h2 {overflow:hidden;left:0;z-index:1;height:25px;vertical-align:top}
+        .otwjob_contents h2 a  {display:inline-block;width:147px;height:17px;padding:0;background:url("../../image/pc/saramin/logo_otwojob.gif") no-repeat 0 0;vertical-align:top}
+        .otwjob_contents .info_txt {position:absolute;right:0;top:6px;padding-top:1px;padding-left:17px;background:url("../../image/pc/saramin/ico_new.gif") no-repeat 0 0;color:#6c6c6c;font-size:11px;font-family:dotum;letter-spacing:-1px}
+        .otwjob_contents .info_txt span {color:#f26b20}
+        .otwjob_contents .item_wrap {overflow:hidden;padding:0 4px 30px 20px;border-top:1px solid #d9d9d9;background-color:#f7f7f7}
+        .otwjob_contents .item_wrap li {float:left;margin:26px 16px 0 0}
+        .otwjob_contents .item {margin:0;padding:0;color:#444}
+        .otwjob_contents .item h3 {color:#444;font-family:"Malgun Gothic",dotum;font-size:14px}
+        .otwjob_contents .item h3 a {display:block;padding-left:1px;color:#444}
+        .otwjob_contents .item h3 .depth1 {display:inline-block;margin-right:5px;padding-right:7px;background:url("../../image/pc/saramin/bul_vline02.png") no-repeat 100% 5px}
+        .otwjob_contents .item h3 .depth2 {display:inline-block;padding-right:12px;background:url("../../image/pc/saramin/bul_arrow.png") no-repeat 100% 6px;font-weight:normal}
+        .otwjob_contents .item dl {width:218px;min-height:292px;margin-top:8px;border:1px solid #eaeaea;box-sizing:border-box;background:#fff;word-break:break-all}
+        .otwjob_contents .item dl:hover {border:1px solid #666}
+        .otwjob_contents .item .image {overflow:hidden;position:relative;width:202px;height:172px;margin:7px auto}
+        .otwjob_contents .item .image a {display:block}
+        .otwjob_contents .item .image img {width:100%}
+        .otwjob_contents .item .image .img_dim {position:absolute; width:100%; height:100%; background:#000; opacity:.2; -moz-opacity:.2; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";}
+        .otwjob_contents .item .title {overflow:hidden;height:43px;padding:1px 12px 0 11px;color:#444;font-size:13px;font-family:"Malgun Gothic",dotum;line-height:17px}
+        .otwjob_contents .item .title a {display:block;color:#444;font-size:13px;font-family:"Malgun Gothic",dotum;line-height:18px}
+        .otwjob_contents .item .price {padding:5px 12px 15px 12px;font-family:"Malgun Gothic",dotum}
+        .otwjob_contents .item .price .number {display:inline-block;color:#ff4a00;font-family:Tahoma, Verdana, Geneva, sans-serif;font-size:19px;font-weight:bold}
+        .otwjob_contents .item .price .unit {display:inline-block;margin-left:-1px;padding-top:2px;color:#ff4a00;font-size:14px;vertical-align:top}
+        .otwjob_contents .item .info {padding:8px 12px 8px 12px;border-top:1px solid #efefef;font-size:14px;overflow:hidden}
+        .otwjob_contents .item .info:after {display:block;clear:both;content:""}
+        .otwjob_contents .item .info  >  a {display:block;float:left;height:27px;line-height:27px}
+        .otwjob_contents .item .info .photo {display:table;position:relative;width:28px;height:28px;margin-right:7px;background:#ebebeb url('../../image/pc/ico/bg_profile.png') no-repeat center center;background-size:15px auto;border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;overflow:hidden;text-align:center}
+        .otwjob_contents .item .info .photo span {display:table-cell;text-align:center;vertical-align:middle; border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;overflow:hidden}
+        .otwjob_contents .item .info .photo span img {max-width:28px;max-height:28px;vertical-align:middle;}
+        .otwjob_contents .item .info .photo:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.08);width:28px;height:28px; border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;overflow:hidden}
+        .otwjob_contents .item .info .name {display:inline-block;overflow:hidden;width:90px;color:#444;white-space:nowrap;text-overflow:ellipsis;cursor:pointer;vertical-align:top;}
+        .otwjob_contents .item .info .like {background:url('../../image/pc/ico/ico_heart.png') 0 7px no-repeat;display:inline-block;float:right;height:27px;line-height:27px;padding-left:20px}
+        .otwjob_contents .item .info .like.on {background:url('../../image/pc/ico/ico_heart_on.png') 0 7px no-repeat}
+    </style>
+</head>
+<body>
+<div class="otwjob_contents">
+    <!-- [dev] OTWOJOB-619 -->
+    <h2><a href="#none" class="ir" target="_blank"><span>오투잡 OTWOJOB</span></a></h2>
+    <p class="info_txt">더 편리하고 안전한 재능거래! 내 손안에 <span>재능마켓 오투잡</span></p>
+    <ul class="item_wrap">
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="#none" target="_blank">
+                        <span class="depth1">디자인</span><span class="depth2">로고/CI&amp;BI</span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <span class="img_dim"></span>
+                        <a href="#none" target="_blank"><img src="../../image/pc/saramin/@thumb_202x172_1.png" alt=""></a>
+                    </dt>
+                    <dd class="title">[로고CI,BI 디자인] 고퀄리티 로고디<br>자인을 원하신다면?</dd>
+                    <dd class="price">
+                        <span class="number">60,000</span>
+                        <span class="unit">원</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="#" class="photo"><span><img src="//file-stg.o2job.co/profile/5/8/6/5867595658904.jpg/o2j/resize/42x42>" alt=""></span></a>
+                        <a href="#" class="name">카운셀러카운셀러카운셀러</a>
+                        <span class="like on">343</span>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="#none" target="_blank">
+                        <span class="depth1">번역</span><span class="depth2">영어번역</span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <span class="img_dim"></span>
+                        <a href="#none" target="_blank"><img src="../../image/pc/saramin/@thumb_202x172_2.png" alt=""></a>
+                    </dt>
+                    <dd class="title">&lt;15년 미국 현지 회사 경력&gt; 원어민<br>도 감동하는 완벽한 번역</dd>
+                    <dd class="price">
+                        <span class="number">5,000</span>
+                        <span class="unit">원</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="#" class="photo"><span><img src="//file-stg.o2job.co/profile/1/4/4/1449565523.jpeg/o2j/resize/42x42>" alt=""></span></a>
+                        <a href="#" class="name">카운셀러카운셀러카운셀러</a>
+                        <span class="like">343</span>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="#none" target="_blank">
+                        <span class="depth1">마케팅</span><span class="depth2">블로그/체험단</span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <span class="img_dim"></span>
+                        <a href="#none" target="_blank"><img src="../../image/pc/saramin/@thumb_202x172_3.png" alt=""></a>
+                    </dt>
+                    <dd class="title">블로그제작 전문디자이너가 블로그,<br>카페를 멋지고 저렴하게 디자인해...</dd>
+                    <dd class="price">
+                        <span class="number">50,000</span>
+                        <span class="unit">원</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="#" class="photo"><span><img src="//images.otwojob.com/profile/5/7/4/5745d3a73cd2d.png/o2j/resize/27x27>" alt=""></span></a>
+                        <a href="#" class="name">카운셀러카운셀러카운셀러</a>
+                        <span class="like">343</span>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="#none" target="_blank">
+                        <span class="depth1">생활서비스</span><span class="depth2">사주/운세</span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <span class="img_dim"></span>
+                        <a href="#none" target="_blank"><img src="//images.otwojob.com/profile/1/3/8/1384220554.jpg/o2j/resize/27x27>" alt=""></a>
+                    </dt>
+                    <dd class="title">사주 신수 궁합 재물운 취업, 결혼운<br>정확히 봐드리겠습니다.</dd>
+                    <dd class="price">
+                        <span class="number">10,000</span>
+                        <span class="unit">원</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="#" class="photo"><span></span></a>
+                        <a href="#" class="name">카운셀러카운셀러카운셀러</a>
+                        <span class="like">343</span>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

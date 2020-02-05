@@ -1,0 +1,847 @@
+<!-- path_indicator -->
+<nav class="path_indicator">
+    <div class="inner_container wide">
+        <!-- breadcrumb -->
+        <ol class="breadcrumb">
+            <li>
+                <span class="home"><a href="#none">Home</a></span>
+                <span class="path_home"><a href="#none">오투잡 홈</a></span>
+            </li>
+            <li class="path_div">
+                <div class="selectbox">
+                    <label for="a2">마이페이지</label>
+                    <select id="a2">
+                        <option selected>마이오투잡</option>
+                        <option>통합마이오투잡검색</option>
+                        <option>마이오투잡</option>
+                    </select>
+                </div>
+            </li>
+        </ol>
+        <!--// breadcrumb -->
+    </div>
+</nav>
+<!-- //path_indicator -->
+
+<!-- content_container -->
+<section id="content_container type02">
+
+    <!-- view_profile -->
+    <section class="view_profile wide">
+        <div class="profile_header">
+            <div class="top_comment">
+                <span>
+                    판매자 시점 화면입니다. 구매자 시점 화면을 보시려면 버튼을 클릭해 주세요.
+                    <button type="button">구매자 시점 보기</button>
+                </span>
+            </div>
+
+            <!-- cont_sect -->
+            <article class="cont_sect">
+                <span class="photo" style="background-color: #86af69;">
+                    <span>
+                        <img src="//images.otwojob.com/profile/f/3/7/f37jikGJ5txGJSx.png/o2j/resize/160x160&gt;"
+                               alt="hoseki31" title="프로필사진">
+                        <!--알-->
+                    </span>
+                    <button class="camera"></button>
+                </span>
+                <div class="profile_inform">
+                    <label>알라딘베이비칠팔구십<span>(Firmly)</span></label>
+                    <div class="grade">
+                        <div class="top_grade">
+                            <span class="stars"><span class="percent" style="width:99.0%"></span></span>
+                            <b>4.5</b>
+                        </div>
+                        <div class="sell_grade">
+                            누적주문건수
+                            <b>445건</b>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <button type="button" class="holiday" onclick="dataToolTip(this);"  data-tooltip="schedule_calendar" data-tooltip-width="278"><b>휴가 중입니다.</b> 복귀 후 문의해 주세요</button>
+
+                        <div class="alarm_set editor">
+                            <button type="button"><img src="/image/pc/ico/ic-edit-white-12-px.png"></button>
+                        </div>
+                        <span class="schedule_date">휴가종료일: 2018.12.09 12:30</span>
+                    </div>
+
+                    <div class="btn_set">
+                        <button type="button"><img class="talk_ico" src="/image/pc/ico/ic-talk-orange-28-px.png">문의하기
+                        </button>
+                        <button type="button">오더하기</button>
+                        <button type="button">포트폴리오 보기</button>
+                        <button type="button" class="like"></button>
+                    </div>
+                </div>
+                <div class="certify_set">
+                    <span class="corp"></span>
+                    <span class="profile"></span>
+                </div>
+
+                <section class="career_list">
+                    <div class="career">
+                        <label>인증경력</label>
+                        <button style="display: none;" class="link">수정</button>
+                        <ul style="display: none;" class="certify">
+                            <li>
+                                일이삼사오육칠팔구십일이삼사오육칠팔구십이삼사오육칠팔구십_
+                            </li>
+                            <li>
+                                일이삼사오육칠팔구십일이삼사오육칠팔구십이삼사오육칠팔구십_
+                                <span>2018.01~2019.03</span>
+                            </li>
+                            <li>
+                                일이삼사오육칠팔구십일이삼사오육칠팔구십이삼사오육칠팔구십_
+                                <span>2018.01~2019.03</span>
+                            </li>
+                        </ul>
+                        <!-- 입력정보가없는경우-->
+                        <div class="empty_msg">
+                            <span>경력을 인증하면 프로필에<br>인증된 경력으로 노출됩니다.</span>
+                            <button type="button">인증경력 등록하러 가기</button>
+                        </div>
+                    </div>
+
+                    <div class="career">
+                        <label>일반경력</label>
+                        <ul class="common">
+                            <li class="edit">
+                                <button type="button" class="remove_btn"></button>
+                                <input type="text" class="full" value="사람인 오투잡 재직중">
+                                <input type="text" class="calendar_month" value="2019.01">
+                                ~
+                                <input type="text" class="calendar_month right"  value="2019.02">
+                            </li>
+                            <li class="edit">
+                                <button type="button" class="remove_btn"></button>
+                                <input type="text" class="full" value="사람인 오투잡 재직중">
+                                <input type="text" class="calendar_month" value="2019.01">
+                                ~
+                                <input type="text" class="calendar_month right"  value="2019.02">
+                            </li>
+                            <li class="edit">
+                                <button type="button" class="remove_btn"></button>
+                                <input type="text" class="full" value="사람인 오투잡 재직중">
+                                <input type="text" class="calendar_month" value="2019.01">
+                                ~
+                                <input type="text" class="calendar_month right"  value="2019.02">
+                            </li>
+                            <li class="edit">
+                                <button type="button" class="remove_btn"></button>
+                                <input type="text" class="full" value="사람인 오투잡 재직중">
+                                <input type="text" class="calendar_month" value="2019.01">
+                                ~
+                                <input type="text" class="calendar_month right"  value="2019.02">
+                            </li>
+                            <li class="edit btn">
+                                <div class="btn_wrap">
+                                    <button type="button">취소</button>
+                                    <button type="button" class="save">저장</button>
+                                </div>
+                            </li>
+                            <li class="plus">
+                                <button><img src="/image/pc/orderjob/ic-add-16-px.png">경력추가</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="career">
+                        <label>소개</label>
+                        <ul class="common">
+                            <li class="edit">
+                                <input type="text" value="지구컴즈에 주문해야 하는 이유" class="full">
+                                <textarea class="editor">
+5년연속 한국소비자만족지수1위를 수상한 전문기업으로서 신뢰할 수 있습니다.
+랭키닷컴 광고디자인 부문 1위를 마크하고 있습니다.
+Kidp 한국디자인진흥원 공식 디자인업체로서 20여 명의 디자이너 보유, 디자인부터 인쇄까지 원스톱으로 진행해 드립니다.
+                                </textarea>
+                                <div class="btn_wrap">
+                                    <button type="button">취소</button>
+                                    <button type="button" class="save">저장</button>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="career">
+                        <label>기업정보</label>
+                        <button style="display: none;" class="link">수정</button>
+                        <ul style="display: none;" class="corporation">
+                            <li>
+                                <p>회사명</p>
+                                주식회사 지구컴즈
+                            </li>
+                            <li>
+                                <p>대표자</p>
+                                김경훈
+                            </li>
+                            <li>
+                                <p>주소</p>
+                                34829 대전광역시 중구 대전천서로 591 (선화동) 4층
+                            </li>
+                            <li>
+                                <p>등록번호</p>
+                                4978600931
+                            </li>
+                        </ul>
+
+                        <!-- 입력정보가없는경우-->
+                        <div class="empty_msg">
+                            <span>기업 인증하면 프로필에<br>기업정보가 노출됩니다.</span>
+                            <button type="button">기업정보 등록하러 가기</button>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+            <!-- cont_sect -->
+        </div>
+
+        <section class="profile_body">
+            <div class="body_inform">
+                <label>구매평</label>
+                <a href="javascript:void(0)" class="more">전체보기<img src="/image/pc/ico/ic-arrow-right-m.png"></a>
+                <div class="review_header">
+                    <div class="summary_number">
+                        <div class="inform">
+                            <label>누적 주문건</label>
+                            <span><b>445</b>건</span>
+                        </div>
+                        <div class="inform">
+                            <label>누적 거래액</label>
+                            <span><b>28,539,000</b>원</span>
+                        </div>
+                        <div class="inform">
+                            <label>판매자 인상</label>
+                            <span><h4>친절함, 품질좋은결과물, 원활한소통</h4></span>
+                        </div>
+                    </div>
+                    <div class="summary_view">
+                        <div class="star_box">
+                            <p class="star_grade_l">
+                                <span class="stars"><span class="percent _average_comp" average="100"
+                                                          style="width: 100%;"></span></span>
+                                <span class="total_num">5.0</span>
+                            </p>
+                            <p class="detail_total">
+                                <span>서비스 <em>5.0</em></span>
+                                <span>품질 <em>5.0</em></span>
+                                <span>친절도 <em>5.0</em></span>
+                            </p>
+                        </div>
+                        <div class="review_percent">
+                            <ul>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_xs">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:100%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent _average_comp" average="92"
+                                                                 style="width: 92%;"></span></span>
+                                    </p>
+                                    <div class="right_area">
+                                        <span>+1000건</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_xs">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:80%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent _average_comp" average="8"
+                                                                 style="width: 8%;"></span></span>
+                                    </p>
+                                    <div class="right_area">
+                                        <span>436건</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_xs">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:60%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent _average_comp" average="0"
+                                                                 style="width: 0%;"></span></span>
+                                    </p>
+                                    <div class="right_area">
+                                        <span>156건</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_xs">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:40%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent _average_comp" average="0"
+                                                                 style="width: 0%;"></span></span>
+                                    </p>
+                                    <div class="right_area">
+                                        <span>69건</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_xs">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:20%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent _average_comp" average="0"
+                                                                 style="width: 0%;"></span></span>
+                                    </p>
+                                    <div class="right_area">
+                                        <span>39건</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review_wrap">
+                    <div class="item first">
+                        <div class="top_info">
+                            <div class="left_area">
+                                <p class="star_grade_s">
+                                    <span class="stars">
+                                        <span class="percent" style="width:100%"></span>
+                                    </span>
+                                </p>
+                                <ul class="detail_grade">
+                                    <li class="five">서비스 <em>5.0</em></li>
+                                    <li class="five">품질 <em>5.0</em></li>
+                                    <li class="five">친절도 <em>5.0</em></li>
+                                </ul>
+                                <p class="icon_grade verygood">적극추천</p></div>
+                            <div class="right_area"><p>최경근 <span>2018.10.11</span></p></div>
+                        </div>
+                        <div class="text_cont is_img">
+                            <p class="upimg">
+                                <button type="button"><img src="//images.otwojob.com/review/r/8/K/r8KYMWCRY8RaCL7.jpg">
+                                </button>
+                            </p>
+                            <div class="comment" id="comment_185038"><p>이렇게 맛있는 머핀까지 써비스로 주시고 감사합니다. 오란다 넘 맛있어요.</p>
+                            </div>
+                            <ul class="review_detail_list">
+                                <li>#꼼꼼함</li>
+                                <li>#전문적인</li>
+                                <li>#빠른응답</li>
+                                <li>#원활한소통</li>
+                                <li>#품질 좋은 결과물</li>
+                                <li>#편안함</li>
+                                <li>#비용대비 효과적</li>
+                                <li>#매우친절</li>
+                                <li>#안정적인</li>
+                                <li>#믿음직한</li>
+                                <li>#친절한</li>
+                                <li>#빠른작업</li>
+                                <li>#상세한설명</li>
+                                <li>#시간내 배달</li>
+                            </ul>
+                        </div>
+                        <div class="product_view">
+                            <a href="javascript:void(0)" class="product_inform">
+                                <div class="photo">
+                                    <img src="//images.otwojob.com/product/Y/3/n/Y3nxmWp3amVjJEB.png/o2j/resize/50x36>">
+                                </div>
+                                <span>해상도낮은 이미지를 선명한벡 해상도낮은 이미지를 선명한벡해상도낮은 이미지를 선명한벡해상도낮은 이미지를 선명한벡</span>
+                            </a>
+                            <span class="account">1,000,000원</span>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="top_info">
+                            <div class="left_area">
+                                <p class="star_grade_s">
+                                    <span class="stars">
+                                        <span class="percent" style="width:100%"></span>
+                                    </span>
+                                </p>
+                                <ul class="detail_grade">
+                                    <li class="five">서비스 <em>5.0</em></li>
+                                    <li class="five">품질 <em>5.0</em></li>
+                                    <li class="five">친절도 <em>5.0</em></li>
+                                </ul>
+                                <p class="icon_grade verygood">적극추천</p></div>
+                            <div class="right_area"><p>James <span>2018.09.30</span></p></div>
+                        </div>
+                        <div class="text_cont ">
+                            <div class="comment" id="comment_183936"><p>와~ 뜯는 즉시 다 먹었어요. 아이들어 너무 좋아하네요. 마트에서 파는것은 딱딱해서
+                                저도 잘 안 먹는데, 이건 저도 아이들이랑 경쟁하듯 처묵처묵 했음</p></div>
+                            <ul class="review_detail_list">
+                                <li>#전문적인</li>
+                                <li>#원활한소통</li>
+                                <li>#시간내 배달</li>
+                                <li>#품질 좋은 결과물</li>
+                            </ul>
+                        </div>
+                        <div class="product_view">
+                            <a href="javascript:void(0)" class="product_inform">
+                                <div class="photo">
+                                    <img src="//images.otwojob.com/product/Y/3/n/Y3nxmWp3amVjJEB.png/o2j/resize/50x36>">
+                                </div>
+                                <span>해상도낮은 이미지를 선명한벡 해상도낮은 이미지를 선명한벡해상도낮은 이미지를 선명한벡해상도낮은 이미지를 선명한벡</span>
+                            </a>
+                            <span class="account">1,000,000원</span>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <div class="top_info">
+                            <div class="left_area"><p class="star_grade_s"><span class="stars"><span class="percent"
+                                                                                                     style="width:100%"></span></span>
+                            </p>
+                                <ul class="detail_grade">
+                                    <li class="five">서비스 <em>5.0</em></li>
+                                    <li class="five">품질 <em>5.0</em></li>
+                                    <li class="five">친절도 <em>5.0</em></li>
+                                </ul>
+                                <p class="icon_grade verygood">적극추천</p></div>
+                            <div class="right_area"><p>빠쉐이 <span>2018.09.30</span></p></div>
+                        </div>
+                        <div class="text_cont ">
+                            <div class="title">블로그 상위노출 / 실시간 검색 1위 작업</div>
+                            <div class="comment" id="comment_183917"><p>단것을 좋아하는 저로써는 정말 최고의 맛인거 같아요~
+                                조만간 추가주문할게요~~</p></div>
+                            <ul class="review_detail_list">
+                                <li>#품질 좋은 결과물</li>
+                                <li>#시간내 배달</li>
+                                <li>#안정적인</li>
+                                <li>#믿음직한</li>
+                            </ul>
+                        </div>
+                        <div class="product_view">
+                            <a href="javascript:void(0)" class="product_inform">
+                                <div class="photo">
+                                    <img src="//images.otwojob.com/product/Y/3/n/Y3nxmWp3amVjJEB.png/o2j/resize/50x36>">
+                                </div>
+                                <span>해상도낮은 이미지를 선명한벡 해상도낮은 이미지를 선명한벡해상도낮은 이미지를 선명한벡해상도낮은 이미지를 선명한벡</span>
+                            </a>
+                            <span class="account">1,000,000원</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="empty_review"  style="display: none;">   <!-- 구매평이 없을시 사용-->
+                    <h3>작성 된 구매 평이 없습니다.</h3>
+                    <img src="/image/pc/common/no-review.png">
+                </div>
+            </div>
+
+            <div class="body_inform">
+                <label>판매중인 재능</label>
+                <ul class="category_list01">
+                    <li>
+                        <div class="type_img">
+                            <span class="photo">
+                                <a href="/product/PR8JWA56UK5SeCztdsjv" target="_blank">
+                                <img src="//images.otwojob.com/product/O/S/W/OSWHNjHf1vDQ8uU.jpg/o2j/resize/270x196&gt;" alt="♥ 드라이플라워 캘리그래피 주문 액자 ♥" title="♥ 드라이플라워 캘리그래피 주문 액자 ♥">
+                            </a>
+                            </span>
+                            <button type="button" class="like on"></button>
+                            <span class="hotdeal_discount sale_PR8JWA56UK5SeCztdsjv" style="">46</span>
+                        </div>
+                        <div class="mid_wrap">
+                            <div class="info_icon">
+                                <span class="path">노하우/상담</span>
+                                <span class="free">무료재능</span>
+                                <span class="ico_s"><img src="/image/pc/main/ic_special_01.png"></span>
+                            </div>
+                            <h3 class="tit"><a href="/product/PR8JWA56UK5SeCztdsjv" target="_blank">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요. 15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a></h3>
+                            <div class="new_price_area price" item="PR8JWA56UK5SeCztdsjv" flag="true">
+                                <span class="discount" style="display: inline;"><em>46</em>%</span>
+                                <span class="sale" style="display: inline;"><em>12,000</em></span>
+                                <span class="origin"><em>6,500</em></span>
+                            </div>
+                            <div class="new_star_grade_wrap">
+                                <span class="new_star_grade">
+                                    <span style="width:100%;">별점</span>
+                                </span>
+                                <em>5.0 (1) </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="type_img">
+                            <span class="photo">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img src="//images.otwojob.com/product/J/2/R/J2Rm1rXo5lP6wXk.jpg/o2j/resize/270&gt;" alt="❤ 드라이플라워 캘리그라피 용돈봉투 ❤" title="❤ 드라이플라워 캘리그라피 용돈봉투 ❤">
+                                </a>
+                            </span>
+                            <button type="button" class="like"></button>
+                            <span class="sale_discount" style="">30</span>
+                        </div>
+                        <div class="mid_wrap">
+                            <div class="info_icon">
+                                <span class="path">노하우/상담</span>
+                                <span class="free">무료재능</span>
+                                <span class="ico_s"><img src="/image/pc/main/ic_special_01.png"></span>
+                            </div>
+                            <h3 class="tit"><a href="javascript:void(0)" target="_blank">❤ 드라이플라워 캘리그라피 용돈봉투 ❤</a></h3>
+                            <div class="new_price_area price" flag="true">
+                                <span class="discount" style="display: inline;"><em>30</em>%</span>
+                                <span class="sale" style="display: inline;"><em>5,000</em></span>
+                                <span class="origin"><em>3,500</em></span>
+                            </div>
+                            <div class="new_star_grade_wrap">
+                                <span class="new_star_grade">
+                                    <span style="width:100%;">별점</span>
+                                </span>
+                                <em>5.0 (1) </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="type_img">
+                            <span class="photo">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img src="//images.otwojob.com/product/x/p/f/xpf6Q8LABldkL6h.png/o2j/resize/270&gt;" alt="선물용으로 굳굳! 1:1맞춤제작 머그컵 " title="선물용으로 굳굳! 1:1맞춤제작 머그컵 ">
+                                </a>
+                            </span>
+                            <button type="button" class="like"></button>
+                            <span class="sale_discount" style="display:none;"></span>
+                        </div>
+                        <div class="mid_wrap">
+                            <div class="info_icon">
+                                <span class="path">노하우/상담</span>
+                                <span class="free">무료재능</span>
+                                <span class="ico_s"><img src="/image/pc/main/ic_special_01.png"></span>
+                            </div>
+                            <h3 class="tit"><a href="javascript:void(0)" target="_blank">선물용으로 굳굳! 1:1맞춤제작 머그컵 </a></h3>
+                            <div class="new_price_area price" item="PRoXy8qaLUQPzlGJ8xC3" flag="false">
+                                <span class="origin"><em>6,000</em></span>
+                            </div>
+                            <div class="new_star_grade_wrap">
+                                <span class="new_star_grade">
+                                <span style="width:98%;">별점</span>
+                                </span>
+                                <em>4.9 (18) </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="type_img">
+                            <span class="photo">
+                                <a href="/product/PR8JWA56UK5SeCztdsjv" target="_blank">
+                                <img src="//images.otwojob.com/product/O/S/W/OSWHNjHf1vDQ8uU.jpg/o2j/resize/270x196&gt;" alt="♥ 드라이플라워 캘리그래피 주문 액자 ♥" title="♥ 드라이플라워 캘리그래피 주문 액자 ♥">
+                            </a>
+                            </span>
+                            <button type="button" class="like on"></button>
+                            <span class="hotdeal_discount sale_PR8JWA56UK5SeCztdsjv" style="">46</span>
+                        </div>
+                        <div class="mid_wrap">
+                            <div class="info_icon">
+                                <span class="path">노하우/상담</span>
+                                <span class="free">무료재능</span>
+                                <span class="ico_s"><img src="/image/pc/main/ic_special_01.png"></span>
+                            </div>
+                            <h3 class="tit"><a href="/product/PR8JWA56UK5SeCztdsjv" target="_blank">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요. 15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a></h3>
+                            <div class="new_price_area price" item="PR8JWA56UK5SeCztdsjv" flag="true">
+                                <span class="discount" style="display: inline;"><em>46</em>%</span>
+                                <span class="sale" style="display: inline;"><em>12,000</em></span>
+                                <span class="origin"><em>6,500</em></span>
+                            </div>
+                            <div class="new_star_grade_wrap">
+                                <span class="new_star_grade">
+                                    <span style="width:100%;">별점</span>
+                                </span>
+                                <em>5.0 (1) </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="type_img">
+                            <span class="photo">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img src="//images.otwojob.com/product/J/2/R/J2Rm1rXo5lP6wXk.jpg/o2j/resize/270&gt;" alt="❤ 드라이플라워 캘리그라피 용돈봉투 ❤" title="❤ 드라이플라워 캘리그라피 용돈봉투 ❤">
+                                </a>
+                            </span>
+                            <button type="button" class="like"></button>
+                            <span class="sale_discount" style="">30</span>
+                        </div>
+                        <div class="mid_wrap">
+                            <div class="info_icon">
+                                <span class="path">노하우/상담</span>
+                                <span class="free">무료재능</span>
+                                <span class="ico_s"><img src="/image/pc/main/ic_special_01.png"></span>
+                            </div>
+                            <h3 class="tit"><a href="javascript:void(0)" target="_blank">❤ 드라이플라워 캘리그라피 용돈봉투 ❤</a></h3>
+                            <div class="new_price_area price" flag="true">
+                                <span class="discount" style="display: inline;"><em>30</em>%</span>
+                                <span class="sale" style="display: inline;"><em>5,000</em></span>
+                                <span class="origin"><em>3,500</em></span>
+                            </div>
+                            <div class="new_star_grade_wrap">
+                                <span class="new_star_grade">
+                                    <span style="width:100%;">별점</span>
+                                </span>
+                                <em>5.0 (1) </em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="type_img">
+                            <span class="photo">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img src="//images.otwojob.com/product/x/p/f/xpf6Q8LABldkL6h.png/o2j/resize/270&gt;" alt="선물용으로 굳굳! 1:1맞춤제작 머그컵 " title="선물용으로 굳굳! 1:1맞춤제작 머그컵 ">
+                                </a>
+                            </span>
+                            <button type="button" class="like"></button>
+                            <span class="sale_discount" style="display:none;"></span>
+                        </div>
+                        <div class="mid_wrap">
+                            <div class="info_icon">
+                                <span class="path">노하우/상담</span>
+                                <span class="free">무료재능</span>
+                                <span class="ico_s"><img src="/image/pc/main/ic_special_01.png"></span>
+                            </div>
+                            <h3 class="tit"><a href="javascript:void(0)" target="_blank">선물용으로 굳굳! 1:1맞춤제작 머그컵 </a></h3>
+                            <div class="new_price_area price" item="PRoXy8qaLUQPzlGJ8xC3" flag="false">
+                                <span class="origin"><em>6,000</em></span>
+                            </div>
+                            <div class="new_star_grade_wrap">
+                                <span class="new_star_grade">
+                                <span style="width:98%;">별점</span>
+                                </span>
+                                <em>4.9 (18) </em>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="body_inform">
+                <label>포트폴리오
+                    <div class="btn_set auto">
+                        <button type="button" class="plus_header">포트폴리오 추가</button>
+                    </div>
+                </label>
+                <a href="javascript:void(0)" class="more">전체보기<img src="/image/pc/ico/ic-arrow-right-m.png"></a>
+                <div class="portfolio_box">
+                    <div class="vertical_image">
+                        <img src="http://ertkorea.com/data/file/7/3551666217_wnbHtYoN_13__1_.png">
+                        <div class="fade_wrap">
+                            홈페이지 투유 웹사이트 디자인
+                            <br>
+                            <button type="button">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="horizontal_image">
+                        <img src="https://i.ytimg.com/vi/5_3jd471hp0/maxresdefault.jpg">
+                        <div class="fade_wrap">
+                            홈페이지 투유 웹사이트 디자인
+                            <br>
+                            <button type="button">자세히 보기</button>
+                        </div>
+                    </div>
+                    <!--<div class="common_file">
+                        <div class="fade_wrap">
+                            창업컨설팅 제안서
+                            <br>
+                            <button type="button">다운받기</button>
+                        </div>
+                    </div>-->
+                    <div class="common_file plus">
+                        <button type="button">포트폴리오를 추가해 주세요</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body_inform">
+                <label>참고사이트</label>
+
+                <div class="site_list">
+                    <div>
+                        <button class="remove"></button>
+                        <button type="button" class="screenshot"><img src="//images.otwojob.com/product/1/3/7/1373617848.jpg/o2j/resize/120>"></button>
+                        <a href="javascript:void(0)">
+                            <h2>고래달님의 프로필 | 재능마켓 오투잡 (otwojob.com)</h2>
+                            <h3>디자인 전문분야 판매자와 톡톡 주요경력등 디자인 전문분야 판매자와 톡톡 주요경력등</h3>
+                            <span>https://www.otwojob.com/rank/main?majorCategory=18</span>
+                        </a>
+                    </div>
+                    <div>
+                        <button class="remove"></button>
+                        <button type="button" class="screenshot">&nbsp;</button>
+                        <a href="javascript:void(0)">
+                            <h2>www.otwojob.com</h2>
+                            <h3>해당링크로이동합니다</h3>
+                            <span>www.otwjob.co.kr</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <article style="display: none;">
+            <div class="review_wrap">
+                <div class="summary">
+                    <h5 class="tit">구매평 <a href="#">전체보기 &gt;</a></h5>
+                    <div class="review_total">
+                        <div class="star_box">
+                            <p class="star_grade_m">
+                                <span class="stars"><span class="percent" average="70" style=""></span></span>
+                                <span class="total_num">4.0</span>
+                            </p>
+                            <p class="detail_total">
+                                <span>서비스 4.0</span>
+                                <span>친절도 4.0</span>
+                                <span>품질 4.0</span>
+                            </p>
+                        </div>
+                        <div class="review_percent">
+                            <ul>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_ss">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:100%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent" average="80" style=""></span></span>
+                                    </p>
+                                    <div class="right_area"><span>50%</span></div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_ss">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:80%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent" average="90" style=""></span></span>
+                                    </p>
+                                    <div class="right_area"><span>20%</span></div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_ss">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:60%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent" average="100" style=""></span></span>
+                                    </p>
+                                    <div class="right_area"><span>15%</span></div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_ss">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:40%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent" average="10" style=""></span></span>
+                                    </p>
+                                    <div class="right_area"><span>10%</span></div>
+                                </li>
+                                <li>
+                                    <div class="left_area">
+                                        <div class="score">
+                                            <p class="star_grade_ss">
+                                                <span class="stars"><span class="percent"
+                                                                          style="width:20%"></span></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="line_grade">
+                                        <span class="line"><span class="percent" average="20" style=""></span></span>
+                                    </p>
+                                    <div class="right_area"><span>5%</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="icon_box">
+                            <span class="verygood">적극추천 (999)</span> <!-- verygood / good / bad / verybad -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review_detail">
+                    <h5 class="tit">판매자 인상</h5>
+                    <div class="review_detail_list">
+                        <span>전문적인 (48)</span>
+                        <span>높은 퀄리티 (48)</span>
+                        <span>친절한 (48)</span>
+                        <span>꼼꼼함 (48)</span>
+                        <span>비용대비 효과적 (48)</span>
+                        <span>편안함 (48)</span>
+                        <span>꼼꼼함 (48)</span>
+                        <span>비용대비 효과적 (48)</span>
+                        <span>편안함 (48)</span>
+                        <span>꼼꼼함 (48)</span>
+                        <span>비용대비 효과적 (48)</span>
+                        <span>편안함 (48)</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--// view_profile -->
+
+</section>
+<!-- // content_container -->
+
+<div class="common_tooltip light" id="schedule_calendar">
+    <span class="tooltip_arr"></span>
+    <div class="tooltip_wrap">
+        <div class="tooltip_cont">
+            <div class="seller_schedule_calendar"></div>
+            <div class="schedule_comment">
+                <span>
+                    <p class="today">오늘 날짜</p>
+                    <p class="disabled">응대불가능 날짜</p>
+                </span>
+                판매자는 문의에 대한 응답이 불가능한 날짜를 설정할 수 있습니다.
+                판매자가 설정한 문의응대 불가능 날짜를 참고하여 주문해주세요.
+            </div>
+        </div>
+    </div>
+    <button type="button" class="coupon_closer">닫기</button>
+</div>
+
+<script>
+    $(window).ready(function() {
+        var array = ["2019-03-20","2019-03-21","2019-03-22"];
+        var holiday = ["2019-03-10","2019-03-11","2019-03-12"];
+
+       sellerCalendar.init(array, holiday, true, true);
+    });
+</script>

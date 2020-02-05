@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>마이페이지 - 메시지 상세 보기</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="/css/pc/reset.css">
+<link rel="stylesheet" type="text/css" href="/css/pc/common.css">
+<link rel="stylesheet" type="text/css" href="/css/pc/content.css">
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/pc/common.js"></script>
+</head>
+<body>
+<!-- [dev] OTWOJOB-610, OTWOJOB-749 -->
+<div class="popup_wrap">
+	<div class="msgbox" style="display:none;">
+		<span class="closed">메세지<a href="#none">2</a></span>
+	</div>
+	<!-- [dev] message box status: open -->
+	<div class="msgbox">
+		<div class="msgbox_container">
+			<h2>구매자 오투잡님<a href="#" class="linkview">판매재능보기</a>
+				<a class="close" href="javascript:;" title="닫기">
+					<img src="//images.otwojob.com//image/pc/ico/popup_close.png" alt="메시지 닫기">
+				</a>
+			</h2>
+			<!-- messaging_content --><!-- 최소가로넓이는 480px입니다. 이 밑으로 내려가면 메세지입력창 영역이 잘려서 보이지 않습니다. 480이하로 창 크기 조절 못하게 설정 부탁드려요~ -->
+			<div class="messaging_content">
+				<!-- <button class="msg_reload">새로고침</button> [dev] 운영서버에서 버튼 확인이 불가능하여 주석처리하였습니다. -->
+				<!--<p class="msgbox_wing_banner">
+					<a href="#"><img src="/image/pc/common/msgbox_wing_banner.png" alt="APP EVENT - 오투잡 APP으로 언제 어디서나 메시지 전송 OK"></a>
+					<button type="button"><img src="/image/pc/common/msgbox_wing_banner_close.png" alt="닫기"></button>
+				</p>-->
+				<p class="top_message">
+					메시지를 보내는 즉시 이메일과 휴대폰 문자로 상대방에게 알림이 갑니다.<br>
+					직거래를 유도하는 계좌이체, 연락처, 이메일 등 개인정보가 포함된 글과 광고성 게시물의 경우 관리자에 의해 임의로 삭제될 수 있습니다.<!--<a href="#" class="btn_close">닫기</a>-->
+				</p>
+				<div class="chatting_content">
+					<ul class="chatting">
+						<li class="buyer_say">
+							<div class="buyer_wrap">
+								<p class="buyer_img"><img src="/image/pc/temp/@msg_buyer.png" alt=""></p>
+								<div class="chatting_data">
+									<p class="id_date">오투잡 <span>2016. 09.08 17:51:55</span></p>
+									<div class="bubble">
+										<div class="bubble_msg">
+										<pre>디퓨져를 선택하는 이유
+1)은은하게 방에 가득 향이퍼지면서 심신이 맑아지는 것
+<a href="javascript:;" class="report_icon"></a></pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="seller_say">
+							<div class="chatting_data">
+								<p class="c_date">2016. 09.08 17:51:55</p>
+								<div class="bubble">
+									<div class="bubble_msg">
+									<pre>디퓨져를 선택하는 이유
+
+<a href="javascript:;" class="report_icon"></a></pre>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="seller_say">
+							<div class="chatting_data">
+								<p class="c_date">2016. 09.08 17:51:55 <span class="red_circle"></span></p>
+								<div class="bubble">
+									<div class="bubble_msg">
+										<!-- 스폐셜 가격제안 -->
+										<div class="special_propose_deal">
+											<a href="#">
+												<p class="txt01">판매자가 스폐셜 가격으로 제안을 하였습니다.</p>
+												<p class="spd_tit">[디자인] 다이어트 상담 식단 짜드려요.</p>
+												<div class="line01">
+													<p class="l_tit">제안금액</p>
+													<p class="price">150,000원</p>
+												</div>
+											</a>
+										</div>
+										<!-- //스폐셜 가격제안 -->
+										<div class="btn_wrap align_right mt10">
+											<a href="#" class="report_icon"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="buyer_say">
+							<div class="buyer_wrap">
+								<p class="buyer_img"><img src="/image/pc/temp/@msg_buyer.png" alt=""></p>
+								<div class="chatting_data">
+									<p class="id_date">오투잡 <span>2016. 09.08 17:51:55</span><span class="red_circle"></span></p>
+									<div class="bubble">
+										<div class="bubble_msg">
+											<!-- attached_file -->
+											<a href="#none" class="attached_file" title="첨부파일">일정_160616_abcdefg.txt</a> <em class="file_volume">(483.98KB)</em><a href="#" class="report_icon"></a> <!-- OTWOJOB-845 -->
+											<!--// attached_file -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="seller_say">
+							<div class="chatting_data">
+								<p class="c_date">2016. 09.08 17:51:55 <span class="red_circle"></span></p>
+								<div class="bubble">
+									<div class="bubble_msg">
+										<!-- sending image -->
+										<img src="/image/pc/temp/@send_image.png" alt="">
+										<br>
+										<a href="#none" class="send_image" title="파일보내기">싸인.jpg</a> <em class="file_volume">(483.98KB)</em><a href="#" class="report_icon"></a> <!-- OTWOJOB-845 -->
+										<!--// sending image -->
+										<!-- progress bar -->
+										<div class="msg_progress_box">
+											<div class="msg_progress">
+												<div id="progressBar" class="bar_color" style="width:10%;display:block;"></div>
+											</div>
+											<p id="per_num" class="bar_num">10%</p>
+										</div>
+										<button type="button"><img src="../../image/pc/btn/btn_upload_cancle.png" alt="취소하기"></button>
+										<p class="cancle_txt">파일전송이 취소되었습니다.</p>
+										<button onclick="progressMove()">Progess TEST</button> <!-- [dev] 테스트 버튼 개발 후 삭제 -->
+										<!-- //progress bar -->
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="seller_say">
+							<div class="chatting_data">
+								<p class="c_date">2016. 09.08 17:51:55</p>
+								<div class="bubble">
+									<div class="bubble_msg">
+									<pre>
+ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+									</pre>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="buyer_say">
+							<div class="buyer_wrap">
+								<p class="buyer_img"><img src="/image/pc/temp/@msg_buyer.png" alt=""></p>
+								<div class="chatting_data">
+									<p class="id_date">오투잡 <span>2016. 09.08 17:51:55</span></p>
+									<div class="bubble">
+										<div class="bubble_msg">
+											<pre>디</pre>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="seller_say">
+							<div class="chatting_data">
+								<p class="c_date">2016. 09.08 17:51:55</p>
+								<div class="bubble">
+									<div class="bubble_msg">
+									<pre>
+ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+									</pre>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- OTWOJOB-749 : messaging_footer class 추가 -->
+			<div>
+				<div id="container_" class="container">
+					<div id="o_1bqh29kmk1ip11oho1k681eml8sua" class="row">
+						<p class="progress_cancel_center"><button type="button"><img src="/image/pc/ico/progress_cancel2.png" alt="전송취소"></button></p>
+						<div class="file_info">
+							<div class="col-sm-3">PC_오투잡_홍보메일_추석광고연장.zip</div>
+							<div class="col-sm-1">( 29.4 MB )</div>
+						</div>
+						<div class="progress">
+							<div role="progressbar" class="progress-bar progress-bar-info progress-bar-striped" style="width: 0%;">0%</div>
+						</div>
+					</div>
+					<div id="uploadList"></div>
+				</div>
+				<div class="messaging_footer">
+					<div id="container" class="msg_writing">
+						<button id="fileAddBtn" type="button" class="msg_upload_file" style="z-index: 1;"></button>
+						<div class="msg_entry_form">
+							<div class="textarea_wrap">
+								<p class="notice">메시지를 입력해 주세요.</p>
+								<textarea cols="5" rows="1" name="content"></textarea>
+							</div>
+						</div>
+						<div class="send_msg">
+							<input type="submit" value="전송">
+						</div>
+						<div id="html5_1bqh1qjkjim0n6peq21ubsdai4_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 55px; height: 55px; overflow: hidden; z-index: 0;">
+							<input id="html5_1bqh1qjkjim0n6peq21ubsdai4" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept="">
+						</div>
+					</div>
+					<button type="button" class="recommend_special_price">
+						<span class="special_price_txt">
+							<em>스페셜 가격제안</em>
+							<em title="지금 스페셜 가격제안 하기" class="recommend_now">지금 구매자에게 할인 된 가격을 제안하실 수 있어요!</em>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- [dev] OTWOJOB-610 : 리사이즈 스크립트 추가 -->
+<script type="text/javascript">
+//<![CDATA[
+$( window ).resize(function() {
+    var winH = $(window).height(),
+        winW = $(window).width(),
+        msgH = winH - 159 + 'px';
+    $('.messaging_content').css('height', msgH);
+    $('.messaging_footer').css('width', winW);
+});
+//]]>
+</script>
+</body>
+</html>

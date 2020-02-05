@@ -1,0 +1,189 @@
+	<fieldset>
+		<legend class="blind">회원가입</legend>
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>계정정보 <span class="must"> 필수입력정보입니다.</span></h2>
+			<div class="type01 must">
+				<input type="text" placeholder="아이디" title="아이디" />
+				<button class="btn_confirm btn_org" type="button">중복확인</button>
+				<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+						<p class="ok" style="display:none">사용이 가능한 닉네임입니다.</p>
+						<p class="warning" style="display:none">이미 사용중인 아이디입니다.</p> -->
+				<p class="warning">이미 사용중인 아이디입니다.</p>
+				<p class="ok">사용이 가능한 닉네임입니다.</p>
+			</div>
+
+			<div class="type01 must">
+				<input type="text" placeholder="닉네임" title="닉네임" id="aa"/>
+				<button class="btn_confirm btn_gray" type="button">중복확인</button>
+				<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+						<p class="ok" style="display:none">사용이 가능한 닉네임입니다.</p>
+						<p class="warning" style="display:none">이미 사용중인 아이디입니다.</p> -->
+			</div>
+
+			<div class="type02 must">
+				<span class="password"><input type="password" placeholder="비밀번호" title="비밀번호" /></span>
+				<!-- 확인값에 따라 class="on" 추가 -->
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+						<p class="warning" style="display:none">비밀번호는 8~32자 이내로 입력하셔야 합니다.</p> -->
+			</div>
+
+			<div class="type02 must">
+				<span class="password_confirm"><input type="password" placeholder="비밀번호확인" title="비밀번호확인" /></span>
+				<!-- 확인값에 따라 class="on" 추가 -->
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.
+						<p class="warning" style="display:none">비밀번호가 일치하지 않습니다.</p> -->
+			</div>
+
+			<p class="password_text">
+				비밀번호는 8~32자 이내로 영문 (대문자,소문자), 숫자, 특수 문자 3가지를 조합하셔서 작성하시면 됩니다.<br>
+				단, 3자리 이상 키보드 자판 연속 배열 입력은 불가합니다.<br>
+				사용 가능한 특수 기호문자는 ! @ # $ % ^ & * ( ) - + = { } [ ] 입니다.
+			</p>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>회원인증</h2>
+
+			<div class="tab_type01">
+				<button class="on" data-href="#cell_cont">휴대폰 번호 인증</button>
+				<button data-href="#email_cont">이메일 주소 인증</button>
+			</div>
+
+			<!-- tab_content -->
+			<div id="cell_cont" class="tab_content">
+				<h3 class="blind">휴대폰 번호 인증</h3>
+				<div class="must tell">
+					<div class="selectbox">
+						<label for="a1">010</label>
+						<select id="a1">
+							<option value="">010</option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+					<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+					<button class="btn_confirm btn_gray" type="button">인증</button>
+					<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+				</div>
+
+				<div class="must type02">
+					<span><input type="text" placeholder="인증번호" title="인증번호" /></span>
+					<button class="btn_confirm btn_gray" type="button">확인</button>
+					<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+				</div>
+			</div>
+			<!--// tab_content -->
+
+			<!-- tab_content -->
+			<div id="email_cont" class="tab_content" style="display:none;">
+				<h3 class="blind">이메일 주소 인증</h3>
+				<div class="must email01" >
+					<em><input type="text" placeholder="이메일" title="이메일주소" class="top10"/></em> @
+					<input type="text" title="이메일주소" />
+					<div class="selectbox share_line">
+						<label for="a2">직접입력</label>
+						<select id="a2">
+							<option value="">직접입력</option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+					<button class="btn_confirm btn_gray" type="button">인증</button>
+					<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+				</div>
+
+				<div class="must type02">
+					<span><input type="text" placeholder="인증번호" title="인증번호" class="top10" /></span>
+					<button class="btn_confirm btn_gray" type="button">확인</button>
+					<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+				</div>
+			</div>
+			<!--// tab_content -->
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>회원정보 <span class="must"> 15세이상만 회원가입 가능합니다.</span></h2>
+			<div class="must">
+				<input type="text" placeholder="이름" title="이름" />
+			</div>
+
+			<div class="sex_type">
+				<button type="button">남자</button>
+				<button type="button">여자</button>
+			</div>
+
+			<div class="must email02">
+				<input type="text" placeholder="이메일" title="이메일주소" /> @
+				<input type="text" title="이메일주소" />
+				<div class="selectbox share_line">
+					<label for="a3">직접입력</label>
+					<select id="a3">
+						<option value="">직접입력</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+
+			<div class="must">
+				<div class="selectbox">
+					<label for="a4">생년</label>
+					<select id="a4">
+						<option value="">생년</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<div class="selectbox birth share_line">
+					<label for="a5">월</label>
+					<select id="a5">
+						<option value="">월</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<div class="selectbox birth share_line">
+					<label for="a6">일</label>
+					<select id="a6">
+						<option value="">일</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+
+			<div class="tell">
+				<div class="selectbox">
+					<label for="a1">010</label>
+					<select id="a1">
+						<option value="">010</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- btn_wrap -->
+		<article class="btn_wrap">
+			<div class="join_btn_wrap">
+				<span class="btn_cancel"><button type="button">취소</button></span>
+				<span class="btn_join"><button type="button">가입하기</button></span>
+			</div>
+			<div class="orline"><span>or</span></div>
+			<button class="btn_type2" type="button"><span class="facebook">페이스북으로 가입하기</span></button>
+			<button class="btn_type2" type="button"><span class="naver">네이버로 가입하기</span></button>
+			<button class="btn_type2" type="button"><span class="kakao">카카오로 가입하기</span></button>
+		</article>
+		<!--// btn_wrap -->
+	</fieldset>

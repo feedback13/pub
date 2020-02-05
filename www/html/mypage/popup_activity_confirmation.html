@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko" style="overflow-y: auto;">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>재능 판매활동 확인서</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+    @import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+</style>
+<link rel="stylesheet" type="text/css" href="../../css/pc/reset.css">
+<link rel="stylesheet" type="text/css" href="../../css/pc/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/pc/content.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/pc/bluebird.min.js"></script>
+<script type="text/javascript" src="../../js/pc/html2canvas.min.js"></script>
+<script type="text/javascript" src="../../js/pc/jspdf.min.js"></script>
+<script type="text/javascript" src="../../js/pc/common.js"></script>
+</head>
+<body>
+<!-- [dev] OTWOJOB-610 : popup 띄우실 때 [top=0, scrollbars=yes, resizable=no] 는 꼭 지켜주세요~ -->
+<div class="popup_wrap">
+    <div class="btn_wrap right_wrap">
+        <button type="button" class="btn_border" onclick="printDoc()">인쇄하기</button>
+        <button type="button" class="btn_border" onclick="makePdf('activity_confirmation')">다운받기</button>
+        <button type="button" class="btn_border"  onclick="openLay('send_email')">메일로 보내기</button>
+    </div>
+
+    <div class="popup_layer02 activity_confirmation confirmation" >
+        <div id="activity_confirmation">
+            <div class="preface">
+                <span>제 2019-OTO1110000001호</span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAbCAIAAAARTeGzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUJFRTVFQzQ3MkE4MTFFNjlCMkNBRDdCMzE3NjZCNjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUJFRTVFQzU3MkE4MTFFNjlCMkNBRDdCMzE3NjZCNjQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQkVFNUVDMjcyQTgxMUU2OUIyQ0FEN0IzMTc2NkI2NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQkVFNUVDMzcyQTgxMUU2OUIyQ0FEN0IzMTc2NkI2NCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plh0qy4AABBmSURBVHja7FoHdBRl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">
+            </div>
+            <div class="confirmation">
+                <label>재능 판매활동 확인서</label>
+
+                <section class="activity_inform">
+                    <label>판 매 자  정 보</label>
+                    <div class="inform">
+                        <label>성             명</label>
+                        <span>김유이</span>
+                    </div>
+                    <div class="inform">
+                        <label>아이디(닉네임)</label>
+                        <span>potwojob(피오투잡)</span>
+                    </div>
+                    <div class="inform">
+                        <label>전   문   분   야</label>
+                        <span>생활서비스</span>
+                    </div>
+                    <div class="inform">
+                        <label>연      락     처</label>
+                        <span>010-1234-<span class="blured_text_num"></span></span>
+                    </div>
+                    <div class="inform">
+                        <label>이      메     일</label>
+                        <span>notwo<span class="blured_text"></span>@saramin.co.kr</span>
+                    </div>
+                    <div class="inform">
+                        <label>판 매 자 등 록 일</label>
+                        <span>2018.01.23</span>
+                    </div>
+                </section>
+
+                <section class="activity_inform table_block">
+                    <label>판매활동 현황<p>(오투잡+오더잡)</p>
+                        <span>총 재능판매 실적 : 15건/ 30,000,000원 </span>
+                    </label>
+                    <table>
+                        <colgroup>
+                            <col width="13%">
+                            <col width="*">
+                            <col width="10%">
+                            <col width="18%">
+                            <col width="13%">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>등록일</th>
+                            <th>재능명</th>
+                            <th>가격</th>
+                            <th>판매실적</th>
+                            <th>진행상황</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2016. 07. 27</td>
+                            <td>합리적인 방법으로 제안 합니다. 모닝콜 해드립니다.</td>
+                            <td>80,000원</td>
+                            <td class="price">15건 / 10,000,000원</td>
+                            <td class="ing">판매중</td>
+                        </tr>
+                        <tr>
+                            <td>2016. 07. 27</td>
+                            <td>15일 동안 5kg 원리적인 다이어트 식단 건강 레시피 작성해 드립니다.</td>
+                            <td>80,000원</td>
+                            <td class="price">15건 / 10,000,000원</td>
+                            <td class="ing">판매중</td>
+                        </tr>
+                        <tr>
+                            <td>2016. 07. 27</td>
+                            <td>합리적인 방법으로 제안합니다.</td>
+                            <td>80,000원</td>
+                            <td class="price">15건 / 10,000,000원</td>
+                            <td class="ing">판매중</td>
+                        </tr>
+                        <tr>
+                            <td>2016. 07. 27</td>
+                            <td>합리적인 방법으로 제안합니다.</td>
+                            <td>80,000원</td>
+                            <td class="price">15건 / 10,000,000원</td>
+                            <td class="ing">판매중</td>
+                        </tr>
+                        <tr>
+                            <td>2016. 07. 27</td>
+                            <td>15일 동안 5kg 원리적인 다이어트 식단 레시피 작성해 드립니다. </td>
+                            <td>80,000원</td>
+                            <td class="price">15건 / 10,000,000원</td>
+                            <td class="ing">판매중</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5">+ 이외 3개 재능상품 판매중</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <div class="comment">위 판매자는 재능 중개사이트, 오투잡을 통해 자신의 재능을 상품으로 인정받아<br>
+                    오투잡의 재능판매자로 활동하고 있음을 확인합니다.
+                </div>
+                <div class="authority">
+                    2019년 01년 11일
+                    <b>재능마켓, 오투잡</b>
+                    (주)사람인에이치알
+                </div>
+                <div class="footer">
+                    • 본 확인서는 판매자가 직접 입력한 정보로써, 정보 및 판매활동에 대한 책임은 판매자에게 있습니다.<br>
+                    • 본 확인서는 발행일기준으로 해당 판매자의 재능판매활동을 확인하는 서류로 이외의 목적으로는 사용할 수 없습니다.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup_layer send_email box_type460">
+    <fieldset>
+        <legend class="blind">이메일 발송</legend>
+        <p class="tit">이메일 발송<a href="#none" class="btn_close"><img src="/image/pc/ico/popup_close.png" alt="팝업닫기"></a></p>
+        <article class="pop_content">
+            <label class="comment">회원님의 이메일로 판매활동 확인서를 발송합니다.</label>
+            <div class="type_grey email">
+                <span>이메일</span>
+                <div class="email_form">
+                    <input type="text" placeholder="선택">
+                    @
+                    <input type="text">
+                </div>
+            </div>
+            <div class="btn_wrap">
+                <button type="button" class="btn_cancel" onclick="layerClose('send_email')">취소</button>
+                <button type="button" class="btn_ok">메일 발송하기</button>
+            </div>
+        </article>
+    </fieldset>
+</div>
+</body>
+<script>
+    $(document).ready(function() {
+
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,329 @@
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>사람인 OTWOJOB</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../../../../js/jquery/themes/default/style.min.css">
+    <script type="text/javascript" src="../../../../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../../../../js/jquery/jstree.min.js"></script>
+</head>
+<body>
+<div class="menu" id="menuIA">
+    <ul>
+        <li><a href="./pub-ia/guide/html/index.html" target="pageFrame">Defalt Guide</a></li>
+        <li><a href="./pub-ia/layout99/main/layer_all.html" target="pageFrame">레이어팝업 모음</a></li>
+        <li><a href="./pub-ia/layout11/main/list_type_all.html" target="pageFrame">재능리스트 타입 모음</a></li>
+        <li><a href="javascript:void(0);">오투잡</a>
+            <ul>
+                <li><a href="./pub-ia/layout13/talent/UP_016.html" target="pageFrame">베스트 재능</a></li>
+                <li class="pop"><a href="javascript:void(0);" onclick="window.open('/p/mypage/popup_msg.html', 'width=300, height=400'); return false;" target="_blank">메세지팝업<span>pop</span></a></li>
+                <li><a href="javascript:void(0);">회원</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">간편회원관리(모바일에서확인)</a></li>
+                        <li><a href="javascript:void(0);">pc별도페이지</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/mypage/UP_107.html" target="pageFrame">기본회원정보(PC 별도)</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">로그인(구버전)</a>
+                            <ul>
+                               <li><a href="./pub-ia/layout13/member/UP_022.html" target="pageFrame">일반로그인</a></li>
+                                <!-- <li><a href="./pub-ia/layout14/member/UP_023.html" target="pageFrame">만14세미만</a></li>
+                                <li><a href="./pub-ia/layout14/member/UP_024.html" target="pageFrame">아이디찾기</a></li>
+                                <li><a href="./pub-ia/layout14/member/UP_024_3.html" target="pageFrame">아이디찾기완료</a></li>
+                                <li><a href="./pub-ia/layout14/member/UP_024_2.html" target="pageFrame">비밀번호찾기</a></li>-->
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">오투잡이용가이드</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout13/customer/UP_039.html" target="pageFrame">구매자가이드</a></li>
+                                <li><a href="./pub-ia/layout13/customer/UP_040.html" target="pageFrame">판매자가이드</a></li>
+                                <li><a href="./pub-ia/layout12/customer/UP_041.html" target="pageFrame">재능등록가이드</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">이용약관</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/terms/UP_033.html" target="pageFrame">오투잡이용약관</a></li>
+                                <li><a href="./pub-ia/layout12/terms/UP_035.html" target="pageFrame">판매자이용약관</a></li>
+                                <li><a href="./pub-ia/layout12/terms/UP_037.html" target="pageFrame">개인정보처리방침</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">개인정보수정</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/mypage/UP_104_02.html" target="pageFrame">비밀번호확인</a></li>
+                                <li class="layer"><a href="./pub-ia/layout12/mypage/UP_107.html" target="pageFrame">기본회원정보<span>layer</span></a></li>
+                                <li><a href="javascript:void(0);">판매회원정보</a>
+                                    <ul>
+                                        <li class="layer"><a href="./pub-ia/layout12/mypage/UP_111.html" target="pageFrame">개인<span>layer</span></a></li>
+                                        <li class="layer"><a href="./pub-ia/layout12/mypage/UP_112.html" target="pageFrame">사업자<span>layer</span></a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_114.html" target="pageFrame">심사</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">판매회원전환(모바일에서확인)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">재능카테고리</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/talent/UP_007.html" target="pageFrame">리스트</a></li>
+                        <li><a href="./pub-ia/layout13/talent/UP_007_1.html" target="pageFrame">리스트없음</a></li>
+                        <li class="layer"><a href="./pub-ia/layout13/talent/UP_015_view.html" target="pageFrame">상세<span>layer</span></a></li>
+                        <li><a href="./pub-ia/layout13/talent/UP_012_review.html" target="pageFrame">구매평</a></li>
+                        <li><a href="javascript:void(0);">재능등록</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/mypage/UP_051_2.html" target="pageFrame">등록</a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_055.html" target="pageFrame">완료</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">재능결제</a>
+                    <ul>
+                        <li class="layer"><a href="./pub-ia/layout13/talent/UP_015_view.html" target="pageFrame">상세<span>layer</span></a></li>
+                        <li class="comp"><a href="./pub-ia/layout13/mypage/UP_088_2.html" target="pageFrame">최종결제</a></li>
+                        <li class="comp"><a href="./pub-ia/layout13/mypage/UP_091.html" target="pageFrame">주문완료(무통장입금)</a></li>
+                        <li class="comp"><a href="./pub-ia/layout13/mypage/UP_092.html" target="pageFrame">주문완료(카드/실시간계좌/휴대폰/O캐쉬)</a></li>
+                        <li class="comp"><a href="./pub-ia/layout13/mypage/UP_093.html" target="pageFrame">광고주문완료(무통장입금)</a></li>
+                        <li class="comp"><a href="./pub-ia/layout13/mypage/UP_094.html" target="pageFrame">광고주문완료(카드/실시간계좌/휴대폰/O캐쉬)</a></li>
+                        <li class="comp"><a href="./pub-ia/layout13/mypage/UP_096.html" target="pageFrame">주문완료(주문취소)</a></li>
+                        <li class="comp"><a href="./pub-ia/layout13/mypage/UP_098_1.html" target="pageFrame">결제내역</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">마이페이지</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout12/mypage/UP_044.html" target="pageFrame">메인</a></li>
+                        <li><a href="./pub-ia/layout12/talent/UP_012_P.html" target="pageFrame">프로필-개인</a></li>
+                        <li><a href="./pub-ia/layout12/talent/UP_012_C.html" target="pageFrame">프로필-기업</a></li>
+                        <li><a href="javascript:void(0);">메시지 관리</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/mypage/UP_046.html" target="pageFrame">메시지 목록</a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_046_1.html" target="pageFrame">오투잡 알림</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">재능판매</a>
+                            <ul>
+                                <li class="layer"><a href="./pub-ia/layout12/mypage/UP_051.html" target="pageFrame">재능 등록</a></li>
+                                <li class="layer"><a href="./pub-ia/layout12/mypage/UP_056_2.html" target="pageFrame">재능관리<span>layer</span></a></li>
+                                <li><a href="javascript:void(0);">판매관리</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_058_1.html" target="pageFrame">리스트</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_076.html" target="pageFrame">상세</a></li>
+                                    </ul>
+                                <li><a href="./pub-ia/layout12/mypage/UP_061.html" target="pageFrame">스케줄 관리</a></li>
+                                <li><a href="javascript:void(0);">오더정보</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_062.html" target="pageFrame">오더정보리스트</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_065.html" target="pageFrame">나의 제안내역</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">광고관리</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_067.html" target="pageFrame">광고리스트</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_069.html" target="pageFrame">광고신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);" target="pageFrame">수익관리</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_070.html" target="pageFrame">수익관리</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_071.html" target="pageFrame">판매내역</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_072.html" target="pageFrame">정산관리</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_073.html" target="pageFrame">출금신청</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_059.html" target="pageFrame">매출관리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">재능구매</a>
+                            <ul>
+                                <li><a href="javascript:void(0);">구매관리</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_075.html" target="pageFrame">리스트</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_076_2.html" target="pageFrame">상세</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">구매평</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_171.html" target="pageFrame">작성 가능한 구매평</a></li>
+                                        <li><a href="./pub-ia/layout12/mypage/UP_171_01.html" target="pageFrame">작성한 구매평</a></li>
+                                        <!--<li><a href="./pub-ia/layout12/talent/UP_012_review.html" target="pageFrame">구매평(프로필)</a></li>-->
+                                    </ul>
+                                </li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_077.html" target="pageFrame">찜리스트</a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_085.html" target="pageFrame">O캐시</a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_133.html" target="pageFrame">O포인트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">쿠폰</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/mypage/UP_129.html" target="pageFrame">쿠폰관리</a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_129_1.html" target="pageFrame">쿠폰등록</a></li>
+                                <li><a href="./pub-ia/layout13/coupon/couponzone.html">쿠폰존</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">오더잡</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/mypage/UP_078.html" target="pageFrame">오더등록</a></li>
+                                <li class="layer"><a href="./pub-ia/layout12/mypage/UP_080.html" target="pageFrame">오더내역<span>layer</span></a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_081.html" target="pageFrame">추천오더</a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_080_1.html" target="pageFrame">오더상세내역</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./pub-ia/layout12/mypage/UP_097.html" target="pageFrame">결제내역관리</a></li>
+                        <li><a href="javascript:void(0);">개인정보 관리</a>
+                            <ul>
+                                <li class="layer"><a href="./pub-ia/layout12/mypage/UP_116.html" target="pageFrame">프로필 관리<span>layer</span></a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_104_02.html" target="pageFrame">개인정보 수정(회원쪽확인)</a></li>
+                                <li><a href="./pub-ia/layout12/mypage/UP_104_02.html" target="pageFrame">판매회원정보 수정(회원쪽확인)</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">고객센터</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout12/customer/UP_025.html" target="pageFrame">FAQ</a></li>
+                                <li><a href="./pub-ia/layout12/customer/UP_029.html" target="pageFrame">1:1문의하기</a></li>
+                                <li><a href="./pub-ia/layout12/customer/UP_135.html" target="pageFrame">O캐시환불신청</a></li>
+                                <li><a href="./pub-ia/layout12/customer/UP_031.html" target="pageFrame">나의 신고내역</a></li>
+                                <li><a href="./pub-ia/layout12/customer/UP_027.html" target="pageFrame">공지사항-상세페이지</a></li>
+                                <li><a href="javascript:void(0);">이용가이드</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout13/customer/UP_039.html" target="pageFrame">구매자가이드</a></li>
+                                        <li><a href="./pub-ia/layout13/customer/UP_040.html" target="pageFrame">판매자가이드</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="javascript:void(0);">오더잡이용가이드</a>
+                                    <ul>
+                                        <li><a href="./pub-ia/layout03/customer/UP_042.html" target="pageFrame">구매자가이드</a></li>
+                                        <li><a href="./pub-ia/layout03/customer/UP_043.html" target="pageFrame">판매자가이드</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./pub-ia/layout12/notice/UP_172.html" target="pageFrame">알림센터</a></li>
+                <li><a href="javascript:void(0);">통합검색</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/search/UP_017.html" target="pageFrame">결과리스트</a></li>
+                        <li><a href="./pub-ia/layout13/search/UP_017_1.html" target="pageFrame">결과없음</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">스페셜셀러</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/powerseller/UP_150.html" target="pageFrame">리스트</a></li>
+                        <li><a href="./pub-ia/layout13/powerseller/UP_151.html" target="pageFrame">상세</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pub-ia/layout13/branding/recommend_landing.html">추천재능</a></li>
+                <li><a href="javascript:void(0);">브랜딩페이지</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/branding/branding.html" target="pageFrame">브랜딩</a></li>
+                        <li><a href="./pub-ia/layout13/branding/nhn_godo.html" target="pageFrame">NHN 고도몰제휴 안내</a></li>
+                        <li><a href="./pub-ia/layout13/branding/app_setting.html" target="pageFrame">앱설치</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">브랜드관</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/event/brand.html" target="pageFrame">브랜드관</a></li>
+                        <li><a href="./pub-ia/layout13/event/brand_main.html" target="pageFrame">브랜드관-메인</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">기타</a>
+                    <ul>
+                        <li><a href="./etc/error_503.html">배포중 대체 페이지</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="javascript:void(0);">오더잡</a>
+            <ul>
+                <li><a href="./pub-ia/layout01/main/UP_015.html" target="pageFrame">메인</a></li>
+                <li><a href="./pub-ia/layout01/main/UP_015_01.html" target="pageFrame">작업제안-상세</a></li>
+                <li><a href="javascript:void(0);">회원</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">오더잡이용가이드</a>
+                            <ul>
+                                <li><a href="./pub-ia/layout03/customer/UP_042.html" target="pageFrame">구매자가이드</a></li>
+                                <li><a href="./pub-ia/layout03/customer/UP_043.html" target="pageFrame">판매자가이드</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="javascript:void(0);">메세지</a>
+            <ul>
+                <li><a href="./pub-ia/layout20/message/message.html" target="pageFrame">메세지</a></li>
+                <li><a href="./pub-ia/layout20/message/message_system.html" target="pageFrame">시스템메세지</a></li>
+                <li><a href="./pub-ia/layout20/message/message_layer.html" target="pageFrame">메세지-레이어팝업</a></li>
+                <li><a href="./pub-ia/layout12/mypage/UP_076.html" target="pageFrame">재능판매-판매관리 상세</a></li>
+                <li><a href="./pub-ia/layout12/mypage/UP_076_2.html" target="pageFrame">재능구매-구매관리 상세</a></li>
+                <li><a href="./pub-ia/layout12/mypage/UP_046.html" target="pageFrame">메시지 목록</a></li>
+                <!--    <li><a href="javascript:void(0);" onclick="window.open('/p/message/test.html', 'width=570, height=765'); return false;" target="_blank">ios_test</a></li>-->
+            </ul>
+        </li>
+        <li><a href="javascript:void(0);">이벤트</a>
+            <ul>
+                <li><a href="javascript:void(0);">2017</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/event/2017/event_20170809.html" target="pageFrame">무료재능</a></li>
+                        <li><a href="./pub-ia/layout13/event/2017/event_20170914.html" target="pageFrame">추석스페셜</a></li>
+                        <li><a href="./pub-ia/layout13/event/2017/exhibit.html">기획전</a></li>
+                        <li><a href="./pub-ia/layout13/branding/app_setting.html" target="pageFrame">앱설치</a></li>
+                        <li><a href="./pub-ia/layout13/event/payback.html" target="pageFrame">페이백 랜딩</a></li>
+                        <li><a href="./pub-ia/layout13/event/2017/event_20171228.html" target="pageFrame">2018오투잡 수수료 업계최저</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pub-ia/layout13/event/event_20180111.html" target="pageFrame">5주년 이벤트</a></li>
+                <li><a href="./pub-ia/layout13/event/event_20180122.html" target="pageFrame">푸시 수신동의 이벤트</a></li>
+                <li><a href="./pub-ia/layout13/event/event_20180321.html" target="pageFrame">앱설치</a></li>
+                <li><a href="javascript:void(0);">오키데이(3월)</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/event/event_20180316_t.html" target="pageFrame">이벤트페이지-티저</a></li>
+                        <li><a href="./pub-ia/layout13/event/event_20180316.html" target="pageFrame">이벤트페이지-본페이지</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">오키데이(4월)</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/event/event_20180412_t.html" target="pageFrame">이벤트페이지-티저/본페이지</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0);">오키데이(6월)</a>
+                    <ul>
+                        <li><a href="./pub-ia/layout13/event/event_20180625.html" target="pageFrame">이벤트페이지</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pub-ia/layout13/event/event_20180502.html" target="pageFrame">메인개편이벤트</a></li>
+                <li><a href="./pub-ia/layout13/event/event_20181105.html" target="pageFrame">스마일페이</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:void(0);">프로젝트</a>
+            <ul>
+                <li><a href="./pub-ia/layout12/mypage/UP_044.html" target="pageFrame">메인</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    // html demo
+    $('#menuIA').jstree().bind('select_node.jstree', function(e,data) {
+        var href = data.node.a_attr.href;
+        $(parent.document).contents().find('#pageFrame').attr('src', href);
+    });
+    function openAll(){
+        $('#menuIA').jstree().open_all();
+    }
+    function closeAll(){
+        $('#menuIA').jstree().close_all();
+    }
+</script>
+</body>
+</html>

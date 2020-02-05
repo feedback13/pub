@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright (c) 2017. (주)사람인HR.
+  ~ All rights reserved.
+  -->
+
+<html lang="ko">
+<head>
+    <title>OTWOJOB</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style>
+        body {margin:0;padding:0;font-family: Malgun Gothic, Apple SD Gothic Neo,dotum,arial,sans-serif;text-align:left}
+        div,ul,ol,li,dl,dt,dd,p,input,textarea,select,h1,h2,h3,h4,h5,em,address,fieldset,form,iframe,object,menu,button {margin:0;padding:0}
+        div,ul,ol,dl,p,td,input,textarea,select {color:#444;font-family: Malgun Gothic, dotum, arial, sans-serif;font-size:12px;font-weight:normal}
+        img,fieldset,iframe {border:none}
+        menu,ul,ol,li {list-style:none}
+        img,input,select,textarea {vertical-align:top}
+        hr {display:none}
+        em,address {font-style:normal}
+        a {text-decoration:none;color:#666}
+        a:hover {text-decoration:none}
+        button {border:0;background:none;cursor:pointer}
+        .blind {visibility:hidden;overflow:hidden;position:absolute;left:-1000em;width:0;height:0;font-size:0;line-height:0}
+        .ipad input[type=text],input[type=image],button,input[type=button],textarea {-webkit-appearance:none;-webkit-text-size-adjust:none;-webkit-border-radius:0}
+        .bar {display:inline-block;width:1px;height:11px;margin:-1px 10px 1px 11px;background:url("../../image/pc/saramin/l_bar.gif") no-repeat 100% 0px;vertical-align:middle}
+        .ir span {display:block;overflow:hidden;position:relative; padding-right:5px;font-size: 18px; font-weight: normal; font-style: normal; font-stretch: normal; letter-spacing: -2px; color: #222; line-height: 24px;}
+        a.ir:hover {text-decoration:none}
+        /* contents */
+        .otwjob_contents {position:relative;width:1260px;margin:0px auto 0 auto;letter-spacing:-1px; font-family: Malgun Gothic, dotum, arial, sans-serif !important;}
+        .otwjob_contents h2 {overflow:hidden;left:0;z-index:1;height:25px;vertical-align:top; margin-bottom: 10px; }
+        .otwjob_contents h2 a  {display:inline-block;}
+        .otwjob_contents .info_txt {position:absolute;right:6px;top:6px;font-size: 13px; font-weight: normal;font-style: normal;font-stretch: normal;letter-spacing: -1px;color: #444444;}
+        .otwjob_contents .info_txt img {margin-left: 7px; vertical-align: middle; width: 4px; height: 9px;}
+        .otwjob_contents .item_wrap {overflow:hidden;padding-top:28px;border-top:1px solid #eaeaea;background-color:#fff; width: 1026px; display: inline-block; }
+        .otwjob_contents .item_wrap li {float:left; padding:0 20px 0 0; border-right: 1px solid #eaeaea;}
+        .otwjob_contents .item_wrap li:nth-last-child(n+2){ padding:0 20px 0 0; border-right: 0px solid #eaeaea;}
+        .otwjob_contents .item {margin:0;padding:0;color:#444;font-family: Malgun Gothic, dotum, arial, sans-serif;}
+        .otwjob_contents .item h3 {color:#444;font-size:14px; font-style: normal;font-stretch: normal;color:#444;letter-spacing: -1px;}
+        .otwjob_contents .item h3 a {display:block;padding-left:1px;}
+        .otwjob_contents .item h3 .depth1 {display:inline-block;font-size: 15px;font-weight: bold; vertical-align: middle;}
+        .otwjob_contents .item h3 .depth2 {display:inline-block;font-size: 13px; font-weight: normal; color: #444444; vertical-align: middle;}
+        .otwjob_contents .item h3 .contour {margin: 0px 6px; vertical-align: middle; font-size: 11px; color: #979797;}
+        .otwjob_contents .item h3 img {vertical-align: middle; margin-left: 8px; width: 4px; height: 7px;}
+        .otwjob_contents .item dl {width:236px;margin-top:8px;box-sizing:border-box;background:#fff;word-break:break-all}
+        .otwjob_contents .item .image {overflow:hidden;position:relative;width:236px;height:172px;border:1px solid #f0f0f0; text-align: center; display: table-cell; vertical-align: middle;}
+        .otwjob_contents .item .image a {display:block; text-align: center; vertical-align: middle; width: 234px; height: 172px; overflow: hidden;}
+        .otwjob_contents .item .image img {height: 172px;width: 234px;position:relative;/* left: 50%; *//* top: 50%; *//* transform: translate(-50%, -50%); */}
+        .otwjob_contents .item .image .img_dim {position:absolute; width:100%; height:100%; background-color: transparent; /*opacity:.2; -moz-opacity:.2; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";*/}
+        .otwjob_contents .item .title {overflow:hidden;margin-top:8px; font-size: 14px; height: 39px; font-weight: normal;  font-style: normal; font-stretch: normal; line-height: 1.43; letter-spacing: -0.5px; color: #212121; word-break: break-all; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical;}
+        .otwjob_contents .item .title a {display:block;color:#444;font-family: Malgun Gothic, dotum, arial, sans-serif;}
+        .otwjob_contents .item .grade {display: inline-block; margin-top: 12px;}
+        .otwjob_contents .item .grade span.new_star_grade {text-indent: -10000px; background: url('http://images.otwojob.com/image/pc/main/ic_star_xs_gray.png') left bottom no-repeat; display: inline-block; width: 70px; height: 15px; vertical-align: middle;}
+        .otwjob_contents .item .grade span.new_star_grade span.percent {background: url('http://images.otwojob.com/image/pc/main/ic_star_xs_color.png') left bottom no-repeat;display: block; height: 15px }
+        .otwjob_contents .item .grade div.grade_text {font-size: 11px;line-height: 1.26;letter-spacing: normal;color: #666666;display:inline-block;vertical-align:middle; margin-left: 2px; font-family: Malgun Gothic, dotum, arial, sans-serif;}
+        .otwjob_contents .item .price {padding:0; margin-top: 17px;}
+        .otwjob_contents .item .price .discount {font-size: 20px; font-weight: bold; letter-spacing: -0.7px; color: #999; display: inline-block; margin-right: 8px;}
+        .otwjob_contents .item .price .number {display:inline-block;font-size: 20px; font-weight: bold; letter-spacing: -0.7px; color: #222; margin-right: -2px;}
+        .otwjob_contents .item .price .unit {display:inline-block;font-size: 13px; letter-spacing: -0.7px; color: #222;}
+        .otwjob_contents .item .info {padding:9px 0;border-top:1px solid #efefef;margin-top: 14px;}
+        .otwjob_contents .item .info:after {display:block;clear:both;content:""}
+        .otwjob_contents .item .info  >  a {display:block;float:left;height:27px;line-height:27px}
+        .otwjob_contents .item .info .photo {display:table;position:relative;width:28px;height:28px;margin-right:7px;background:#fff;background-size:15px auto;border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;overflow:hidden;text-align:center;color: #fff;font-weight: bold;font-size: 15px;}
+        .otwjob_contents .item .info .photo span {display:table-cell;text-align:center;vertical-align:middle; border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;overflow:hidden}
+        .otwjob_contents .item .info .photo span img {max-width:28px;max-height:28px;vertical-align:middle;}
+        .otwjob_contents .item .info .photo:after {content:"";position:absolute;left:0;top:0;right:0;bottom:0;background:rgba(0,0,0,0.08);width:28px;height:28px; border-radius:100px;-webkit-border-radius:100px;-moz-border-radius:100px;overflow:hidden}
+        .otwjob_contents .item .info .photo.profile_color_0 {background-color: #ff868d !important;}
+        .otwjob_contents .item .info .photo.profile_color_1 {background-color: #a1c5ff !important;}
+        .otwjob_contents .item .info .photo.profile_color_2 {background-color: #86af69 !important;}
+        .otwjob_contents .item .info .photo.profile_color_3 {background-color: #5cb7d2 !important;}
+        .otwjob_contents .item .info .photo.profile_color_4 {background-color: #559cde !important;}
+        .otwjob_contents .item .info .photo.profile_color_5 {background-color: #ecc46c !important;}
+        .otwjob_contents .item .info .photo.profile_color_6 {background-color: #ffc0a1 !important;}
+        .otwjob_contents .item .info .photo.profile_color_7 {background-color: #b89ff2 !important;}
+        .otwjob_contents .item .info .photo.profile_color_8 {background-color: #698faf !important;}
+        .otwjob_contents .item .info .photo.profile_color_9 {background-color: #69aeaf !important;}
+
+        .otwjob_contents .item .info .name {display:inline-block;overflow:hidden;width:90px;color:#85888c;white-space:nowrap;text-overflow:ellipsis;cursor:pointer;vertical-align:top;}
+        .otwjob_contents .item .info .tag {float: right; padding: 5px 0;}
+        .otwjob_contents .item .info .tag div {height: 17px; border: 1px solid #ececec; font-size: 11px; letter-spacing: -1.5px; color: #949494; display: inline-block; text-align: center; vertical-align: middle;}
+        .otwjob_contents .item .info .tag div.profile { width: 42px;}
+        .otwjob_contents .item .info .tag div.corp {width: 41px; }
+
+        .otwjob_contents .free_content {padding-top: 28px; border-top: 1px solid #eaeaea; font-family: Malgun Gothic, dotum, arial, sans-serif; display: inline-block; vertical-align: top; margin-left: -7px; width: 210px; padding-left: 22px;}
+        .otwjob_contents .free_content .free_title {font-size: 15px; letter-spacing: -1px; color: #444; display: inline-block; font-weight: bold; margin-left: 4px;}
+        .otwjob_contents .free_content .free_etc {float: right; color: #949494; fonr-size: 12px; letter-spacing: -1px;}
+        .otwjob_contents .free_content .free_item li {margin-top: 14px;display: inline-block;text-align: center;/* height: 71px; */}
+        .otwjob_contents .free_content .free_item li:first-child {margin-top: 10px;}
+        .otwjob_contents .free_content .free_item li div {display: table-cell;width: 67px;height: 36px;vertical-align: middle;text-align: center;border:1px solid #eaeaea;overflow: hidden;/* float: left; */position: relative;}
+        .otwjob_contents .free_content .free_item li img {max-width: 61px;max-height: 30px;display: inline;/* position: absolute; *//* left: 50%; *//* top: 50%; *//* transform: translate(-50%, -50%); */vertical-align: middle;}
+        .otwjob_contents .free_content .free_item li a:nth-child(2n - 1) {display: table;float: left;width: 67px;height: 36px;}
+        .otwjob_contents .free_content .free_item li a:nth-child(2n) {display: inline-block;vertical-align: top;width: 129px;/* height: 48px; */font-size: 13px;line-height: 1.38;letter-spacing: -0.5px;color: #212121;margin-left: 12px;/*padding-top: 5px;*/}
+        .otwjob_contents .free_content .free_item li a dd {text-align: left; word-break: break-all; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical; overflow: hidden; height: 34px;}
+    </style>
+</head>
+<body>
+<div class="otwjob_contents">
+    <!-- OTWOJOB-2093 -->
+    <h2 class="ir"><span>오투잡</span></h2>
+    <p class="info_txt"><a href="javascript:void(0)" target="_blank">더 많은 상품 보기<img src="http://images.otwojob.com/image/pc/ico/path-4.png"></a></p>
+    <ul class="item_wrap">
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="javascript:void(0)" target="_blank">
+                        <span class="depth1">디자인</span><span class="contour">&#5;</span><span class="depth2">캐리커쳐/인물<img src="http://images.otwojob.com/image/pc/ico/path-4.png"></span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/u/p/h/uphidDckMowEJsA.png/o2j/resize/236>" align="center" alt=""></a>
+                    </dt>
+                    <dd class="title"><a href="javascript:void(0)" target="_blank">15년경력의 디자이너 전문가에게<br>고퀄리티 편집물을 제작하세요.</a></dd>
+                    <dd class="grade">
+                        <span class="new_star_grade">
+                            <span class="percent" style="width:67%;"></span>   <!-- 평점 입력부분 -->
+                        </span>
+                        <div class="grade_text">
+                            4.5(144)
+                        </div>
+                    </dd>
+                    <dd class="price">
+                        <span class="discount">60%</span>
+                        <span class="number">60,000</span>
+                        <span class="unit">원~</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="javascript:void(0)" class="photo profile_color_4"><span>쏘</span></a>
+                        <a href="javascript:void(0)" class="name">쏘군마스터</a>
+                        <div class="tag">
+                            <div class="profile">프로필</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="javascript:void(0)" target="_blank">
+                        <span class="depth1">음악/더빙</span><span class="contour">&#5;</span><span class="depth2">나레이션/성우<img src="http://images.otwojob.com/image/pc/ico/path-4.png"></span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/h/S/a/hSavbrDlwGSueE7.png/o2j/resize/236" align="center" alt=""></a>
+                    </dt>
+                    <dd class="title"><a href="javascript:void(0)" target="_blank">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요. 요건 좀 기네유</a></dd>
+                    <dd class="grade">
+                        <span class="new_star_grade">
+                            <span class="percent" style="width:90.5%;"></span>
+                        </span>
+                        <div class="grade_text">
+                            4.5(144)
+                        </div>
+                    </dd>
+                    <dd class="price">
+                        <span class="discount">30%</span>
+                        <span class="number">400,000</span>
+                        <span class="unit">원~</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="javascript:void(0)" class="photo"><span><img src="//file-stg.o2job.co/profile/5/8/6/5867595658904.jpg/o2j/resize/42x42>" alt=""></span></a>
+                        <a href="javascript:void(0)" class="name">카운셀러카운셀러카운셀러</a>
+                        <div class="tag">
+                            <div class="corp">기업</div>
+                            <div class="profile">프로필</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="javascript:void(0)" target="_blank">
+                        <span class="depth1">번역</span><span class="contour">&#5;</span><span class="depth2">영어번역<img src="http://images.otwojob.com/image/pc/ico/path-4.png"></span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/5/4/1/541XihjZDSv7ga1.jpg/o2j/resize/234x182>" align="center" alt=""></a>
+                    </dt>
+                    <dd class="title"><a href="javascript:void(0)" target="_blank">15년경력의 디자이너 전문가에게 고퀄리티 편집물을 제작하세요.</a></dd>
+                    <dd class="grade">
+                        <span class="new_star_grade">
+                            <span class="percent" style="width:100%;"></span>
+                        </span>
+                        <div class="grade_text">
+                            4.5(144)
+                        </div>
+                    </dd>
+                    <dd class="price">
+                        <span class="discount">60%</span>
+                        <span class="number">60,000</span>
+                        <span class="unit">원~</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="javascript:void(0)" class="photo"><span><img src="//file-stg.o2job.co/profile/5/8/6/5867595658904.jpg/o2j/resize/42x42>" align="center" alt=""></span></a>
+                        <a href="javascript:void(0)" class="name">카운셀러카운셀러카운셀러</a>
+                        <div class="tag">
+                            <div class="corp">기업</div>
+                            <div class="profile">프로필</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <h3>
+                    <a href="javascript:void(0)" target="_blank">
+                        <span class="depth1">IT개발</span><span class="contour">&#5;</span><span class="depth2">응용프로그래밍<img src="http://images.otwojob.com/image/pc/ico/path-4.png"></span>
+                    </a>
+                </h3>
+                <dl>
+                    <dt class="image">
+                        <a href="javascript:void(0)" target="_blank"><img src="//images.otwojob.com/product/F/y/7/Fy72N4mFOL3FTca.jpg/o2j/resize/234>" alt=""></a>
+                    </dt>
+                    <dd class="title"><a href="javascript:void(0)" target="_blank">15년경력의 디자이너 전문가에게<br>고퀄리티 편집물을 제작하세요.</a></dd>
+                    <dd class="grade">
+                        <span class="new_star_grade">
+                            <span class="percent" style="width:67%;"></span>
+                        </span>
+                        <div class="grade_text">
+                            4.5(144)
+                        </div>
+                    </dd>
+                    <dd class="price">
+                        <span class="discount">60%</span>
+                        <span class="number">60,000</span>
+                        <span class="unit">원~</span>
+                    </dd>
+                    <dd class="info">
+                        <a href="javascript:void(0)" class="photo"><span><img src="//file-stg.o2job.co/profile/5/8/6/5867595658904.jpg/o2j/resize/42x42>" alt=""></span></a>
+                        <a href="javascript:void(0)" class="name">카운셀러카운셀러카운셀러</a>
+                        <div class="tag">
+                            <div class="corp">기업</div>
+                            <div class="profile">프로필</div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+    </ul>
+
+    <div class="free_content">
+        <span class="free_title">브랜드관</span>
+        <a href="javascript:void(0)" target="_blank" class="free_etc">더보기</a>
+        <ul class="free_item" style="width: 210px;">
+            <li>
+                <a href="javascript:void(0)" target="_blank"><div><img src="https://static.otwojob.com/brand/cba8e7d2-b627-483e-99fc-17473fed5c48.png"></div></a>
+                <a href="javascript:void(0)" target="_blank"><dd>기획/디자인/개발/관리 홈페이지의 모든 것</dd></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" target="_blank"><div><img src="https://static.otwojob.com/brand/f7c08ce6-8d7a-4d76-9242-c5f7866a8027.png"></div></a>
+                <a href="javascript:void(0)" target="_blank"><dd>카페24 쇼핑몰 수정부터 구축까지</dd></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" target="_blank"><div><img src="https://static.otwojob.com/brand/d4b7d092-98ad-49d5-b119-f682d8f3e454.png"></div></a>
+                <a href="javascript:void(0)" target="_blank"><dd>e-커머스 전문 마케팅&IT 대행사</dd></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" target="_blank"><div><img src="https://static.otwojob.com/brand/ac7090b1-fa66-467e-8fc1-d98e619c3da7.png"></div></a>
+                <a href="javascript:void(0)" target="_blank"><dd>반응형 홈페이지 전문! 디자인/마케팅 솔루션</dd></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" target="_blank"><div><img src="https://static.otwojob.com/brand/61f22404-465d-49c1-b50d-f33afb7308ea.png"></div></a>
+                <a href="javascript:void(0)" target="_blank"><dd>카페24 쇼핑몰 수정부터 구축까지</dd></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" target="_blank"><div><img src="https://static.otwojob.com/brand/c45cd829-a78e-4e7b-84e9-86a0abffddc6.png"></div></a>
+                <a href="javascript:void(0)" target="_blank"><dd>e-커머스 전문 마케팅&IT 대행사</dd></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" target="_blank"><div><img src="https://static.otwojob.com/brand/d4b7d092-98ad-49d5-b119-f682d8f3e454.png"></div></a>
+                <a href="javascript:void(0)" target="_blank"><dd>e-커머스 전문 마케팅&IT 대행사</dd></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<script>
+    $(document).ready(function(){
+
+    });
+</script>
+</body>
+</html>

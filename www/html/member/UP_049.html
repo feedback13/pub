@@ -1,0 +1,231 @@
+	<fieldset>
+		<legend class="blind">판매회원전환 정보입력(개인)</legend>
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>판매유형 <span class="must"> 필수입력정보입니다.</span></h2>
+			<div class="inner_box">
+				<div class="selectbox right_pos full_width">
+					<label for="sell_type">유형선택</label>
+					<select id="sell_type">
+						<option value="">유형선택</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="sell_type">
+				<p class="warning" style="display:block">판매 유형을 선택해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다. -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>판매자 정보</h2>
+			<div class="must">
+				<input type="text" placeholder="이름" title="이름" />
+			</div>
+			<div class="must">
+				<input type="text" placeholder="우편번호" title="우편번호" />
+				<button class="btn_confirm btn_gray" type="button" onclick="javascript:openLay('find_address');">우편번호  찾기</button>
+				<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+			</div>
+			<div class="type03">
+				<input type="text" placeholder="주소" title="주소" />
+			</div>
+			<div class="type03">
+				<input type="text" placeholder="상세주소" title="상세주소" />
+			</div>
+			<div class="must type03">
+				<div class="selectbox">
+					<label for="a2">은행명</label>
+					<select id="a2">
+						<option value="">은행명</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="must type03">
+				<input type="text" placeholder="계좌번호를 ( - )없이 입력해 주세요" title="계좌번호" />
+			</div>
+			<div class="tab_type02">
+				<a class="on" href="#none">휴대폰 번호 인증</a>
+				<a href="#none">아이핀 인증</a>
+			</div>
+
+			<div class="must tell">
+				<div class="selectbox">
+					<label for="a1">010</label>
+					<select id="a1">
+						<option value="">010</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+				<button class="btn_confirm btn_gray" type="button">인증</button>
+				<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+			</div>
+
+			<div class="must type02">
+				<span><input type="text" placeholder="인증번호" title="인증번호" /></span>
+				<button class="btn_confirm btn_gray" type="button">확인</button>
+				<!-- 확인값에 따라 class="btn_gray" 를 class="btn_org"로 교체-->
+			</div>
+
+			<div class="password_text">
+				본인명의의 휴대폰 또는 아이핀(I-PIN)인증을 통해 본인인증을 할 수 있습니다. <br />
+				(법인 휴대폰 사용자는 아이핀 인증만 가능합니다)<br />
+				입력하신 정보는 본인인증을 위해 나이스평가정보㈜에 제공됩니다.
+				<p class="warning" style="display:block">본인 인증을 해 주세요.</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>수수료에 대한 증빙</h2>
+			<div class="must ">
+				<span class="input_radio">
+					<input type="radio" id="bill01"name="bill" title="세금계산서" />
+					<label for="bill01">세금계산서</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="bill02"name="bill" title="현금영수증" />
+					<label for="bill02">현금영수증</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="none"name="bill" title="발급안함" />
+					<label for="none">발급안함</label>
+				</span>
+			</div>
+
+			<div class="password_text">
+				회사는 매월 판매 회원의 오투잡 서비스 수수료(20%) 부과에 대한 세금계산서 <br />
+				또는 현금영수증을 발급합니다
+				<p class="warning" style="display:block">수수료에 대한 증빙의 발급 수단을 선택해 주세요</p>
+				<!--  확인값에 따라 style="display:none"을 style="display:block"으로 바꿔주시면 됩니다.  -->
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>세금계산서 발급</h2>
+
+			<div class="must email02">
+				<input type="text" placeholder="이메일" title="이메일주소" /> @
+				<input type="text" title="이메일주소" />
+				<div class="selectbox share_line">
+					<label for="mail1">직접입력</label>
+					<select id="mail1">
+						<option value="">직접입력</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+
+			<div class="tell">
+				<div class="selectbox">
+					<label for="a1">연락처</label>
+					<select id="a1">
+						<option value="">연락처</option>
+						<option value="">010</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+			</div>
+
+			<div class="password_text">
+				전자세금계산서를 아래의 이메일에서 받으실 수 있습니다.
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- row_group -->
+		<article class="row_group">
+			<h2>현금영수증 발급</h2>
+
+			<div class="must email02">
+				<input type="text" placeholder="이메일" title="이메일주소" /> @
+				<input type="text" title="이메일주소" />
+				<div class="selectbox share_line">
+					<label for="mail2">직접입력</label>
+					<select id="mail2">
+						<option value="">직접입력</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+			</div>
+
+			<div>
+				<span class="bill_tit">발급용도</span>
+				<span class="input_radio">
+					<input type="radio" id="cause01"name="cause" title="소득공제용" />
+					<label for="cause01">소득공제용</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="cause02"name="cause" title="지출증빙용" />
+					<label for="cause02">지출증빙용</label>
+				</span>
+			</div>
+
+			<div>
+				<span class="bill_tit">발급수단</span>
+				<span class="input_radio">
+					<input type="radio" id="phone"name="cause2" title="휴대폰 번호" />
+					<label for="phone">휴대폰 번호</label>
+				</span>
+				<span class="input_radio">
+					<input type="radio" id="cashcard"name="cause2" title="현금영수증카드" />
+					<label for="cashcard">현금영수증카드</label>
+				</span>
+			</div>
+
+			<!-- 휴대폰 번호 체크했을때 -->
+			<div class="tell">
+				<div class="selectbox">
+					<label for="a1">연락처</label>
+					<select id="a1">
+						<option value="">010</option>
+						<option></option>
+						<option></option>
+					</select>
+				</div>
+				<input class="share_line" type="text" title="전화번호앞자리" /> - <input type="text" title="전화번호뒷자리" />
+			</div>
+
+			<!-- 현금영수증카드 체크했을때 -->
+			<div class="card">
+				<input type="text" title="현금영수증카드1" /> -
+				<input type="text" title="현금영수증카드2" /> -
+				<input type="text" title="현금영수증카드3" /> -
+				<input type="text" title="현금영수증카드4" />
+			</div>
+
+
+			<div class="password_text">
+				발급용도와 발급 수단을 선택해 주세요. <br/>
+				(선택한 발급용도로 발급된 현금영수증은 다른 용도로 재 발급 불가)
+			</div>
+		</article>
+		<!--// row_group -->
+
+		<!-- btn_wrap -->
+		<article class="btn_wrap">
+			<div class="join_btn_wrap">
+				<span class="btn_cancel"><button type="button">취소</button></span>
+				<span class="btn_next"><button type="button">전환하기</button></span>
+			</div>
+		</article>
+		<!--// btn_wrap -->
+	</fieldset>
